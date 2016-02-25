@@ -1,0 +1,307 @@
+[
+  {
+    "name": "random_experience_sampling",
+    "display_name": "Random Experience Sampling",
+    "package_name": "org.md2k.ema",
+    "file_name": "random_experience_sampling.json",
+    "timeout": {
+      "start_timeout": 300,
+      "completion_timeout": 300
+    },
+    "notification_option": [
+      {
+        "priority": 0,
+        "notification": {
+          "type": "EMA",
+          "datasource": {
+            "platform": {
+              "type": "PHONE"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "tone_type": "",
+          "tone_count": 5,
+          "tone_interval": 60,
+          "message": [
+            "Survey Available",
+            "Please answer the Survey"
+          ]
+        }
+      },
+      {
+        "priority": 0,
+        "notification": {
+          "type": "EMA",
+          "datasource": {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "message": [
+            "Survey Available",
+            "Please answer the Survey"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "event_contingent_recording",
+    "type": "EMA",
+    "display_name": "Event Contingent Recording",
+    "package_name": "org.md2k.ema",
+    "file_name": "event_contingent_recording.json",
+    "timeout": {
+      "start_timeout": 300,
+      "completion_timeout": 300
+    },
+    "notification_option": [
+      {
+        "priority": 0,
+        "notification": {
+          "type": "EMA",
+          "datasource": {
+            "platform": {
+              "type": "PHONE"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "tone_type": "",
+          "tone_count": 5,
+          "tone_interval": 60,
+          "message": [
+            "Survey Appears",
+            "Please answer the Survey"
+          ]
+        }
+      },
+      {
+        "priority": 0,
+        "notification": {
+          "type": "EMA",
+          "datasource": {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "message": [
+            "Survey Available",
+            "Please answer the Survey"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "end_of_day_recording",
+    "type": "EMA",
+    "display_name": "End of Day Recording",
+    "package_name": "org.md2k.ema",
+    "file_name": "end_of_day_recording.json",
+    "timeout": {
+      "start_timeout": 300,
+      "completion_timeout": 300
+    },
+    "notification_option": [
+      {
+        "priority": 0,
+        "notification": {
+          "type": "EMA",
+          "datasource": {
+            "platform": {
+              "type": "PHONE"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "tone_type": "",
+          "tone_count": 5,
+          "tone_interval": 60,
+          "message": [
+            "End-of-Day Survey Available",
+            "Please answer the Survey"
+          ]
+        }
+      },
+      {
+        "priority": 0,
+        "notification": {
+          "type": "EMA",
+          "datasource": {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "message": [
+            "End-of-Day Survey Available",
+            "Please answer the End-of-Day Survey"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "headspace",
+    "display_name": "HeadSpace",
+    "package_name": "com.getsomeheadspace.android",
+    "timeout": {
+      "start_timeout": 300,
+      "completion_timeout": 300
+    },
+    "notification_option": [
+      {
+        "priority": 0,
+        "notification": {
+          "type": "INTERVENTION",
+          "datasource": {
+            "platform": {
+              "type": "PHONE"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "tone_type": "",
+          "tone_count": 5,
+          "tone_interval": 60,
+          "message": [
+            "HeadSpace",
+            "Take a moment to make some head space"
+          ]
+        }
+      },
+      {
+        "priority": 0,
+        "notification": {
+          "type": "INTERVENTION",
+          "datasource": {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "message": [
+            "HeadSpace",
+            "Take a moment to make some head space"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "moodsurfing",
+    "display_name": "MoodSurfing",
+    "package_name": "org.md2k.moodsurfing",
+    "timeout": {
+      "start_timeout": 300,
+      "completion_timeout": 300
+    },
+    "notification_option": [
+      {
+        "priority": 0,
+        "notification": {
+          "type": "INTERVENTION",
+          "datasource": {
+            "platform": {
+              "type": "PHONE"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "tone_type": "",
+          "tone_count": 5,
+          "tone_interval": 60,
+          "message": [
+            "Mood Surfing",
+            "Take a moment to surf your mood"
+          ]
+        }
+      },
+      {
+        "priority": 0,
+        "notification": {
+          "type": "INTERVENTION",
+          "datasource": {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "message": [
+            "Mood Surfing",
+            "Take a moment to surf your mood"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "ThoughtShakeup",
+    "display_name": "Thought Shakeup",
+    "package_name": "org.md2k.thoughtshakeup",
+    "timeout": {
+      "start_timeout": 300,
+      "completion_timeout": 300
+    },
+    "notification_option": [
+      {
+        "priority": 0,
+        "notification": {
+          "type": "INTERVENTION",
+          "datasource": {
+            "platform": {
+              "type": "PHONE"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "tone_type": "",
+          "tone_count": 5,
+          "tone_interval": 60,
+          "message": [
+            "Thought Shakeup",
+            "Take a moment to shake up your thoughts"
+          ]
+        }
+      },
+      {
+        "priority": 0,
+        "notification": {
+          "type": "INTERVENTION",
+          "datasource": {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
+          },
+          "vibrate_type": "THREE_TONE_HIGH",
+          "vibrate_count": 5,
+          "vibrate_interval": 60,
+          "message": [
+            "Thought Shakeup",
+            "Take a moment to shake up your thoughts"
+          ]
+        }
+      }
+    ]
+  }
+]
