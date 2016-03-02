@@ -10,11 +10,13 @@
   },
   {
     "question_id": 1,
-    "question_type": "text_numeric",
+    "question_type": "multiple_choice",
     "question_text": "Approximately how long ago did you take the first puff from that cigarette?",
     "response_option": [
-      "0",
-      "120"
+      "Less than 5 minutes",
+      "5 to 15 minutes",
+      "15 to 30 minutes",
+      "More than 30 minutes"
     ]
   },
   {
@@ -23,17 +25,16 @@
   },
   {
     "question_id": 3,
-    "question_type": "multiple_choice",
-    "question_text": "How strong is your urge to smoke right now?",
+    "question_text": "In the last ten minutes, have you had a strong temptation/urge to smoke?",
     "response_option": [
-      "No Urge",
-      "Weak",
-      "Moderate",
-      "Strong",
-      "Severe"
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
     ]
   },
-
   {
     "question_id": 4,
     "question_type": "multiple_choice",
@@ -97,6 +98,33 @@
       "yes",
       "YES",
       "YES!!!"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "multiple_choice",
+    "question_text": "Do you see someone smoking or do you smell cigarettes?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "multiple_choice",
+    "question_text": "Do you have access to cigarettes right now?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Are you someplace where you can smoke?",
+    "response_option": [
+      "Yes",
+      "No"
     ]
   }
 ]
