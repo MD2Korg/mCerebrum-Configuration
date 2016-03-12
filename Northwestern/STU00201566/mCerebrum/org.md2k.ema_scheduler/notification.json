@@ -1,0 +1,88 @@
+[
+    {
+      "id": "PHONE_VIBRATE_3",
+      "name": "Phone Vibration",
+      "type": "VIBRATION",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "format":"THREE_TONE",
+      "repeat":3,
+      "interval":500
+    },
+    {
+      "id": "MICROSOFT_BAND_VIBRATE_3",
+      "name": "Microsoft Band Vibration",
+      "type": "VIBRATION",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "MICROSOFT_BAND"
+        }
+      },
+      "format": "THREE_TONE_HIGH",
+      "repeat": 3,
+      "interval": 500
+    },
+    {
+      "id": "PHONE_TONE_3",
+      "name": "Phone Tone",
+      "type": "TONE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "format": "THREE_TONE_HIGH",
+      "repeat": 3,
+      "interval": 500
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10",
+      "name": "Phone Tone",
+      "type": "MESSAGE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "repeat": 1,
+      "message": [
+        "Time to answer the EMA",
+        "Time to answer the EMA",
+        "OK",
+        "Cancel",
+        "Delay 10 Minutes"
+      ],
+      "response_option": {
+        "ok": true,
+        "cancel": true,
+        "delay": true,
+        "delay_time": 600
+      }
+    },
+    {
+      "id": "MICROSOFT_BAND_TILE",
+      "name": "Microsoft Band Tile",
+      "type": "TILE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "MICROSOFT_BAND"
+        }
+      },
+      "repeat":1,
+      "message":[
+        "Time to answer the EMA",
+        "Time to answer the EMA",
+        "OK",
+        "Cancel",
+        "Delay 10 Minutes"
+      ]
+    }
+  ]

@@ -1,0 +1,71 @@
+{
+  "ema_type": [
+    {
+      "id": "RANDOM_EMA",
+      "type":"RANDOM",
+      "category":"EMA",
+      "name": "Random Experience Sampling",
+      "application": {
+        "package_name": "org.md2k.ema",
+        "file_name": "random_experience_sampling.json"
+      }
+    },
+    {
+      "id": "EVENT_EMA",
+      "type":"EVENT",
+      "category":"EMA",
+      "name": "Event Contingent EMA",
+      "application": {
+        "package_name": "org.md2k.ema",
+        "file_name": "event_contingent_recording.json"
+      }
+    },
+    {
+      "id": "END_OF_DAY_EMA",
+      "type":"EVENT",
+      "category":"EMA",
+      "name": "End of day EMA",
+      "application": {
+        "package_name": "org.md2k.ema",
+        "file_name": "end_of_day_recording.json"
+      }
+    },
+    {
+      "id": "MOODSURFING",
+      "type":"EVENT",
+      "category":"EMI",
+      "name": "MoodSurfing",
+      "application": {
+        "package_name": "org.md2k.moodsurfing"
+      }
+    },
+    {
+      "id": "THOUGHT_SHAKEUP",
+      "type":"EVENT",
+      "category":"EMI",
+      "name": "Thought Shakeup",
+      "application": {
+        "package_name": "org.md2k.thoughtshakeup"
+      }
+    },
+    {
+      "id": "HEADSPACE",
+      "type":"EVENT",
+      "category":"EMI",
+      "name": "HeadSpace",
+      "application": {
+        "package_name": "com.getsomeheadspace.android"
+      }
+    },
+    {
+      "id": "RANOM_INTERVENTION",
+      "type":"EVENT",
+      "category":"EMI",
+      "name": "Random Intervention",
+      "application": {
+        "package_name": "org.md2k.ema",
+        "file_name": "random_experience_sampling.json"
+      }
+    }
+  ]
+}

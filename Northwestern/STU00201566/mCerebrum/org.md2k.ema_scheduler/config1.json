@@ -1,0 +1,226 @@
+{
+  "ema_type": [
+    {
+      "id": "RANDOM_EMA",
+      "name": "Random Experience Sampling",
+      "application": {
+        "package_name": "org.md2k.ema",
+        "file_name": "random_experience_sampling.json"
+      },
+      "ema":[
+        {
+          "no_of_ema":1,
+          "window": {
+            "type": "DAY_START",
+            "start_offset": 0,
+            "end_offset": 14400
+          }
+        },
+        {
+          "no_of_ema":1,
+          "window": {
+            "type": "DAY_START",
+            "start_offset": 14400,
+            "end_offset": 28800
+          }
+        },
+        {
+          "no_of_ema":1,
+          "window": {
+            "type": "DAY_START",
+            "start_offset": 28800,
+            "end_offset": 43200
+          }
+        }
+      ],
+      "condition":[
+        "RANDOM_EMA_60",
+        "EVENT_CONTINGENT_EMA_10",
+        "EMI_60",
+        "DATA_QUALITY_5_RIP",
+        "DRIVING_5"
+      ],
+      "notification": [
+        {
+          "type": "PHONE_VIBRATE_3",
+          "repeat":2,
+          "interval":120
+        },
+        {
+          "type": "PHONE_MESSAGE_DELAY_10",
+          "repeat":1
+        },
+        {
+          "type": "MICROSOFT_BAND_VIBRATE_3",
+          "repeat":2,
+          "interval":120
+        },
+        {
+          "type": "MICROSOFT_BAND_TILE",
+          "repeat":2,
+          "interval":120
+        }
+      ]
+    }
+  ],
+  "notification": [
+    {
+      "id": "PHONE_VIBRATE_3",
+      "name": "Phone Vibration",
+      "type": "VIBRATION",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "format":"THREE_TONE",
+      "repeat":3,
+      "interval":500
+    },
+    {
+      "id": "MICROSOFT_BAND_VIBRATE_3",
+      "name": "Microsoft Band Vibration",
+      "type": "VIBRATION",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "MICROSOFT_BAND"
+        }
+      },
+      "format": "THREE_TONE_HIGH",
+      "repeat": 3,
+      "interval": 500
+    },
+    {
+      "id": "PHONE_TONE_3",
+      "name": "Phone Tone",
+      "type": "TONE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "format": "THREE_TONE_HIGH",
+      "repeat": 3,
+      "interval": 500
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10",
+      "name": "Phone Tone",
+      "type": "MESSAGE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "repeat": 1,
+      "message": [
+        "Time to answer the EMA",
+        "Time to answer the EMA",
+        "OK",
+        "Cancel",
+        "Delay 10 Minutes"
+      ],
+      "response_option": {
+        "ok": true,
+        "cancel": true,
+        "delay": true,
+        "delay_time": 600
+      }
+    },
+    {
+      "id": "MICROSOFT_BAND_TILE",
+      "name": "Microsoft Band Tile",
+      "type": "TILE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "MICROSOFT_BAND"
+        }
+      },
+      "repeat":1,
+      "message":[
+        "Time to answer the EMA",
+        "Time to answer the EMA",
+        "OK",
+        "Cancel",
+        "Delay 10 Minutes"
+      ]
+    }
+  ],
+  "condition":[
+    {
+      "id": "DRIVING_5",
+      "name": "Driving (5 Minute)",
+      "window": {
+        "type": "TIME",
+        "duration": 300
+      },
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        },
+        "type": "DRIVING"
+      },
+      "condition":{
+        "type":"all",
+        "value":"0"
+      }
+    },
+    {
+      "id": "DATA_QUALITY_5_RIP",
+      "name": "Data Quality (5 Minute Respiration)",
+      "window": {
+        "type": "TIME",
+        "duration": 300
+      },
+      "datasource": {
+        "platform": {
+          "type": "AUTOSENSE_CHEST"
+        },
+        "type": "RESPIRATION"
+      },
+      "condition":{
+        "type":"average",
+        "relation":"greater than",
+        "value":"0.8"
+      }
+    },
+    {
+      "id": "RANDOM_EMA_60",
+      "name": "Random EMA (60 Minute)",
+      "window": {
+        "type": "TIME",
+        "duration": 3600
+      },
+      "datasource": {
+        "type": "EMA"
+      }
+    },
+    {
+      "id": "EVENT_CONTINGENT_EMA_10",
+      "name": "Event Contingent EMA (10 Minute)",
+      "window": {
+        "type": "TIME",
+        "duration": 600
+      },
+      "datasource": {
+        "type": "EMA"
+      }
+    },
+    {
+      "id": "EMI_10",
+      "name": "EMI (10 Minute)",
+      "window": {
+        "type": "TIME",
+        "duration": 600
+      },
+      "datasource": {
+        "type": "EMA"
+      }
+    }
+  ]
+}
