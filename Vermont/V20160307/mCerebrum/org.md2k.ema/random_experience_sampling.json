@@ -1,0 +1,136 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "Have you smoked since the last time you reported your smoking status?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "How long ago did you take the first puff from that cigarette?",
+    "response_option": [
+      "1 - 19 Minutes ago",
+      "20 - 39 Minutes ago",
+      "40 - 59 Minutes ago",
+      "60 - 79 Minutes ago",
+      "80 - 100 Minutes ago",
+      ">100 Minutes ago"
+    ],
+    "condition": [
+      "0:Yes"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_text": "For the next few questions, please rate how you feel right now."
+  },
+
+  {
+    "question_id": 3,
+    "question_text": "In the last ten minutes, have you had a strong temptation/urge to smoke?",
+    "response_option": [
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "I feel cheerful",
+    "response_option": [
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "multiple_choice",
+    "question_text": "I feel happy",
+    "response_option": [
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "multiple_choice",
+    "question_text": "I feel angry/frustrated",
+    "response_option": [
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_choice",
+    "question_text": "I feel nervous/stressed",
+    "response_option": [
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "multiple_choice",
+    "question_text": "I feel sad",
+    "response_option": [
+      "NO!!!",
+      "NO",
+      "no",
+      "yes",
+      "YES",
+      "YES!!!"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "multiple_choice",
+    "question_text": "Do you see someone smoking or do you smell cigarettes?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "multiple_choice",
+    "question_text": "Do you have access to cigarettes right now?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Are you someplace where you can smoke?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  }
+]
