@@ -25,6 +25,7 @@
   },
   {
     "question_id": 3,
+    "question_type": "multiple_choice",
     "question_text": "In the last ten minutes, have you had a strong temptation/urge to smoke?",
     "response_option": [
       "NO!!!",
