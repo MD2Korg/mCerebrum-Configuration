@@ -1,88 +1,253 @@
 [
-    {
-      "id": "PHONE_VIBRATE_3",
-      "name": "Phone Vibration",
-      "type": "VIBRATION",
-      "priority": 0,
-      "datasource": {
-        "platform": {
-          "type": "PHONE"
-        }
-      },
-      "format":"THREE_TONE",
-      "repeat":3,
-      "interval":500
-    },
-    {
-      "id": "MICROSOFT_BAND_VIBRATE_3",
-      "name": "Microsoft Band Vibration",
-      "type": "VIBRATION",
-      "priority": 0,
-      "datasource": {
-        "platform": {
-          "type": "MICROSOFT_BAND"
-        }
-      },
-      "format": "THREE_TONE_HIGH",
-      "repeat": 3,
-      "interval": 500
-    },
-    {
-      "id": "PHONE_TONE_3",
-      "name": "Phone Tone",
-      "type": "TONE",
-      "priority": 0,
-      "datasource": {
-        "platform": {
-          "type": "PHONE"
-        }
-      },
-      "format": "THREE_TONE_HIGH",
-      "repeat": 3,
-      "interval": 500
-    },
-    {
-      "id": "PHONE_MESSAGE_DELAY_10",
-      "name": "Phone Tone",
-      "type": "MESSAGE",
-      "priority": 0,
-      "datasource": {
-        "platform": {
-          "type": "PHONE"
-        }
-      },
-      "repeat": 1,
-      "message": [
-        "Time to answer the EMA",
-        "Time to answer the EMA",
-        "OK",
-        "Cancel",
-        "Delay 10 Minutes"
-      ],
-      "response_option": {
-        "ok": true,
-        "cancel": true,
-        "delay": true,
-        "delay_time": 600
+  {
+    "id": "MICROSOFT_BAND_VIBRATE_3",
+    "name": "Microsoft Band Vibration",
+    "type": "VIBRATION",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "MICROSOFT_BAND"
       }
     },
-    {
-      "id": "MICROSOFT_BAND_TILE",
-      "name": "Microsoft Band Tile",
-      "type": "TILE",
-      "priority": 0,
-      "datasource": {
-        "platform": {
-          "type": "MICROSOFT_BAND"
-        }
-      },
-      "repeat":1,
-      "message":[
-        "Time to answer the EMA",
-        "Time to answer the EMA",
-        "OK",
-        "Cancel",
-        "Delay 10 Minutes"
-      ]
+    "format": "THREE_TONE_HIGH",
+    "repeat": 3,
+    "duration":2000
+  },
+  {
+    "id": "MICROSOFT_BAND_MESSAGE_EMA",
+    "name": "Microsoft Band Message (EMA)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "MICROSOFT_BAND"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "Survey",
+      "Time to take a Survey"
+    ]
+  },
+  {
+    "id": "MICROSOFT_BAND_MESSAGE_MOODSURFING",
+    "name": "Microsoft Band Message (MoodSurfing)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "MICROSOFT_BAND"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "Mood Surfing",
+      "Take a moment to surf your mood"
+    ]
+  },
+  {
+    "id": "MICROSOFT_BAND_MESSAGE_HEADSPACE",
+    "name": "Microsoft Band Message (Head Space)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "MICROSOFT_BAND"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "HeadSpace",
+      "Time a moment to make some head space"
+    ]
+  },
+  {
+    "id": "MICROSOFT_BAND_MESSAGE_THOUGHTSHAKEUP",
+    "name": "Microsoft Band Message (Thought Shakeup)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "MICROSOFT_BAND"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "Thought Shakeup",
+      "Take a moment to shake up your thoughts"
+    ]
+  },
+  {
+    "id": "PHONE_VIBRATE_3",
+    "name": "Phone Vibration",
+    "type": "VIBRATION",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "format": "THREE_TONE",
+    "repeat": 3,
+    "duration":1500
+  },
+  {
+    "id": "PHONE_TONE_3",
+    "name": "Phone Tone",
+    "type": "TONE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "format": "THREE_TONE_HIGH",
+    "repeat": 3,
+    "duration":1500
+  },
+  {
+    "id": "PHONE_SCREEN",
+    "name": "Phone Screen",
+    "type": "SCREEN",
+    "priority": 0,
+    "repeat":1,
+    "duration":300000,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
     }
-  ]
+  },
+  {
+    "id": "PHONE_MESSAGE_DELAY_EMA",
+    "name": "Phone Message (EMA)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "Survey",
+      "Time to take a Survey",
+      "OK",
+      "Cancel",
+      "Delay 10 Minutes"
+    ],
+    "response_option": {
+      "ok": true,
+      "cancel": true,
+      "delay": true,
+      "delay_time": 600000
+    }
+  },
+  {
+    "id": "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+    "name": "Phone Message (EMA)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "repeat": 1,
+    "duration":30000,
+    "message": [
+      "Survey",
+      "Time to take a Survey",
+      "OK",
+      "Cancel",
+      "Delay"
+    ],
+    "response_option": {
+      "ok": true,
+      "cancel": true,
+      "delay": true,
+      "delay_time": -1
+    }
+  },
+  {
+    "id": "PHONE_MESSAGE_DELAY_MOODSURFING",
+    "name": "Phone Message (MoodSurfing)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "Mood Surfing",
+      "Take a moment to surf your mood",
+      "OK",
+      "Cancel",
+      "Delay 10 Minutes"
+    ],
+    "response_option": {
+      "ok": true,
+      "cancel": true,
+      "delay": true,
+      "delay_time": 600000
+    }
+  },
+  {
+    "id": "PHONE_MESSAGE_DELAY_THOUGHTSHAKEUP",
+    "name": "Phone Message (ThoughtShakeup)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "Thought Shakeup",
+      "Take a moment to shake up your thoughts",
+      "OK",
+      "Cancel",
+      "Delay 10 Minutes"
+    ],
+    "response_option": {
+      "ok": true,
+      "cancel": true,
+      "delay": true,
+      "delay_time": 600000
+    }
+  },
+  {
+    "id": "PHONE_MESSAGE_HEADSPACE",
+    "name": "Phone Message (HeadSpace)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "repeat": 1,
+    "duration":300000,
+    "message": [
+      "HeadSpace",
+      "Time a moment to make some head space",
+      "OK",
+      "Cancel"
+    ],
+    "response_option": {
+      "ok": true,
+      "cancel": true,
+      "delay": false
+    }
+  }
+]

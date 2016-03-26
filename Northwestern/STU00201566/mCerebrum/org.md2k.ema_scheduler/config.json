@@ -1,71 +1,270 @@
-{
-  "ema_type": [
-    {
-      "id": "RANDOM_EMA",
-      "type":"RANDOM",
-      "category":"EMA",
+[
+  {
+    "id": "RANDOM_EMA",
+    "type": "RANDOM",
+    "category": "EMA",
+    "name": "Random Experience Sampling",
+    "application": {
+      "id": "random_experience_sampling",
       "name": "Random Experience Sampling",
-      "application": {
-        "package_name": "org.md2k.ema",
-        "file_name": "random_experience_sampling.json"
-      }
+      "file_name": "random_experience_sampling.json",
+      "package_name": "org.md2k.ema",
+      "timeout": 300000
     },
-    {
-      "id": "EVENT_EMA",
-      "type":"EVENT",
-      "category":"EMA",
-      "name": "Event Contingent EMA",
-      "application": {
-        "package_name": "org.md2k.ema",
-        "file_name": "event_contingent_recording.json"
+    "windows": [
+      {
+        "count": 1,
+        "type": "DAY_START",
+        "start_offset": 0,
+        "end_offset": 14400000
+      },
+      {
+        "count": 1,
+        "type": "DAY_START",
+        "start_offset": 14400000,
+        "end_offset": 28800000
+      },
+      {
+        "count": 1,
+        "type": "DAY_START",
+        "start_offset": 28800000,
+        "end_offset": 43200000
       }
-    },
-    {
-      "id": "END_OF_DAY_EMA",
-      "type":"EVENT",
-      "category":"EMA",
-      "name": "End of day EMA",
-      "application": {
-        "package_name": "org.md2k.ema",
-        "file_name": "end_of_day_recording.json"
+    ],
+    "scheduler_rules":[
+      {
+        "type":"RANDOM",
+        "start_time":"WINDOW_START",
+        "end_time":"WINDOW_END",
+        "divide":2
+      },
+      {
+        "type":"RANDOM",
+        "start_time":"LAST_SCHEDULE",
+        "end_time":"WINDOW_END",
+        "divide":2
+      },
+      {
+        "type":"WHEN_POSSIBLE"
       }
+    ],
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "SMOKING_EMA",
+    "type": "EVENT",
+    "category": "EMA",
+    "name": "Event Contingent EMA",
+    "application": {
+      "id": "event_contingent_recording",
+      "name": "Event Contingent Recording",
+      "package_name": "org.md2k.ema",
+      "file_name": "event_contingent_recording.json",
+      "timeout": 300000
     },
-    {
-      "id": "MOODSURFING",
-      "type":"EVENT",
-      "category":"EMI",
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "END_OF_DAY_EMA",
+    "type": "EVENT",
+    "category": "EMA",
+    "name": "End of day EMA",
+    "application": {
+      "id": "end_of_day_recording",
+      "name": "End of Day Recording",
+      "package_name": "org.md2k.ema",
+      "file_name": "end_of_day_recording.json",
+      "timeout": 300000
+    },
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MOODSURFING",
+    "category": "EMI",
+    "name": "MoodSurfing",
+    "application": {
+      "id": "moodsurfing",
       "name": "MoodSurfing",
-      "application": {
-        "package_name": "org.md2k.moodsurfing"
-      }
+      "package_name": "org.md2k.moodsurfing",
+      "timeout": 10000
     },
-    {
-      "id": "THOUGHT_SHAKEUP",
-      "type":"EVENT",
-      "category":"EMI",
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_MOODSURFING",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_MOODSURFING",
+          "PHONE_SCREEN"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "THOUGHT_SHAKEUP",
+    "category": "EMI",
+    "name": "Thought Shakeup",
+    "application": {
+      "id": "thought_shakeup",
       "name": "Thought Shakeup",
-      "application": {
-        "package_name": "org.md2k.thoughtshakeup"
-      }
+      "package_name": "org.md2k.thoughtshakeup",
+      "timeout": 300000
     },
-    {
-      "id": "HEADSPACE",
-      "type":"EVENT",
-      "category":"EMI",
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_THOUGHTSHAKEUP",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_THOUGHTSHAKEUP",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HEADSPACE",
+    "category": "EMI",
+    "name": "HeadSpace",
+    "application": {
+      "id": "head_space",
       "name": "HeadSpace",
-      "application": {
-        "package_name": "com.getsomeheadspace.android"
-      }
+      "package_name": "com.getsomeheadspace.android",
+      "timeout": 300000
     },
-    {
-      "id": "RANOM_INTERVENTION",
-      "type":"EVENT",
-      "category":"EMI",
-      "name": "Random Intervention",
-      "application": {
-        "package_name": "org.md2k.ema",
-        "file_name": "random_experience_sampling.json"
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_HEADSPACE",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3",
+          "PHONE_MESSAGE_DELAY_HEADSPACE",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3",
+          "PHONE_TONE_3"
+        ]
       }
+    ]
+  },
+  {
+    "id": "EMI",
+    "type": "EVENT",
+    "category": "EMI",
+    "name": "Random Intervention",
+    "application": {
+      "package_name": "org.md2k.ema",
+      "file_name": "random_experience_sampling.json"
     }
-  ]
-}
+  }
+]

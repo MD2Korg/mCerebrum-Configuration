@@ -1,23 +1,23 @@
 [
   {
     "id":"random_experience_sampling",
-    "name":"random_experience_sampleing",
-    "display_name":"Random Experience Sampling",
+    "name":"Random Experience Sampling",
     "file_name":"random_experience_sampling.json",
-    "timeout":300
+    "package_name": "org.md2k.ema",
+    "timeout":300000
   },
   {
     "id":"event_contingent_recording",
-    "name":"event_contingent_recording",
-    "display_name":"Event Contingent Recording",
-    "file_name":"event_contingent_recording.json",
-    "timeout":300
+    "name":"Event Contingent Recording",
+    "package_name": "org.md2k.ema",
+    "file_name": "event_contingent_recording.json",
+    "timeout":300000
   },
   {
     "id":"end_of_day_recording",
-    "name":"end_of_day_recording",
-    "display_name":"End of Day Recording",
-    "file_name":"end_of_day_recording.json",
-    "timeout":300
+    "name":"End of Day Recording",
+    "package_name": "org.md2k.ema",
+    "file_name": "end_of_day_recording.json",
+    "timeout":300000
   }
 ]
