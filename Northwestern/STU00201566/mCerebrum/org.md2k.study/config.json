@@ -13,10 +13,12 @@
       "org.md2k.ema/random_experience_sampling.json",
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
+      "org.md2k.ema_scheduler/condition.json",
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.streamprocessor/model.json",
+      "org.md2k.streamprocessor/model_rip.json",
       "org.md2k.study/config.json",
       "org.md2k.study/tutorial.pdf"
     ]
@@ -357,7 +359,7 @@
     },
     {
       "id": "EMA_test",
-      "type": "status",
+      "type": "App Controller",
       "name": "EMA/EMI Test",
       "enable": true,
       "icon": "ic_notification_teal_48dp",
