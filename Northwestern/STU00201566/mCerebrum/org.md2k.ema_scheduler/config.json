@@ -1,9 +1,10 @@
 [
   {
     "id": "RANDOM_EMA",
-    "type": "RANDOM",
-    "category": "EMA",
+    "type": "EMA",
+    "trigger_type": "RANDOM",
     "name": "Random Experience Sampling",
+    "enable": true,
     "application": {
       "id": "random_experience_sampling",
       "name": "Random Experience Sampling",
@@ -11,41 +12,67 @@
       "package_name": "org.md2k.ema",
       "timeout": 300000
     },
-    "windows": [
+    "blocks": [
       {
-        "count": 1,
-        "type": "DAY_START",
+        "total": 1,
+        "base": "DAY_START",
         "start_offset": 0,
         "end_offset": 14400000
       },
       {
-        "count": 1,
-        "type": "DAY_START",
+        "total": 1,
+        "base": "DAY_START",
         "start_offset": 14400000,
         "end_offset": 28800000
       },
       {
-        "count": 1,
-        "type": "DAY_START",
+        "total": 1,
+        "base": "DAY_START",
         "start_offset": 28800000,
         "end_offset": 43200000
       }
     ],
-    "scheduler_rules":[
+    "scheduler_rules": [
       {
-        "type":"RANDOM",
-        "start_time":"WINDOW_START",
-        "end_time":"WINDOW_END",
-        "divide":2
+        "type": "RANDOM",
+        "start_time": "BLOCK_START",
+        "end_time": "BLOCK_END",
+        "divide": 2,
+        "conditions": [
+          "VALID_BLOCK_RANDOM_EMA",
+          "RANDOM_EMA_60",
+          "EVENT_CONTINGENT_EMA_10",
+          "EMI_10",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
+        ]
       },
       {
-        "type":"RANDOM",
-        "start_time":"LAST_SCHEDULE",
-        "end_time":"WINDOW_END",
-        "divide":2
+        "type": "RANDOM",
+        "start_time": "LAST_SCHEDULE",
+        "end_time": "BLOCK_END",
+        "divide": 2,
+        "conditions": [
+          "VALID_BLOCK_RANDOM_EMA",
+          "RANDOM_EMA_60",
+          "EVENT_CONTINGENT_EMA_10",
+          "EMI_10",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
+        ]
       },
       {
-        "type":"WHEN_POSSIBLE"
+        "type": "IMMEDIATE",
+        "conditions": [
+          "VALID_BLOCK_RANDOM_EMA",
+          "RANDOM_EMA_60",
+          "EVENT_CONTINGENT_EMA_10",
+          "EMI_10"
+        ]
       }
     ],
     "notifications": [
@@ -76,10 +103,11 @@
     ]
   },
   {
-    "id": "SMOKING_EMA",
-    "type": "EVENT",
-    "category": "EMA",
+    "id": "EVENT_CONTINGENT_EMA",
+    "type": "EMA",
+    "trigger_type": "SELF_REPORT",
     "name": "Event Contingent EMA",
+    "enable": true,
     "application": {
       "id": "event_contingent_recording",
       "name": "Event Contingent Recording",
@@ -87,6 +115,96 @@
       "file_name": "event_contingent_recording.json",
       "timeout": 300000
     },
+    "blocks": [
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 0,
+        "end_offset": 14400000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 14400000,
+        "end_offset": 28800000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 28800000,
+        "end_offset": 43200000
+      }
+    ],
+    "scheduler_rules": [
+      {
+        "type": "IMMEDIATE",
+        "data_source":{
+          "type": "EVENT"
+        },
+        "parameters":[
+          "SMOKING"
+        ],
+        "conditions": [
+          "VALID_BLOCK_EVENT_CONTINGENT_EMA",
+          "RANDOM_EMA_10",
+          "EVENT_CONTINGENT_EMA_30",
+          "EMI_10",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
+        ]
+      }
+    ],
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "PHONE_VIBRATE_3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "END_OF_DAY_EMA",
+    "type": "EMA",
+    "trigger_type": "SELF_REPORT",
+    "name": "End of day EMA",
+    "enable": true,
+    "application": {
+      "id": "end_of_day_recording",
+      "name": "End of Day Recording",
+      "package_name": "org.md2k.ema",
+      "file_name": "end_of_day_recording.json",
+      "timeout": 300000
+    },
+    "scheduler_rules": [
+      {
+        "type": "IMMEDIATE",
+        "data_source":{
+          "type": "DAY_END"
+        }
+      }
+    ],
+
     "notifications": [
       {
         "time": 0,
@@ -115,55 +233,44 @@
     ]
   },
   {
-    "id": "END_OF_DAY_EMA",
-    "type": "EVENT",
-    "category": "EMA",
-    "name": "End of day EMA",
-    "application": {
-      "id": "end_of_day_recording",
-      "name": "End of Day Recording",
-      "package_name": "org.md2k.ema",
-      "file_name": "end_of_day_recording.json",
-      "timeout": 300000
-    },
-    "notifications": [
+    "id": "EMI",
+    "type": "EMI",
+    "trigger_type": "EVENT",
+    "name": "Intervention",
+    "enable": true,
+    "scheduler_rules": [
       {
-        "time": 0,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "MICROSOFT_BAND_MESSAGE_EMA",
-          "PHONE_VIBRATE_3",
-          "PHONE_MESSAGE_DELAY_EMA",
-          "PHONE_SCREEN"
-        ]
-      },
-      {
-        "time": 120000,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3",
-          "PHONE_TONE_3"
-        ]
-      },
-      {
-        "time": 240000,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3",
-          "PHONE_TONE_3"
+        "type": "IMMEDIATE",
+        "data_source":{
+          "type": "ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION"
+        },
+        "parameters":[
+          "0",
+          "2"
+        ],
+        "conditions": [
+          "RANDOM_EMA_10",
+          "EVENT_CONTINGENT_EMA_10",
+          "EMI_60",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       }
     ]
   },
   {
     "id": "MOODSURFING",
-    "category": "EMI",
+    "type": "EMI",
     "name": "MoodSurfing",
+    "trigger_type":"EVENT",
+    "enable":false,
     "application": {
       "id": "moodsurfing",
       "name": "MoodSurfing",
       "package_name": "org.md2k.moodsurfing",
-      "timeout": 10000
+      "timeout": 900000
     },
     "notifications": [
       {
@@ -172,21 +279,22 @@
           "MICROSOFT_BAND_VIBRATE_3",
           "MICROSOFT_BAND_MESSAGE_MOODSURFING",
           "PHONE_VIBRATE_3",
-          "PHONE_MESSAGE_DELAY_MOODSURFING",
-          "PHONE_SCREEN"
+          "PHONE_MESSAGE_MOODSURFING"
         ]
       }
     ]
   },
   {
     "id": "THOUGHT_SHAKEUP",
-    "category": "EMI",
+    "type": "EMI",
     "name": "Thought Shakeup",
+    "trigger_type": "EVENT",
+    "enable": false,
     "application": {
       "id": "thought_shakeup",
       "name": "Thought Shakeup",
       "package_name": "org.md2k.thoughtshakeup",
-      "timeout": 300000
+      "timeout":900000
     },
     "notifications": [
       {
@@ -195,37 +303,22 @@
           "MICROSOFT_BAND_VIBRATE_3",
           "MICROSOFT_BAND_MESSAGE_THOUGHTSHAKEUP",
           "PHONE_VIBRATE_3",
-          "PHONE_MESSAGE_DELAY_THOUGHTSHAKEUP",
-          "PHONE_SCREEN"
-        ]
-      },
-      {
-        "time": 120000,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3",
-          "PHONE_TONE_3"
-        ]
-      },
-      {
-        "time": 240000,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3",
-          "PHONE_TONE_3"
+          "PHONE_MESSAGE_THOUGHTSHAKEUP"
         ]
       }
     ]
   },
   {
     "id": "HEADSPACE",
-    "category": "EMI",
+    "type": "EMI",
     "name": "HeadSpace",
+    "trigger_type": "EVENT",
+    "enable": false,
     "application": {
       "id": "head_space",
       "name": "HeadSpace",
       "package_name": "com.getsomeheadspace.android",
-      "timeout": 300000
+      "timeout":900000
     },
     "notifications": [
       {
@@ -234,37 +327,9 @@
           "MICROSOFT_BAND_VIBRATE_3",
           "MICROSOFT_BAND_MESSAGE_HEADSPACE",
           "PHONE_VIBRATE_3",
-          "PHONE_TONE_3",
-          "PHONE_MESSAGE_DELAY_HEADSPACE",
-          "PHONE_SCREEN"
-        ]
-      },
-      {
-        "time": 120000,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3",
-          "PHONE_TONE_3"
-        ]
-      },
-      {
-        "time": 240000,
-        "types": [
-          "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3",
-          "PHONE_TONE_3"
+          "PHONE_MESSAGE_HEADSPACE"
         ]
       }
     ]
-  },
-  {
-    "id": "EMI",
-    "type": "EVENT",
-    "category": "EMI",
-    "name": "Random Intervention",
-    "application": {
-      "package_name": "org.md2k.ema",
-      "file_name": "random_experience_sampling.json"
-    }
   }
 ]

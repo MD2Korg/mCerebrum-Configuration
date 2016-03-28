@@ -1,0 +1,74 @@
+[
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    },
+    "type": "ACCELEROMETER_X"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    },
+    "type": "ACCELEROMETER_Y"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    },
+    "type": "ACCELEROMETER_Z"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    },
+    "type": "GYROSCOPE_X"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    },
+    "type": "GYROSCOPE_Y"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    },
+    "type": "GYROSCOPE_Z"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "ACCELEROMETER_X"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "ACCELEROMETER_Y"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "ACCELEROMETER_Z"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "GYROSCOPE_X"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "GYROSCOPE_Y"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "GYROSCOPE_Z"
+  }
+]

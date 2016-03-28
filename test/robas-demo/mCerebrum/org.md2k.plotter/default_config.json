@@ -1,0 +1,20 @@
+[
+  {
+    "platform":{
+      "type":"AUTOSENSE_WRIST"
+    },
+    "type":"ACCELEROMETER_X"
+  },
+  {
+    "platform":{
+      "type":"AUTOSENSE_WRIST"
+    },
+    "type":"ACCELEROMETER_Y"
+  },
+  {
+    "platform":{
+      "type":"AUTOSENSE_WRIST"
+    },
+    "type":"ACCELEROMETER_Z"
+  }
+]

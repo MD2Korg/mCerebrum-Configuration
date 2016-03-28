@@ -383,8 +383,8 @@
     },
     {
       "id": "app_stop",
-      "name": "Stop Data Collection",
-      "icon": "ic_pause_teal_48dp",
+      "name": "Stop & Close Application",
+      "icon": "ic_error_red_50dp",
       "enable": true,
       "rank": 2,
       "package_name": "org.md2k.study",
@@ -422,7 +422,7 @@
       },
       {
         "id": "report",
-        "name": "Status",
+        "name": "App Controller",
         "enable": true,
         "values": [
           "app_service",

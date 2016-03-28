@@ -159,7 +159,7 @@
       }
     },
     "repeat": 1,
-    "duration":30000,
+    "duration":300000,
     "message": [
       "Survey",
       "Time to take a Survey",
@@ -175,7 +175,7 @@
     }
   },
   {
-    "id": "PHONE_MESSAGE_DELAY_MOODSURFING",
+    "id": "PHONE_MESSAGE_MOODSURFING",
     "name": "Phone Message (MoodSurfing)",
     "type": "MESSAGE",
     "priority": 0,
@@ -185,23 +185,21 @@
       }
     },
     "repeat": 1,
-    "duration":300000,
+    "duration":120000,
     "message": [
       "Mood Surfing",
       "Take a moment to surf your mood",
       "OK",
-      "Cancel",
-      "Delay 10 Minutes"
+      "Cancel"
     ],
     "response_option": {
       "ok": true,
       "cancel": true,
-      "delay": true,
-      "delay_time": 600000
+      "delay": false
     }
   },
   {
-    "id": "PHONE_MESSAGE_DELAY_THOUGHTSHAKEUP",
+    "id": "PHONE_MESSAGE_THOUGHTSHAKEUP",
     "name": "Phone Message (ThoughtShakeup)",
     "type": "MESSAGE",
     "priority": 0,
@@ -211,19 +209,17 @@
       }
     },
     "repeat": 1,
-    "duration":300000,
+    "duration":120000,
     "message": [
       "Thought Shakeup",
       "Take a moment to shake up your thoughts",
       "OK",
-      "Cancel",
-      "Delay 10 Minutes"
+      "Cancel"
     ],
     "response_option": {
       "ok": true,
       "cancel": true,
-      "delay": true,
-      "delay_time": 600000
+      "delay": false
     }
   },
   {
@@ -237,7 +233,7 @@
       }
     },
     "repeat": 1,
-    "duration":300000,
+    "duration":120000,
     "message": [
       "HeadSpace",
       "Time a moment to make some head space",
