@@ -39,6 +39,7 @@
         "end_time": "BLOCK_END",
         "divide": 2,
         "conditions": [
+          "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
           "EVENT_CONTINGENT_EMA_10",
@@ -55,6 +56,7 @@
         "end_time": "BLOCK_END",
         "divide": 2,
         "conditions": [
+          "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
           "EVENT_CONTINGENT_EMA_10",
@@ -68,6 +70,7 @@
       {
         "type": "IMMEDIATE",
         "conditions": [
+          "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
           "EVENT_CONTINGENT_EMA_10",
@@ -145,6 +148,7 @@
           "SMOKING"
         ],
         "conditions": [
+          "PRIVACY",
           "VALID_BLOCK_EVENT_CONTINGENT_EMA",
           "RANDOM_EMA_10",
           "EVENT_CONTINGENT_EMA_30",
@@ -249,6 +253,7 @@
           "2"
         ],
         "conditions": [
+          "PRIVACY",
           "RANDOM_EMA_10",
           "EVENT_CONTINGENT_EMA_10",
           "EMI_60",

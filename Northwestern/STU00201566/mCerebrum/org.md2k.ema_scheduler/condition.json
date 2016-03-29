@@ -147,6 +147,15 @@
       "id": "RANDOM_EMA",
       "type": "EMA"
     }
+  },
+  {
+    "id": "PRIVACY",
+    "type":"PRIVACY",
+    "name": "Privacy is active",
+    "data_source": {
+      "type": "PRIVACY"
+    }
+
   }
 
 ]

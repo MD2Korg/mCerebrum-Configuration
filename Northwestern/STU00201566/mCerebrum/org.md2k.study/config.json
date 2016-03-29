@@ -39,6 +39,7 @@
       "id": "datakit",
       "name": "DataKit",
       "enable": true,
+      "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
       "package_name": "org.md2k.datakit",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
@@ -142,17 +143,6 @@
       "package_name": "org.md2k.plotter",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
-    },
-    {
-      "id": "cerebralcortex",
-      "name": "Data Uploader",
-      "enable": true,
-      "package_name": "org.md2k.cerebralcortex",
-      "service": "org.md2k.cerebralcortex.ServiceDataExporter",
-      "settings": "org.md2k.cerebralcortex.ActivityDataExporterSettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-CerebralCortex/releases"
     },
     {
       "id": "adobe_acrobat_reader",
@@ -297,7 +287,7 @@
       "enable": true,
       "name": "Day Start/Day End",
       "parameters":[
-        "30000"
+        "28800000"
       ]
     },
     {
