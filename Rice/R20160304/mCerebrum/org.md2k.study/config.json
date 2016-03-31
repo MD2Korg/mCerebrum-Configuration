@@ -7,7 +7,7 @@
       "org.md2k.autosense/default_config.json",
       "org.md2k.cerebralcortex/config.json",
       "org.md2k.cerebralcortex/default_config.json",
-      "org.md2k.datakit/privacy_config",
+      "org.md2k.datakit/privacy_config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/random_experience_sampling.json",
       "org.md2k.ema_scheduler/config.json",

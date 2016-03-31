@@ -42,7 +42,7 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "EVENT_CONTINGENT_EMA_10",
+          "SMOKING_EMA_10",
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
@@ -59,7 +59,7 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "EVENT_CONTINGENT_EMA_10",
+          "SMOKING_EMA_10",
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
@@ -73,7 +73,7 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "EVENT_CONTINGENT_EMA_10",
+          "SMOKING_EMA_10",
           "EMI_10"
         ]
       }
@@ -106,7 +106,7 @@
     ]
   },
   {
-    "id": "EVENT_CONTINGENT_EMA",
+    "id": "SMOKING_EMA",
     "type": "EMA",
     "trigger_type": "SELF_REPORT",
     "name": "Event Contingent EMA",
@@ -149,9 +149,9 @@
         ],
         "conditions": [
           "PRIVACY",
-          "VALID_BLOCK_EVENT_CONTINGENT_EMA",
+          "VALID_BLOCK_SMOKING_EMA",
           "RANDOM_EMA_10",
-          "EVENT_CONTINGENT_EMA_30",
+          "SMOKING_EMA_30",
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
@@ -255,7 +255,7 @@
         "conditions": [
           "PRIVACY",
           "RANDOM_EMA_10",
-          "EVENT_CONTINGENT_EMA_10",
+          "SMOKING_EMA_10",
           "EMI_60",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
