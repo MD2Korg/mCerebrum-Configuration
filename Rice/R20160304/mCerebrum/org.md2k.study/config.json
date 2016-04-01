@@ -2,7 +2,7 @@
   "config_info": {
     "id": "R20160304",
     "name": "MD2K Smoking Study",
-    "version_code": 10,
+    "version_code": 17,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.cerebralcortex/config.json",
@@ -408,23 +408,27 @@
       "platform": {
         "type": "AUTOSENSE_CHEST"
       },
-      "type": "RESPIRATION"
+      "type": "DATA_QUALITY",
+      "id":"RESPIRATION"
     },
     {
       "platform": {
         "type": "AUTOSENSE_CHEST"
       },
-      "type": "ECG"
+      "type": "DATA_QUALITY",
+      "id": "ECG"
     },
     {
       "platform": {
         "id": "LEFT_WRIST"
-      }
+      },
+      "type":"DATA_QUALITY"
     },
     {
       "platform": {
         "id": "RIGHT_WRIST"
-      }
+      },
+      "type":"DATA_QUALITY"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "config_info": {
     "id": "1502S63161",
     "name": "MD2K - MN EasySense Study",
-    "version_code": 11,
+    "version_code": 17,
     "required_files": [
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.plotter/default_config.json",
@@ -289,12 +289,14 @@
     {
       "platform": {
         "id": "LEFT_WRIST"
-      }
+      },
+      "type":"DATA_QUALITY"
     },
     {
       "platform": {
         "id": "RIGHT_WRIST"
-      }
+      },
+      "type":"DATA_QUALITY"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "config_info": {
     "id": "STU00201566",
     "name": "MD2K Smoking Study",
-    "version_code": 10,
+    "version_code": 17,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.cerebralcortex/config.json",
@@ -41,7 +41,6 @@
       "name": "DataKit",
       "enable": true,
       "package_name": "org.md2k.datakit",
-      "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
     {
@@ -483,23 +482,27 @@
       "platform": {
         "type": "AUTOSENSE_CHEST"
       },
-      "type": "RESPIRATION"
+      "type": "DATA_QUALITY",
+      "id":"RESPIRATION"
     },
     {
       "platform": {
         "type": "AUTOSENSE_CHEST"
       },
-      "type": "ECG"
+      "type": "DATA_QUALITY",
+      "id": "ECG"
     },
     {
       "platform": {
         "id": "LEFT_WRIST"
-      }
+      },
+      "type":"DATA_QUALITY"
     },
     {
       "platform": {
         "id": "RIGHT_WRIST"
-      }
+      },
+      "type":"DATA_QUALITY"
     }
   ]
 }

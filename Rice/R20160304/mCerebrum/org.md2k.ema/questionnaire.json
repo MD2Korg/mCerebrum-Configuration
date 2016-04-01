@@ -327,7 +327,7 @@
       "Beer",
       "Wine",
       "Liquor",
-      "None"
+      "Did not "
     ]
   },
   {
@@ -379,7 +379,7 @@
     "question_text": "How many cigarettes did you smoke?",
     "response_option": [
       "1",
-      "30"
+      "100"
     ],
     "condition": [
       "30:Yes"

@@ -39,6 +39,6 @@
     "platform": {
       "type": "MICROSOFT_BAND"
     },
-    "type": "STATUS"
+    "type": "DATA_QUALITY"
   }
 ]
