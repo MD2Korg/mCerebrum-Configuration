@@ -54,6 +54,31 @@
     }
   },
   {
+    "id": "DATA_QUALITY_DAY_START",
+    "type":"DATA_QUALITY",
+    "name": "Data quality good from the day started",
+    "values": [
+      "DAY_START",
+      "60"
+    ],
+    "data_source": {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_QUALITY",
+      "id":"RESPIRATION"
+    }
+  },
+  {
+    "id": "EMA_ANSWER_5",
+    "type":"EMA_ANSWER",
+    "name": "EMA answered in 5 Minutes",
+    "values": [
+      "300000"
+    ]
+  },
+
+  {
     "id": "RANDOM_EMA_60",
     "type":"LAST_EMA_EMI",
     "name": "Last Triggered Random EMA 60 minute ago",

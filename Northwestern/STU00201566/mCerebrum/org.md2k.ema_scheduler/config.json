@@ -103,6 +103,41 @@
           "PHONE_VIBRATE_3"
         ]
       }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 0.75,
+        "messages": [
+          "Thank you. You will be paid $0.75 for taking the survey within 5 minutes and wearing the sensors for more than 60% of the time since day started.",
+          "You will be paid $0.75",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START",
+          "EMA_ANSWER_5"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. You will be paid $0.50 for taking the survey and wearing the sensors for more than 60% of the time since day started. But you missed $0.25 bonus for not answering the survey within 5 minutes.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START"
+        ]
+      },
+      {
+        "incentive": 0.00,
+        "messages": [
+          "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+        ]
+      }
     ]
   },
   {
@@ -185,6 +220,41 @@
           "PHONE_VIBRATE_3"
         ]
       }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 0.75,
+        "messages": [
+          "Thank you. You will be paid $0.75 for taking the survey within 5 minutes and wearing the sensors for more than 60% of the time since day started.",
+          "You will be paid $0.75",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START",
+          "EMA_ANSWER_5"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. You will be paid $0.50 for taking the survey and wearing the sensors for more than 60% of the time since day started. But you missed $0.25 bonus for not answering the survey within 5 minutes.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START"
+        ]
+      },
+      {
+        "incentive": 0.00,
+        "messages": [
+          "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+        ]
+      }
     ]
   },
   {
@@ -208,7 +278,6 @@
         }
       }
     ],
-
     "notifications": [
       {
         "time": 0,
@@ -232,6 +301,18 @@
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
           "PHONE_VIBRATE_3"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.00,
+        "messages": [
+          "Thank you. You will be paid $1.00 for taking the End of Day survey.",
+          "You will be paid $1.00",
+          "Total Earning: $"
+        ],
+        "conditions": [
         ]
       }
     ]
@@ -261,6 +342,13 @@
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10",
           "NOT_ACTIVE_1"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.00,
+        "conditions": [
         ]
       }
     ]

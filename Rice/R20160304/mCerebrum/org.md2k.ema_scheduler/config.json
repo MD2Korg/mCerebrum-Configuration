@@ -48,8 +48,6 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "SMOKING_EMA_10",
-          "STRESS_EMA_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10",
@@ -65,8 +63,6 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "SMOKING_EMA_10",
-          "STRESS_EMA_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10",
@@ -79,8 +75,6 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "SMOKING_EMA_10",
-          "STRESS_EMA_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10",
@@ -112,6 +106,29 @@
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
           "PHONE_SCREEN_30"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.25,
+        "messages": [
+          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+          "You will be paid $1.25",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_LAST_EMA"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
         ]
       }
     ]
@@ -158,18 +175,16 @@
     "scheduler_rules": [
       {
         "type": "IMMEDIATE",
-        "data_source":{
+        "data_source": {
           "type": "EVENT"
         },
-        "parameters":[
+        "parameters": [
           "SMOKING"
         ],
         "conditions": [
           "PRIVACY",
           "VALID_BLOCK_SMOKING_EMA",
-          "RANDOM_EMA_10",
           "SMOKING_EMA_30",
-          "STRESS_EMA_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10",
@@ -201,6 +216,29 @@
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
           "PHONE_SCREEN_30"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.25,
+        "messages": [
+          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+          "You will be paid $1.25",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_LAST_EMA"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
         ]
       }
     ]
@@ -244,21 +282,18 @@
         "end_offset": 57600000
       }
     ],
-
     "scheduler_rules": [
       {
         "type": "IMMEDIATE",
-        "data_source":{
+        "data_source": {
           "type": "ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION"
         },
-        "parameters":[
+        "parameters": [
           "2"
         ],
         "conditions": [
           "PRIVACY",
           "VALID_BLOCK_SMOKING_EMA",
-          "RANDOM_EMA_10",
-          "SMOKING_EMA_10",
           "STRESS_EMA_30",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
@@ -267,7 +302,6 @@
         ]
       }
     ],
-
     "notifications": [
       {
         "time": 0,
@@ -292,6 +326,29 @@
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
           "PHONE_SCREEN_30"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.25,
+        "messages": [
+          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+          "You will be paid $1.25",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_LAST_EMA"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
         ]
       }
     ]

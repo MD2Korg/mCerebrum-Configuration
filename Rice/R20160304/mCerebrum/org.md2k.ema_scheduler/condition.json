@@ -54,6 +54,22 @@
     }
   },
   {
+    "id": "DATA_QUALITY_LAST_EMA",
+    "type":"DATA_QUALITY",
+    "name": "Data quality good from last ema",
+    "values": [
+      "LAST_EMA",
+      "60"
+    ],
+    "data_source": {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_QUALITY",
+      "id":"RESPIRATION"
+    }
+  },
+  {
     "id": "RANDOM_EMA_60",
     "type":"LAST_EMA_EMI",
     "name": "Last Triggered Random EMA 60 minute ago",
