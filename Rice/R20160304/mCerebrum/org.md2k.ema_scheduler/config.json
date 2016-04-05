@@ -10,7 +10,7 @@
       "name": "Random EMA",
       "file_name": "questionnaire.json",
       "package_name": "org.md2k.ema",
-      "timeout": 600000
+      "timeout": 300000
     },
     "blocks": [
       {
@@ -144,7 +144,7 @@
       "name": "Smoking EMA",
       "file_name": "questionnaire.json",
       "package_name": "org.md2k.ema",
-      "timeout": 600000
+      "timeout": 300000
     },
     "blocks": [
       {
@@ -254,7 +254,7 @@
       "name": "Stress EMA",
       "file_name": "questionnaire.json",
       "package_name": "org.md2k.ema",
-      "timeout": 600000
+      "timeout": 300000
     },
     "blocks": [
       {

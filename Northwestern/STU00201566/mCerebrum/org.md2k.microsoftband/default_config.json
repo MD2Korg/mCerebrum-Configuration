@@ -21,18 +21,6 @@
     "platform": {
       "type": "MICROSOFT_BAND"
     },
-    "type": "RR_INTERVAL"
-  },
-  {
-    "platform": {
-      "type": "MICROSOFT_BAND"
-    },
-    "type": "HEART_RATE"
-  },
-  {
-    "platform": {
-      "type": "MICROSOFT_BAND"
-    },
     "type": "BAND_CONTACT"
   },
   {

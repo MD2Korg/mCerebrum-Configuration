@@ -363,7 +363,7 @@
       "id": "moodsurfing",
       "name": "MoodSurfing",
       "package_name": "org.md2k.moodsurfing",
-      "timeout": 900000
+      "timeout": 600000
     },
     "notifications": [
       {
@@ -387,7 +387,7 @@
       "id": "thought_shakeup",
       "name": "Thought Shakeup",
       "package_name": "org.md2k.thoughtshakeup",
-      "timeout":900000
+      "timeout":600000
     },
     "notifications": [
       {
@@ -411,7 +411,7 @@
       "id": "head_space",
       "name": "HeadSpace",
       "package_name": "com.getsomeheadspace.android",
-      "timeout":900000
+      "timeout":600000
     },
     "notifications": [
       {
