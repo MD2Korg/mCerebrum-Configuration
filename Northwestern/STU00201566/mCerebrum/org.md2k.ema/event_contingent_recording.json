@@ -127,5 +127,9 @@
       "Yes",
       "No"
     ]
+  },
+  {
+    "question_id": 12,
+    "question_text": "Thank you for answering this EMA. Please click \"FINISH\"."
   }
 ]

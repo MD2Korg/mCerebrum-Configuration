@@ -300,7 +300,7 @@
   {
     "question_id": 25,
     "question_type": "multiple_choice",
-    "question_text": "Right now, Are you wearing the patch right now?",
+    "question_text": "Right now, Are you wearing the patch?",
     "response_option": [
       "Yes",
       "No"
@@ -316,7 +316,7 @@
       "Friend",
       "Stranger",
       "Someone I do not know well",
-      "No one around me is smoking"
+      "<UNSELECT_OTHER>No one around me is smoking"
     ]
   },
   {
@@ -327,7 +327,7 @@
       "Beer",
       "Wine",
       "Liquor",
-      "Did not drink any alcohol"
+      "<UNSELECT_OTHER>Did not drink any alcohol"
     ]
   },
   {
@@ -426,7 +426,7 @@
     "response_option": [
       "a NEW stressful issue or problem.",
       "an ONGOING stressful issue or problem.",
-      "not applicable to me."
+      "<UNSELECT_OTHER>not applicable to me."
     ]
   },
   {
@@ -436,7 +436,7 @@
     "response_option": [
       "a NEW positive experience.",
       "an ONGOING positive experience.",
-      "not applicable to me."
+      "<UNSELECT_OTHER>not applicable to me."
     ]
   },
   {
@@ -468,5 +468,9 @@
       "Agree",
       "Strongly Agree"
     ]
+  },
+  {
+    "question_id": 38,
+    "question_text": "Thank you for answering this EMA. Please click \"FINISH\"."
   }
 ]

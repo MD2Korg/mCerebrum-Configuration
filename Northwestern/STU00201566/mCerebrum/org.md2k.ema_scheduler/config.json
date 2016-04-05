@@ -10,7 +10,7 @@
       "name": "Random Experience Sampling",
       "file_name": "random_experience_sampling.json",
       "package_name": "org.md2k.ema",
-      "timeout": 300000
+      "timeout": 600000
     },
     "blocks": [
       {
@@ -151,7 +151,7 @@
       "name": "Event Contingent Recording",
       "package_name": "org.md2k.ema",
       "file_name": "event_contingent_recording.json",
-      "timeout": 300000
+      "timeout": 600000
     },
     "blocks": [
       {
@@ -268,7 +268,7 @@
       "name": "End of Day Recording",
       "package_name": "org.md2k.ema",
       "file_name": "end_of_day_recording.json",
-      "timeout": 300000
+      "timeout": 600000
     },
     "scheduler_rules": [
       {

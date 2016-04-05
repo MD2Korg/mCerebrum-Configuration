@@ -1,9 +1,9 @@
 [
   {
-    "id":"random_experience_sampling",
-    "name":"random_experience_sampleing",
-    "display_name":"Random Experience Sampling",
-    "file_name":"random_experience_sampling.json",
+    "id":"ema",
+    "name":"EMA",
+    "display_name":"EMA Questionnaire",
+    "file_name":"questionnaire.json",
     "timeout":300000
   }
 ]
