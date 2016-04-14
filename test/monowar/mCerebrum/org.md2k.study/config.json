@@ -6,7 +6,6 @@
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/privacy_config.json",
-      "org.md2k.ema/config_ema.json",
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
@@ -72,6 +71,14 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
+    },
+    {
+      "id": "plotter",
+      "name": "Plotter",
+      "enable": true,
+      "package_name": "org.md2k.plotter",
+      "default_config": "default_config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
     }
   ],
   "actions": [

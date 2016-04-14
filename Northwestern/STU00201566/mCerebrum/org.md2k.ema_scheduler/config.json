@@ -46,8 +46,7 @@
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10",
-          "NOT_ACTIVE_1"
+          "PHONE_BATTERY_10"
         ]
       },
       {
@@ -63,8 +62,7 @@
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10",
-          "NOT_ACTIVE_1"
+          "PHONE_BATTERY_10"
         ]
       },
       {
@@ -190,8 +188,7 @@
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10",
-          "NOT_ACTIVE_1"
+          "PHONE_BATTERY_10"
         ]
       }
     ],
@@ -340,8 +337,7 @@
           "EMI_60",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10",
-          "NOT_ACTIVE_1"
+          "PHONE_BATTERY_10"
         ]
       }
     ],
@@ -411,7 +407,7 @@
       "id": "head_space",
       "name": "HeadSpace",
       "package_name": "com.getsomeheadspace.android",
-      "timeout":600000
+      "timeout":1000
     },
     "notifications": [
       {

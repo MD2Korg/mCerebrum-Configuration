@@ -1,6 +1,6 @@
 {
   "config_info": {
-    "id": "STU00201566",
+    "id": "R20160304",
     "name": "MD2K Smoking Study",
     "version_code": 17,
     "required_files": [
@@ -9,13 +9,10 @@
       "org.md2k.cerebralcortex/default_config.json",
       "org.md2k.datakit/privacy_config.json",
       "org.md2k.ema/config_ema.json",
-      "org.md2k.ema/end_of_day_recording.json",
-      "org.md2k.ema/event_contingent_recording.json",
-      "org.md2k.ema/random_experience_sampling.json",
+      "org.md2k.ema/questionnaire.json",
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
       "org.md2k.ema_scheduler/condition.json",
-      "org.md2k.microsoftband/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.streamprocessor/model.json",
@@ -25,7 +22,7 @@
     ]
   },
   "study_info": {
-    "id": "STU00201566",
+    "id": "R20160304",
     "name": "MD2K Smoking Study"
   },
   "apps": [
@@ -67,24 +64,6 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
     },
     {
-      "id": "microsofthealth",
-      "name": "MicrosoftHealth",
-      "enable": true,
-      "package_name": "com.microsoft.kapp",
-      "download_link": "market://details?id=com.microsoft.kapp"
-    },
-    {
-      "id": "microsoftband",
-      "name": "MicrosoftBand",
-      "enable": true,
-      "package_name": "org.md2k.microsoftband",
-      "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
-      "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
-    },
-    {
       "id": "streamprocessor",
       "name": "StreamProcessor",
       "enable": true,
@@ -115,27 +94,6 @@
       "enable": true,
       "package_name": "org.md2k.ema",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
-    },
-    {
-      "id": "moodsurfing",
-      "name": "MoodSurfing",
-      "enable": true,
-      "package_name": "org.md2k.moodsurfing",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases"
-    },
-    {
-      "id": "thoughtshakeup",
-      "name": "ThoughtShakeup",
-      "enable": true,
-      "package_name": "org.md2k.thoughtshakeup",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases"
-    },
-    {
-      "id": "headspace",
-      "name": "HeadSpace",
-      "enable": true,
-      "package_name": "com.getsomeheadspace.android",
-      "download_link": "market://details?id=com.getsomeheadspace.android"
     },
     {
       "id": "plotter",
@@ -246,16 +204,6 @@
       "class_name": "org.md2k.study.model_view.sleep_info.ActivitySleep"
     },
     {
-      "id": "day_type",
-      "type": "setup",
-      "name": "Pre/Post Quit Day",
-      "rank": 4,
-      "enable": true,
-      "icon": "ic_sleep_teal_48dp",
-      "package_name": "org.md2k.study",
-      "class_name": "org.md2k.study.model_view.day_type.ActivityDayType"
-    },
-    {
       "id": "clear_database",
       "type": "reset",
       "name": "Clear All Data",
@@ -292,14 +240,6 @@
       ]
     },
     {
-      "id": "study_start_end",
-      "type": "setup",
-      "rank": 2,
-      "enable": false,
-      "name": "Study Start/End"
-    },
-
-    {
       "id": "privacy",
       "name": "Privacy",
       "icon": "ic_unlock_teal_48dp",
@@ -314,15 +254,6 @@
       "icon": "ic_unlock_teal_48dp",
       "enable": true,
       "rank": 2
-    },
-    {
-      "id": "intervention",
-      "name": "Intervention",
-      "icon": "ic_intervention_48dp",
-      "package_name": "org.md2k.study",
-      "enable": true,
-      "rank": 2,
-      "class_name": "org.md2k.study.model_view.intervention.ActivityInterventionApp"
     },
     {
       "id": "smoking_self_report",
@@ -407,7 +338,6 @@
           "config_info",
           "study_info",
           "user_info",
-          "day_type",
           "wakeup_info",
           "sleep_info",
           "clear_database"
@@ -467,13 +397,8 @@
         "enable": true,
         "values": [
           "smoking_self_report",
-          "intervention",
           "plotter"
         ]
-      },
-      {
-        "id": "study_start_end",
-        "enable": false
       }
     ]
   },

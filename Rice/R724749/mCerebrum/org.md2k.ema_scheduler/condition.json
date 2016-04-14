@@ -43,7 +43,7 @@
     "name": "Data quality good in last 5 minutes",
     "values": [
       "300000",
-      "60"
+      "80"
     ],
     "data_source": {
       "platform": {
