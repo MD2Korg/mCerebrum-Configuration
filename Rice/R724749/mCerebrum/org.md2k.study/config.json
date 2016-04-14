@@ -1,7 +1,7 @@
 {
   "config_info": {
-    "id": "R20160304",
-    "name": "MD2K Smoking Study",
+    "id": "R724749",
+    "name": "RICE Smoking Study",
     "version_code": 17,
     "required_files": [
       "org.md2k.autosense/default_config.json",
@@ -22,8 +22,8 @@
     ]
   },
   "study_info": {
-    "id": "R20160304",
-    "name": "MD2K Smoking Study"
+    "id": "R724749",
+    "name": "RICE Smoking Study"
   },
   "apps": [
     {

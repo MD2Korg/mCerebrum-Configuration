@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "STU00201566",
-    "name": "MD2K Smoking Study",
+    "name": "MD2K Smoking Study (at NW)",
     "version_code": 17,
     "required_files": [
       "org.md2k.autosense/default_config.json",
@@ -26,7 +26,7 @@
   },
   "study_info": {
     "id": "STU00201566",
-    "name": "MD2K Smoking Study"
+    "name": "MD2K Smoking Study (at NW)"
   },
   "apps": [
     {
