@@ -2,10 +2,11 @@
   "config_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "version_code": 17,
+    "version_code": 19,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
+      "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/end_of_day_recording.json",
       "org.md2k.ema/event_contingent_recording.json",
@@ -39,6 +40,7 @@
       "name": "DataKit",
       "enable": true,
       "package_name": "org.md2k.datakit",
+      "config": "config.json",
       "default_config": "default_config.json",
       "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
@@ -178,7 +180,7 @@
       "rank": 7,
       "package_name": "org.md2k.study",
       "icon": "ic_download_teal_48dp",
-      "class_name": "org.md2k.study.model_view.config_download.ActivityConfigDownload"
+      "class_name": "org.md2k.study.model_view.config_info.ActivityConfigDownload"
     },
     {
       "id": "app_install",
@@ -350,7 +352,7 @@
     {
       "id": "EMA_test",
       "type": "App Controller",
-      "name": "EMA/EMI Test",
+      "name": "Survey/EMI Test",
       "enable": true,
       "icon": "ic_notification_teal_48dp",
       "rank": 2,
@@ -360,9 +362,11 @@
     {
       "id": "app_reset",
       "name": "Reset App",
-      "icon": "ic_unlock_teal_48dp",
+      "icon": "ic_refresh_teal_48dp",
       "enable": true,
-      "rank": 2
+      "rank": 2,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_reset.ActivityAppReset"
     },
     {
       "id": "app_start",
@@ -387,8 +391,8 @@
     "password": "1234",
     "view_contents": [
       {
-        "id": "system",
-        "name": "System Setup",
+        "id": "key_configure_app",
+        "name": "Configure Applications",
         "enable": true,
         "values": [
           "config_info",
@@ -399,8 +403,8 @@
         ]
       },
       {
-        "id": "study_setup",
-        "name": "Study Setup",
+        "id": "key_configure_study",
+        "name": "Configure Study",
         "enable": true,
         "values": [
           "config_info",
@@ -413,20 +417,21 @@
         ]
       },
       {
-        "id": "report",
-        "name": "App Controller",
+        "id": "key_start_study",
+        "name": "Start Study",
+        "enable": true
+      },
+      {
+        "id": "key_stop_study",
+        "name": "Stop Study",
+        "enable": true
+      },
+      {
+        "id": "key_other",
+        "name": "Others",
         "enable": true,
         "values": [
           "app_service",
-          "app_start",
-          "app_stop"
-        ]
-      },
-      {
-        "id": "test",
-        "name": "Test",
-        "enable": true,
-        "values": [
           "EMA_test"
         ]
       }
@@ -435,30 +440,15 @@
   "user_view": {
     "view_contents": [
       {
-        "id": "user_status",
-        "enable": true,
-        "values": [
-          "config_info",
-          "study_info",
-          "app_install",
-          "app_settings",
-          "user_info",
-          "wakeup_info",
-          "sleep_info",
-          "app_service",
-          "day_start_end"
-        ]
-      },
-      {
         "id": "data_quality",
         "enable": true
       },
       {
-        "id": "privacy",
+        "id": "day_start_end",
         "enable": true
       },
       {
-        "id": "day_start_end",
+        "id": "privacy",
         "enable": true
       },
       {
@@ -467,42 +457,91 @@
         "values": [
           "smoking_self_report",
           "intervention",
-          "plotter"
+          "app_reset"
         ]
-      },
-      {
-        "id": "study_start_end",
-        "enable": false
       }
     ]
   },
 
   "data_quality": [
     {
-      "platform": {
-        "type": "AUTOSENSE_CHEST"
+      "name":"Breathing",
+      "plotter":true,
+      "video":true,
+      "message":true,
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
+      "datasource_quality": {
+        "platform": {
+          "type": "AUTOSENSE_CHEST"
+        },
+        "type": "DATA_QUALITY",
+        "id": "RESPIRATION"
       },
-      "type": "DATA_QUALITY",
-      "id":"RESPIRATION"
+      "datasource_plot": {
+        "platform": {
+          "type": "AUTOSENSE_CHEST"
+        },
+        "type": "RESPIRATION"
+      }
     },
     {
-      "platform": {
-        "type": "AUTOSENSE_CHEST"
+      "name":"Heart Rate",
+      "plotter":true,
+      "video":true,
+      "message":true,
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
+      "datasource_quality": {
+        "platform": {
+          "type": "AUTOSENSE_CHEST"
+        },
+        "type": "DATA_QUALITY",
+        "id": "ECG"
       },
-      "type": "DATA_QUALITY",
-      "id": "ECG"
+      "datasource_plot": {
+        "platform": {
+          "type": "AUTOSENSE_CHEST"
+        },
+        "type": "ECG"
+      }
     },
     {
-      "platform": {
-        "id": "LEFT_WRIST"
+      "plotter":true,
+      "video":true,
+      "message":true,
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
+      "datasource_quality": {
+        "platform": {
+          "id": "LEFT_WRIST"
+        },
+        "type": "DATA_QUALITY"
       },
-      "type":"DATA_QUALITY"
-    },
+      "datasource_plot": {
+        "platform": {
+          "id": "LEFT_WRIST"
+        },
+        "type": "ACCELEROMETER"
+      }    },
     {
-      "platform": {
-        "id": "RIGHT_WRIST"
+      "plotter": true,
+      "video": true,
+      "message": true,
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
+      "datasource_quality": {
+        "platform": {
+          "id": "RIGHT_WRIST"
+        },
+        "type": "DATA_QUALITY"
       },
-      "type":"DATA_QUALITY"
+      "datasource_plot": {
+        "platform": {
+          "id": "RIGHT_WRIST"
+        },
+        "type": "ACCELEROMETER"
+      }
     }
   ]
 }

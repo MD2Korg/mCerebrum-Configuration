@@ -6,6 +6,7 @@
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
+      "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/questionnaire.json",
       "org.md2k.ema_scheduler/config.json",
@@ -36,6 +37,8 @@
       "name": "DataKit",
       "enable": true,
       "package_name": "org.md2k.datakit",
+      "config": "config.json",
+      "default_config": "default_config.json",
       "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
@@ -449,7 +452,7 @@
         "platform": {
           "id": "LEFT_WRIST"
         },
-        "type": "ACCELEROMETER_X"
+        "type": "ACCELEROMETER"
       }    },
     {
       "name": "Right Wrist",
@@ -468,7 +471,7 @@
         "platform": {
           "id": "RIGHT_WRIST"
         },
-        "type": "ACCELEROMETER_X"
+        "type": "ACCELEROMETER"
       }
     }
   ]
