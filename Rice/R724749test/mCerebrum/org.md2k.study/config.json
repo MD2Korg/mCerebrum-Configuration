@@ -280,7 +280,7 @@
     {
       "id": "EMA_test",
       "type": "App Controller",
-      "name": "EMA/EMI Test",
+      "name": "Survey Test",
       "enable": true,
       "icon": "ic_notification_teal_48dp",
       "rank": 2,
@@ -395,8 +395,8 @@
       "plotter":true,
       "video":true,
       "message":true,
-      "video_link": "https://www.youtube.com/watch?v=GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor 3) Restart Phone",
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
       "datasource_quality": {
         "platform": {
           "type": "AUTOSENSE_CHEST"
@@ -416,8 +416,8 @@
       "plotter":true,
       "video":true,
       "message":true,
-      "video_link": "https://www.youtube.com/watch?v=GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor 3) Restart Phone",
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
       "datasource_quality": {
         "platform": {
           "type": "AUTOSENSE_CHEST"
@@ -437,8 +437,8 @@
       "plotter":true,
       "video":true,
       "message":true,
-      "video_link": "https://www.youtube.com/watch?v=GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor 3) Restart Phone",
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
       "datasource_quality": {
         "platform": {
           "id": "LEFT_WRIST"
@@ -456,8 +456,8 @@
       "plotter": true,
       "video": true,
       "message": true,
-      "video_link": "https://www.youtube.com/watch?v=GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor 3) Restart Phone",
+      "video_link": "GR3pahhXp4U",
+      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
       "datasource_quality": {
         "platform": {
           "id": "RIGHT_WRIST"
