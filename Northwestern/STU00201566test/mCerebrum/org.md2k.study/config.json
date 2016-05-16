@@ -462,85 +462,158 @@
       }
     ]
   },
-
   "data_quality": [
     {
-      "name":"Breathing",
-      "plotter":true,
-      "video":true,
-      "message":true,
-      "video_link": "GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
-      "datasource_quality": {
-        "platform": {
-          "type": "AUTOSENSE_CHEST"
-        },
-        "type": "DATA_QUALITY",
-        "id": "RESPIRATION"
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
       },
-      "datasource_plot": {
-        "platform": {
-          "type": "AUTOSENSE_CHEST"
-        },
-        "type": "RESPIRATION"
+      "type": "DATA_QUALITY",
+      "id": "RESPIRATION"
+    },
+    {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_QUALITY",
+      "id": "ECG"
+    },
+    {
+      "platform": {
+        "id": "LEFT_WRIST"
+      },
+      "type": "DATA_QUALITY"
+    },
+    {
+      "platform": {
+        "id": "RIGHT_WRIST"
+      },
+      "type": "DATA_QUALITY"
+    }
+  ],
+  "data_quality_view": [
+    {
+      "name": "Breathing",
+      "plotter":{
+        "enable":true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "RESPIRATION"
+        }
+      },
+      "video":{
+        "enable": true,
+        "link": "GR3pahhXp4U"
+      },
+      "message": {
+        "enable":true,
+        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
       }
     },
     {
-      "name":"Heart Rate",
-      "plotter":true,
-      "video":true,
-      "message":true,
-      "video_link": "GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
-      "datasource_quality": {
-        "platform": {
-          "type": "AUTOSENSE_CHEST"
-        },
-        "type": "DATA_QUALITY",
-        "id": "ECG"
+      "name": "Heart Rate",
+      "plotter":{
+        "enable":true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "ECG"
+        }
       },
-      "datasource_plot": {
-        "platform": {
-          "type": "AUTOSENSE_CHEST"
-        },
-        "type": "ECG"
+      "video":{
+        "enable": true,
+        "link": "GR3pahhXp4U"
+      },
+
+      "message": {
+        "enable":true,
+        "text":"1) Reset the application, wait 15 seconds and check it again.\n\n2)Restart the phone, wait 1-2 minutes and check it again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest.\n\n5) Make sure the connector marked in blue is on the left side of your chest.\n\n6) Move the white stickers slightly up.\n\n7) Move the white stickers slightly down.\n\n8) Charge the white box."
       }
     },
     {
-      "plotter":true,
-      "video":true,
-      "message":true,
-      "video_link": "GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
-      "datasource_quality": {
-        "platform": {
-          "id": "LEFT_WRIST"
-        },
-        "type": "DATA_QUALITY"
+      "name": "Left Wrist(A)",
+      "plotter":{
+        "enable":true,
+        "datasource": {
+          "platform": {
+            "type":"AUTOSENSE_WRIST",
+            "id":"LEFT_WRIST"
+          },
+          "type":"ACCELEROMETER_X"
+        }
       },
-      "datasource_plot": {
-        "platform": {
-          "id": "LEFT_WRIST"
-        },
-        "type": "ACCELEROMETER"
-      }    },
+      "video":{
+        "enable": true,
+        "link": "GR3pahhXp4U"
+      },
+      "message": {
+        "enable":true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+      }
+    },
     {
-      "plotter": true,
-      "video": true,
-      "message": true,
-      "video_link": "GR3pahhXp4U",
-      "message_link": "1) Reset Application\n2) Restart Sensor\n3) Restart Phone",
-      "datasource_quality": {
-        "platform": {
-          "id": "RIGHT_WRIST"
-        },
-        "type": "DATA_QUALITY"
+      "name": "Right Wrist(A)",
+      "plotter":{
+        "enable":true,
+        "datasource": {
+          "platform": {
+            "type":"AUTOSENSE_WRIST",
+            "id": "RIGHT_WRIST"
+          },
+          "type":"ACCELEROMETER_X"
+        }
       },
-      "datasource_plot": {
-        "platform": {
-          "id": "RIGHT_WRIST"
-        },
-        "type": "ACCELEROMETER"
+      "video":{
+        "enable": true,
+        "link": "GR3pahhXp4U"
+      },
+      "message": {
+        "enable":true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+      }
+    },
+    {
+      "name": "Left Wrist(M)",
+      "plotter":{
+        "enable":true,
+        "datasource": {
+          "platform": {
+            "type":"MICROSOFT_BAND",
+            "id":"LEFT_WRIST"
+          },
+          "type":"ACCELEROMETER"
+        }
+      },
+      "video":{
+        "enable": true,
+        "link": "GR3pahhXp4U"
+      },
+      "message": {
+        "enable":true,
+        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
+      }
+    },
+    {
+      "name": "Right Wrist(M)",
+      "plotter":{
+        "enable":true,
+        "datasource": {
+          "platform": {
+            "type":"MICROSOFT_BAND",
+            "id":"RIGHT_WRIST"
+          },
+          "type":"ACCELEROMETER"
+        }
+      },
+      "video":{
+        "enable": true,
+        "link": "GR3pahhXp4U"
+      },
+      "message": {
+        "enable":true,
+        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     }
   ]
