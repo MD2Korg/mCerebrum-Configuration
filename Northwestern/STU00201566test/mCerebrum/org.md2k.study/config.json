@@ -2,7 +2,7 @@
   "config_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "version_code": 19,
+    "version_code": 21,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -19,7 +19,9 @@
       "org.md2k.plotter/default_config.json",
       "org.md2k.streamprocessor/model.json",
       "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.study/config.json",
+      "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
   },
@@ -272,7 +274,7 @@
       "enable": true,
       "name": "Running Apps",
       "rank": 3,
-      "icon":"ic_apps_teal_48dp",
+      "icon": "ic_apps_teal_48dp",
       "package_name": "org.md2k.study",
       "class_name": "org.md2k.study.model_view.app_service.ActivityService"
     },
@@ -287,19 +289,8 @@
       "type": "setup",
       "rank": 2,
       "enable": true,
-      "name": "Day Start/Day End",
-      "parameters":[
-        "28800000"
-      ]
+      "name": "Day Start/Day End"
     },
-    {
-      "id": "study_start_end",
-      "type": "setup",
-      "rank": 2,
-      "enable": false,
-      "name": "Study Start/End"
-    },
-
     {
       "id": "privacy",
       "name": "Privacy",
@@ -327,7 +318,7 @@
     },
     {
       "id": "smoking_self_report",
-      "name": "Report",
+      "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,
       "package_name": "org.md2k.study",
@@ -493,8 +484,8 @@
   "data_quality_view": [
     {
       "name": "Breathing",
-      "plotter":{
-        "enable":true,
+      "plotter": {
+        "enable": true,
         "datasource": {
           "platform": {
             "type": "AUTOSENSE_CHEST"
@@ -502,19 +493,19 @@
           "type": "RESPIRATION"
         }
       },
-      "video":{
+      "video": {
         "enable": true,
         "link": "GR3pahhXp4U"
       },
       "message": {
-        "enable":true,
-        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+        "enable": true,
+        "text": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
       "name": "Heart Rate",
-      "plotter":{
-        "enable":true,
+      "plotter": {
+        "enable": true,
         "datasource": {
           "platform": {
             "type": "AUTOSENSE_CHEST"
@@ -522,14 +513,14 @@
           "type": "ECG"
         }
       },
-      "video":{
+      "video": {
         "enable": true,
         "link": "GR3pahhXp4U"
       },
 
       "message": {
-        "enable":true,
-        "text":"1) Reset the application, wait 15 seconds and check it again.\n\n2)Restart the phone, wait 1-2 minutes and check it again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest.\n\n5) Make sure the connector marked in blue is on the left side of your chest.\n\n6) Move the white stickers slightly up.\n\n7) Move the white stickers slightly down.\n\n8) Charge the white box."
+        "enable": true,
+        "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
@@ -549,29 +540,29 @@
         "link": "GR3pahhXp4U"
       },
       "message": {
-        "enable":true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
       }
     },
     {
       "name": "Right Wrist(A)",
-      "plotter":{
-        "enable":true,
+      "plotter": {
+        "enable": true,
         "datasource": {
           "platform": {
-            "type":"AUTOSENSE_WRIST",
+            "type": "AUTOSENSE_WRIST",
             "id": "RIGHT_WRIST"
           },
-          "type":"ACCELEROMETER_X"
+          "type": "ACCELEROMETER_X"
         }
       },
-      "video":{
+      "video": {
         "enable": true,
         "link": "GR3pahhXp4U"
       },
       "message": {
-        "enable":true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
       }
     },
     {
@@ -616,5 +607,43 @@
         "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     }
-  ]
+  ],
+  "day_start": {
+    "by": "user",
+    "base": "wakeup",
+    "notify": [
+      {
+        "type": "button",
+        "offset": -30000
+      },
+      {
+        "type": "prompt",
+        "offset": 0,
+        "parameters": [
+          "PHONE_SCREEN",
+          "PHONE_MESSAGE_START_DAY"
+        ]
+      },
+      {
+        "type": "notification",
+        "offset": 30000,
+        "parameters": [
+          "PHONE_VIBRATE",
+          "PHONE_TONE",
+          "PHONE_SCREEN",
+          "PHONE_MESSAGE_START_DAY"
+        ]
+      }
+    ]
+  },
+  "day_end": {
+    "by": "user",
+    "base": "day_start",
+    "notify": [
+      {
+        "type": "button",
+        "offset": 30000
+      }
+    ]
+  }
 }
