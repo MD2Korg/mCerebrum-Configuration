@@ -2,7 +2,7 @@
   "config_info": {
     "id": "R724749-Test",
     "name": "RICE Smoking Study-Test",
-    "version_code": 21,
+    "version_code": 50099,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -508,7 +508,7 @@
     "notify": [
       {
         "type": "button",
-        "offset": -30000
+        "offset": -10800000
       },
       {
         "type": "prompt",
@@ -520,7 +520,7 @@
       },
       {
         "type": "notification",
-        "offset": 30000,
+        "offset": 10800000,
         "parameters": [
           "PHONE_VIBRATE",
           "PHONE_TONE",
@@ -536,7 +536,7 @@
     "notify": [
       {
         "type": "button",
-        "offset": 30000
+        "offset": 0
       }
     ]
   }

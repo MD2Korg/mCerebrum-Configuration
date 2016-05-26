@@ -2,7 +2,7 @@
   "config_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "version_code": 21,
+    "version_code": 50099,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -21,6 +21,7 @@
       "org.md2k.streamprocessor/model_rip.json",
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.study/config.json",
+      "org.md2k.study/sense_2_stop.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
@@ -28,6 +29,8 @@
   "study_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test"
+    "logo":"sense_2_stop.png",
+    "title":""
   },
   "apps": [
     {
@@ -326,6 +329,15 @@
       "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport"
     },
     {
+      "id": "eating_self_report",
+      "name": "Report Eating",
+      "icon": "ic_eating_teal_48dp",
+      "enable": true,
+      "package_name": "org.md2k.study",
+      "rank": 2,
+      "class_name": "org.md2k.study.model_view.selfreport_eating.ActivitySelfReportEating"
+    },
+    {
       "id": "plotter",
       "name": "Plotter",
       "enable": true,
@@ -447,6 +459,7 @@
         "enable": true,
         "values": [
           "smoking_self_report",
+          "eating_self_report",
           "intervention",
           "app_reset"
         ]
