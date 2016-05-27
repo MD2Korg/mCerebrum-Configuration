@@ -10,7 +10,7 @@ Contains configurations for mCerebrum studies
 [http://docs.md2k.org/feedback](http://docs.md2k.org/feedback)
 
 # Support
-**MD2K** is supported by the National Institutes of Health Big Data to Knowledge Initiative Grant **#1U54EB020404**
+[MD2K](https://md2k.org) is supported by the [National Institutes of Health](https://www.nih.gov/) [Big Data to Knowledge Initiative](https://datascience.nih.gov/bd2k) Grant **#1U54EB020404**
 
 Team: 
 [Cornell Tech](http://tech.cornell.edu/), 
