@@ -526,9 +526,7 @@
         "offset": 10800000,
         "parameters": [
           "PHONE_VIBRATE",
-          "PHONE_TONE",
-          "PHONE_SCREEN",
-          "PHONE_MESSAGE_START_DAY"
+          "PHONE_TONE"
         ]
       }
     ]
