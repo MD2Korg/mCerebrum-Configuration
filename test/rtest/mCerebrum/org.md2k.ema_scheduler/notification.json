@@ -1,0 +1,92 @@
+[
+  {
+    "id": "PHONE_VIBRATE_30",
+    "name": "Phone Vibration",
+    "type": "VIBRATION",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "format": "THREE_TONE",
+    "repeat": 10,
+    "duration": 30000
+  },
+  {
+    "id": "PHONE_TONE_30",
+    "name": "Phone Tone",
+    "type": "TONE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "format": "THREE_TONE_HIGH",
+    "repeat": 10,
+    "duration": 30000
+  },
+  {
+    "id": "PHONE_SCREEN_30",
+    "name": "Phone Screen",
+    "type": "SCREEN",
+    "priority": 0,
+    "repeat": 1,
+    "duration": 30000,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    }
+  },
+  {
+    "id": "PHONE_MESSAGE_DELAY_EMA",
+    "name": "Phone Message (EMA)",
+    "type": "MESSAGE",
+    "priority": 0,
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      }
+    },
+    "repeat": 1,
+    "duration": 60000,
+    "message": [
+      "Survey",
+      "Time to take a Survey",
+      "OK",
+      "Cancel",
+      "Delay 10 Minutes"
+    ],
+    "response_option": {
+      "ok": true,
+      "cancel": true,
+      "delay": true
+    },
+    "response_action": {
+      "id": "DELAY",
+      "name": "Phone Message (EMA)",
+      "type": "MESSAGE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "repeat": 1,
+      "duration": 6000000,
+      "message": [
+        "Survey delayed for 10 minutes",
+        "Please click \"Start\" when you are ready",
+        "Start",
+        "Cancel"
+      ],
+      "response_option": {
+        "ok": true,
+        "cancel": false,
+        "delay": false
+      }
+    }
+  }
+]
