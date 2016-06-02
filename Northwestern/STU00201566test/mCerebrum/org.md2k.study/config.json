@@ -326,7 +326,15 @@
       "enable": true,
       "package_name": "org.md2k.study",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport"
+      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
+      "parameters":{
+          "s1":"Smoking Report",
+          "s2":"I have smoked",
+          "s3":"less than 5 minutes ago",
+          "s4":"5 - 15 minutes ago",
+          "s5":"15 - 30 minutes ago",
+          "s6":"more than 30 minutes ago"
+      }
     },
     {
       "id": "eating_self_report",
@@ -335,7 +343,15 @@
       "enable": true,
       "package_name": "org.md2k.study",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport_eating.ActivitySelfReportEating"
+      "class_name": "org.md2k.study.model_view.selfreport_eating.ActivitySelfReportEating",
+      "parameters":{
+          "s1":"Eating Report",
+          "s2":"I took food/drinks",
+          "s3":"less than 5 minutes ago",
+          "s4":"5 - 15 minutes ago",
+          "s5":"15 - 30 minutes ago",
+          "s6":"more than 30 minutes ago"
+      }
     },
     {
       "id": "plotter",
@@ -627,7 +643,7 @@
     "notify": [
       {
         "type": "button",
-        "offset": -30000
+        "offset": -10800000
       },
       {
         "type": "prompt",
@@ -639,7 +655,7 @@
       },
       {
         "type": "notification",
-        "offset": 30000,
+        "offset": 10800000,
         "parameters": [
           "PHONE_VIBRATE",
           "PHONE_TONE",
@@ -655,7 +671,7 @@
     "notify": [
       {
         "type": "button",
-        "offset": 30000
+        "offset": 28800000
       }
     ]
   }

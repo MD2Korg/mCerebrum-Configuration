@@ -55,7 +55,7 @@
     "message": [
       "Start Day",
       "Please start the Day",
-      "OK"
+      "Start"
     ],
     "response_option": {
       "ok": true,

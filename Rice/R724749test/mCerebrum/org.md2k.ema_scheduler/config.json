@@ -94,7 +94,8 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_SCREEN_30"
+          "PHONE_SCREEN_30",
+          "PHONE_MESSAGE_DELAY_EMA",
         ]
       },
       {
@@ -102,6 +103,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       }
@@ -203,6 +205,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -211,6 +214,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       }

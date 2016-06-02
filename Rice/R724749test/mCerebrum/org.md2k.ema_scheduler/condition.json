@@ -110,7 +110,7 @@
     "type":"LAST_EMA_EMI",
     "name": "Last Triggered Smoking EMA 30 minute ago",
     "values": [
-      "18000000"
+      "1800000"
     ],
     "source": {
       "id": "SMOKING_EMA",
@@ -132,7 +132,7 @@
   {
     "id": "STRESS_EMA_30",
     "type":"LAST_EMA_EMI",
-    "name": "Last Triggered Stress EMA EMA 10 minute ago",
+    "name": "Last Triggered Stress EMA EMA 30 minute ago",
     "values": [
       "1800000"
     ],

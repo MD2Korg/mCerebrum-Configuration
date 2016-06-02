@@ -265,7 +265,15 @@
       "enable": true,
       "package_name": "org.md2k.study",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport"
+      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
+      "parameters":{
+          "s1":"Smoking Report",
+          "s2":"I have smoked",
+          "s3":"less than 5 minutes ago",
+          "s4":"5 - 15 minutes ago",
+          "s5":"15 - 30 minutes ago",
+          "s6":"more than 30 minutes ago"
+      }
     },
     {
       "id": "plotter",
@@ -526,7 +534,9 @@
         "offset": 10800000,
         "parameters": [
           "PHONE_VIBRATE",
-          "PHONE_TONE"
+          "PHONE_TONE",
+          "PHONE_SCREEN",
+          "PHONE_MESSAGE_START_DAY"
         ]
       }
     ]

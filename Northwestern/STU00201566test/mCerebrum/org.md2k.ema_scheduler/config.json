@@ -92,6 +92,8 @@
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
           "PHONE_VIBRATE_3"
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
         ]
       },
       {
@@ -99,6 +101,8 @@
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
           "PHONE_VIBRATE_3"
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
         ]
       }
     ],
@@ -147,8 +151,8 @@
     "application": {
       "id": "event_contingent_recording",
       "name": "Event Contingent Recording",
-      "package_name": "org.md2k.ema",
       "file_name": "event_contingent_recording.json",
+      "package_name": "org.md2k.ema",
       "timeout": 600000
     },
     "blocks": [
@@ -207,14 +211,18 @@
         "time": 120000,
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3"
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
         ]
       },
       {
         "time": 240000,
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3"
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN"
         ]
       }
     ],
@@ -290,14 +298,20 @@
         "time": 120000,
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3"
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+          "PHONE_SCREEN"
         ]
       },
       {
         "time": 240000,
         "types": [
           "MICROSOFT_BAND_VIBRATE_3",
-          "PHONE_VIBRATE_3"
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+          "PHONE_SCREEN"
         ]
       }
     ],

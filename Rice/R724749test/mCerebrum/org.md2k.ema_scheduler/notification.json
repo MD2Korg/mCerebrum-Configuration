@@ -10,8 +10,8 @@
       }
     },
     "format": "THREE_TONE",
-    "repeat": 30,
-    "duration":30000
+    "repeat": 10,
+    "duration": 30000
   },
   {
     "id": "PHONE_TONE_30",
@@ -24,16 +24,16 @@
       }
     },
     "format": "THREE_TONE_HIGH",
-    "repeat": 30,
-    "duration":30000
+    "repeat": 10,
+    "duration": 30000
   },
   {
     "id": "PHONE_SCREEN_30",
     "name": "Phone Screen",
     "type": "SCREEN",
     "priority": 0,
-    "repeat":1,
-    "duration":30000,
+    "repeat": 1,
+    "duration": 30000,
     "datasource": {
       "platform": {
         "type": "PHONE"
@@ -62,8 +62,31 @@
     "response_option": {
       "ok": true,
       "cancel": true,
-      "delay": true,
-      "delay_time": 600000
+      "delay": true
+    },
+    "response_action": {
+      "id": "DELAY",
+      "name": "Phone Message (EMA)",
+      "type": "MESSAGE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "repeat": 1,
+      "duration": 6000000,
+      "message": [
+        "Survey delayed for 10 minutes",
+        "Please click \"Start\" when you are ready",
+        "Start",
+        "Cancel"
+      ],
+      "response_option": {
+        "ok": true,
+        "cancel": false,
+        "delay": false
+      }
     }
   }
 ]
