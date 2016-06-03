@@ -1,0 +1,34 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_select",
+    "question_text": "Please check the hour blocks when you took 1 or more puffs today",
+    "response_option": [
+      "8:00 am - 9:00 am",
+      "9:00 am - 10:00 am",
+      "10:00 am - 11:00 am",
+      "11:00 am - 12:00 pm",
+      "12:00 pm - 1:00 pm",
+      "1:00 pm - 2:00 pm",
+      "2:00 pm - 3:00 pm",
+      "3:00 pm - 4:00 pm",
+      "4:00 pm - 5:00 pm",
+      "5:00 pm - 6:00 pm",
+      "6:00 pm - 7:00 pm",
+      "7:00 pm - 8:00 pm"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "Did you receive a stress-reduction suggestion on your watch today?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_text": "Thank you for answering this survey. Please click \"FINISH\"."
+  }
+]

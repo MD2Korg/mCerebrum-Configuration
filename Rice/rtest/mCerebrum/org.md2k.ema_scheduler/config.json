@@ -48,9 +48,7 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "DATA_QUALITY_5",
-          "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "NOT_DRIVING_5"
         ]
       },
       {

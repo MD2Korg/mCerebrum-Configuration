@@ -11,7 +11,7 @@
   "upload":{
     "enabled":true,
     "interval": 900000,
-    "url": "https://rice-cerebralcortex.md2k.org/",
+    "url": "https://northwestern-cerebralcortex.md2k.org/",
     "restricted_datasource": [
       {
         "platform": {
@@ -42,16 +42,6 @@
         "id": "1800000",
         "title": "30 Minutes",
         "value": 1800000
-      },
-      {
-        "id": "3600000",
-        "title": "1 Hour",
-        "value": 3600000
-      },
-      {
-        "id": "7200000",
-        "title": "2 Hours",
-        "value": 7200000
       }
     ],
     "privacy_type_options": [

@@ -10,7 +10,7 @@
       }
     },
     "format": "THREE_TONE",
-    "repeat": 60,
+    "repeat": 180,
     "duration":10800000
   },
   {
@@ -24,7 +24,7 @@
       }
     },
     "format": "THREE_TONE_HIGH",
-    "repeat": 60,
+    "repeat": 180,
     "duration":10800000
   },
   {

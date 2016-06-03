@@ -44,7 +44,6 @@
           "RANDOM_EMA_60",
           "SMOKING_EMA_10",
           "EMI_10",
-          "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
         ]
@@ -60,7 +59,6 @@
           "RANDOM_EMA_60",
           "SMOKING_EMA_10",
           "EMI_10",
-          "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
         ]
@@ -136,7 +134,7 @@
         "incentive": 0.00,
         "messages": [
           "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
-          "You will be paid $0.00",
+          "You will be paid $0.50",
           "Total Earning: $"
         ],
         "conditions": [
@@ -187,14 +185,6 @@
           "SMOKING"
         ],
         "conditions": [
-          "PRIVACY",
-          "VALID_BLOCK_SMOKING_EMA",
-          "RANDOM_EMA_10",
-          "SMOKING_EMA_30",
-          "EMI_10",
-          "DATA_QUALITY_5",
-          "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
         ]
       }
     ],
@@ -258,7 +248,7 @@
         "incentive": 0.00,
         "messages": [
           "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
-          "You will be paid $0.50",
+          "You will be paid $0.00",
           "Total Earning: $"
         ],
         "conditions": [

@@ -50,7 +50,8 @@
           "RANDOM_EMA_60",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       },
       {
@@ -64,7 +65,8 @@
           "RANDOM_EMA_60",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       },
       {
@@ -75,7 +77,8 @@
           "RANDOM_EMA_60",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       }
     ],
@@ -94,8 +97,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_SCREEN_30",
-          "PHONE_MESSAGE_DELAY_EMA"
+          "PHONE_SCREEN_30"
         ]
       },
       {
@@ -103,7 +105,6 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       }
@@ -181,6 +182,13 @@
           "SMOKING"
         ],
         "conditions": [
+          "PRIVACY",
+          "VALID_BLOCK_SMOKING_EMA",
+          "SMOKING_EMA_30",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       }
     ],
@@ -199,7 +207,6 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -208,7 +215,6 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       }
@@ -291,7 +297,8 @@
           "STRESS_EMA_30",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       }
     ],
@@ -310,7 +317,6 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -319,7 +325,6 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       }
