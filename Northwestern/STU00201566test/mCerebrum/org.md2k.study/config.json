@@ -2,7 +2,7 @@
   "config_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "version_code": 50299,
+    "version_code": 50399,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",

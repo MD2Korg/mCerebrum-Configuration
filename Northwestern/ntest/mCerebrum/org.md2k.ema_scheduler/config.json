@@ -229,29 +229,6 @@
           "Total Earning: $"
         ],
         "conditions": [
-          "DATA_QUALITY_DAY_START",
-          "EMA_ANSWER_5"
-        ]
-      },
-      {
-        "incentive": 0.50,
-        "messages": [
-          "Thank you. You will be paid $0.50 for taking the survey and wearing the sensors for more than 60% of the time since day started. But you missed $0.25 bonus for not answering the survey within 5 minutes.",
-          "You will be paid $0.50",
-          "Total Earning: $"
-        ],
-        "conditions": [
-          "DATA_QUALITY_DAY_START"
-        ]
-      },
-      {
-        "incentive": 0.00,
-        "messages": [
-          "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
-          "You will be paid $0.00",
-          "Total Earning: $"
-        ],
-        "conditions": [
         ]
       }
     ]

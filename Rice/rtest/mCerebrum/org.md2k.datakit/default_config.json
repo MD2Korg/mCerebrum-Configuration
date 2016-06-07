@@ -59,9 +59,9 @@
         "id": "location",
         "title": "Location",
         "summary": "",
-        "source": [
+        "datasource": [
           {
-            "datasource_type": "LOCATION"
+            "type":"LOCATION"
           }
         ]
       },
@@ -69,33 +69,33 @@
         "id": "activity",
         "title": "Activity",
         "summary": "",
-        "source": [
+        "datasource": [
           {
-            "datasource_type": "LOCATION"
+            "type":"LOCATION"
           },
           {
-            "datasource_type": "ACCELEROMETER"
+            "type":"ACCELEROMETER"
           },
           {
-            "datasource_type": "GYROSCOPE"
+            "type": "GYROSCOPE"
           },
           {
-            "datasource_type": "ACCELEROMETER_X"
+            "type": "ACCELEROMETER_X"
           },
           {
-            "datasource_type": "ACCELEROMETER_Y"
+            "type": "ACCELEROMETER_Y"
           },
           {
-            "datasource_type": "ACCELEROMETER_Z"
+            "type": "ACCELEROMETER_Z"
           },
           {
-            "datasource_type": "GYROSCOPE_X"
+            "type": "GYROSCOPE_X"
           },
           {
-            "datasource_type": "GYROSCOPE_Y"
+            "type": "GYROSCOPE_Y"
           },
           {
-            "datasource_type": "GYROSCOPE_Z"
+            "type": "GYROSCOPE_Z"
           }
         ]
       },
@@ -103,9 +103,11 @@
         "id": "chest_sensor",
         "title": "Chest Sensor",
         "summary": "",
-        "source": [
+        "datasource": [
           {
-            "platform_type": "AUTOSENSE_CHEST"
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            }
           }
         ]
       },
@@ -113,9 +115,16 @@
         "id": "wrist_sensor",
         "title": "Wrist Sensors",
         "summary": "",
-        "source": [
+        "datasource": [
           {
-            "platform_type": "AUTOSENSE_WRIST"
+            "platform": {
+              "type": "AUTOSENSE_WRIST"
+            }
+          },
+          {
+            "platform": {
+              "type": "MICROSOFT_BAND"
+            }
           }
         ]
       },
@@ -123,9 +132,9 @@
         "id": "ema_intervention",
         "title": "Surveys",
         "summary": "",
-        "source": [
+        "datasource": [
           {
-            "datasource_type": "SURVEY"
+            "type": "SURVEY"
           }
         ]
       }

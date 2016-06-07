@@ -1,89 +1,91 @@
-[
-  {
-    "id": "PHONE_VIBRATE",
-    "name": "Phone Vibration",
-    "type": "VIBRATION",
-    "priority": 0,
-    "datasource": {
-      "platform": {
-        "type": "PHONE"
+{
+  "notification_option": [
+    {
+      "id": "PHONE_VIBRATE",
+      "name": "Phone Vibration",
+      "type": "VIBRATION",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "format": "THREE_TONE",
+      "repeat": 180,
+      "duration": 10800000
+    },
+    {
+      "id": "PHONE_TONE",
+      "name": "Phone Tone",
+      "type": "TONE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "format": "THREE_TONE_HIGH",
+      "repeat": 180,
+      "duration": 10800000
+    },
+    {
+      "id": "PHONE_SCREEN",
+      "name": "Phone Screen",
+      "type": "SCREEN",
+      "priority": 0,
+      "repeat": 1,
+      "duration": 10000,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
       }
     },
-    "format": "THREE_TONE",
-    "repeat": 180,
-    "duration":10800000
-  },
-  {
-    "id": "PHONE_TONE",
-    "name": "Phone Tone",
-    "type": "TONE",
-    "priority": 0,
-    "datasource": {
-      "platform": {
-        "type": "PHONE"
+    {
+      "id": "PHONE_MESSAGE_START_DAY",
+      "name": "Start Day",
+      "type": "MESSAGE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "repeat": 1,
+      "duration": 3600000000,
+      "message": [
+        "Start Day",
+        "Please start the Day",
+        "Start"
+      ],
+      "response_option": {
+        "ok": true,
+        "cancel": false,
+        "delay": false
       }
     },
-    "format": "THREE_TONE_HIGH",
-    "repeat": 180,
-    "duration":10800000
-  },
-  {
-    "id": "PHONE_SCREEN",
-    "name": "Phone Screen",
-    "type": "SCREEN",
-    "priority": 0,
-    "repeat":1,
-    "duration":10000,
-    "datasource": {
-      "platform": {
-        "type": "PHONE"
+    {
+      "id": "PHONE_MESSAGE_END_DAY",
+      "name": "End Day",
+      "type": "MESSAGE",
+      "priority": 0,
+      "datasource": {
+        "platform": {
+          "type": "PHONE"
+        }
+      },
+      "repeat": 1,
+      "duration": 3600000000,
+      "message": [
+        "End Day",
+        "Please end the Day",
+        "OK"
+      ],
+      "response_option": {
+        "ok": true,
+        "cancel": false,
+        "delay": false
       }
     }
-  },
-  {
-    "id": "PHONE_MESSAGE_START_DAY",
-    "name": "Start Day",
-    "type": "MESSAGE",
-    "priority": 0,
-    "datasource": {
-      "platform": {
-        "type": "PHONE"
-      }
-    },
-    "repeat": 1,
-    "duration":3600000000,
-    "message": [
-      "Start Day",
-      "Please start the Day",
-      "Start"
-    ],
-    "response_option": {
-      "ok": true,
-      "cancel": false,
-      "delay": false
-    }
-  },
-  {
-    "id": "PHONE_MESSAGE_END_DAY",
-    "name": "End Day",
-    "type": "MESSAGE",
-    "priority": 0,
-    "datasource": {
-      "platform": {
-        "type": "PHONE"
-      }
-    },
-    "repeat": 1,
-    "duration":3600000000,
-    "message": [
-      "End Day",
-      "Please end the Day",
-      "OK"
-    ],
-    "response_option": {
-      "ok": true,
-      "cancel": false,
-      "delay": false
-    }
-  }
-]
+  ]
+}
