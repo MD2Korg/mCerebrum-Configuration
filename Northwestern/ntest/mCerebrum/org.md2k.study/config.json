@@ -2,6 +2,7 @@
   "config_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
+    "filename": "ntest",
     "version_code": 50399,
     "required_files": [
       "org.md2k.autosense/default_config.json",
@@ -26,11 +27,17 @@
       "org.md2k.study/tutorial.pdf"
     ]
   },
+  "start_screen": {
+    "update_app": true,
+    "md2k_logo": true,
+    "md2k_link": true,
+    "config_text": true
+  },
   "study_info": {
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "logo":"sense_2_stop.png",
-    "title":""
+    "logo": "sense_2_stop.png",
+    "title": ""
   },
   "apps": [
     {
@@ -327,13 +334,13 @@
       "package_name": "org.md2k.study",
       "rank": 2,
       "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
-      "parameters":{
-          "s1":"Smoking Report",
-          "s2":"I have smoked",
-          "s3":"less than 5 minutes ago",
-          "s4":"5 - 15 minutes ago",
-          "s5":"15 - 30 minutes ago",
-          "s6":"more than 30 minutes ago"
+      "parameters": {
+        "s1": "Smoking Report",
+        "s2": "I have smoked",
+        "s3": "less than 5 minutes ago",
+        "s4": "5 - 15 minutes ago",
+        "s5": "15 - 30 minutes ago",
+        "s6": "more than 30 minutes ago"
       }
     },
     {
@@ -344,13 +351,13 @@
       "package_name": "org.md2k.study",
       "rank": 2,
       "class_name": "org.md2k.study.model_view.selfreport_eating.ActivitySelfReportEating",
-      "parameters":{
-          "s1":"Eating Report",
-          "s2":"I have taken food/drinks",
-          "s3":"less than 5 minutes ago",
-          "s4":"5 - 15 minutes ago",
-          "s5":"15 - 30 minutes ago",
-          "s6":"more than 30 minutes ago"
+      "parameters": {
+        "s1": "Eating Report",
+        "s2": "I have taken food/drinks",
+        "s3": "less than 5 minutes ago",
+        "s4": "5 - 15 minutes ago",
+        "s5": "15 - 30 minutes ago",
+        "s6": "more than 30 minutes ago"
       }
     },
     {
@@ -547,7 +554,6 @@
         "enable": true,
         "link": "toiopB7ltc8"
       },
-
       "message": {
         "enable": true,
         "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
@@ -555,17 +561,17 @@
     },
     {
       "name": "L-Wrist(A)",
-      "plotter":{
-        "enable":true,
+      "plotter": {
+        "enable": true,
         "datasource": {
           "platform": {
-            "type":"AUTOSENSE_WRIST",
-            "id":"LEFT_WRIST"
+            "type": "AUTOSENSE_WRIST",
+            "id": "LEFT_WRIST"
           },
-          "type":"ACCELEROMETER_X"
+          "type": "ACCELEROMETER_X"
         }
       },
-      "video":{
+      "video": {
         "enable": true,
         "link": "MbHUvM6C1GE"
       },
@@ -597,43 +603,43 @@
     },
     {
       "name": "L-Wrist(M)",
-      "plotter":{
-        "enable":true,
+      "plotter": {
+        "enable": true,
         "datasource": {
           "platform": {
-            "type":"MICROSOFT_BAND",
-            "id":"LEFT_WRIST"
+            "type": "MICROSOFT_BAND",
+            "id": "LEFT_WRIST"
           },
-          "type":"ACCELEROMETER"
+          "type": "ACCELEROMETER"
         }
       },
-      "video":{
+      "video": {
         "enable": true,
         "link": "QYQJISCLCdg"
       },
       "message": {
-        "enable":true,
+        "enable": true,
         "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     },
     {
       "name": "R-Wrist(M)",
-      "plotter":{
-        "enable":true,
+      "plotter": {
+        "enable": true,
         "datasource": {
           "platform": {
-            "type":"MICROSOFT_BAND",
-            "id":"RIGHT_WRIST"
+            "type": "MICROSOFT_BAND",
+            "id": "RIGHT_WRIST"
           },
-          "type":"ACCELEROMETER"
+          "type": "ACCELEROMETER"
         }
       },
-      "video":{
+      "video": {
         "enable": true,
         "link": "QYQJISCLCdg"
       },
       "message": {
-        "enable":true,
+        "enable": true,
         "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     }
