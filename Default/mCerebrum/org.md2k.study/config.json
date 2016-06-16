@@ -3,26 +3,20 @@
     "id": "default",
     "name": "Default",
     "filename": "default",
-    "version_code": 0,
+    "version_code": 50399,
     "required_files": [
-      "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
-      "org.md2k.ema/end_of_day_recording.json",
-      "org.md2k.ema/event_contingent_recording.json",
-      "org.md2k.ema/random_experience_sampling.json",
+      "org.md2k.ema/questionnaire.json",
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
       "org.md2k.ema_scheduler/condition.json",
-      "org.md2k.microsoftband/default_config.json",
+      "org.md2k.microsoftband/config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
-      "org.md2k.streamprocessor/model.json",
-      "org.md2k.streamprocessor/model_rip.json",
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.study/config.json",
-      "org.md2k.study/sense_2_stop.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
@@ -67,17 +61,6 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
-      "id": "autosense",
-      "name": "AutoSense",
-      "enable": true,
-      "package_name": "org.md2k.autosense",
-      "service": "org.md2k.autosense.antradio.connection.ServiceAutoSenses",
-      "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
-    },
-    {
       "id": "microsofthealth",
       "name": "MicrosoftHealth",
       "enable": true,
@@ -94,14 +77,6 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
-    },
-    {
-      "id": "streamprocessor",
-      "name": "StreamProcessor",
-      "enable": true,
-      "package_name": "org.md2k.streamprocessor",
-      "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
     },
     {
       "id": "ema_scheduler",
@@ -126,27 +101,6 @@
       "enable": true,
       "package_name": "org.md2k.ema",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
-    },
-    {
-      "id": "moodsurfing",
-      "name": "MoodSurfing",
-      "enable": true,
-      "package_name": "org.md2k.moodsurfing",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases"
-    },
-    {
-      "id": "thoughtshakeup",
-      "name": "ThoughtShakeup",
-      "enable": true,
-      "package_name": "org.md2k.thoughtshakeup",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases"
-    },
-    {
-      "id": "headspace",
-      "name": "HeadSpace",
-      "enable": true,
-      "package_name": "com.getsomeheadspace.android",
-      "download_link": "market://details?id=com.getsomeheadspace.android"
     },
     {
       "id": "plotter",
@@ -257,16 +211,6 @@
       "class_name": "org.md2k.study.model_view.sleep_info.ActivitySleep"
     },
     {
-      "id": "day_type",
-      "type": "setup",
-      "name": "Pre/Post Quit Day",
-      "rank": 4,
-      "enable": true,
-      "icon": "ic_sleep_teal_48dp",
-      "package_name": "org.md2k.study",
-      "class_name": "org.md2k.study.model_view.day_type.ActivityDayType"
-    },
-    {
       "id": "clear_database",
       "type": "reset",
       "name": "Clear All Data",
@@ -316,15 +260,6 @@
       "rank": 2
     },
     {
-      "id": "intervention",
-      "name": "Intervention",
-      "icon": "ic_intervention_48dp",
-      "package_name": "org.md2k.study",
-      "enable": true,
-      "rank": 2,
-      "class_name": "org.md2k.study.model_view.intervention.ActivityInterventionApp"
-    },
-    {
       "id": "smoking_self_report",
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
@@ -335,23 +270,6 @@
       "parameters": {
         "s1": "Smoking Report",
         "s2": "I have smoked",
-        "s3": "less than 5 minutes ago",
-        "s4": "5 - 15 minutes ago",
-        "s5": "15 - 30 minutes ago",
-        "s6": "more than 30 minutes ago"
-      }
-    },
-    {
-      "id": "eating_self_report",
-      "name": "Report Eating",
-      "icon": "ic_eating_teal_48dp",
-      "enable": true,
-      "package_name": "org.md2k.study",
-      "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport_eating.ActivitySelfReportEating",
-      "parameters": {
-        "s1": "Eating Report",
-        "s2": "I have taken food/drinks",
         "s3": "less than 5 minutes ago",
         "s4": "5 - 15 minutes ago",
         "s5": "15 - 30 minutes ago",
@@ -412,7 +330,6 @@
     }
   ],
   "admin_view": {
-    "password": "1234",
     "view_contents": [
       {
         "id": "key_configure_app",
@@ -434,7 +351,6 @@
           "config_info",
           "study_info",
           "user_info",
-          "day_type",
           "wakeup_info",
           "sleep_info",
           "clear_database"
@@ -480,8 +396,7 @@
         "enable": true,
         "values": [
           "smoking_self_report",
-          "eating_self_report",
-          "intervention",
+          "plotter",
           "app_reset"
         ]
       }
@@ -490,114 +405,12 @@
   "data_quality": [
     {
       "platform": {
-        "type": "AUTOSENSE_CHEST"
-      },
-      "type": "DATA_QUALITY",
-      "id": "RESPIRATION"
-    },
-    {
-      "platform": {
-        "type": "AUTOSENSE_CHEST"
-      },
-      "type": "DATA_QUALITY",
-      "id": "ECG"
-    },
-    {
-      "platform": {
-        "id": "LEFT_WRIST"
-      },
-      "type": "DATA_QUALITY"
-    },
-    {
-      "platform": {
-        "id": "RIGHT_WRIST"
+        "type": "MICROSOFT_BAND"
       },
       "type": "DATA_QUALITY"
     }
   ],
   "data_quality_view": [
-    {
-      "name": "Breathing",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "AUTOSENSE_CHEST"
-          },
-          "type": "RESPIRATION"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "2bxc8kONPSs"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
-      }
-    },
-    {
-      "name": "Heart Rate",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "AUTOSENSE_CHEST"
-          },
-          "type": "ECG"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "toiopB7ltc8"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
-      }
-    },
-    {
-      "name": "L-Wrist(A)",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "AUTOSENSE_WRIST",
-            "id": "LEFT_WRIST"
-          },
-          "type": "ACCELEROMETER_X"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "MbHUvM6C1GE"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
-      }
-    },
-    {
-      "name": "R-Wrist(A)",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "AUTOSENSE_WRIST",
-            "id": "RIGHT_WRIST"
-          },
-          "type": "ACCELEROMETER_X"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "MbHUvM6C1GE"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
-      }
-    },
     {
       "name": "L-Wrist(M)",
       "plotter": {
@@ -612,7 +425,7 @@
       },
       "video": {
         "enable": true,
-        "link": "QYQJISCLCdg"
+        "link": "GuHSeXYO-E0"
       },
       "message": {
         "enable": true,
@@ -633,7 +446,7 @@
       },
       "video": {
         "enable": true,
-        "link": "QYQJISCLCdg"
+        "link": "GuHSeXYO-E0"
       },
       "message": {
         "enable": true,

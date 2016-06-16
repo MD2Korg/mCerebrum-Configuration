@@ -54,11 +54,11 @@
     }
   },
   {
-    "id": "DATA_QUALITY_DAY_START",
+    "id": "DATA_QUALITY_LAST_EMA",
     "type":"DATA_QUALITY",
-    "name": "Data quality good from the day started",
+    "name": "Data quality good from last ema",
     "values": [
-      "DAY_START",
+      "LAST_EMA",
       "60"
     ],
     "data_source": {
@@ -69,15 +69,6 @@
       "id":"RESPIRATION"
     }
   },
-  {
-    "id": "EMA_ANSWER_5",
-    "type":"EMA_ANSWER",
-    "name": "EMA answered in 5 Minutes",
-    "values": [
-      "300000"
-    ]
-  },
-
   {
     "id": "RANDOM_EMA_60",
     "type":"LAST_EMA_EMI",
@@ -127,27 +118,27 @@
     }
   },
   {
-    "id": "EMI_10",
+    "id": "STRESS_EMA_10",
     "type":"LAST_EMA_EMI",
-    "name": "Last Triggered EMI 10 minute ago",
+    "name": "Last Triggered Stress EMA EMA 10 minute ago",
     "values": [
       "600000"
     ],
     "source": {
-      "id": "EMI",
-      "type": "EMI"
+      "id": "STRESS_EMA",
+      "type": "EMA"
     }
   },
   {
-    "id": "EMI_60",
+    "id": "STRESS_EMA_30",
     "type":"LAST_EMA_EMI",
-    "name": "Last Triggered EMI 10 minute ago",
+    "name": "Last Triggered Stress EMA EMA 30 minute ago",
     "values": [
-      "3600000"
+      "1800000"
     ],
     "source": {
-      "id": "EMI",
-      "type": "EMI"
+      "id": "STRESS_EMA",
+      "type": "EMA"
     }
   },
   {

@@ -11,7 +11,7 @@
   "upload":{
     "enabled":false,
     "interval": 900000,
-    "url": "https://northwestern-cerebralcortex.md2k.org/",
+    "url": "https://cerebralcortex.md2k.org/",
     "restricted_datasource": [
       {
         "platform": {
