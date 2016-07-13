@@ -62,7 +62,7 @@
       "duration": 300000,
       "message": [
         "HeadSpace",
-        "Time a moment to make some head space"
+        "Take a moment to make some head space"
       ]
     },
     {
@@ -283,7 +283,7 @@
       "duration": 120000,
       "message": [
         "HeadSpace",
-        "Time a moment to make some head space",
+        "Take a moment to make some head space",
         "OK",
         "Cancel"
       ],

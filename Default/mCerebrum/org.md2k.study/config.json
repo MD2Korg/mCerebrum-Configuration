@@ -12,10 +12,10 @@
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
       "org.md2k.ema_scheduler/condition.json",
-      "org.md2k.microsoftband/config.json",
-      "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.microsoftband/default_config.json",
+      "org.md2k.phonesensor/default_config.json",
       "org.md2k.study/config.json",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"

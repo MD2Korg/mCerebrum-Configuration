@@ -2,7 +2,14 @@
   {
     "platform":{
       "type":"PHONE"
-    }
+    },
+    "type":"ACCELEROMETER"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"GYROSCOPE"
   },
   {
     "platform":{
