@@ -14,8 +14,6 @@
       "org.md2k.ema_scheduler/condition.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.notificationmanager/tone.mp3",
-      "org.md2k.microsoftband/default_config.json",
-      "org.md2k.phonesensor/default_config.json",
       "org.md2k.study/config.json",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
@@ -57,26 +55,7 @@
       "service": "org.md2k.phonesensor.ServicePhoneSensor",
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
-      "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
-    },
-    {
-      "id": "microsofthealth",
-      "name": "MicrosoftHealth",
-      "enable": true,
-      "package_name": "com.microsoft.kapp",
-      "download_link": "market://details?id=com.microsoft.kapp"
-    },
-    {
-      "id": "microsoftband",
-      "name": "MicrosoftBand",
-      "enable": true,
-      "package_name": "org.md2k.microsoftband",
-      "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
-      "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
     },
     {
       "id": "ema_scheduler",
@@ -231,12 +210,6 @@
       "class_name": "org.md2k.study.model_view.app_service.ActivityService"
     },
     {
-      "id": "data_quality",
-      "rank": 2,
-      "enable": true,
-      "name": "Sensor Data Quality"
-    },
-    {
       "id": "day_start_end",
       "type": "setup",
       "rank": 2,
@@ -380,10 +353,6 @@
   "user_view": {
     "view_contents": [
       {
-        "id": "data_quality",
-        "enable": true
-      },
-      {
         "id": "day_start_end",
         "enable": true
       },
@@ -402,58 +371,6 @@
       }
     ]
   },
-  "data_quality": [
-    {
-      "platform": {
-        "type": "MICROSOFT_BAND"
-      },
-      "type": "DATA_QUALITY"
-    }
-  ],
-  "data_quality_view": [
-    {
-      "name": "L-Wrist(M)",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "MICROSOFT_BAND",
-            "id": "LEFT_WRIST"
-          },
-          "type": "ACCELEROMETER"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "GuHSeXYO-E0"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
-      }
-    },
-    {
-      "name": "R-Wrist(M)",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "MICROSOFT_BAND",
-            "id": "RIGHT_WRIST"
-          },
-          "type": "ACCELEROMETER"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "GuHSeXYO-E0"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
-      }
-    }
-  ],
   "day_start": {
     "by": "user",
     "base": "wakeup",
