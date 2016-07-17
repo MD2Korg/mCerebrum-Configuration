@@ -2,12 +2,21 @@
   "config_info": {
     "id": "1502S63161",
     "name": "MD2K - MN EasySense Study",
+    "filename": "1502S63161",
+    "auto_update":true,
     "version_code": 17,
     "required_files": [
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.plotter/default_config.json",
-      "org.md2k.study/config.json"
+      "org.md2k.study/config.json",
+      "org.md2k.study/tutorial.pdf"
     ]
+  },
+  "start_screen": {
+    "update_app": true,
+    "md2k_logo": true,
+    "md2k_link": true,
+    "config_text": true
   },
   "study_info": {
     "id": "1502S63161",
@@ -194,7 +203,9 @@
       "name": "Reset App",
       "icon": "ic_unlock_teal_48dp",
       "enable": true,
-      "rank": 2
+      "rank": 2,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_reset.ActivityAppReset"
     },
     {
       "id": "app_start",
@@ -218,8 +229,8 @@
   "admin_view": {
     "view_contents": [
       {
-        "id": "system",
-        "name": "System Setup",
+        "id": "key_configure_app",
+        "name": "Configure Applications",
         "enable": true,
         "values": [
           "config_info",
@@ -230,8 +241,8 @@
         ]
       },
       {
-        "id": "study_setup",
-        "name": "Study Setup",
+        "id": "key_configure_study",
+        "name": "Configure Study",
         "enable": true,
         "values": [
           "config_info",
@@ -241,13 +252,21 @@
         ]
       },
       {
-        "id": "report",
-        "name": "App Controller",
+        "id": "key_start_study",
+        "name": "Start Study",
+        "enable": true
+      },
+      {
+        "id": "key_stop_study",
+        "name": "Stop Study",
+        "enable": true
+      },
+      {
+        "id": "key_other",
+        "name": "Others",
         "enable": true,
         "values": [
-          "app_service",
-          "app_start",
-          "app_stop"
+          "app_service"
         ]
       }
     ]
@@ -255,33 +274,20 @@
   "user_view": {
     "view_contents": [
       {
-        "id": "user_status",
-        "enable": true,
-        "values": [
-          "config_info",
-          "study_info",
-          "app_install",
-          "app_settings",
-          "user_info",
-          "app_service",
-          "study_start_end"
-        ]
+        "id": "data_quality",
+        "enable": true
       },
       {
-        "id": "data_quality",
+        "id": "study_start_end",
         "enable": true
       },
       {
         "id": "user_app",
         "enable": true,
         "values": [
-          "plotter"
+          "plotter",
+          "app_reset"
         ]
-      },
-
-      {
-        "id": "study_start_end",
-        "enable": true
       }
     ]
   },
@@ -297,6 +303,90 @@
         "id": "RIGHT_WRIST"
       },
       "type":"DATA_QUALITY"
+    }
+  ],
+  "data_quality_view": [
+    {
+      "name": "Breathing",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "RESPIRATION"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "jIwhPiO7GmU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+      }
+    },
+    {
+      "name": "Heart Rate",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "ECG"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "sIpg_IQTYjo"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+      }
+    },
+    {
+      "name": "Left Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_WRIST",
+            "id": "LEFT_WRIST"
+          },
+          "type": "ACCELEROMETER_X"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "rIdvcPiwMGU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+      }
+    },
+    {
+      "name": "Right Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_WRIST",
+            "id": "RIGHT_WRIST"
+          },
+          "type": "ACCELEROMETER_X"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "rIdvcPiwMGU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+      }
     }
   ]
 }

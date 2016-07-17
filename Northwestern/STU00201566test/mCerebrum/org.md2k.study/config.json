@@ -3,6 +3,7 @@
     "id": "STU00201566-Test",
     "name": "MD2K Smoking Study (at NW)-Test",
     "filename": "STU00201566test",
+    "auto_update":true,
     "version_code": 50399,
     "required_files": [
       "org.md2k.autosense/default_config.json",

@@ -3,6 +3,7 @@
     "id": "V20160307-Test",
     "name": "VERMONT Smoking Study-Test",
     "filename": "V20160307test",
+    "auto_update":true,
     "version_code": 50399,
     "required_files": [
       "org.md2k.autosense/default_config.json",
