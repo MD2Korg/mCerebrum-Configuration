@@ -1,10 +1,10 @@
 {
   "config_info": {
     "id": "1502S63161",
+    "version": "1.1.0",
     "name": "MD2K - MN EasySense Study",
     "filename": "1502S63161",
     "auto_update":true,
-    "version_code": 17,
     "required_files": [
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.plotter/default_config.json",

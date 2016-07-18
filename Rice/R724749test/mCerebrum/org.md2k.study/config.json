@@ -1,10 +1,10 @@
 {
   "config_info": {
     "id": "R724749-Test",
+    "version": "1.1.0",
     "name": "RICE Smoking Study-Test",
     "filename": "R724749test",
     "auto_update":true,
-    "version_code": 50399,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -17,8 +17,10 @@
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
+      "org.md2k.selfreport/config.json",
       "org.md2k.streamprocessor/model.json",
       "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
       "org.md2k.study/logo.png",
       "org.md2k.study/notification.json",
@@ -76,6 +78,14 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
+    },
+    {
+      "id": "selfreport",
+      "name": "Self Report",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "config": "config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
       "id": "streamprocessor",
@@ -274,16 +284,11 @@
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,
-      "package_name": "org.md2k.study",
+      "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
+      "class_name": "org.md2k.selfreport.ActivitySelfReport",
       "parameters": {
-        "s1": "Smoking Report",
-        "s2": "I have smoked",
-        "s3": "less than 5 minutes ago",
-        "s4": "5 - 15 minutes ago",
-        "s5": "15 - 30 minutes ago",
-        "s6": "more than 30 minutes ago"
+        "id": "smoking_self_report"
       }
     },
     {

@@ -1,0 +1,67 @@
+[
+  {
+    "id":"smoking_self_report",
+    "name":"Smoking Event",
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      },
+      "type": "EVENT",
+      "id": "SMOKING",
+      "metadata":{
+        "DATA_TYPE":"org.md2k.datakitapi.datatype.DataTypeJSONObject",
+        "NAME":"Smoking Event",
+        "DESCRIPTION":"Smoking event as json object (type: system, self report)"
+      },
+      "dataDescriptors":[
+        {
+          "DATA_TYPE":"org.md2k.utilities.data_format.Event",
+          "UNIT":"String",
+          "NAME":"Smoking event with type of occurring",
+          "DESCRIPTION":"Smoking event with type of occurring"
+        }
+      ]
+    },
+
+    "parameters": {
+      "s1": "Smoking Report",
+      "s2": "I have smoked",
+      "s3": "less than 5 minutes ago",
+      "s4": "5 - 15 minutes ago",
+      "s5": "15 - 30 minutes ago",
+      "s6": "more than 30 minutes ago"
+    }
+  },
+  {
+    "id":"eating_self_report",
+    "name":"Eating Event",
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      },
+      "type": "EVENT",
+      "id": "EATING",
+      "metadata":{
+        "DATA_TYPE":"org.md2k.datakitapi.datatype.DataTypeJSONObject",
+        "NAME":"Eating Event",
+        "DESCRIPTION":"Eating event as json object (type: system, self report)"
+      },
+      "dataDescriptors":[
+        {
+          "DATA_TYPE":"org.md2k.utilities.data_format.Event",
+          "UNIT":"String",
+          "NAME":"Eating event with type of occurring",
+          "DESCRIPTION":"Eating event with type of occurring"
+        }
+      ]
+    },
+    "parameters": {
+      "s1": "Eating Report",
+      "s2": "I have taken food/drinks",
+      "s3": "less than 5 minutes ago",
+      "s4": "5 - 15 minutes ago",
+      "s5": "15 - 30 minutes ago",
+      "s6": "more than 30 minutes ago"
+    }
+  }
+]
