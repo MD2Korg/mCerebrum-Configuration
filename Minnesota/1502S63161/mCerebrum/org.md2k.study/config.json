@@ -18,10 +18,6 @@
     "md2k_link": true,
     "config_text": true
   },
-  "study_info": {
-    "id": "1502S63161",
-    "name": "MD2K - MN EasySense Study"
-  },
   "apps": [
     {
       "id": "study",

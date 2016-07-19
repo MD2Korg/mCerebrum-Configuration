@@ -5,6 +5,8 @@
     "name": "MD2K Smoking Study (at NW)-Test",
     "filename": "STU00201566test",
     "auto_update":true,
+    "logo": "sense_2_stop.png",
+    "title": "",
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -35,12 +37,6 @@
     "md2k_logo": true,
     "md2k_link": true,
     "config_text": true
-  },
-  "study_info": {
-    "id": "STU00201566-Test",
-    "name": "MD2K Smoking Study (at NW)-Test",
-    "logo": "sense_2_stop.png",
-    "title": ""
   },
   "apps": [
     {

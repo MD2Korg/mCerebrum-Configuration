@@ -26,10 +26,6 @@
     "md2k_link": true,
     "config_text": true
   },
-  "study_info": {
-    "id": "default",
-    "name": "Default"
-  },
   "apps": [
     {
       "id": "study",

@@ -33,10 +33,6 @@
     "md2k_link": true,
     "config_text": true
   },
-  "study_info": {
-    "id": "V20160307-Test",
-    "name": "VERMONT Smoking Study-Test"
-  },
   "apps": [
     {
       "id": "study",
