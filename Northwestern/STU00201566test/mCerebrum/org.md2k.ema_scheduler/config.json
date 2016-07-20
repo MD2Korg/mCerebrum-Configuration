@@ -46,7 +46,8 @@
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       },
       {
@@ -62,7 +63,8 @@
           "EMI_10",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       },
       {
