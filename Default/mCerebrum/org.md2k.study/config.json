@@ -15,6 +15,7 @@
       "org.md2k.ema_scheduler/condition.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.selfreport/config.json",
       "org.md2k.study/config.json",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
@@ -53,6 +54,14 @@
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
+    },
+    {
+      "id": "selfreport",
+      "name": "Self Report",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "config": "config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
       "id": "ema_scheduler",
@@ -234,16 +243,11 @@
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,
-      "package_name": "org.md2k.study",
+      "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
+      "class_name": "org.md2k.selfreport.ActivitySelfReport",
       "parameters": {
-        "s1": "Smoking Report",
-        "s2": "I have smoked",
-        "s3": "less than 5 minutes ago",
-        "s4": "5 - 15 minutes ago",
-        "s5": "15 - 30 minutes ago",
-        "s6": "more than 30 minutes ago"
+        "id": "smoking_self_report"
       }
     },
     {
