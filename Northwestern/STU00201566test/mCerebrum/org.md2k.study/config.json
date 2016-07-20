@@ -334,28 +334,24 @@
       "class_name": "org.md2k.study.model_view.intervention.ActivityInterventionApp"
     },
     {
-      "id": "smoking_self_report",
+      "id": "self_report",
+      "type": "smoking_self_report",
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,
       "package_name": "org.md2k.selfreport",
       "rank": 2,
       "class_name": "org.md2k.selfreport.ActivitySelfReport",
-      "parameters": {
-        "id": "smoking_self_report"
-      }
     },
     {
-      "id": "eating_self_report",
+      "id": "self_report",
+      "type": "eating_self_report",
       "name": "Report Eating",
       "icon": "ic_eating_teal_48dp",
       "enable": true,
       "package_name": "org.md2k.selfreport",
       "rank": 2,
       "class_name": "org.md2k.selfreport.ActivitySelfReport",
-      "parameters": {
-        "id": "eating_self_report"
-      }
     },
     {
       "id": "plotter",

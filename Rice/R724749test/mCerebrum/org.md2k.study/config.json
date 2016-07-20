@@ -277,7 +277,8 @@
       "rank": 2
     },
     {
-      "id": "smoking_self_report",
+      "id": "self_report",
+      "type": "smoking_self_report",
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,

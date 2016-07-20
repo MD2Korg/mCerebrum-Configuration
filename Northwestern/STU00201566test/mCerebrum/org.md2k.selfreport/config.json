@@ -1,7 +1,7 @@
 [
   {
-    "id":"smoking",
-    "type":"self_report",
+    "id": "self_report",
+    "type": "smoking_self_report",
     "name":"Smoking Event",
     "datasource": {
       "platform": {
@@ -34,8 +34,8 @@
     }
   },
   {
-    "id":"eating",
-    "type":"self_report",
+    "id": "self_report",
+    "type": "eating_self_report",
     "name":"Eating Event",
     "datasource": {
       "platform": {
