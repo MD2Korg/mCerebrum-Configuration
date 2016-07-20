@@ -78,6 +78,7 @@
       "name": "Self Report",
       "enable": true,
       "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
