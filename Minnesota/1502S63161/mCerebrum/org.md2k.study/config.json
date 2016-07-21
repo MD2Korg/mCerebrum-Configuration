@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "1502S63161",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "name": "MD2K - MN EasySense Study",
     "filename": "1502S63161",
     "auto_update":true,
@@ -93,7 +93,7 @@
       "rank": 7,
       "package_name": "org.md2k.study",
       "icon": "ic_download_teal_48dp",
-      "class_name": "org.md2k.study.model_view.config_download.ActivityConfigDownload"
+      "class_name": "org.md2k.study.model_view.config_info.ActivityConfigDownload"
     },
     {
       "id": "app_install",
@@ -197,7 +197,7 @@
     {
       "id": "app_reset",
       "name": "Reset App",
-      "icon": "ic_unlock_teal_48dp",
+      "icon": "ic_refresh_teal_48dp",
       "enable": true,
       "rank": 2,
       "package_name": "org.md2k.study",
@@ -282,6 +282,7 @@
         "enable": true,
         "values": [
           "plotter",
+          "app_stop",
           "app_reset"
         ]
       }
@@ -335,53 +336,53 @@
       },
       "video": {
         "enable": true,
-        "link": "sIpg_IQTYjo"
+        "link": "ly-xgB0AEwM"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+        "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
-      "name": "Left Wrist",
+      "name": "L-Wrist(M)",
       "plotter": {
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MICROSOFT_BAND",
             "id": "LEFT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
         "enable": true,
-        "link": "rIdvcPiwMGU"
+        "link": "GuHSeXYO-E0"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     },
     {
-      "name": "Right Wrist",
+      "name": "R-Wrist(M)",
       "plotter": {
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MICROSOFT_BAND",
             "id": "RIGHT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
         "enable": true,
-        "link": "rIdvcPiwMGU"
+        "link": "GuHSeXYO-E0"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     }
   ]

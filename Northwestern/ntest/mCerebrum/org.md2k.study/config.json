@@ -1,9 +1,12 @@
 {
   "config_info": {
     "id": "STU00201566-Test",
+    "version": "1.1.1",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "filename": "ntest",
-    "version_code": 50399,
+    "filename": "STU00201566test",
+    "auto_update": true,
+    "logo": "sense_2_stop.png",
+    "title": "",
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -20,7 +23,9 @@
       "org.md2k.plotter/default_config.json",
       "org.md2k.streamprocessor/model.json",
       "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.selfreport/config.json",
       "org.md2k.study/config.json",
       "org.md2k.study/sense_2_stop.png",
       "org.md2k.study/notification.json",
@@ -32,12 +37,6 @@
     "md2k_logo": true,
     "md2k_link": true,
     "config_text": true
-  },
-  "study_info": {
-    "id": "STU00201566-Test",
-    "name": "MD2K Smoking Study (at NW)-Test",
-    "logo": "sense_2_stop.png",
-    "title": ""
   },
   "apps": [
     {
@@ -96,6 +95,15 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
+    },
+    {
+      "id": "selfreport",
+      "name": "Self Report",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
+      "config": "config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
       "id": "streamprocessor",
@@ -327,38 +335,24 @@
       "class_name": "org.md2k.study.model_view.intervention.ActivityInterventionApp"
     },
     {
-      "id": "smoking_self_report",
+      "id": "self_report",
+      "type": "smoking_self_report",
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,
-      "package_name": "org.md2k.study",
+      "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
-      "parameters": {
-        "s1": "Smoking Report",
-        "s2": "I have smoked",
-        "s3": "less than 5 minutes ago",
-        "s4": "5 - 15 minutes ago",
-        "s5": "15 - 30 minutes ago",
-        "s6": "more than 30 minutes ago"
-      }
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
-      "id": "eating_self_report",
+      "id": "self_report",
+      "type": "eating_self_report",
       "name": "Report Eating",
       "icon": "ic_eating_teal_48dp",
       "enable": true,
-      "package_name": "org.md2k.study",
+      "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport_eating.ActivitySelfReportEating",
-      "parameters": {
-        "s1": "Eating Report",
-        "s2": "I have taken food/drinks",
-        "s3": "less than 5 minutes ago",
-        "s4": "5 - 15 minutes ago",
-        "s5": "15 - 30 minutes ago",
-        "s6": "more than 30 minutes ago"
-      }
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "plotter",
@@ -484,7 +478,6 @@
           "smoking_self_report",
           "eating_self_report",
           "intervention",
-          "plotter",
           "app_reset"
         ]
       }

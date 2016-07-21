@@ -1,10 +1,10 @@
 {
   "config_info": {
     "id": "default",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "name": "Default",
     "filename": "default",
-    "auto_update":true,
+    "auto_update": true,
     "required_files": [
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
@@ -60,6 +60,7 @@
       "name": "Self Report",
       "enable": true,
       "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
@@ -246,10 +247,7 @@
       "enable": true,
       "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.selfreport.ActivitySelfReport",
-      "parameters": {
-        "id": "smoking_self_report"
-      }
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "plotter",
@@ -368,7 +366,8 @@
         "values": [
           "smoking_self_report",
           "plotter",
-          "app_reset"
+          "app_reset",
+          "app_stop"
         ]
       }
     ]

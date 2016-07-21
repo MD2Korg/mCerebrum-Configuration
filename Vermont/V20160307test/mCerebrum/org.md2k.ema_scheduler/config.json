@@ -157,11 +157,9 @@
       {
         "type": "IMMEDIATE",
         "data_source": {
-          "type": "EVENT"
+          "type": "EVENT",
+          "id": "SMOKING"
         },
-        "parameters": [
-          "SMOKING"
-        ],
         "conditions": [
           "PRIVACY",
           "VALID_BLOCK_SMOKING_EMA",

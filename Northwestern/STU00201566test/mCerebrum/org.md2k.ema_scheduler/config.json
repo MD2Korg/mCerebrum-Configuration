@@ -182,12 +182,13 @@
     "scheduler_rules": [
       {
         "type": "IMMEDIATE",
-        "data_source":{
-          "type": "EVENT"
+        "data_source": {
+          "type": "EVENT",
+          "id": "SMOKING",
+          "application": {
+            "id": "org.md2k.selfreport"
+          }
         },
-        "parameters":[
-          "SMOKING"
-        ],
         "conditions": [
           "PRIVACY",
           "VALID_BLOCK_SMOKING_EMA",

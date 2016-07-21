@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "STU00201566-Test",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "name": "MD2K Smoking Study (at NW)-Test",
     "filename": "STU00201566test",
     "auto_update":true,
@@ -101,6 +101,7 @@
       "name": "Self Report",
       "enable": true,
       "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
@@ -341,7 +342,7 @@
       "enable": true,
       "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.selfreport.ActivitySelfReport",
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "self_report",
@@ -351,7 +352,7 @@
       "enable": true,
       "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.selfreport.ActivitySelfReport",
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "plotter",

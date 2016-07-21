@@ -9,23 +9,7 @@
     ]
   },
   {
-    "question_id": 1,
-    "question_type": "multiple_choice",
-    "question_text": "Approximately how long ago did you take the first puff from that cigarette?",
-    "response_option": [
-      "1 - 19 Minutes",
-      "20 - 39 Minutes",
-      "40 - 59 Minutes",
-      "60 - 79 Minutes",
-      "80 - 100 Minutes",
-      "> 100 Minutes"
-    ],
-    "condition": [
-      "0:Yes"
-    ]
-  },
-  {
-    "question_id": 2,
+    "question_id": 12,
     "question_text": "Thank you for answering this survey. Please click \"FINISH\"."
   }
 

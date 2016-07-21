@@ -1,9 +1,10 @@
 {
   "config_info": {
-    "id": "R724749-Test",
-    "name": "RICE Smoking Study-Test",
-    "filename": "rtest",
-    "version_code": 50399,
+    "id": "V20160307-Test",
+    "version": "1.1.1",
+    "name": "VERMONT Smoking Study-Test",
+    "filename": "V20160307test",
+    "auto_update": true,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
@@ -16,8 +17,10 @@
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
+      "org.md2k.selfreport/config.json",
       "org.md2k.streamprocessor/model.json",
       "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
       "org.md2k.study/logo.png",
       "org.md2k.study/notification.json",
@@ -29,12 +32,6 @@
     "md2k_logo": true,
     "md2k_link": true,
     "config_text": true
-  },
-  "study_info": {
-    "id": "R724749-Test",
-    "name": "RICE Smoking Study-Test",
-    "logo": "logo.png",
-    "title": ""
   },
   "apps": [
     {
@@ -75,6 +72,15 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
+    },
+    {
+      "id": "selfreport",
+      "name": "Self Report",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
+      "config": "config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
       "id": "streamprocessor",
@@ -258,7 +264,7 @@
       "rank": 2,
       "class_name": "org.md2k.datakit.ActivityPrivacy",
       "parameters": {
-        "max_time": "1020000"
+        "max_time": "7200000"
       }
     },
     {
@@ -269,20 +275,16 @@
       "rank": 2
     },
     {
-      "id": "smoking_self_report",
+      "id": "self_report",
+      "type": "smoking_self_report",
       "name": "Report Smoking",
       "icon": "ic_smoking_teal_48dp",
       "enable": true,
-      "package_name": "org.md2k.study",
+      "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.study.model_view.selfreport.ActivitySelfReport",
+      "class_name": "org.md2k.selfreport.ActivityMain",
       "parameters": {
-        "s1": "Smoking Report",
-        "s2": "I have smoked",
-        "s3": "less than 5 minutes ago",
-        "s4": "5 - 15 minutes ago",
-        "s5": "15 - 30 minutes ago",
-        "s6": "more than 30 minutes ago"
+        "id": "smoking_self_report"
       }
     },
     {
@@ -453,11 +455,11 @@
       },
       "video": {
         "enable": true,
-        "link": "jIwhPiO7GmU"
+        "link": "i7Tp9iz7FRg"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+        "text": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
@@ -473,11 +475,11 @@
       },
       "video": {
         "enable": true,
-        "link": "sIpg_IQTYjo"
+        "link": "ly-xgB0AEwM"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+        "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
@@ -494,11 +496,11 @@
       },
       "video": {
         "enable": true,
-        "link": "rIdvcPiwMGU"
+        "link": "buQI6MiC_po"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
       }
     },
     {
@@ -515,11 +517,11 @@
       },
       "video": {
         "enable": true,
-        "link": "rIdvcPiwMGU"
+        "link": "buQI6MiC_po"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
       }
     }
   ],

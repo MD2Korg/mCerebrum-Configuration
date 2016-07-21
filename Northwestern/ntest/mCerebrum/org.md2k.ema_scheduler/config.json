@@ -44,8 +44,10 @@
           "RANDOM_EMA_60",
           "SMOKING_EMA_10",
           "EMI_10",
+          "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       },
       {
@@ -59,8 +61,10 @@
           "RANDOM_EMA_60",
           "SMOKING_EMA_10",
           "EMI_10",
+          "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
+          "PHONE_BATTERY_10",
+          "NOT_ACTIVE_1"
         ]
       },
       {
@@ -178,13 +182,15 @@
     "scheduler_rules": [
       {
         "type": "IMMEDIATE",
-        "data_source":{
-          "type": "EVENT"
+        "data_source": {
+          "type": "EVENT",
+          "id": "SMOKING",
+          "application": {
+            "id": "org.md2k.selfreport"
+          }
         },
-        "parameters":[
-          "SMOKING"
-        ],
         "conditions": [
+          "PHONE_BATTERY_10"
         ]
       }
     ],
@@ -226,6 +232,29 @@
         "messages": [
           "Thank you. You will be paid $0.75 for taking the survey within 5 minutes and wearing the sensors for more than 60% of the time since day started.",
           "You will be paid $0.75",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START",
+          "EMA_ANSWER_5"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. You will be paid $0.50 for taking the survey and wearing the sensors for more than 60% of the time since day started. But you missed $0.25 bonus for not answering the survey within 5 minutes.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START"
+        ]
+      },
+      {
+        "incentive": 0.00,
+        "messages": [
+          "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
+          "You will be paid $0.50",
           "Total Earning: $"
         ],
         "conditions": [

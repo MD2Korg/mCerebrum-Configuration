@@ -48,6 +48,8 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
+          "STRESS_EMA_5",
+          "SMOKING_EMA_5",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
@@ -62,6 +64,8 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
+          "STRESS_EMA_5",
+          "SMOKING_EMA_5",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
@@ -73,7 +77,8 @@
           "PRIVACY",
           "VALID_BLOCK_RANDOM_EMA",
           "RANDOM_EMA_60",
-          "DATA_QUALITY_5",
+          "STRESS_EMA_5",
+          "SMOKING_EMA_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
         ]
@@ -94,7 +99,8 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_SCREEN_30"
+          "PHONE_SCREEN_30",
+          "PHONE_MESSAGE_DELAY_EMA"
         ]
       },
       {
@@ -102,19 +108,8 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
-        ]
-      }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.25,
-        "messages": [
-          "Thank you for completing the survey!",
-          "",
-          ""
-        ],
-        "conditions": [
         ]
       }
     ]
@@ -162,17 +157,11 @@
       {
         "type": "IMMEDIATE",
         "data_source": {
-          "type": "EVENT"
+          "type": "EVENT",
+          "id": "SMOKING"
         },
-        "parameters": [
-          "SMOKING"
-        ],
         "conditions": [
           "PRIVACY",
-          "VALID_BLOCK_SMOKING_EMA",
-          "SMOKING_EMA_30",
-          "DATA_QUALITY_5",
-          "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
         ]
       }
@@ -192,6 +181,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -200,19 +190,8 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
-        ]
-      }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.25,
-        "messages": [
-          "Thank you for completing the survey!",
-          "",
-          ""
-        ],
-        "conditions": [
         ]
       }
     ]
@@ -267,8 +246,10 @@
         ],
         "conditions": [
           "PRIVACY",
-          "VALID_BLOCK_SMOKING_EMA",
+          "VALID_BLOCK_STRESS_EMA",
           "STRESS_EMA_30",
+          "SMOKING_EMA_5",
+          "RANDOM_EMA_5",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
@@ -290,6 +271,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -298,19 +280,8 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
-        ]
-      }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.25,
-        "messages": [
-          "Thank you for completing the survey!",
-          "",
-          ""
-        ],
-        "conditions": [
         ]
       }
     ]
