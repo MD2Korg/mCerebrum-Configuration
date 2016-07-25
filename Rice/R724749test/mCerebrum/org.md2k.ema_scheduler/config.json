@@ -144,7 +144,7 @@
     "name": "Smoking EMA",
     "enable": true,
     "application": {
-      "id": "smoking_ema",
+      "id": "SMOKING_EMA",
       "name": "Smoking EMA",
       "file_name": "questionnaire.json",
       "package_name": "org.md2k.ema",

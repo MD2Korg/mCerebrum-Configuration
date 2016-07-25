@@ -6,7 +6,7 @@
     "name": "Random Experience Sampling",
     "enable": true,
     "application": {
-      "id": "random_experience_sampling",
+      "id": "RANDOM_EMA",
       "name": "Random Experience Sampling",
       "file_name": "random_experience_sampling.json",
       "package_name": "org.md2k.ema",
@@ -153,7 +153,7 @@
     "name": "Event Contingent EMA",
     "enable": true,
     "application": {
-      "id": "event_contingent_recording",
+      "id": "SMOKING_EMA",
       "name": "Event Contingent Recording",
       "file_name": "event_contingent_recording.json",
       "package_name": "org.md2k.ema",
@@ -269,7 +269,7 @@
     "name": "End of day EMA",
     "enable": true,
     "application": {
-      "id": "end_of_day_recording",
+      "id": "END_OF_DAY_EMA",
       "name": "End of Day Recording",
       "package_name": "org.md2k.ema",
       "file_name": "end_of_day_recording.json",
@@ -370,7 +370,7 @@
     "trigger_type":"EVENT",
     "enable":false,
     "application": {
-      "id": "moodsurfing",
+      "id": "MOODSURFING",
       "name": "MoodSurfing",
       "package_name": "org.md2k.moodsurfing",
       "timeout": 600000
@@ -395,7 +395,7 @@
     "trigger_type": "EVENT",
     "enable": false,
     "application": {
-      "id": "thought_shakeup",
+      "id": "THOUGHT_SHAKEUP",
       "name": "Thought Shakeup",
       "package_name": "org.md2k.thoughtshakeup",
       "timeout":600000
@@ -420,7 +420,7 @@
     "trigger_type": "EVENT",
     "enable": false,
     "application": {
-      "id": "head_space",
+      "id": "HEADSPACE",
       "name": "HeadSpace",
       "package_name": "com.getsomeheadspace.android",
       "timeout":1000

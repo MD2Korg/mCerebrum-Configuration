@@ -34,7 +34,7 @@
     "name": "Not driving in last 5 minutes",
     "values": [
       "300000",
-      "60"
+      "66"
     ]
   },
   {
@@ -43,7 +43,7 @@
     "name": "Data quality good in last 5 minutes",
     "values": [
       "300000",
-      "80"
+      "60"
     ],
     "data_source": {
       "platform": {
