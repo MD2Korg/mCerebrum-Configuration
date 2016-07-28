@@ -190,7 +190,6 @@
           }
         },
         "conditions": [
-          "PHONE_BATTERY_10"
         ]
       }
     ],
@@ -254,7 +253,7 @@
         "incentive": 0.00,
         "messages": [
           "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
-          "You will be paid $0.50",
+          "You will be paid $0.00",
           "Total Earning: $"
         ],
         "conditions": [
