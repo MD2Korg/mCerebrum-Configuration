@@ -49,7 +49,7 @@
       "platform": {
         "type": "AUTOSENSE_CHEST"
       },
-      "type": "DATA_QUALITY",
+      "type": "DATA_VARIANCE",
       "id":"RESPIRATION"
     }
   },
@@ -65,7 +65,7 @@
       "platform": {
         "type": "AUTOSENSE_CHEST"
       },
-      "type": "DATA_QUALITY",
+      "type": "DATA_VARIANCE",
       "id":"RESPIRATION"
     }
   },
