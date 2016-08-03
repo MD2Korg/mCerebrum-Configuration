@@ -134,13 +134,13 @@
         }
       },
       "repeat": 1,
-      "duration": 600000,
+      "duration": 240000,
       "message": [
         "Survey",
         "Time to take a Survey",
         "OK",
         "Cancel",
-        "Delay 10 Minutes"
+        "Delay 4 Minutes"
       ],
       "response_option": {
         "ok": true,
@@ -160,7 +160,7 @@
         "repeat": 1,
         "duration": 6000000,
         "message": [
-          "Survey delayed for 10 minutes",
+          "Survey delayed for 4 minutes",
           "Please click \"Start\" when you are ready",
           "Start",
           "Cancel"
