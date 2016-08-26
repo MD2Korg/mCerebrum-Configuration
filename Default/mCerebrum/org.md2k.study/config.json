@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "default",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "name": "Default",
     "filename": "default",
     "auto_update": true,
@@ -14,6 +14,7 @@
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
       "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.plotter/default_config.json",
       "org.md2k.selfreport/config.json",
       "org.md2k.study/config.json",
       "org.md2k.study/notification.json",
@@ -372,15 +373,16 @@
     ]
   },
   "day_start": {
-    "by": "user",
     "base": "wakeup",
     "notify": [
       {
         "type": "button",
+        "base": "wakeup",
         "offset": -10800000
       },
       {
         "type": "prompt",
+        "base": "wakeup",
         "offset": 0,
         "parameters": [
           "PHONE_SCREEN",
@@ -389,6 +391,7 @@
       },
       {
         "type": "notification",
+        "base": "wakeup",
         "offset": 10800000,
         "parameters": [
           "PHONE_VIBRATE",
@@ -400,12 +403,16 @@
     ]
   },
   "day_end": {
-    "by": "user",
-    "base": "day_start",
     "notify": [
       {
         "type": "button",
+        "base": "day_start",
         "offset": 28800000
+      },
+      {
+        "type": "system",
+        "base": "sleep",
+        "offset": 0
       }
     ]
   }

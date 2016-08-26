@@ -58,5 +58,15 @@
       "type":"PHONE"
     },
     "type":"BATTERY"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    }
+  },
+  {
+    "platform": {
+      "type": "RIGHT_WRIST"
+    }
   }
 ]

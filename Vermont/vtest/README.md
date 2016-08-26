@@ -1,3 +1,0 @@
-# Vermont Lab Test
-
-## Description
