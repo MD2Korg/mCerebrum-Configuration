@@ -1,22 +1,30 @@
 {
   "config_info": {
-    "id": "default",
+    "id": "R724749-Test",
     "version": "1.3.2",
-    "name": "Default",
-    "filename": "default",
+    "name": "RICE Smoking Study-Test",
+    "filename": "R724749test",
     "auto_update": true,
+    "logo": "logo.png",
+    "title": "",
     "required_files": [
+      "org.md2k.autosense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/questionnaire.json",
-      "org.md2k.ema_scheduler/condition.json",
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
+      "org.md2k.ema_scheduler/condition.json",
       "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.selfreport/config.json",
+      "org.md2k.streamprocessor/model.json",
+      "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
+      "org.md2k.study/logo.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
@@ -53,7 +61,19 @@
       "service": "org.md2k.phonesensor.ServicePhoneSensor",
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
+      "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
+    },
+    {
+      "id": "autosense",
+      "name": "AutoSense",
+      "enable": true,
+      "package_name": "org.md2k.autosense",
+      "service": "org.md2k.autosense.antradio.connection.ServiceAutoSenses",
+      "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
     },
     {
       "id": "selfreport",
@@ -63,6 +83,14 @@
       "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
+    },
+    {
+      "id": "streamprocessor",
+      "name": "StreamProcessor",
+      "enable": true,
+      "package_name": "org.md2k.streamprocessor",
+      "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
     },
     {
       "id": "ema_scheduler",
@@ -217,6 +245,12 @@
       "class_name": "org.md2k.study.model_view.app_service.ActivityService"
     },
     {
+      "id": "data_quality",
+      "rank": 2,
+      "enable": true,
+      "name": "Sensor Data Quality"
+    },
+    {
       "id": "day_start_end",
       "type": "setup",
       "rank": 2,
@@ -230,7 +264,10 @@
       "enable": true,
       "package_name": "org.md2k.datakit",
       "rank": 2,
-      "class_name": "org.md2k.datakit.ActivityPrivacy"
+      "class_name": "org.md2k.datakit.ActivityPrivacy",
+      "parameters": {
+        "max_time": "7200000"
+      }
     },
     {
       "id": "user_status",
@@ -267,7 +304,7 @@
     {
       "id": "EMA_test",
       "type": "App Controller",
-      "name": "Survey/EMI Test",
+      "name": "Survey Test",
       "enable": true,
       "icon": "ic_notification_teal_48dp",
       "rank": 2,
@@ -303,6 +340,7 @@
     }
   ],
   "admin_view": {
+    "password": "1234",
     "view_contents": [
       {
         "id": "key_configure_app",
@@ -353,6 +391,10 @@
   "user_view": {
     "view_contents": [
       {
+        "id": "data_quality",
+        "enable": true
+      },
+      {
         "id": "day_start_end",
         "enable": true
       },
@@ -365,20 +407,129 @@
         "enable": true,
         "values": [
           "smoking_self_report",
-          "plotter",
-          "app_reset",
-          "app_stop"
+          "app_reset"
         ]
       }
     ]
   },
+  "data_quality": [
+    {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_VARIANCE",
+      "id": "RESPIRATION"
+    },
+    {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_QUALITY",
+      "id": "ECG"
+    },
+    {
+      "platform": {
+        "id": "LEFT_WRIST"
+      },
+      "type": "DATA_QUALITY"
+    },
+    {
+      "platform": {
+        "id": "RIGHT_WRIST"
+      },
+      "type": "DATA_QUALITY"
+    }
+  ],
+  "data_quality_view": [
+    {
+      "name": "Breathing",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "RESPIRATION"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "jIwhPiO7GmU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+      }
+    },
+    {
+      "name": "Heart Rate",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "ECG"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "sIpg_IQTYjo"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+      }
+    },
+    {
+      "name": "Left Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_WRIST",
+            "id": "LEFT_WRIST"
+          },
+          "type": "ACCELEROMETER_X"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "rIdvcPiwMGU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+      }
+    },
+    {
+      "name": "Right Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_WRIST",
+            "id": "RIGHT_WRIST"
+          },
+          "type": "ACCELEROMETER_X"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "rIdvcPiwMGU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged.\n\n4) Make sure the wristband power switch is ON."
+      }
+    }
+  ],
   "day_start": {
-    "base": "wakeup",
     "notify": [
       {
         "type": "button",
         "base": "wakeup",
-        "offset": -10800000
+        "offset": -120000
       },
       {
         "type": "prompt",
@@ -392,7 +543,7 @@
       {
         "type": "notification",
         "base": "wakeup",
-        "offset": 10800000,
+        "offset": 120000,
         "parameters": [
           "PHONE_VIBRATE",
           "PHONE_TONE",
@@ -407,7 +558,7 @@
       {
         "type": "button",
         "base": "day_start",
-        "offset": 28800000
+        "offset": 60000
       },
       {
         "type": "system",

@@ -29,6 +29,21 @@
     }
   },
   {
+    "id": "NOT_ACTIVE_5",
+    "type": "NOT_ACTIVE",
+    "name": "Not physically active in last 5 minute",
+    "values": [
+      "300000",
+      "0"
+    ],
+    "data_source": {
+      "application": {
+        "id": "org.md2k.streamprocessor"
+      },
+      "type": "STRESS_ACTIVITY"
+    }
+  },
+  {
     "id": "NOT_DRIVING_5",
     "type": "NOT_DRIVING",
     "name": "Not driving in last 5 minutes",

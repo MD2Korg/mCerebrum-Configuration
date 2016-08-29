@@ -1,7 +1,7 @@
 [
   {
     "id": "PHONE_BATTERY_10",
-    "type":"PHONE_BATTERY",
+    "type": "PHONE_BATTERY",
     "name": "Phone battery percentage is greater than 10",
     "values": [
       "10"
@@ -15,7 +15,7 @@
   },
   {
     "id": "NOT_ACTIVE_1",
-    "type":"NOT_ACTIVE",
+    "type": "NOT_ACTIVE",
     "name": "Not physically active in last 1 minute",
     "values": [
       "60000",
@@ -29,23 +29,8 @@
     }
   },
   {
-    "id": "NOT_ACTIVE_5",
-    "type": "NOT_ACTIVE",
-    "name": "Not physically active in last 5 minute",
-    "values": [
-      "300000",
-      "0"
-    ],
-    "data_source": {
-      "application": {
-        "id": "org.md2k.streamprocessor"
-      },
-      "type": "STRESS_ACTIVITY"
-    }
-  },
-  {
     "id": "NOT_DRIVING_5",
-    "type":"NOT_DRIVING",
+    "type": "NOT_DRIVING",
     "name": "Not driving in last 5 minutes",
     "values": [
       "300000",
@@ -54,7 +39,7 @@
   },
   {
     "id": "DATA_QUALITY_5",
-    "type":"DATA_QUALITY",
+    "type": "DATA_QUALITY",
     "name": "Data quality good in last 5 minutes",
     "values": [
       "300000",
@@ -65,12 +50,12 @@
         "type": "AUTOSENSE_CHEST"
       },
       "type": "DATA_VARIANCE",
-      "id":"RESPIRATION"
+      "id": "RESPIRATION"
     }
   },
   {
     "id": "DATA_QUALITY_LAST_EMA",
-    "type":"DATA_QUALITY",
+    "type": "DATA_QUALITY",
     "name": "Data quality good from last ema",
     "values": [
       "LAST_EMA",
@@ -81,12 +66,12 @@
         "type": "AUTOSENSE_CHEST"
       },
       "type": "DATA_VARIANCE",
-      "id":"RESPIRATION"
+      "id": "RESPIRATION"
     }
   },
   {
     "id": "RANDOM_EMA_60",
-    "type":"LAST_EMA_EMI",
+    "type": "LAST_EMA_EMI",
     "name": "Last Triggered Random EMA 60 minute ago",
     "values": [
       "3600000"
@@ -98,7 +83,7 @@
   },
   {
     "id": "RANDOM_EMA_10",
-    "type":"LAST_EMA_EMI",
+    "type": "LAST_EMA_EMI",
     "name": "Last Triggered Random EMA 10 minute ago",
     "values": [
       "600000"
@@ -134,7 +119,7 @@
   },
   {
     "id": "SMOKING_EMA_10",
-    "type":"LAST_EMA_EMI",
+    "type": "LAST_EMA_EMI",
     "name": "Last Triggered Smoking EMA 10 minute ago",
     "values": [
       "600000"
@@ -146,7 +131,7 @@
   },
   {
     "id": "SMOKING_EMA_30",
-    "type":"LAST_EMA_EMI",
+    "type": "LAST_EMA_EMI",
     "name": "Last Triggered Smoking EMA 30 minute ago",
     "values": [
       "1800000"
@@ -158,7 +143,7 @@
   },
   {
     "id": "STRESS_EMA_10",
-    "type":"LAST_EMA_EMI",
+    "type": "LAST_EMA_EMI",
     "name": "Last Triggered Stress EMA EMA 10 minute ago",
     "values": [
       "600000"
@@ -182,7 +167,7 @@
   },
   {
     "id": "STRESS_EMA_30",
-    "type":"LAST_EMA_EMI",
+    "type": "LAST_EMA_EMI",
     "name": "Last Triggered Stress EMA EMA 30 minute ago",
     "values": [
       "1800000"
@@ -194,7 +179,7 @@
   },
   {
     "id": "VALID_BLOCK_SMOKING_EMA",
-    "type":"VALID_BLOCK",
+    "type": "VALID_BLOCK",
     "name": "No EMA/EMI triggered in this block",
     "values": [
       "1"
@@ -218,7 +203,7 @@
   },
   {
     "id": "VALID_BLOCK_RANDOM_EMA",
-    "type":"VALID_BLOCK",
+    "type": "VALID_BLOCK",
     "name": "No EMA/EMI triggered in this block",
     "values": [
       "1"
@@ -230,12 +215,10 @@
   },
   {
     "id": "PRIVACY",
-    "type":"PRIVACY",
+    "type": "PRIVACY",
     "name": "Privacy is active",
     "data_source": {
       "type": "PRIVACY"
     }
-
   }
-
 ]

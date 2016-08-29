@@ -302,7 +302,6 @@
           "STRESS_EMA_30",
           "SMOKING_EMA_5",
           "RANDOM_EMA_5",
-          "NOT_ACTIVE_5",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
           "PHONE_BATTERY_10"
