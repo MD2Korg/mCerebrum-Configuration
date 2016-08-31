@@ -4,7 +4,7 @@
       "type": "MICROSOFT_BAND"
     },
     "metadata": {
-      "FREQUENCY": "31 Hz"
+      "FREQUENCY": "31"
     },
     "type": "ACCELEROMETER"
   },
@@ -13,7 +13,7 @@
       "type": "MICROSOFT_BAND"
     },
     "metadata": {
-      "FREQUENCY": "31 Hz"
+      "FREQUENCY": "31"
     },
     "type": "GYROSCOPE"
   },
