@@ -1,28 +1,33 @@
 {
   "config_info": {
-    "id": "V20160307-Test",
+    "id": "STU00201566-Test",
     "version": "1.4.0",
-    "name": "VERMONT Smoking Study-Test",
-    "filename": "V20160307test",
-    "auto_update":true,
+    "name": "MD2K Smoking Study (at NW)-Test",
+    "filename": "STU00201566test",
+    "auto_update": true,
+    "logo": "sense_2_stop.png",
+    "title": "",
     "required_files": [
-      "org.md2k.autosense/default_config.json",
+      "org.md2k.motionsense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
-      "org.md2k.ema/questionnaire.json",
+      "org.md2k.ema/end_of_day_recording.json",
+      "org.md2k.ema/event_contingent_recording.json",
+      "org.md2k.ema/random_experience_sampling.json",
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
       "org.md2k.ema_scheduler/condition.json",
-      "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.microsoftband/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
-      "org.md2k.selfreport/config.json",
       "org.md2k.streamprocessor/model.json",
       "org.md2k.streamprocessor/model_rip.json",
       "org.md2k.streamprocessor/model_puffmarker.json",
+      "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.selfreport/config.json",
       "org.md2k.study/config.json",
-      "org.md2k.study/logo.png",
+      "org.md2k.study/sense_2_stop.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
@@ -65,13 +70,42 @@
     {
       "id": "autosense",
       "name": "AutoSense",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.autosense",
       "service": "org.md2k.autosense.antradio.connection.ServiceAutoSenses",
       "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
       "config": "config.json",
       "default_config": "default_config.json",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
+    },
+    {
+      "id": "motionsense",
+      "name": "MotionSense",
+      "enable": true,
+      "package_name": "org.md2k.motionsense",
+      "service": "org.md2k.motionsense.ServiceMotionSense",
+      "settings": "org.md2k.motionsense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
+    },
+    {
+      "id": "microsofthealth",
+      "name": "MicrosoftHealth",
+      "enable": true,
+      "package_name": "com.microsoft.kapp",
+      "download_link": "market://details?id=com.microsoft.kapp"
+    },
+    {
+      "id": "microsoftband",
+      "name": "MicrosoftBand",
+      "enable": true,
+      "package_name": "org.md2k.microsoftband",
+      "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
+      "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
     },
     {
       "id": "selfreport",
@@ -113,6 +147,27 @@
       "enable": true,
       "package_name": "org.md2k.ema",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
+    },
+    {
+      "id": "moodsurfing",
+      "name": "MoodSurfing",
+      "enable": true,
+      "package_name": "org.md2k.moodsurfing",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases"
+    },
+    {
+      "id": "thoughtshakeup",
+      "name": "ThoughtShakeup",
+      "enable": true,
+      "package_name": "org.md2k.thoughtshakeup",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases"
+    },
+    {
+      "id": "headspace",
+      "name": "HeadSpace",
+      "enable": true,
+      "package_name": "com.getsomeheadspace.android",
+      "download_link": "market://details?id=com.getsomeheadspace.android"
     },
     {
       "id": "plotter",
@@ -223,6 +278,16 @@
       "class_name": "org.md2k.study.model_view.sleep_info.ActivitySleep"
     },
     {
+      "id": "day_type",
+      "type": "setup",
+      "name": "Pre/Post Quit Day",
+      "rank": 4,
+      "enable": true,
+      "icon": "ic_sleep_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.day_type.ActivityDayType"
+    },
+    {
       "id": "clear_database",
       "type": "reset",
       "name": "Clear All Data",
@@ -262,10 +327,7 @@
       "enable": true,
       "package_name": "org.md2k.datakit",
       "rank": 2,
-      "class_name": "org.md2k.datakit.ActivityPrivacy",
-      "parameters": {
-        "max_time": "7200000"
-      }
+      "class_name": "org.md2k.datakit.ActivityPrivacy"
     },
     {
       "id": "user_status",
@@ -275,6 +337,15 @@
       "rank": 2
     },
     {
+      "id": "intervention",
+      "name": "Intervention",
+      "icon": "ic_intervention_48dp",
+      "package_name": "org.md2k.study",
+      "enable": true,
+      "rank": 2,
+      "class_name": "org.md2k.study.model_view.intervention.ActivityInterventionApp"
+    },
+    {
       "id": "self_report",
       "type": "smoking_self_report",
       "name": "Report Smoking",
@@ -282,10 +353,17 @@
       "enable": true,
       "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.selfreport.ActivityMain",
-      "parameters": {
-        "id": "smoking_self_report"
-      }
+      "class_name": "org.md2k.selfreport.ActivityMain"
+    },
+    {
+      "id": "self_report",
+      "type": "eating_self_report",
+      "name": "Report Eating",
+      "icon": "ic_eating_teal_48dp",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "rank": 2,
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "plotter",
@@ -305,7 +383,7 @@
     {
       "id": "EMA_test",
       "type": "App Controller",
-      "name": "Survey Test",
+      "name": "Survey/EMI Test",
       "enable": true,
       "icon": "ic_notification_teal_48dp",
       "rank": 2,
@@ -363,6 +441,7 @@
           "config_info",
           "study_info",
           "user_info",
+          "day_type",
           "wakeup_info",
           "sleep_info",
           "clear_database"
@@ -408,6 +487,8 @@
         "enable": true,
         "values": [
           "smoking_self_report",
+          "eating_self_report",
+          "intervention",
           "app_reset"
         ]
       }
@@ -483,15 +564,15 @@
       }
     },
     {
-      "name": "Left Wrist",
+      "name": "L-Wrist(A)",
       "plotter": {
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MOTION_SENSE",
             "id": "LEFT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
@@ -504,15 +585,15 @@
       }
     },
     {
-      "name": "Right Wrist",
+      "name": "R-Wrist(A)",
       "plotter": {
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MOTION_SENSE",
             "id": "RIGHT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
@@ -522,6 +603,48 @@
       "message": {
         "enable": true,
         "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
+      }
+    },
+    {
+      "name": "L-Wrist(M)",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MICROSOFT_BAND",
+            "id": "LEFT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "GuHSeXYO-E0"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
+      }
+    },
+    {
+      "name": "R-Wrist(M)",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MICROSOFT_BAND",
+            "id": "RIGHT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "GuHSeXYO-E0"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     }
   ],
@@ -559,7 +682,7 @@
       {
         "type": "button",
         "base": "day_start",
-        "offset": 0
+        "offset": 28800000
       },
       {
         "type": "system",

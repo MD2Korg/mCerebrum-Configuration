@@ -1,0 +1,20 @@
+[
+  {
+    "platform": {
+      "type": "MOTION_SENSE"
+    },
+    "type": "ACCELEROMETER"
+  },
+  {
+    "platform": {
+      "type": "MOTION_SENSE"
+    },
+    "type": "GYROSCOPE"
+  },
+  {
+    "platform": {
+      "type": "MOTION_SENSE"
+    },
+    "type": "BATTERY"
+  }
+]

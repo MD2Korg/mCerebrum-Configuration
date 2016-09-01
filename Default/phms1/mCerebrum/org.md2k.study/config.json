@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "phms1",
-    "version": "1.3.5",
+    "version": "1.4.0",
     "name": "MD2K - Phone & Microsoft Band",
     "filename": "phms1",
     "auto_update": true,
