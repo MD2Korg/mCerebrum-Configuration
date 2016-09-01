@@ -13,7 +13,7 @@
       "type":"PHONE"
     },
     "metadata":{
-      "FREQUENCY":"SENSOR_DELAY_UI"
+      "FREQUENCY": "16"
     },
     "type":"LOCATION"
   },
@@ -22,7 +22,7 @@
       "type":"PHONE"
     },
     "metadata":{
-      "FREQUENCY":"SENSOR_DELAY_UI"
+      "FREQUENCY": "16"
     },
     "type":"ACCELEROMETER"
   },
@@ -31,26 +31,8 @@
       "type":"PHONE"
     },
     "metadata":{
-      "FREQUENCY":"SENSOR_DELAY_UI"
+      "FREQUENCY": "16"
     },
     "type":"GYROSCOPE"
-  },
-  {
-    "platform":{
-      "type":"PHONE"
-    },
-    "metadata":{
-      "FREQUENCY":"1.0 Hz"
-    },
-    "type":"CPU"
-  },
-  {
-    "platform":{
-      "type":"PHONE"
-    },
-    "metadata":{
-      "FREQUENCY":"1.0 Hz"
-    },
-    "type":"MEMORY"
   }
 ]

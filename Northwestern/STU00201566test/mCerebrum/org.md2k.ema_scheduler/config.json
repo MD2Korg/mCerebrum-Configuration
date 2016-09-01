@@ -387,18 +387,6 @@
           "PHONE_MESSAGE_MOODSURFING"
         ]
       }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.00,
-        "messages": [
-          "Thank you. You will be paid $1.00 for taking the Intervention.",
-          "You will be paid $1.00",
-          "Total Earning: $"
-        ],
-        "conditions": [
-        ]
-      }
     ]
   },
   {
@@ -424,18 +412,6 @@
           "PHONE_MESSAGE_THOUGHTSHAKEUP"
         ]
       }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.00,
-        "messages": [
-          "Thank you. You will be paid $1.00 for taking the Intervention.",
-          "You will be paid $1.00",
-          "Total Earning: $"
-        ],
-        "conditions": [
-        ]
-      }
     ]
   },
   {
@@ -459,18 +435,6 @@
           "PHONE_VIBRATE_3",
           "PHONE_SCREEN",
           "PHONE_MESSAGE_HEADSPACE"
-        ]
-      }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.00,
-        "messages": [
-          "Thank you. You will be paid $1.00 for taking the Intervention.",
-          "You will be paid $1.00",
-          "Total Earning: $"
-        ],
-        "conditions": [
         ]
       }
     ]
