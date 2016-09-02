@@ -8,6 +8,7 @@
     "logo": "sense_2_stop.png",
     "title": "",
     "required_files": [
+      "org.md2k.autosense/default_config.json",
       "org.md2k.motionsense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
@@ -70,7 +71,7 @@
     {
       "id": "autosense",
       "name": "AutoSense",
-      "enable": false,
+      "enable": true,
       "package_name": "org.md2k.autosense",
       "service": "org.md2k.autosense.antradio.connection.ServiceAutoSenses",
       "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
