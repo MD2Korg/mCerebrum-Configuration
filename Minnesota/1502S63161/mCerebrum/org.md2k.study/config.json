@@ -1,10 +1,10 @@
 {
   "config_info": {
     "id": "1502S63161",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "name": "MD2K - MN EasySense Study",
     "filename": "1502S63161",
-    "auto_update":true,
+    "auto_update": true,
     "required_files": [
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.plotter/default_config.json",
@@ -24,6 +24,7 @@
       "name": "Study",
       "enable": true,
       "package_name": "org.md2k.study",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Study/releases"
     },
     {
@@ -31,6 +32,7 @@
       "name": "DataKit",
       "enable": true,
       "package_name": "org.md2k.datakit",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
     {
@@ -49,6 +51,7 @@
       "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
     },
     {
@@ -57,6 +60,7 @@
       "enable": true,
       "package_name": "org.md2k.plotter",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
     },
     {
@@ -155,7 +159,7 @@
       "enable": true,
       "name": "Running Apps",
       "rank": 3,
-      "icon":"ic_apps_teal_48dp",
+      "icon": "ic_apps_teal_48dp",
       "package_name": "org.md2k.study",
       "class_name": "org.md2k.study.model_view.app_service.ActivityService"
     },
@@ -288,18 +292,18 @@
       }
     ]
   },
-   "data_quality": [
+  "data_quality": [
     {
       "platform": {
         "id": "LEFT_WRIST"
       },
-      "type":"DATA_QUALITY"
+      "type": "DATA_QUALITY"
     },
     {
       "platform": {
         "id": "RIGHT_WRIST"
       },
-      "type":"DATA_QUALITY"
+      "type": "DATA_QUALITY"
     }
   ],
   "data_quality_view": [

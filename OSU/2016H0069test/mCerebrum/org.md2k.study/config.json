@@ -1,9 +1,9 @@
 {
   "config_info": {
-    "id": "osu-Test",
-    "version": "1.4.1",
+    "id": "2016H0069-Test",
+    "version": "1.4.2",
     "name": "OSU CHF Study-Test",
-    "filename": "osutest",
+    "filename": "2016H0069test",
     "auto_update": true,
     "title": "OSU CHF Study - Test",
     "required_files": [
@@ -18,9 +18,6 @@
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.selfreport/config.json",
-      "org.md2k.streamprocessor/model.json",
-      "org.md2k.streamprocessor/model_rip.json",
-      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
       "org.md2k.study/logo.png",
       "org.md2k.study/notification.json",
@@ -39,6 +36,7 @@
       "name": "Study",
       "enable": true,
       "package_name": "org.md2k.study",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Study/releases"
     },
     {
@@ -49,6 +47,7 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
     {
@@ -60,6 +59,7 @@
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
@@ -71,6 +71,7 @@
       "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
     },
     {
@@ -80,15 +81,8 @@
       "package_name": "org.md2k.selfreport",
       "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
-    },
-    {
-      "id": "streamprocessor",
-      "name": "StreamProcessor",
-      "enable": true,
-      "package_name": "org.md2k.streamprocessor",
-      "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
     },
     {
       "id": "ema_scheduler",
@@ -97,6 +91,7 @@
       "package_name": "org.md2k.ema_scheduler",
       "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
     },
     {
@@ -105,6 +100,7 @@
       "enable": true,
       "package_name": "org.md2k.notificationmanager",
       "service": "org.md2k.notificationmanager.ServiceNotificationManager",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-NotificationManager/releases"
     },
     {
@@ -112,6 +108,7 @@
       "name": "EMA",
       "enable": true,
       "package_name": "org.md2k.ema",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
     },
     {
@@ -120,6 +117,7 @@
       "enable": true,
       "package_name": "org.md2k.plotter",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
     },
     {

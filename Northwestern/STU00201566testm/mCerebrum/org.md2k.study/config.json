@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "STU00201566-Test",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "name": "MD2K Smoking Study (at NW)-Test",
     "filename": "STU00201566testm",
     "auto_update": true,
@@ -45,6 +45,7 @@
       "name": "Study",
       "enable": true,
       "package_name": "org.md2k.study",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Study/releases"
     },
     {
@@ -55,6 +56,7 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
     {
@@ -66,6 +68,7 @@
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
@@ -77,6 +80,7 @@
       "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
     },
     {
@@ -88,6 +92,7 @@
       "settings": "org.md2k.motionsense.ActivitySettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
     },
     {
@@ -106,6 +111,7 @@
       "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
     },
     {
@@ -115,6 +121,7 @@
       "package_name": "org.md2k.selfreport",
       "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
@@ -123,6 +130,7 @@
       "enable": true,
       "package_name": "org.md2k.streamprocessor",
       "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
     },
     {
@@ -132,6 +140,7 @@
       "package_name": "org.md2k.ema_scheduler",
       "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
     },
     {
@@ -140,6 +149,7 @@
       "enable": true,
       "package_name": "org.md2k.notificationmanager",
       "service": "org.md2k.notificationmanager.ServiceNotificationManager",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-NotificationManager/releases"
     },
     {
@@ -147,6 +157,7 @@
       "name": "EMA",
       "enable": true,
       "package_name": "org.md2k.ema",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
     },
     {
@@ -154,6 +165,7 @@
       "name": "MoodSurfing",
       "enable": true,
       "package_name": "org.md2k.moodsurfing",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases"
     },
     {
@@ -161,6 +173,7 @@
       "name": "ThoughtShakeup",
       "enable": true,
       "package_name": "org.md2k.thoughtshakeup",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases"
     },
     {
@@ -176,6 +189,7 @@
       "enable": true,
       "package_name": "org.md2k.plotter",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
     },
     {

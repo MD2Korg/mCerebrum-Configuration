@@ -11,7 +11,7 @@
   "upload": {
     "enabled": true,
     "interval": 900000,
-    "url": "https://rice-cerebralcortex.md2k.org/",
+    "url": "https://ohiostate-cerebralcortex.md2k.org/",
     "restricted_datasource": [
       {
         "platform": {
@@ -100,41 +100,19 @@
         ]
       },
       {
-        "id": "chest_sensor",
-        "title": "Chest Sensor",
-        "summary": "",
-        "datasource": [
-          {
-            "platform": {
-              "type": "AUTOSENSE_CHEST"
-            }
-          }
-        ]
-      },
-      {
         "id": "wrist_sensor",
         "title": "Wrist Sensors",
         "summary": "",
         "datasource": [
           {
             "platform": {
-              "type": "AUTOSENSE_WRIST"
+              "id": "LEFT_WRIST"
             }
           },
           {
             "platform": {
-              "type": "MICROSOFT_BAND"
+              "type": "RIGHT_WRIST"
             }
-          }
-        ]
-      },
-      {
-        "id": "ema_intervention",
-        "title": "Surveys",
-        "summary": "",
-        "datasource": [
-          {
-            "type": "SURVEY"
           }
         ]
       }

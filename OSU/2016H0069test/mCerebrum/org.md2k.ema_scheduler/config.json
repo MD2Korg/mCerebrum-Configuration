@@ -1,0 +1,56 @@
+[
+  {
+    "id": "START_OF_DAY_EMA",
+    "type": "EMA",
+    "trigger_type": "SELF_REPORT",
+    "name": "Start of day EMA",
+    "enable": true,
+    "application": {
+      "id": "END_OF_DAY_EMA",
+      "name": "End of Day Recording",
+      "package_name": "org.md2k.ema",
+      "file_name": "end_of_day_recording.json",
+      "timeout": 600000
+    },
+    "scheduler_rules": [
+      {
+        "type": "IMMEDIATE",
+        "data_source": {
+          "type": "DAY_START"
+        }
+      }
+    ],
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+          "PHONE_SCREEN"
+        ]
+      },
+      {
+        "time": 240000,
+        "types": [
+          "MICROSOFT_BAND_VIBRATE_3",
+          "MICROSOFT_BAND_MESSAGE_EMA",
+          "PHONE_VIBRATE_3",
+          "PHONE_MESSAGE_DELAY_EMA_15_30_60_120",
+          "PHONE_SCREEN"
+        ]
+      }
+    ]
+  }
+]

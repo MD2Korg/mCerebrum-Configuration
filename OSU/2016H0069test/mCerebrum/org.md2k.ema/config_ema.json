@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ema",
+    "name": "Survey",
+    "display_name": "EMA Questionnaire",
+    "file_name": "questionnaire.json",
+    "timeout": 300000
+  },
+  {
+    "id": "ema",
+    "name": "Medication Adherence",
+    "display_name": "Medication Adherence",
+    "file_name": "medication_adherence.json",
+    "timeout": 300000
+  }
+]

@@ -34,9 +34,9 @@
   },
   {
     "platform": {
-      "type": "AUTOSENSE_WRIST"
+      "type": "MOTION_SENSE"
     },
-    "type": "ACCELEROMETER_X"
+    "type": "ACCELEROMETER"
   },
   {
     "platform": {

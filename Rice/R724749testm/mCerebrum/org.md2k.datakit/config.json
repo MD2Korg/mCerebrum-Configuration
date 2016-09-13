@@ -118,12 +118,12 @@
         "datasource": [
           {
             "platform": {
-              "type": "AUTOSENSE_WRIST"
+              "id": "LEFT_WRIST"
             }
           },
           {
             "platform": {
-              "type": "MICROSOFT_BAND"
+              "type": "RIGHT_WRIST"
             }
           }
         ]

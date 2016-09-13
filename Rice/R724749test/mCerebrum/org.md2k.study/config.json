@@ -1,10 +1,10 @@
 {
   "config_info": {
     "id": "R724749-Test",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "name": "RICE Smoking Study-Test",
     "filename": "R724749test",
-    "auto_update":true,
+    "auto_update": true,
     "logo": "logo.png",
     "title": "",
     "required_files": [
@@ -41,6 +41,7 @@
       "name": "Study",
       "enable": true,
       "package_name": "org.md2k.study",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Study/releases"
     },
     {
@@ -51,6 +52,7 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
     {
@@ -62,6 +64,7 @@
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
@@ -73,6 +76,7 @@
       "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
       "config": "config.json",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
     },
     {
@@ -82,6 +86,7 @@
       "package_name": "org.md2k.selfreport",
       "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
@@ -90,6 +95,7 @@
       "enable": true,
       "package_name": "org.md2k.streamprocessor",
       "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
     },
     {
@@ -99,6 +105,7 @@
       "package_name": "org.md2k.ema_scheduler",
       "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
     },
     {
@@ -107,6 +114,7 @@
       "enable": true,
       "package_name": "org.md2k.notificationmanager",
       "service": "org.md2k.notificationmanager.ServiceNotificationManager",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-NotificationManager/releases"
     },
     {
@@ -114,6 +122,7 @@
       "name": "EMA",
       "enable": true,
       "package_name": "org.md2k.ema",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
     },
     {
@@ -122,6 +131,7 @@
       "enable": true,
       "package_name": "org.md2k.plotter",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
     },
     {

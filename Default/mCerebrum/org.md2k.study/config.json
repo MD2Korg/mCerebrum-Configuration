@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "default",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "name": "Default",
     "filename": "default",
     "auto_update": true,
@@ -33,6 +33,7 @@
       "name": "Study",
       "enable": true,
       "package_name": "org.md2k.study",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Study/releases"
     },
     {
@@ -43,6 +44,7 @@
       "config": "config.json",
       "default_config": "default_config.json",
       "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
     {
@@ -53,6 +55,7 @@
       "service": "org.md2k.phonesensor.ServicePhoneSensor",
       "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
@@ -62,6 +65,7 @@
       "package_name": "org.md2k.selfreport",
       "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
@@ -71,6 +75,7 @@
       "package_name": "org.md2k.ema_scheduler",
       "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
       "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
     },
     {
@@ -79,6 +84,7 @@
       "enable": true,
       "package_name": "org.md2k.notificationmanager",
       "service": "org.md2k.notificationmanager.ServiceNotificationManager",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-NotificationManager/releases"
     },
     {
@@ -86,6 +92,7 @@
       "name": "EMA",
       "enable": true,
       "package_name": "org.md2k.ema",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
     },
     {
@@ -94,6 +101,7 @@
       "enable": true,
       "package_name": "org.md2k.plotter",
       "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
     },
     {
