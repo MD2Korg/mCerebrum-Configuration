@@ -8,9 +8,9 @@
   },
   {
     "id": "ema",
-    "name": "Medication Adherence",
-    "display_name": "Medication Adherence",
-    "file_name": "medication_adherence.json",
+    "name": "Medication Questionnaire",
+    "display_name": "Medication Questionnaire",
+    "file_name": "medication.json",
     "timeout": 300000
   }
 ]

@@ -1,0 +1,38 @@
+[
+  {
+    "platform": {
+      "type": "OMRON_BLOOD_PRESSURE"
+    },
+    "type": "BLOOD_PRESSURE"
+  },
+  {
+    "platform": {
+      "type": "OMRON_BLOOD_PRESSURE"
+    },
+    "type": "BATTERY"
+  },
+  {
+    "platform": {
+      "type": "OMRON_BLOOD_PRESSURE"
+    },
+    "type": "HEART_RATE"
+  },
+  {
+    "platform": {
+      "type": "OMRON_BLOOD_PRESSURE"
+    },
+    "type": "ACCELEROMETER_ACTIVITY_DEVIATION"
+  },
+  {
+    "platform": {
+      "type": "OMRON_WEIGHT_SCALE"
+    },
+    "type": "WEIGHT"
+  },
+  {
+    "platform": {
+      "type": "OMRON_WEIGHT_SCALE"
+    },
+    "type": "BATTERY"
+  }
+]

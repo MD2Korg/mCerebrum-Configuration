@@ -34,8 +34,14 @@
   },
   {
     "platform": {
-      "type": "AUTOSENSE_WRIST"
+      "id": "LEFT_WRIST"
     },
-    "type": "ACCELEROMETER_X"
+    "type": "ACCELEROMETER"
+  },
+  {
+    "platform": {
+      "id": "RIGHT_WRIST"
+    },
+    "type": "ACCELEROMETER"
   }
 ]

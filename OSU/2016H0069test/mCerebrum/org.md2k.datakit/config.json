@@ -111,7 +111,7 @@
           },
           {
             "platform": {
-              "type": "RIGHT_WRIST"
+              "id": "RIGHT_WRIST"
             }
           }
         ]

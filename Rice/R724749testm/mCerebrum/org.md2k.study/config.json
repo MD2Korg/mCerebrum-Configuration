@@ -429,7 +429,6 @@
         "id": "user_app",
         "enable": true,
         "values": [
-          "smoking_self_report",
           "app_reset"
         ]
       }

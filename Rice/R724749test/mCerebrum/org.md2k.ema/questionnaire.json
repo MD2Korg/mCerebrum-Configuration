@@ -465,26 +465,62 @@
   },
   {
     "question_id": 37,
-    "question_type": "multiple_select",
-    "question_text": "Since the last assessment, did you experience or think about (Check all that apply)",
+    "question_type": "multiple_choice",
+    "question_text": "Since the last assessment, I experienced or thought about a stressful issue or problem.",
     "response_option": [
-      "a NEW stressful issue or problem.",
-      "an ONGOING stressful issue or problem.",
-      "<UNSELECT_OTHER>not applicable to me."
+      "Definitely No",
+      "Mostly No",
+      "Mostly Yes",
+      "Definitely Yes"
     ]
   },
   {
     "question_id": 38,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, did you experience or think about (Check all that apply)",
+    "question_text": "Since the last assessment, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
     "response_option": [
-      "a NEW positive experience.",
-      "an ONGOING positive experience.",
-      "<UNSELECT_OTHER>not applicable to me."
+      "Work/School",
+      "Family Relationships",
+      "Other Relationships",
+      "Housing/Where you live",
+      "Crime and Legal Matters",
+      "Health",
+      "Miscellaneous/Other"
+    ],
+    "condition": [
+      "37:~Definitely No"
     ]
   },
   {
     "question_id": 39,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last assessment, I experienced or thought about a positive experience.",
+    "response_option": [
+      "Definitely No",
+      "Mostly No",
+      "Mostly Yes",
+      "Definitely Yes"
+    ]
+  },
+  {
+    "question_id": 40,
+    "question_type": "multiple_select",
+    "question_text": "Since the last assessment, in which of the following areas did you have a positive experience? (Check all that apply)",
+    "response_option": [
+      "Work/School",
+      "Family Relationships",
+      "Other Relationships",
+      "Housing/Where you live",
+      "Crime and Legal Matters",
+      "Health",
+      "Miscellaneous/Other"
+    ],
+    "condition": [
+      "39:~Definitely No"
+    ]
+  },
+  {
+    "question_id": 41,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I felt little interest or pleasure while doing things.",
     "response_option": [
@@ -497,7 +533,7 @@
     ]
   },
   {
-    "question_id": 40,
+    "question_id": 42,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, someone in my life provided me with help for a worry, problem or difficulty.",
     "response_option": [
@@ -509,7 +545,7 @@
     ]
   },
   {
-    "question_id": 41,
+    "question_id": 43,
     "question_type": "multiple_choice",
     "question_text": "At this moment, I feel that a Higher Power/God/Universal Spirit is with me.",
     "response_option": [
@@ -521,7 +557,7 @@
     ]
   },
   {
-    "question_id": 42,
+    "question_id": 44,
     "question_type": "multiple_choice",
     "question_text": "At this moment, I feel spiritually connected to other people.",
     "response_option": [
@@ -533,7 +569,7 @@
     ]
   },
   {
-    "question_id": 43,
+    "question_id": 45,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]

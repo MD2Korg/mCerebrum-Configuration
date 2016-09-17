@@ -65,6 +65,18 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
+      "id": "motionsense",
+      "name": "MotionSense",
+      "enable": true,
+      "package_name": "org.md2k.motionsense",
+      "service": "org.md2k.motionsense.ServiceMotionSense",
+      "settings": "org.md2k.motionsense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
+    },
+    {
       "id": "microsofthealth",
       "name": "MicrosoftHealth",
       "enable": true,
