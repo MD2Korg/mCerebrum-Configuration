@@ -3,10 +3,11 @@
     "id": "V20160307-Test",
     "version": "1.4.2",
     "name": "VERMONT Smoking Study-Test",
-    "filename": "V20160307test",
+    "filename": "V20160307testm",
     "auto_update": true,
     "required_files": [
       "org.md2k.autosense/default_config.json",
+      "org.md2k.motionsense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
@@ -75,6 +76,18 @@
       "default_config": "default_config.json",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
+    },
+    {
+      "id": "motionsense",
+      "name": "MotionSense",
+      "enable": true,
+      "package_name": "org.md2k.motionsense",
+      "service": "org.md2k.motionsense.ServiceMotionSense",
+      "settings": "org.md2k.motionsense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
     },
     {
       "id": "selfreport",
@@ -494,19 +507,19 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MOTION_SENSE",
             "id": "LEFT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
         "enable": true,
-        "link": "buQI6MiC_po"
+        "link": "2n7HwLWlgtQ"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     },
     {
@@ -515,19 +528,19 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MOTION_SENSE",
             "id": "RIGHT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
         "enable": true,
-        "link": "buQI6MiC_po"
+        "link": "2n7HwLWlgtQ"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     }
   ],
