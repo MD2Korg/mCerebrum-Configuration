@@ -56,40 +56,6 @@
         ]
       },
       {
-        "id": "activity",
-        "title": "Activity",
-        "summary": "",
-        "datasource": [
-          {
-            "type":"LOCATION"
-          },
-          {
-            "type":"ACCELEROMETER"
-          },
-          {
-            "type": "GYROSCOPE"
-          },
-          {
-            "type": "ACCELEROMETER_X"
-          },
-          {
-            "type": "ACCELEROMETER_Y"
-          },
-          {
-            "type": "ACCELEROMETER_Z"
-          },
-          {
-            "type": "GYROSCOPE_X"
-          },
-          {
-            "type": "GYROSCOPE_Y"
-          },
-          {
-            "type": "GYROSCOPE_Z"
-          }
-        ]
-      },
-      {
         "id": "chest_sensor",
         "title": "Chest Sensor",
         "summary": "",
