@@ -1,15 +1,33 @@
 {
   "config_info": {
-    "id": "phms1",
+    "id": "STU00201566-Test",
     "version": "1.4.5",
-    "name": "MD2K - Phone & Microsoft Band",
-    "filename": "phms1",
+    "name": "MD2K Training",
+    "filename": "trainp",
     "auto_update": true,
+    "title": "Training (2016)",
     "required_files": [
+      "org.md2k.autosense/default_config.json",
+      "org.md2k.motionsense/default_config.json",
+      "org.md2k.datakit/config.json",
+      "org.md2k.datakit/default_config.json",
+      "org.md2k.ema/config_ema.json",
+      "org.md2k.ema/end_of_day_recording.json",
+      "org.md2k.ema/event_contingent_recording.json",
+      "org.md2k.ema/random_experience_sampling.json",
+      "org.md2k.ema_scheduler/config.json",
+      "org.md2k.ema_scheduler/notification.json",
+      "org.md2k.ema_scheduler/condition.json",
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
+      "org.md2k.streamprocessor/model.json",
+      "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.streamprocessor/model_puffmarker.json",
+      "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.selfreport/config.json",
       "org.md2k.study/config.json",
+      "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
   },
@@ -33,6 +51,9 @@
       "name": "DataKit",
       "enable": true,
       "package_name": "org.md2k.datakit",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
     },
@@ -49,16 +70,40 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
+      "id": "autosense",
+      "name": "AutoSense",
+      "enable": false,
+      "package_name": "org.md2k.autosense",
+      "service": "org.md2k.autosense.antradio.connection.ServiceAutoSenses",
+      "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
+    },
+    {
+      "id": "motionsense",
+      "name": "MotionSense",
+      "enable": true,
+      "package_name": "org.md2k.motionsense",
+      "service": "org.md2k.motionsense.ServiceMotionSense",
+      "settings": "org.md2k.motionsense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
+    },
+    {
       "id": "microsofthealth",
       "name": "MicrosoftHealth",
-      "enable": true,
+      "enable": false,
       "package_name": "com.microsoft.kapp",
       "download_link": "https://github.com/MD2Korg/MicrosoftHealth/releases/download/1.3.20913.1/microsofthealth.apk"
     },
     {
       "id": "microsoftband",
       "name": "MicrosoftBand",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.microsoftband",
       "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
       "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
@@ -66,6 +111,75 @@
       "default_config": "default_config.json",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
+    },
+    {
+      "id": "selfreport",
+      "name": "Self Report",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
+      "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
+    },
+    {
+      "id": "streamprocessor",
+      "name": "StreamProcessor",
+      "enable": false,
+      "package_name": "org.md2k.streamprocessor",
+      "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
+    },
+    {
+      "id": "ema_scheduler",
+      "name": "EMAScheduler",
+      "enable": true,
+      "package_name": "org.md2k.ema_scheduler",
+      "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
+      "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
+    },
+    {
+      "id": "notificationmanager",
+      "name": "NotificationManager",
+      "enable": true,
+      "package_name": "org.md2k.notificationmanager",
+      "service": "org.md2k.notificationmanager.ServiceNotificationManager",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-NotificationManager/releases"
+    },
+    {
+      "id": "ema",
+      "name": "EMA",
+      "enable": true,
+      "package_name": "org.md2k.ema",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
+    },
+    {
+      "id": "moodsurfing",
+      "name": "MoodSurfing",
+      "enable": true,
+      "package_name": "org.md2k.moodsurfing",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases"
+    },
+    {
+      "id": "thoughtshakeup",
+      "name": "ThoughtShakeup",
+      "enable": true,
+      "package_name": "org.md2k.thoughtshakeup",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases"
+    },
+    {
+      "id": "headspace",
+      "name": "HeadSpace",
+      "enable": true,
+      "package_name": "com.getsomeheadspace.android",
+      "download_link": "market://details?id=com.getsomeheadspace.android"
     },
     {
       "id": "plotter",
@@ -79,7 +193,7 @@
     {
       "id": "adobe_acrobat_reader",
       "name": "Adobe Acrobat Reader",
-      "enable": false,
+      "enable": true,
       "package_name": "com.adobe.reader",
       "download_link": "market://details?id=com.adobe.reader"
     }
@@ -157,6 +271,36 @@
       "class_name": "org.md2k.study.model_view.user_info.ActivityUserInfo"
     },
     {
+      "id": "wakeup_info",
+      "type": "setup",
+      "name": "Wakeup Time",
+      "rank": 4,
+      "enable": true,
+      "icon": "ic_wakeup_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.wakeup_info.ActivityWakeUp"
+    },
+    {
+      "id": "sleep_info",
+      "type": "setup",
+      "name": "Sleep Time",
+      "rank": 4,
+      "enable": true,
+      "icon": "ic_sleep_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.sleep_info.ActivitySleep"
+    },
+    {
+      "id": "day_type",
+      "type": "setup",
+      "name": "Pre/Post Quit Day",
+      "rank": 4,
+      "enable": true,
+      "icon": "ic_sleep_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.day_type.ActivityDayType"
+    },
+    {
       "id": "clear_database",
       "type": "reset",
       "name": "Clear All Data",
@@ -183,11 +327,20 @@
       "name": "Sensor Data Quality"
     },
     {
-      "id": "study_start_end",
+      "id": "day_start_end",
       "type": "setup",
       "rank": 2,
       "enable": true,
-      "name": "Study Start/End"
+      "name": "Day Start/Day End"
+    },
+    {
+      "id": "privacy",
+      "name": "Privacy",
+      "icon": "ic_unlock_teal_48dp",
+      "enable": true,
+      "package_name": "org.md2k.datakit",
+      "rank": 2,
+      "class_name": "org.md2k.datakit.ActivityPrivacy"
     },
     {
       "id": "user_status",
@@ -195,6 +348,35 @@
       "icon": "ic_unlock_teal_48dp",
       "enable": true,
       "rank": 2
+    },
+    {
+      "id": "intervention",
+      "name": "Intervention",
+      "icon": "ic_intervention_48dp",
+      "package_name": "org.md2k.study",
+      "enable": true,
+      "rank": 2,
+      "class_name": "org.md2k.study.model_view.intervention.ActivityInterventionApp"
+    },
+    {
+      "id": "self_report",
+      "type": "smoking_self_report",
+      "name": "Report Smoking",
+      "icon": "ic_smoking_teal_48dp",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "rank": 2,
+      "class_name": "org.md2k.selfreport.ActivityMain"
+    },
+    {
+      "id": "self_report",
+      "type": "eating_self_report",
+      "name": "Report Eating",
+      "icon": "ic_eating_teal_48dp",
+      "enable": true,
+      "package_name": "org.md2k.selfreport",
+      "rank": 2,
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "plotter",
@@ -210,6 +392,16 @@
       "icon": "ic_unlock_teal_48dp",
       "enable": true,
       "rank": 2
+    },
+    {
+      "id": "EMA_test",
+      "type": "App Controller",
+      "name": "Survey/EMI Test",
+      "enable": true,
+      "icon": "ic_notification_teal_48dp",
+      "rank": 2,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.EMA_test.ActivityEMA_test"
     },
     {
       "id": "app_reset",
@@ -261,6 +453,9 @@
           "config_info",
           "study_info",
           "user_info",
+          "day_type",
+          "wakeup_info",
+          "sleep_info",
           "clear_database"
         ]
       },
@@ -279,7 +474,8 @@
         "name": "Others",
         "enable": true,
         "values": [
-          "app_service"
+          "app_service",
+          "EMA_test"
         ]
       }
     ]
@@ -291,15 +487,19 @@
         "enable": true
       },
       {
-        "id": "study_start_end",
+        "id": "day_start_end",
+        "enable": true
+      },
+      {
+        "id": "privacy",
         "enable": true
       },
       {
         "id": "user_app",
         "enable": true,
         "values": [
-          "plotter",
-          "app_stop",
+          "eating_self_report",
+          "intervention",
           "app_reset"
         ]
       }
@@ -308,13 +508,7 @@
   "data_quality": [
     {
       "platform": {
-        "id": "LEFT_WRIST"
-      },
-      "type": "DATA_QUALITY"
-    },
-    {
-      "platform": {
-        "id": "RIGHT_WRIST"
+        "type": "MOTION_SENSE"
       },
       "type": "DATA_QUALITY"
     }
@@ -333,11 +527,11 @@
       },
       "video": {
         "enable": true,
-        "link": "jIwhPiO7GmU"
+        "link": "i7Tp9iz7FRg"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+        "text": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
@@ -358,6 +552,48 @@
       "message": {
         "enable": true,
         "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+      }
+    },
+    {
+      "name": "L-Wrist(A)",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MOTION_SENSE",
+            "id": "LEFT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "2n7HwLWlgtQ"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
+      }
+    },
+    {
+      "name": "R-Wrist(A)",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MOTION_SENSE",
+            "id": "RIGHT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "2n7HwLWlgtQ"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     },
     {
@@ -402,5 +638,48 @@
         "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
       }
     }
-  ]
+  ],
+  "day_start": {
+    "notify": [
+      {
+        "type": "button",
+        "base": "wakeup",
+        "offset": -10800000
+      },
+      {
+        "type": "prompt",
+        "base": "wakeup",
+        "offset": 0,
+        "parameters": [
+          "PHONE_SCREEN",
+          "PHONE_MESSAGE_START_DAY"
+        ]
+      },
+      {
+        "type": "notification",
+        "base": "wakeup",
+        "offset": 10800000,
+        "parameters": [
+          "PHONE_VIBRATE",
+          "PHONE_TONE",
+          "PHONE_SCREEN",
+          "PHONE_MESSAGE_START_DAY"
+        ]
+      }
+    ]
+  },
+  "day_end": {
+    "notify": [
+      {
+        "type": "button",
+        "base": "day_start",
+        "offset": 28800000
+      },
+      {
+        "type": "system",
+        "base": "sleep",
+        "offset": 0
+      }
+    ]
+  }
 }
