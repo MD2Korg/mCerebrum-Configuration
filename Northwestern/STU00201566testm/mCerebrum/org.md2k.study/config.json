@@ -1,7 +1,7 @@
 {
   "config_info": {
     "id": "STU00201566-Test",
-    "version": "1.4.5",
+    "version": "1.4.6",
     "name": "MD2K Smoking Study (at NW)-Test",
     "filename": "STU00201566testm",
     "auto_update": true,
@@ -139,6 +139,7 @@
       "enable": true,
       "package_name": "org.md2k.ema_scheduler",
       "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
+      "settings": "org.md2k.ema_scheduler.ActivityIncentiveSettings",
       "config": "config.json",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"

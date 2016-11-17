@@ -3,14 +3,14 @@
     "id": "STU00201566-Test",
     "version": "1.4.6",
     "name": "MD2K Smoking Study (at NW)-Test",
-    "filename": "STU00201566test",
+    "filename": "STU00201566testm2",
     "auto_update": true,
     "logo": "sense_2_stop.png",
     "title": "",
     "required_files": [
       "org.md2k.autosense/default_config.json",
+      "org.md2k.motionsense/default_config.json",
       "org.md2k.datakit/config.json",
-      "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/end_of_day_recording.json",
       "org.md2k.ema/event_contingent_recording.json",
@@ -18,7 +18,6 @@
       "org.md2k.ema_scheduler/config.json",
       "org.md2k.ema_scheduler/notification.json",
       "org.md2k.ema_scheduler/condition.json",
-      "org.md2k.microsoftband/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.streamprocessor/model.json",
@@ -83,16 +82,28 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
     },
     {
+      "id": "motionsense",
+      "name": "MotionSense",
+      "enable": true,
+      "package_name": "org.md2k.motionsense",
+      "service": "org.md2k.motionsense.ServiceMotionSense",
+      "settings": "org.md2k.motionsense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
+    },
+    {
       "id": "microsofthealth",
       "name": "MicrosoftHealth",
-      "enable": true,
+      "enable": false,
       "package_name": "com.microsoft.kapp",
       "download_link": "https://github.com/MD2Korg/MicrosoftHealth/releases/download/1.3.20913.1/microsofthealth.apk"
     },
     {
       "id": "microsoftband",
       "name": "MicrosoftBand",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.microsoftband",
       "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
       "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
@@ -572,19 +583,19 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MOTION_SENSE",
             "id": "LEFT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
         "enable": true,
-        "link": "buQI6MiC_po"
+        "link": "2n7HwLWlgtQ"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     },
     {
@@ -593,19 +604,19 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "AUTOSENSE_WRIST",
+            "type": "MOTION_SENSE",
             "id": "RIGHT_WRIST"
           },
-          "type": "ACCELEROMETER_X"
+          "type": "ACCELEROMETER"
         }
       },
       "video": {
         "enable": true,
-        "link": "buQI6MiC_po"
+        "link": "2n7HwLWlgtQ"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor power switch is ON.\n\n4) Make sure the wrist sensor is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     },
     {
