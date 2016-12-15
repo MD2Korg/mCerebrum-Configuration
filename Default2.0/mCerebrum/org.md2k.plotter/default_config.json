@@ -1,0 +1,72 @@
+[
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"ACCELEROMETER"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"GYROSCOPE"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"COMPASS"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"AMBIENT_TEMPERATURE"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"AMBIENT_LIGHT"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"PROXIMITY"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"PRESSURE"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"MEMORY"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"CPU"
+  },
+  {
+    "platform":{
+      "type":"PHONE"
+    },
+    "type":"BATTERY"
+  },
+  {
+    "platform": {
+      "id": "LEFT_WRIST"
+    }
+  },
+  {
+    "platform": {
+      "type": "RIGHT_WRIST"
+    }
+  }
+]

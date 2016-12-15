@@ -1,0 +1,30 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "When the phone beeped, I was doing things automatically, without being aware of what I was doing.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "When the phone beeped, I found myself doing things without paying attention.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

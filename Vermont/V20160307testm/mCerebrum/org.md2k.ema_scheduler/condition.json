@@ -49,7 +49,7 @@
     "name": "Not driving in last 5 minutes",
     "values": [
       "300000",
-      "60"
+      "75"
     ]
   },
   {

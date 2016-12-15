@@ -230,7 +230,7 @@
   {
     "question_id": 19,
     "question_type": "multiple_choice",
-    "question_text": "Right now, I am very motivated to be abstinent from cigarettes.",
+    "question_text": "Right now, I feel restless.",
     "response_option": [
       "Strongly Disagree",
       "Disagree",
@@ -242,7 +242,7 @@
   {
     "question_id": 20,
     "question_type": "multiple_choice",
-    "question_text": "Right now, I have an urge to smoke.",
+    "question_text": "Right now, I am very motivated to be abstinent from cigarettes.",
     "response_option": [
       "Strongly Disagree",
       "Disagree",
@@ -254,7 +254,7 @@
   {
     "question_id": 21,
     "question_type": "multiple_choice",
-    "question_text": "Right now, Smoking would improve my mood, be pleasurable, or help me cope with this situation.",
+    "question_text": "Right now, I have an urge to smoke.",
     "response_option": [
       "Strongly Disagree",
       "Disagree",
@@ -266,7 +266,7 @@
   {
     "question_id": 22,
     "question_type": "multiple_choice",
-    "question_text": "Right now, I am confident in my ability to be abstinent from cigarettes.",
+    "question_text": "Right now, Smoking would improve my mood, be pleasurable, or help me cope with this situation.",
     "response_option": [
       "Strongly Disagree",
       "Disagree",
@@ -278,6 +278,18 @@
   {
     "question_id": 23,
     "question_type": "multiple_choice",
+    "question_text": "Right now, I am confident in my ability to be abstinent from cigarettes.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 24,
+    "question_type": "multiple_choice",
     "question_text": "Right now, Cigarettes are available to me.",
     "response_option": [
       "Not at All",
@@ -288,7 +300,7 @@
     ]
   },
   {
-    "question_id": 24,
+    "question_id": 25,
     "question_type": "multiple_choice",
     "question_text": "Right now, Is smoking allowed where you are?",
     "response_option": [
@@ -298,7 +310,7 @@
     ]
   },
   {
-    "question_id": 25,
+    "question_id": 26,
     "question_type": "multiple_choice",
     "question_text": "Right now, Are you wearing the patch?",
     "response_option": [
@@ -307,7 +319,7 @@
     ]
   },
   {
-    "question_id": 26,
+    "question_id": 27,
     "question_type": "multiple_select",
     "question_text": "Right now, Are other people around you smoking cigarettes? (Check all that apply)",
     "response_option": [
@@ -320,7 +332,7 @@
     ]
   },
   {
-    "question_id": 27,
+    "question_id": 28,
     "question_type": "multiple_select",
     "question_text": "Right now, Are other people around you using an e-cig or vaping? (Check all that apply)",
     "response_option": [
@@ -333,7 +345,7 @@
     ]
   },
   {
-    "question_id": 28,
+    "question_id": 29,
     "question_type": "multiple_select",
     "question_text": "Since the last assessment, did you drink any (Check all that apply)",
     "response_option": [
@@ -344,7 +356,7 @@
     ]
   },
   {
-    "question_id": 29,
+    "question_id": 30,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, do you think that you have been treated unfairly?",
     "response_option": [
@@ -355,7 +367,7 @@
     ]
   },
   {
-    "question_id": 30,
+    "question_id": 31,
     "question_type": "multiple_choice",
     "question_text": "What do you think was the main reason(s) for this/these experiences? (Pick only one option)",
     "response_option": [
@@ -374,11 +386,11 @@
       "Other/Not Sure"
     ],
     "condition": [
-      "29:~No"
+      "30:~No"
     ]
   },
   {
-    "question_id": 31,
+    "question_id": 32,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, have you smoked any cigarettes?",
     "response_option": [
@@ -387,7 +399,7 @@
     ]
   },
   {
-    "question_id": 32,
+    "question_id": 33,
     "question_type": "text_numeric",
     "question_text": "How many cigarettes did you smoke?",
     "response_option": [
@@ -395,62 +407,62 @@
       "100"
     ],
     "condition": [
-      "31:Yes"
-    ]
-  },
-  {
-    "question_id": 33,
-    "question_type": "multiple_choice",
-    "question_text": "How long ago did you smoke the cigarette?",
-    "response_option": [
-      "0 – 2 hrs",
-      "2 hrs – 4 hrs",
-      "4 hrs – 6 hrs",
-      "6 hrs - 8 hrs",
-      "8 hrs - 10 hrs",
-      "10 hrs - 12 hrs",
-      "More than 12 hrs"
-    ],
-    "condition": [
-      "32:1"
+      "32:Yes"
     ]
   },
   {
     "question_id": 34,
     "question_type": "multiple_choice",
-    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the most recent cigarette?",
+    "question_text": "How long ago did you smoke the cigarette?",
     "response_option": [
-      "0 – 2 hrs",
-      "2 hrs – 4 hrs",
-      "4 hrs – 6 hrs",
+      "0 - 2 hrs",
+      "2 hrs - 4 hrs",
+      "4 hrs - 6 hrs",
       "6 hrs - 8 hrs",
       "8 hrs - 10 hrs",
       "10 hrs - 12 hrs",
       "More than 12 hrs"
     ],
     "condition": [
-      "32:~1"
+      "33:1"
     ]
   },
   {
     "question_id": 35,
     "question_type": "multiple_choice",
-    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the first cigarette?",
+    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the most recent cigarette?",
     "response_option": [
-      "0 – 2 hrs",
-      "2 hrs – 4 hrs",
-      "4 hrs – 6 hrs",
+      "0 - 2 hrs",
+      "2 hrs - 4 hrs",
+      "4 hrs - 6 hrs",
       "6 hrs - 8 hrs",
       "8 hrs - 10 hrs",
       "10 hrs - 12 hrs",
       "More than 12 hrs"
     ],
     "condition": [
-      "32:~1"
+      "33:~1"
     ]
   },
   {
     "question_id": 36,
+    "question_type": "multiple_choice",
+    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the first cigarette?",
+    "response_option": [
+      "0 - 2 hrs",
+      "2 hrs - 4 hrs",
+      "4 hrs - 6 hrs",
+      "6 hrs - 8 hrs",
+      "8 hrs - 10 hrs",
+      "10 hrs - 12 hrs",
+      "More than 12 hrs"
+    ],
+    "condition": [
+      "33:~1"
+    ]
+  },
+  {
+    "question_id": 37,
     "question_type": "multiple_select",
     "question_text": "Since the last assessment, did you use (check all that apply)",
     "response_option": [
@@ -464,7 +476,7 @@
     ]
   },
   {
-    "question_id": 37,
+    "question_id": 38,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I experienced or thought about a stressful issue or problem.",
     "response_option": [
@@ -475,7 +487,7 @@
     ]
   },
   {
-    "question_id": 38,
+    "question_id": 39,
     "question_type": "multiple_select",
     "question_text": "Since the last assessment, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
     "response_option": [
@@ -488,11 +500,11 @@
       "Miscellaneous/Other"
     ],
     "condition": [
-      "37:~Definitely No"
+      "38:~Definitely No"
     ]
   },
   {
-    "question_id": 39,
+    "question_id": 40,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I experienced or thought about a positive experience.",
     "response_option": [
@@ -503,7 +515,7 @@
     ]
   },
   {
-    "question_id": 40,
+    "question_id": 41,
     "question_type": "multiple_select",
     "question_text": "Since the last assessment, in which of the following areas did you have a positive experience? (Check all that apply)",
     "response_option": [
@@ -516,11 +528,11 @@
       "Miscellaneous/Other"
     ],
     "condition": [
-      "39:~Definitely No"
+      "40:~Definitely No"
     ]
   },
   {
-    "question_id": 41,
+    "question_id": 42,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I felt little interest or pleasure while doing things.",
     "response_option": [
@@ -533,7 +545,7 @@
     ]
   },
   {
-    "question_id": 42,
+    "question_id": 43,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, someone in my life provided me with help for a worry, problem or difficulty.",
     "response_option": [
@@ -545,7 +557,7 @@
     ]
   },
   {
-    "question_id": 43,
+    "question_id": 44,
     "question_type": "multiple_choice",
     "question_text": "At this moment, I feel that a Higher Power/God/Universal Spirit is with me.",
     "response_option": [
@@ -557,7 +569,7 @@
     ]
   },
   {
-    "question_id": 44,
+    "question_id": 45,
     "question_type": "multiple_choice",
     "question_text": "At this moment, I feel spiritually connected to other people.",
     "response_option": [
@@ -569,7 +581,7 @@
     ]
   },
   {
-    "question_id": 45,
+    "question_id": 46,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]
