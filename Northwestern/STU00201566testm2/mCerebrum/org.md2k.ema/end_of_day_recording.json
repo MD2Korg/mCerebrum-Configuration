@@ -22,7 +22,7 @@
   {
     "question_id": 1,
     "question_type": "multiple_choice",
-    "question_text": "Did you receive a stress-reduction suggestion on your watch today?",
+    "question_text": "Did you receive a stress-reduction suggestion on your phone today?",
     "response_option": [
       "Yes",
       "No"
