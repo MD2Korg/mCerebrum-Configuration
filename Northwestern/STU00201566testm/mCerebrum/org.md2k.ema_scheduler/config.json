@@ -183,8 +183,8 @@
       {
         "type": "IMMEDIATE",
         "data_source": {
-          "type": "EVENT",
-          "id": "SMOKING",
+          "type": "SMOKING",
+          "id": "SELF_REPORT",
           "application": {
             "id": "org.md2k.selfreport"
           }

@@ -8,7 +8,7 @@
         "type": "PHONE"
       },
       "type": "SMOKING",
-      "id": "SELF_REPORT"
+      "id": "SELF_REPORT",
       "metadata": {
         "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
         "NAME": "Smoking Event",
@@ -25,11 +25,9 @@
     },
     "parameters": {
       "s1": "Smoking Report",
-      "s2": "I have smoked",
-      "s3": "less than 5 minutes ago",
-      "s4": "5 - 15 minutes ago",
-      "s5": "15 - 30 minutes ago",
-      "s6": "more than 30 minutes ago"
+      "s2": "I am smoking or just smoked a ____",
+      "s3": "Cigarette or Cigar",
+      "s4": "E-cigarette or Vaporizer"
     }
   },
   {
@@ -60,9 +58,7 @@
       "type": "PUFFMARKER_SMOKING_EPISODE"
     },
     "parameters": {
-      "s1": "300000",
-      "s2": "900000",
-      "s3": "random"
+      "s1": "60000"
     }
   }
 ]

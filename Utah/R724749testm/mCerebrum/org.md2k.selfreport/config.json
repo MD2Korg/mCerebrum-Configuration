@@ -7,8 +7,8 @@
       "platform": {
         "type": "PHONE"
       },
-      "type": "EVENT",
-      "id": "SMOKING",
+      "type": "SMOKING",
+      "id": "SELF_REPORT",
       "metadata": {
         "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
         "NAME": "Smoking Event",
@@ -40,8 +40,8 @@
       "platform": {
         "type": "PHONE"
       },
-      "type": "EVENT",
-      "id": "SMOKING",
+      "type": "SMOKING",
+      "id": "PUFF_MARKER",
       "metadata": {
         "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
         "NAME": "Smoking Event",

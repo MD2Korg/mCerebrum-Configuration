@@ -42,8 +42,8 @@
       {
         "type": "IMMEDIATE",
         "data_source": {
-          "type": "EVENT",
-          "id": "SMOKING"
+          "type": "SMOKING",
+          "id": "SELF_REPORT"
         },
         "conditions": [
         ]

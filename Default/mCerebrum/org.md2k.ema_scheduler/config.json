@@ -42,8 +42,7 @@
       {
         "type": "IMMEDIATE",
         "data_source": {
-          "type": "EVENT",
-          "id": "SMOKING"
+          "type": "SMOKING"
         },
         "conditions": [
         ]
