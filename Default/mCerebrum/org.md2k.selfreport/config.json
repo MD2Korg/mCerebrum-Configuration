@@ -24,12 +24,18 @@
       ]
     },
     "parameters": {
-      "s1": "Smoking Report",
-      "s2": "I have smoked",
-      "s3": "less than 5 minutes ago",
-      "s4": "5 - 15 minutes ago",
-      "s5": "15 - 30 minutes ago",
-      "s6": "more than 30 minutes ago"
+      "title": "Smoking Report",
+      "description": "I have smoked",
+      "type": "SINGLE_CHOICE",
+      "options": [
+        "less than 5 minutes ago",
+        "5 - 15 minutes ago",
+        "15 - 30 minutes ago",
+        "more than 30 minutes ago"
+      ],
+      "positive_button": "Yes",
+      "negative_button": "Cancel",
+      "neutral_button": null
     }
   }
 ]

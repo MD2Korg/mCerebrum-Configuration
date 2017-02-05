@@ -318,18 +318,18 @@
   {
     "question_id": 27,
     "question_type": "multiple_choice",
-    "question_text": "How long ago did you smoke the cigarette?",
+    "question_text": "When did you smoke the first cigarette since the last assessment?",
     "response_option": [
-      "0 - 2 hrs",
-      "2 hrs - 4 hrs",
-      "4 hrs - 6 hrs",
-      "6 hrs - 8 hrs",
-      "8 hrs - 10 hrs",
-      "10 hrs - 12 hrs",
-      "More than 12 hrs"
+      "0 - 15 min",
+      "16 - 30 min",
+      "31 min - 1 hr",
+      "1 hr - 2 hr",
+      "2 hr - 3 hr",
+      "3 hr - 4 hr",
+      "More than 4 hrs"
     ],
     "condition": [
-      "26:1"
+      "25:Yes"
     ]
   },
   {
@@ -337,139 +337,40 @@
     "question_type": "multiple_choice",
     "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the most recent cigarette?",
     "response_option": [
-      "0 - 2 hrs",
-      "2 hrs - 4 hrs",
-      "4 hrs - 6 hrs",
-      "6 hrs - 8 hrs",
-      "8 hrs - 10 hrs",
-      "10 hrs - 12 hrs",
-      "More than 12 hrs"
+      "0 - 15 min",
+      "16 - 30 min",
+      "31 min - 1 hr",
+      "1 hr - 2 hr",
+      "2 hr - 3 hr",
+      "3 hr - 4 hr",
+      "More than 4 hrs"
     ],
     "condition": [
       "26:~1"
     ]
   },
   {
-    "question_id": 37,
+    "question_id": 29,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, did you use (check all that apply)",
+    "question_text": "Since the last assessment, did you experience or think about (Check all that apply)",
     "response_option": [
-      "Cigars, cigarillos, or little cigars",
-      "Chew, snuff, or dip",
-      "Vaporizer or e-cigarettes",
-      "Hookah or waterpipe",
-      "Pipe will with tobacco (not waterpipe)",
-      "Other tobacco product",
-      "<UNSELECT_OTHER>I did not use other tobacco products"
+      "a NEW stressful issue or problem.",
+      "an ONGOING stressful issue or problem.",
+      "<UNSELECT_OTHER>not applicable to me."
     ]
   },
   {
-    "question_id": 38,
-    "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, I experienced or thought about a stressful issue or problem.",
-    "response_option": [
-      "Definitely No",
-      "Mostly No",
-      "Mostly Yes",
-      "Definitely Yes"
-    ]
-  },
-  {
-    "question_id": 39,
+    "question_id": 30,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
+    "question_text": "Since the last assessment, did you experience or think about (Check all that apply)",
     "response_option": [
-      "Work/School",
-      "Family Relationships",
-      "Other Relationships",
-      "Housing/Where you live",
-      "Crime and Legal Matters",
-      "Health",
-      "Miscellaneous/Other"
-    ],
-    "condition": [
-      "38:~Definitely No"
+      "a NEW positive experience.",
+      "an ONGOING positive experience.",
+      "<UNSELECT_OTHER>not applicable to me."
     ]
   },
   {
-    "question_id": 40,
-    "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, I experienced or thought about a positive experience.",
-    "response_option": [
-      "Definitely No",
-      "Mostly No",
-      "Mostly Yes",
-      "Definitely Yes"
-    ]
-  },
-  {
-    "question_id": 41,
-    "question_type": "multiple_select",
-    "question_text": "Since the last assessment, in which of the following areas did you have a positive experience? (Check all that apply)",
-    "response_option": [
-      "Work/School",
-      "Family Relationships",
-      "Other Relationships",
-      "Housing/Where you live",
-      "Crime and Legal Matters",
-      "Health",
-      "Miscellaneous/Other"
-    ],
-    "condition": [
-      "40:~Definitely No"
-    ]
-  },
-  {
-    "question_id": 42,
-    "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, I felt little interest or pleasure while doing things.",
-    "response_option": [
-      "0 (absolutely no pleasure)",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5 (extreme pleasure)"
-    ]
-  },
-  {
-    "question_id": 43,
-    "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, someone in my life provided me with help for a worry, problem or difficulty.",
-    "response_option": [
-      "Strongly Disagree",
-      "Disagree",
-      "Neutral",
-      "Agree",
-      "Strongly Agree"
-    ]
-  },
-  {
-    "question_id": 44,
-    "question_type": "multiple_choice",
-    "question_text": "At this moment, I feel that a Higher Power/God/Universal Spirit is with me.",
-    "response_option": [
-      "Strongly Disagree",
-      "Disagree",
-      "Neutral",
-      "Agree",
-      "Strongly Agree"
-    ]
-  },
-  {
-    "question_id": 45,
-    "question_type": "multiple_choice",
-    "question_text": "At this moment, I feel spiritually connected to other people.",
-    "response_option": [
-      "Strongly Disagree",
-      "Disagree",
-      "Neutral",
-      "Agree",
-      "Strongly Agree"
-    ]
-  },
-  {
-    "question_id": 46,
+    "question_id": 31,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]
