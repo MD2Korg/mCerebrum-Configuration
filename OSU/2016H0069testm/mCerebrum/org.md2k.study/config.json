@@ -17,6 +17,7 @@
       "org.md2k.motionsense/default_config.json",
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.omron/default_config.json",
+      "org.md2k.easysense/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.study/config.json",
@@ -92,6 +93,17 @@
       "default_config": "default_config.json",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
+    },
+    {
+      "id": "easysense",
+      "name": "EasySense",
+      "enable": "true",
+      "package_name": "org.md2k.easysense",
+      "settings": "org.md2k.easysense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-EasySense/releases"
     },
     {
       "id": "omron",
@@ -312,7 +324,7 @@
     {
       "id": "plotter",
       "name": "Plotter",
-      "enable": false,
+      "enable": true,
       "icon": "ic_plot_teal_48dp",
       "rank": 2,
       "package_name": "org.md2k.plotter"

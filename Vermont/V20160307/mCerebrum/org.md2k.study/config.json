@@ -1,12 +1,10 @@
 {
   "config_info": {
-    "id": "R724749-Test",
-    "version": "1.4.8",
-    "name": "RICE Smoking Study-Test (pilot)",
-    "filename": "R724749testmp",
-    "auto_update": true,
-    "logo": "logo.png",
-    "title": "",
+    "id": "V20160307",
+    "version": "1.4.5",
+    "name": "VERMONT Smoking Study",
+    "filename": "V20160307",
+    "auto_update": false,
     "required_files": [
       "org.md2k.autosense/default_config.json",
       "org.md2k.motionsense/default_config.json",
@@ -25,13 +23,12 @@
       "org.md2k.streamprocessor/model_rip.json",
       "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
-      "org.md2k.study/logo.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
   },
   "start_screen": {
-    "update_app": true,
+    "update_app": false,
     "md2k_logo": true,
     "md2k_link": true,
     "config_text": true
@@ -477,11 +474,11 @@
       },
       "video": {
         "enable": true,
-        "link": "jIwhPiO7GmU"
+        "link": "i7Tp9iz7FRg"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+        "text": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
@@ -497,11 +494,11 @@
       },
       "video": {
         "enable": true,
-        "link": "sIpg_IQTYjo"
+        "link": "ly-xgB0AEwM"
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+        "text": "1) Adjust the position of the electrodes on the body.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
       }
     },
     {
@@ -522,7 +519,7 @@
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     },
     {
@@ -543,7 +540,7 @@
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
       }
     }
   ],

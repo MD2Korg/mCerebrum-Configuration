@@ -1,31 +1,19 @@
 {
   "config_info": {
-    "id": "R724749-Test",
+    "id": "JHU00099074test",
     "version": "1.4.8",
-    "name": "RICE Smoking Study-Test (pilot)",
-    "filename": "R724749testmp",
+    "name": "CTN-0073-Ot",
+    "filename": "JHU00099074test",
     "auto_update": true,
-    "logo": "logo.png",
-    "title": "",
+    "title": "CTN-0073-Ot",
     "required_files": [
       "org.md2k.autosense/default_config.json",
-      "org.md2k.motionsense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
-      "org.md2k.ema/config_ema.json",
-      "org.md2k.ema/questionnaire.json",
-      "org.md2k.ema_scheduler/config.json",
-      "org.md2k.ema_scheduler/notification.json",
-      "org.md2k.ema_scheduler/condition.json",
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
-      "org.md2k.selfreport/config.json",
-      "org.md2k.streamprocessor/model.json",
-      "org.md2k.streamprocessor/model_rip.json",
-      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
-      "org.md2k.study/logo.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
@@ -83,7 +71,7 @@
     {
       "id": "motionsense",
       "name": "MotionSense",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.motionsense",
       "service": "org.md2k.motionsense.ServiceMotionSense",
       "settings": "org.md2k.motionsense.ActivitySettings",
@@ -95,7 +83,7 @@
     {
       "id": "selfreport",
       "name": "Self Report",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.selfreport",
       "service": "org.md2k.selfreport.ServiceSelfReport",
       "config": "config.json",
@@ -105,7 +93,7 @@
     {
       "id": "streamprocessor",
       "name": "StreamProcessor",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.streamprocessor",
       "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
@@ -114,7 +102,7 @@
     {
       "id": "ema_scheduler",
       "name": "EMAScheduler",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.ema_scheduler",
       "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
       "config": "config.json",
@@ -133,7 +121,7 @@
     {
       "id": "ema",
       "name": "EMA",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.ema",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"
@@ -405,8 +393,6 @@
         "name": "Others",
         "enable": true,
         "values": [
-          "app_service",
-          "EMA_test"
         ]
       }
     ]
@@ -429,7 +415,6 @@
         "id": "user_app",
         "enable": true,
         "values": [
-          "smoking_self_report",
           "app_reset"
         ]
       }

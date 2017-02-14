@@ -1,0 +1,376 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "When the phone beeped, I was doing things automatically, without being aware of what I was doing.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "When the phone beeped, I found myself doing things without paying attention.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "When the phone beeped, I was telling myself that I shouldn’t be thinking the way I’m thinking.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "When the phone beeped, I was thinking that some of my emotions are bad or inappropriate and shouldn’t feel them.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel angry.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel ashamed.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel calm.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel disgusted.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel grateful.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel guilty.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel happy.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel irritable.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel lonely.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel proud.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel nervous.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel sad.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I am very motivated to be abstinent from cigarettes.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I have an urge to smoke.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, Smoking would improve my mood, be pleasurable, or help me cope with this situation.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I am confident in my ability to be abstinent from cigarettes.",
+    "response_option": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "question_id": 20,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, Cigarettes are available to me.",
+    "response_option": [
+      "Not at All",
+      "With Extreme Difficulty",
+      "With Difficulty",
+      "Fairly Easily",
+      "Easily"
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, Is smoking allowed where you are?",
+    "response_option": [
+      "Smoking is forbidden",
+      "Smoking is discouraged",
+      "Smoking is allowed"
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, Are you wearing the patch?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 23,
+    "question_type": "multiple_select",
+    "question_text": "Right now, Are other people around you smoking cigarettes? (Check all that apply)",
+    "response_option": [
+      "Adult family member",
+      "Child (under 18)",
+      "Friend",
+      "Stranger",
+      "Someone I do not know well",
+      "<UNSELECT_OTHER>No one around me is smoking"
+    ]
+  },
+  {
+    "question_id": 24,
+    "question_type": "multiple_select",
+    "question_text": "Since the last assessment, did you drink any (Check all that apply)",
+    "response_option": [
+      "Beer",
+      "Wine",
+      "Liquor",
+      "<UNSELECT_OTHER>Did not drink any alcohol"
+    ]
+  },
+  {
+    "question_id": 25,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last assessment, have you smoked any cigarettes?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 26,
+    "question_type": "text_numeric",
+    "question_text": "How many cigarettes did you smoke?",
+    "response_option": [
+      "1",
+      "100"
+    ],
+    "condition": [
+      "25:Yes"
+    ]
+  },
+  {
+    "question_id": 27,
+    "question_type": "multiple_choice",
+    "question_text": "When did you smoke the first cigarette since the last assessment?",
+    "response_option": [
+      "0 - 15 min",
+      "16 - 30 min",
+      "31 min - 1 hr",
+      "1 hr - 2 hr",
+      "2 hr - 3 hr",
+      "3 hr - 4 hr",
+      "More than 4 hrs"
+    ],
+    "condition": [
+      "25:Yes"
+    ]
+  },
+  {
+    "question_id": 28,
+    "question_type": "multiple_choice",
+    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the most recent cigarette?",
+    "response_option": [
+      "0 - 15 min",
+      "16 - 30 min",
+      "31 min - 1 hr",
+      "1 hr - 2 hr",
+      "2 hr - 3 hr",
+      "3 hr - 4 hr",
+      "More than 4 hrs"
+    ],
+    "condition": [
+      "26:~1"
+    ]
+  },
+  {
+    "question_id": 29,
+    "question_type": "multiple_select",
+    "question_text": "Since the last assessment, did you experience or think about (Check all that apply)",
+    "response_option": [
+      "a NEW stressful issue or problem.",
+      "an ONGOING stressful issue or problem.",
+      "<UNSELECT_OTHER>not applicable to me."
+    ]
+  },
+  {
+    "question_id": 30,
+    "question_type": "multiple_select",
+    "question_text": "Since the last assessment, did you experience or think about (Check all that apply)",
+    "response_option": [
+      "a NEW positive experience.",
+      "an ONGOING positive experience.",
+      "<UNSELECT_OTHER>not applicable to me."
+    ]
+  },
+  {
+    "question_id": 31,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

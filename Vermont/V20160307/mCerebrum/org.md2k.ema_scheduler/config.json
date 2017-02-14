@@ -112,29 +112,6 @@
           "PHONE_SCREEN_30"
         ]
       }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.25,
-        "messages": [
-          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
-          "You will be paid $1.25",
-          "Total Earning: $"
-        ],
-        "conditions": [
-          "DATA_QUALITY_LAST_EMA"
-        ]
-      },
-      {
-        "incentive": 0.50,
-        "messages": [
-          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
-          "You will be paid $0.50",
-          "Total Earning: $"
-        ],
-        "conditions": [
-        ]
-      }
     ]
   },
   {
@@ -185,10 +162,13 @@
         },
         "conditions": [
           "PRIVACY",
+          "VALID_BLOCK_SMOKING_EMA",
+          "SMOKING_EMA_30",
+          "STRESS_EMA_5",
+          "RANDOM_EMA_5",
           "DATA_QUALITY_5",
           "NOT_DRIVING_5",
-          "PHONE_BATTERY_10",
-          "NO_SELF_REPORT_10"
+          "PHONE_BATTERY_10"
         ]
       }
     ],
@@ -198,7 +178,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_SINGLE_CHOICE",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -207,7 +187,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_SINGLE_CHOICE",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       },
@@ -216,7 +196,7 @@
         "types": [
           "PHONE_VIBRATE_30",
           "PHONE_TONE_30",
-          "PHONE_MESSAGE_SINGLE_CHOICE",
+          "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
         ]
       }
@@ -309,29 +289,6 @@
           "PHONE_TONE_30",
           "PHONE_MESSAGE_DELAY_EMA",
           "PHONE_SCREEN_30"
-        ]
-      }
-    ],
-    "incentive_rules": [
-      {
-        "incentive": 1.25,
-        "messages": [
-          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
-          "You will be paid $1.25",
-          "Total Earning: $"
-        ],
-        "conditions": [
-          "DATA_QUALITY_LAST_EMA"
-        ]
-      },
-      {
-        "incentive": 0.50,
-        "messages": [
-          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
-          "You will be paid $0.50",
-          "Total Earning: $"
-        ],
-        "conditions": [
         ]
       }
     ]
