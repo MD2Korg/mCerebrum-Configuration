@@ -51,7 +51,7 @@
   },
   {
     "question_id": 5,
-    "question_type": "multiple_choice",
+    "question_type": "multiple_select",
     "question_text": "CHECK ALL THAT APPLY FOR YESTERDAY",
     "response_option": [
       "I ate fast food",
