@@ -71,7 +71,7 @@
     {
       "id": "motionsense",
       "name": "MotionSense",
-      "enable": false,
+      "enable": true,
       "package_name": "org.md2k.motionsense",
       "service": "org.md2k.motionsense.ServiceMotionSense",
       "settings": "org.md2k.motionsense.ActivitySettings",
@@ -275,10 +275,7 @@
       "enable": true,
       "package_name": "org.md2k.datakit",
       "rank": 2,
-      "class_name": "org.md2k.datakit.ActivityPrivacy",
-      "parameters": {
-        "max_time": "7200000"
-      }
+      "class_name": "org.md2k.datakit.ActivityPrivacy"
     },
     {
       "id": "user_status",

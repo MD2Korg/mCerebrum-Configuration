@@ -1,9 +1,9 @@
 {
   "config_info": {
-    "id": "R783207-Testm",
-    "version": "1.4.6",
-    "name": "AA Smoking Study-Test",
-    "filename": "R783207testm",
+    "id": "R783207testmp",
+    "version": "1.4.9",
+    "name": "AA Smoking Study-Test (pilot)",
+    "filename": "R783207testmp",
     "auto_update": true,
     "logo": "logo_aa.png",
     "title": "",
