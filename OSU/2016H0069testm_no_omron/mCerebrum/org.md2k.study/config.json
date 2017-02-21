@@ -108,7 +108,7 @@
     {
       "id": "omron",
       "name": "Omron",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.omron",
       "settings": "org.md2k.omron.ActivitySettings",
       "config": "config.json",

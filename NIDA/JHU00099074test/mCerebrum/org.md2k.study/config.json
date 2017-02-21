@@ -527,6 +527,48 @@
         "enable": true,
         "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
       }
+    },
+    {
+      "name": "Left Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MOTION_SENSE_HRV",
+            "id": "LEFT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "2n7HwLWlgtQ"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+      }
+    },
+    {
+      "name": "Right Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MOTION_SENSE_HRV",
+            "id": "RIGHT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "2n7HwLWlgtQ"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+      }
     }
   ],
   "day_start": {

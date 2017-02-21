@@ -1,0 +1,92 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "Yesterday, were you able to walk the same distance compared to 2 days ago?",
+    "response_option": [
+      "No, I walked less",
+      "Yes, I walked about the same distance",
+      "No, I walked more"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "How flat did you sleep last night?",
+    "response_option": [
+      "1 pillow",
+      "2 pillows",
+      "3 or more pillows",
+      "In a recliner"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "Yesterday, did you feel like you had retained any extra fluid compared to 2 days ago?",
+    "response_option": [
+      "No, I felt like I retained less fluid",
+      "Yes, I felt like I retained the same amount of fluid",
+      "No, I felt like I retained more fluid"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "Yesterday, did your diet (salt intake) change compared to 2 days ago? Examples of salty foods include fast food, canned foods, processed foods, and pre-packaged foods.",
+    "response_option": [
+      "Yes, I ate less salty foods than usual",
+      "No, I ate my normal amount of salty foods",
+      "Yes, I ate more salty foods than usual"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "Did you eat food from a restaurant yesterday?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "multiple_select",
+    "question_text": "CHECK ALL THAT APPLY FOR YESTERDAY",
+    "response_option": [
+      "I ate fast food",
+      "I ate food from a dine-in restaurant"
+    ],
+    "condition": [
+      "4:Yes"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "multiple_choice",
+    "question_text": "How did you get it the food from the restaurant yesterday?",
+    "response_option": [
+      "I went to the restaurant myself",
+      "Someone brought food from the restaurant to me"
+    ],
+    "condition": [
+      "4:Yes"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_choice",
+    "question_text": "Yesterday, how would you rate your level of shortness of breath?",
+    "response_option": [
+      "1 = No shortness of breath",
+      "2 = Mild shortness of breath",
+      "3 = Moderate shortness of breath",
+      "4 = Severe shortness of breath",
+      "5 = Worst possible shortness of breath"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

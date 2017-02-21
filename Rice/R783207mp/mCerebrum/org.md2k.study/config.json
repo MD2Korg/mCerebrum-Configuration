@@ -1,32 +1,37 @@
 {
   "config_info": {
-    "id": "2016H0069-Test",
-    "version": "1.4.5",
-    "name": "OSU CHF Study-Test",
-    "filename": "2016H0069testm",
-    "auto_update": true,
-    "title": "OSU CHF Study - Test",
+    "id": "R783207mp",
+    "version": "1.4.10",
+    "name": "AA Smoking Study (pilot)",
+    "filename": "R783207mp",
+    "auto_update": false,
+    "logo": "logo_aa.png",
+    "title": "",
     "required_files": [
-      "org.md2k.chfscheduler/config.json",
-      "org.md2k.chfscheduler/notification.json",
+      "org.md2k.autosense/default_config.json",
+      "org.md2k.motionsense/default_config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/questionnaire.json",
-      "org.md2k.microsoftband/default_config.json",
-      "org.md2k.motionsense/default_config.json",
+      "org.md2k.ema_scheduler/config.json",
+      "org.md2k.ema_scheduler/notification.json",
+      "org.md2k.ema_scheduler/condition.json",
       "org.md2k.notificationmanager/tone.mp3",
-      "org.md2k.omron/default_config.json",
-      "org.md2k.easysense/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
+      "org.md2k.selfreport/config.json",
+      "org.md2k.streamprocessor/model.json",
+      "org.md2k.streamprocessor/model_rip.json",
+      "org.md2k.streamprocessor/model_puffmarker.json",
       "org.md2k.study/config.json",
+      "org.md2k.study/logo_aa.png",
       "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
   },
   "start_screen": {
-    "update_app": true,
+    "update_app": false,
     "md2k_logo": true,
     "md2k_link": true,
     "config_text": true
@@ -64,6 +69,18 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
     },
     {
+      "id": "autosense",
+      "name": "AutoSense",
+      "enable": true,
+      "package_name": "org.md2k.autosense",
+      "service": "org.md2k.autosense.antradio.connection.ServiceAutoSenses",
+      "settings": "org.md2k.autosense.ActivityAutoSenseSettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-AutoSense/releases"
+    },
+    {
       "id": "motionsense",
       "name": "MotionSense",
       "enable": true,
@@ -76,55 +93,33 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
     },
     {
-      "id": "microsofthealth",
-      "name": "MicrosoftHealth",
+      "id": "selfreport",
+      "name": "Self Report",
       "enable": true,
-      "package_name": "com.microsoft.kapp",
-      "download_link": "https://github.com/MD2Korg/MicrosoftHealth/releases/download/1.3.20913.1/microsofthealth.apk"
+      "package_name": "org.md2k.selfreport",
+      "service": "org.md2k.selfreport.ServiceSelfReport",
+      "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-SelfReport/releases"
     },
     {
-      "id": "microsoftband",
-      "name": "MicrosoftBand",
+      "id": "streamprocessor",
+      "name": "StreamProcessor",
       "enable": true,
-      "package_name": "org.md2k.microsoftband",
-      "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
-      "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
+      "package_name": "org.md2k.streamprocessor",
+      "service": "org.md2k.streamprocessor.ServiceStreamProcessor",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
+      "download_link": "https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases"
     },
     {
-      "id": "easysense",
-      "name": "EasySense",
+      "id": "ema_scheduler",
+      "name": "EMAScheduler",
       "enable": true,
-      "package_name": "org.md2k.easysense",
-      "settings": "org.md2k.easysense.ActivitySettings",
+      "package_name": "org.md2k.ema_scheduler",
+      "service": "org.md2k.ema_scheduler.ServiceEMAScheduler",
       "config": "config.json",
-      "default_config": "default_config.json",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-EasySense/releases"
-    },
-    {
-      "id": "omron",
-      "name": "Omron",
-      "enable": true,
-      "package_name": "org.md2k.omron",
-      "settings": "org.md2k.omron.ActivitySettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
-      "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-Omron/releases"
-    },
-    {
-      "id": "chfscheduler",
-      "name": "CHFScheduler",
-      "enable": true,
-      "package_name": "org.md2k.chfscheduler",
-      "config": "config.json",
-      "service": "org.md2k.chfscheduler.ServiceChfScheduler",
-      "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-CHFScheduler/releases"
+      "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
     },
     {
       "id": "notificationmanager",
@@ -134,16 +129,6 @@
       "service": "org.md2k.notificationmanager.ServiceNotificationManager",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-NotificationManager/releases"
-    },
-    {
-      "id": "medication",
-      "name": "Medication",
-      "enable": true,
-      "package_name": "org.md2k.medication",
-      "settings": "org.md2k.medication.MainSettingsActivity",
-      "config": "config.json",
-      "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-Medication/releases"
     },
     {
       "id": "ema",
@@ -302,7 +287,10 @@
       "enable": true,
       "package_name": "org.md2k.datakit",
       "rank": 2,
-      "class_name": "org.md2k.datakit.ActivityPrivacy"
+      "class_name": "org.md2k.datakit.ActivityPrivacy",
+      "parameters": {
+        "max_time": "7200000"
+      }
     },
     {
       "id": "user_status",
@@ -312,14 +300,14 @@
       "rank": 2
     },
     {
-      "id": "chfscheduler",
-      "type": "chfscheduler",
-      "name": "CHF Protocol",
-      "icon": "ic_medication_teal_48dp",
+      "id": "self_report",
+      "type": "smoking_self_report",
+      "name": "Report Smoking",
+      "icon": "ic_smoking_teal_48dp",
       "enable": true,
-      "package_name": "org.md2k.chfscheduler",
+      "package_name": "org.md2k.selfreport",
       "rank": 2,
-      "class_name": "org.md2k.chfscheduler.ActivityShowList"
+      "class_name": "org.md2k.selfreport.ActivityMain"
     },
     {
       "id": "plotter",
@@ -441,13 +429,27 @@
         "id": "user_app",
         "enable": true,
         "values": [
-          "chfscheduler",
+          "smoking_self_report",
           "app_reset"
         ]
       }
     ]
   },
   "data_quality": [
+    {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_VARIANCE",
+      "id": "RESPIRATION"
+    },
+    {
+      "platform": {
+        "type": "AUTOSENSE_CHEST"
+      },
+      "type": "DATA_QUALITY",
+      "id": "ECG"
+    },
     {
       "platform": {
         "id": "LEFT_WRIST"
@@ -463,7 +465,47 @@
   ],
   "data_quality_view": [
     {
-      "name": "L-Wrist(A)",
+      "name": "Breathing",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "RESPIRATION"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "jIwhPiO7GmU"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+      }
+    },
+    {
+      "name": "Heart Rate",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "AUTOSENSE_CHEST"
+          },
+          "type": "ECG"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "sIpg_IQTYjo"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+      }
+    },
+    {
+      "name": "Left Wrist",
       "plotter": {
         "enable": true,
         "datasource": {
@@ -480,11 +522,11 @@
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
       }
     },
     {
-      "name": "R-Wrist(A)",
+      "name": "Right Wrist",
       "plotter": {
         "enable": true,
         "datasource": {
@@ -501,49 +543,7 @@
       },
       "message": {
         "enable": true,
-        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wrist sensor is charged."
-      }
-    },
-    {
-      "name": "L-Wrist(M)",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "MICROSOFT_BAND",
-            "id": "LEFT_WRIST"
-          },
-          "type": "ACCELEROMETER"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "GuHSeXYO-E0"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
-      }
-    },
-    {
-      "name": "R-Wrist(M)",
-      "plotter": {
-        "enable": true,
-        "datasource": {
-          "platform": {
-            "type": "MICROSOFT_BAND",
-            "id": "RIGHT_WRIST"
-          },
-          "type": "ACCELEROMETER"
-        }
-      },
-      "video": {
-        "enable": true,
-        "link": "GuHSeXYO-E0"
-      },
-      "message": {
-        "enable": true,
-        "text": "1) Make sure the clasp on the Band is securely locked around the wrist.\n\n2) Reset the application, wait 15 seconds and check again.\n\n3) Restart the phone, wait one minute and check again.\n\n4) Make sure the Band is charged and powered ON."
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
       }
     }
   ],

@@ -3,21 +3,22 @@
     "id": "2016H0069-Test",
     "version": "1.4.5",
     "name": "OSU CHF Study-Test",
-    "filename": "2016H0069testm",
+    "filename": "2016H0069test",
     "auto_update": true,
     "title": "OSU CHF Study - Test",
     "required_files": [
+      "org.md2k.chfscheduler/condition.json",
       "org.md2k.chfscheduler/config.json",
       "org.md2k.chfscheduler/notification.json",
       "org.md2k.datakit/config.json",
       "org.md2k.datakit/default_config.json",
       "org.md2k.ema/config_ema.json",
+      "org.md2k.ema/medication.json",
       "org.md2k.ema/questionnaire.json",
       "org.md2k.microsoftband/default_config.json",
       "org.md2k.motionsense/default_config.json",
       "org.md2k.notificationmanager/tone.mp3",
       "org.md2k.omron/default_config.json",
-      "org.md2k.easysense/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
       "org.md2k.study/config.json",
@@ -95,17 +96,6 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases"
     },
     {
-      "id": "easysense",
-      "name": "EasySense",
-      "enable": true,
-      "package_name": "org.md2k.easysense",
-      "settings": "org.md2k.easysense.ActivitySettings",
-      "config": "config.json",
-      "default_config": "default_config.json",
-      "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-EasySense/releases"
-    },
-    {
       "id": "omron",
       "name": "Omron",
       "enable": true,
@@ -117,12 +107,11 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-Omron/releases"
     },
     {
-      "id": "chfscheduler",
+      "id": "chf_scheduler",
       "name": "CHFScheduler",
       "enable": true,
       "package_name": "org.md2k.chfscheduler",
       "config": "config.json",
-      "service": "org.md2k.chfscheduler.ServiceChfScheduler",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-CHFScheduler/releases"
     },
@@ -302,7 +291,10 @@
       "enable": true,
       "package_name": "org.md2k.datakit",
       "rank": 2,
-      "class_name": "org.md2k.datakit.ActivityPrivacy"
+      "class_name": "org.md2k.datakit.ActivityPrivacy",
+      "parameters": {
+        "max_time": "7200000"
+      }
     },
     {
       "id": "user_status",
@@ -312,9 +304,9 @@
       "rank": 2
     },
     {
-      "id": "chfscheduler",
-      "type": "chfscheduler",
-      "name": "CHF Protocol",
+      "id": "chf_scheduler",
+      "type": "chf_scheduler",
+      "name": "MedHerence",
       "icon": "ic_medication_teal_48dp",
       "enable": true,
       "package_name": "org.md2k.chfscheduler",
@@ -324,7 +316,7 @@
     {
       "id": "plotter",
       "name": "Plotter",
-      "enable": true,
+      "enable": false,
       "icon": "ic_plot_teal_48dp",
       "rank": 2,
       "package_name": "org.md2k.plotter"
@@ -441,7 +433,7 @@
         "id": "user_app",
         "enable": true,
         "values": [
-          "chfscheduler",
+          "chf_scheduler",
           "app_reset"
         ]
       }
