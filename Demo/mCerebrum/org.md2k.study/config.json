@@ -7,8 +7,6 @@
     "auto_update": false,
     "title": "mCerebrum Demo",
     "required_files": [
-      "org.md2k.autosense/config.json",
-      "org.md2k.motionsense/config.json",
       "org.md2k.datakit/config.json",
       "org.md2k.ema/config_ema.json",
       "org.md2k.ema/questionnaire.json",
@@ -418,6 +416,7 @@
         "enable": true,
         "values": [
           "smoking_self_report",
+          "plotter",
           "app_reset"
         ]
       }
