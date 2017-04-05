@@ -91,7 +91,7 @@
         "total": 1,
         "base": "DAY_START",
         "start_offset": 0,
-        "end_offset": 300000
+        "end_offset": 86400000
       }
     ],
     "scheduler_rules": [
