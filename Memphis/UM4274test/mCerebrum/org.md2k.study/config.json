@@ -1,0 +1,381 @@
+{
+  "config_info": {
+    "id": "UM4274Test",
+    "version": "1.4.6",
+    "name": "Memphis Brushing study-test",
+    "filename": "UM4274test",
+    "auto_update": true,
+    "title": "BRUSHING",
+    "required_files": [
+      "org.md2k.motionsense/default_config.json",
+      "org.md2k.datakit/config.json",
+      "org.md2k.datakit/default_config.json",
+      "org.md2k.phonesensor/default_config.json",
+      "org.md2k.plotter/default_config.json",
+      "org.md2k.oralb/default_config.json",
+      "org.md2k.study/config.json",
+      "org.md2k.study/logo.png",
+      "org.md2k.study/notification.json",
+      "org.md2k.study/tutorial.pdf"
+    ]
+  },
+  "start_screen": {
+    "update_app": true,
+    "md2k_logo": true,
+    "md2k_link": true,
+    "config_text": true
+  },
+  "apps": [
+    {
+      "id": "study",
+      "name": "Study",
+      "enable": true,
+      "package_name": "org.md2k.study",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-Study/releases"
+    },
+    {
+      "id": "datakit",
+      "name": "DataKit",
+      "enable": true,
+      "package_name": "org.md2k.datakit",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "service": "org.md2k.datakit.cerebralcortex.ServiceCerebralCortex",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-DataKit/releases"
+    },
+    {
+      "id": "phonesensor",
+      "name": "PhoneSensor",
+      "enable": true,
+      "package_name": "org.md2k.phonesensor",
+      "service": "org.md2k.phonesensor.ServicePhoneSensor",
+      "settings": "org.md2k.phonesensor.ActivityPhoneSensorSettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
+    },
+    {
+      "id": "motionsense",
+      "name": "MotionSense",
+      "enable": true,
+      "package_name": "org.md2k.motionsense",
+      "service": "org.md2k.motionsense.ServiceMotionSense",
+      "settings": "org.md2k.motionsense.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
+    },
+    {
+      "id": "oralb",
+      "name": "mCerebrum-Brushing",
+      "enable": true,
+      "package_name": "org.md2k.oralb",
+      "settings": "org.md2k.oralb.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-OralB/releases"
+    },
+    {
+      "id": "plotter",
+      "name": "Plotter",
+      "enable": true,
+      "package_name": "org.md2k.plotter",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-Plotter/releases"
+    }
+  ],
+  "actions": [
+    {
+      "id": "config_info",
+      "type": "setup",
+      "name": "Configuration Info",
+      "enable": true,
+      "rank": 7
+    },
+    {
+      "id": "clear_config",
+      "type": "reset",
+      "name": "Clear Configuration",
+      "enable": true,
+      "rank": 7,
+      "icon": "ic_delete_blue_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.clear_config.ActivityClearConfig"
+    },
+    {
+      "id": "config_download",
+      "type": "reset",
+      "name": "Download New Configuration",
+      "enable": true,
+      "rank": 7,
+      "package_name": "org.md2k.study",
+      "icon": "ic_download_teal_48dp",
+      "class_name": "org.md2k.study.model_view.config_info.ActivityConfigDownload"
+    },
+    {
+      "id": "app_install",
+      "type": "setup",
+      "name": "Applications",
+      "enable": true,
+      "rank": 6,
+      "icon": "ic_install_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_install.ActivityInstallApp"
+    },
+    {
+      "id": "app_settings",
+      "type": "setup",
+      "name": "Settings",
+      "enable": true,
+      "rank": 6,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_settings.ActivityAppSettings",
+      "icon": "ic_settings_teal_48dp"
+    },
+    {
+      "id": "datakit_connect",
+      "type": "setup",
+      "name": "DataKit Connection",
+      "enable": true,
+      "rank": 5
+    },
+    {
+      "id": "study_info",
+      "type": "setup",
+      "enable": true,
+      "rank": 4,
+      "name": "Study"
+    },
+    {
+      "id": "user_info",
+      "type": "setup",
+      "name": "User ID",
+      "enable": true,
+      "rank": 4,
+      "icon": "ic_user_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.user_info.ActivityUserInfo"
+    },
+    {
+      "id": "clear_database",
+      "type": "reset",
+      "name": "Clear All Data",
+      "icon": "ic_delete_indigo_48dp",
+      "enable": true,
+      "rank": 4,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.clear_data.ActivityClearData"
+    },
+    {
+      "id": "app_service",
+      "type": "setup",
+      "enable": true,
+      "name": "Running Apps",
+      "rank": 3,
+      "icon": "ic_apps_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_service.ActivityService"
+    },
+    {
+      "id": "user_status",
+      "name": "user_status",
+      "icon": "ic_unlock_teal_48dp",
+      "enable": true,
+      "rank": 2
+    },
+    {
+      "id": "plotter",
+      "name": "Plotter",
+      "enable": true,
+      "icon": "ic_plot_teal_48dp",
+      "rank": 2,
+      "package_name": "org.md2k.plotter"
+    },
+    {
+      "id": "data_quality",
+      "rank": 2,
+      "enable": true,
+      "name": "Sensor Data Quality"
+    },
+    {
+      "id": "user_app",
+      "name": "User Application",
+      "icon": "ic_unlock_teal_48dp",
+      "enable": true,
+      "rank": 2
+    },
+    {
+      "id": "app_reset",
+      "name": "Reset App",
+      "icon": "ic_refresh_teal_48dp",
+      "enable": true,
+      "rank": 2,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_reset.ActivityAppReset"
+    },
+    {
+      "id": "oralb_brush_app",
+      "name": "Smart Brush App",
+      "icon": "oralb_brush.png",
+      "enable": true,
+      "rank": 2,
+      "package_name": "org.md2k.oralb",
+      "class_name": "org.md2k.oralb.MainActivity"
+    },
+    {
+      "id": "normal_brush_app",
+      "name": "Regular Brush App",
+      "icon": "regular_brush.png",
+      "enable": true,
+      "rank": 2,
+      "package_name": "org.md2k.oralb",
+      "class_name": "org.md2k.oralb.VideoActivity"
+    },
+    {
+      "id": "app_start",
+      "name": "Start Data Collection",
+      "icon": "ic_play_teal_48dp",
+      "enable": true,
+      "rank": 2,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_start.ActivityAppStart"
+    },
+    {
+      "id": "app_stop",
+      "name": "Stop & Close Application",
+      "icon": "ic_error_red_50dp",
+      "enable": true,
+      "rank": 2,
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.app_stop.ActivityAppStop"
+    }
+  ],
+  "admin_view": {
+    "password": "1234",
+    "view_contents": [
+      {
+        "id": "key_configure_app",
+        "name": "Configure Applications",
+        "enable": true,
+        "values": [
+          "config_info",
+          "app_install",
+          "app_settings",
+          "config_download",
+          "clear_config"
+        ]
+      },
+      {
+        "id": "key_configure_study",
+        "name": "Configure Study",
+        "enable": true,
+        "values": [
+          "config_info",
+          "study_info",
+          "user_info",
+          "clear_database"
+        ]
+      },
+      {
+        "id": "key_start_study",
+        "name": "Start Study",
+        "enable": true
+      },
+      {
+        "id": "key_stop_study",
+        "name": "Stop Study",
+        "enable": true
+      },
+      {
+        "id": "key_other",
+        "name": "Others",
+        "enable": true,
+        "values": [
+          "app_service",
+          "EMA_test"
+        ]
+      }
+    ]
+  },
+  "user_view": {
+    "view_contents": [
+      {
+        "id": "data_quality",
+        "enable": true
+      },
+      {
+        "id": "user_app",
+        "enable": true,
+        "values": [
+          "app_reset",
+          "oralb_brush_app",
+          "normal_brush_app"
+        ]
+      }
+    ]
+  },
+  "data_quality": [
+    {
+      "platform": {
+        "id": "LEFT_WRIST"
+      },
+      "type": "DATA_QUALITY"
+    },
+    {
+      "platform": {
+        "id": "RIGHT_WRIST"
+      },
+      "type": "DATA_QUALITY"
+    }
+  ],
+  "data_quality_view": [
+    {
+      "name": "Left Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MOTION_SENSE",
+            "id": "LEFT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "2n7HwLWlgtQ"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+      }
+    },
+    {
+      "name": "Right Wrist",
+      "plotter": {
+        "enable": true,
+        "datasource": {
+          "platform": {
+            "type": "MOTION_SENSE",
+            "id": "RIGHT_WRIST"
+          },
+          "type": "ACCELEROMETER"
+        }
+      },
+      "video": {
+        "enable": true,
+        "link": "2n7HwLWlgtQ"
+      },
+      "message": {
+        "enable": true,
+        "text": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+      }
+    }
+  ]
+}
