@@ -1,11 +1,11 @@
 {
   "config_info": {
-    "id": "2016H0069-Test",
-    "version": "1.4.5",
-    "name": "OSU CHF Study-Test",
-    "filename": "2016H0069testm",
-    "auto_update": true,
-    "title": "OSU CHF Study - Test",
+    "id": "2016H0069m",
+    "version": "1.4.6",
+    "name": "OSU CHF Study",
+    "filename": "2016H0069m",
+    "auto_update": false,
+    "title": "OSU CHF Study",
     "required_files": [
       "org.md2k.chfscheduler/config.json",
       "org.md2k.chfscheduler/notification.json",
@@ -26,7 +26,7 @@
     ]
   },
   "start_screen": {
-    "update_app": true,
+    "update_app": false,
     "md2k_logo": true,
     "md2k_link": true,
     "config_text": true
@@ -108,7 +108,7 @@
     {
       "id": "omron",
       "name": "Omron",
-      "enable": false,
+      "enable": true,
       "package_name": "org.md2k.omron",
       "settings": "org.md2k.omron.ActivitySettings",
       "config": "config.json",
