@@ -1,4 +1,4 @@
-# MD2K Year 2 Smoking at Northwestern (STU00201566)
+# Rice Lab Test
 
 ## Description
 The purpose of this study is (1) to develop the decision rules and
