@@ -1,9 +1,9 @@
 {
   "config_info": {
-    "id": "UM4274test",
+    "id": "UM4274",
     "version": "1.4.6",
-    "name": "Memphis Brushing study - Test",
-    "filename": "UM4274test",
+    "name": "Memphis Brushing study",
+    "filename": "UM4274",
     "auto_update": true,
     "title": "BRUSHING",
     "required_files": [

@@ -1,0 +1,38 @@
+[
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "1.0 Hz"
+    },
+    "type": "BATTERY"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "LOCATION"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "ACCELEROMETER"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "GYROSCOPE"
+  }
+]
