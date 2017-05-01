@@ -1,36 +1,24 @@
 {
   "id": "default",
-  "version": "1.4.5",
-  "meta_data": {
-    "title": "Default",
-    "summary": "Default Configuration",
-    "description": "Default Configuration",
-    "filename": "default",
-    "download_url": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
-  },
+  "version": "2.0.0",
+  "short_name":"Def",
+  "title": "Default",
+  "summary": "Default Configuration",
+  "description": "Default Configuration",
+  "auto_update": "true",
+  "download_url": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases",
+  "filename": "default",
   "study": {
-    "id": "default",
-    "version": "1.4.5",
-    "meta_data": {
-      "title": "Default",
-      "summary": "Default Configuration",
-      "description": "Default Configuration",
-      "logo": "sense_2_stop.png"
-    }
-  },
+    "id": "org.md2k.study",
+    "title": "mCerebrum",
+    "summary": "Configuring and Running Study",
+    "description": "Capable of configuring and running user studies",
+    "download_url": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases"
+   },
+
   "apps": [
     {
-      "id": "org.md2k.study",
-      "title": "Study",
-      "summary": "Configuring and Running Study",
-      "description": "Capable of configuring and running user studies",
-      "enable": true,
-      "show": true,
-      "editable": true,
       "download_url": "https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases",
-      "dependency": [
-        "org.md2k.datakit"
-      ]
     },
     {
       "id": "org.md2k.datakit",
