@@ -58,7 +58,7 @@
     "name": "Data quality good in last 5 minutes",
     "values": [
       "300000",
-      "50"
+      "60"
     ],
     "data_source": {
       "platform": {
@@ -195,5 +195,54 @@
     "data_source": {
       "type": "PRIVACY"
     }
+  },
+  {
+    "id": "SMOKING_EMA_LIMIT",
+    "type": "EMA_LIMIT",
+    "name": "SMOKING EMA limit=14",
+    "values": [
+      "42"
+    ],
+    "source": {
+      "id": "SMOKING_EMA",
+      "type": "EMA"
+    }
+  },
+  {
+    "id": "RANDOM_EMA_LIMIT",
+    "type": "EMA_LIMIT",
+    "name": "RANDOM EMA limit=14",
+    "values": [
+      "42"
+    ],
+    "source": {
+      "id": "RANDOM_EMA",
+      "type": "EMA"
+    }
+  },
+  {
+    "id": "END_OF_DAY_EMA_LIMIT",
+    "type": "EMA_LIMIT",
+    "name": "END_OF_DAY EMA limit=14",
+    "values": [
+      "14"
+    ],
+    "source": {
+      "id": "END_OF_DAY_EMA",
+      "type": "EMA"
+    }
+  },
+  {
+    "id": "BONUS_INCENTIVE_42",
+    "type": "BONUS_INCENTIVE",
+    "name": "Bonus Incentive of 0.25 for 42 EMAs",
+    "values": [
+      "42",
+      "0.75"
+    ],
+    "source": {
+      "type": "INCENTIVE"
+    }
   }
+
 ]

@@ -117,7 +117,22 @@
         ],
         "conditions": [
           "DATA_QUALITY_DAY_START",
-          "EMA_ANSWER_5"
+          "EMA_ANSWER_5",
+          "RANDOM_EMA_LIMIT",
+          "BONUS_INCENTIVE_42"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. You will be paid $0.50 for taking the survey and wearing the sensors for more than 60% of the time since day started.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START",
+          "EMA_ANSWER_5",
+          "RANDOM_EMA_LIMIT"
         ]
       },
       {
@@ -128,13 +143,25 @@
           "Total Earning: $"
         ],
         "conditions": [
-          "DATA_QUALITY_DAY_START"
+          "DATA_QUALITY_DAY_START",
+          "RANDOM_EMA_LIMIT"
         ]
       },
       {
         "incentive": 0.00,
         "messages": [
           "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
+          "You will be paid $0.00",
+          "Total Earning: $"
+        ],
+        "conditions": [
+        "RANDOM_EMA_LIMIT"
+        ]
+      },
+      {
+        "incentive": 0.00,
+        "messages": [
+          "Thank you. You have reached maximum limit of the Random Survey",
           "You will be paid $0.00",
           "Total Earning: $"
         ],
@@ -237,7 +264,22 @@
         ],
         "conditions": [
           "DATA_QUALITY_DAY_START",
-          "EMA_ANSWER_5"
+          "EMA_ANSWER_5",
+          "SMOKING_EMA_LIMIT",
+          "BONUS_INCENTIVE_42"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. You will be paid $0.50 for taking the survey and wearing the sensors for more than 60% of the time since day started.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_DAY_START",
+          "EMA_ANSWER_5",
+          "SMOKING_EMA_LIMIT"
         ]
       },
       {
@@ -248,13 +290,25 @@
           "Total Earning: $"
         ],
         "conditions": [
-          "DATA_QUALITY_DAY_START"
+          "DATA_QUALITY_DAY_START",
+          "SMOKING_EMA_LIMIT"
         ]
       },
       {
         "incentive": 0.00,
         "messages": [
           "Thank you. Unfortunately, you will be paid $0.00 because you have not worn sensors for at least 60% of the time since day started.",
+          "You will be paid $0.00",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "SMOKING_EMA_LIMIT"
+        ]
+      },
+      {
+        "incentive": 0.00,
+        "messages": [
+          "Thank you. You have reached maximum limit of the Smoking Survey",
           "You will be paid $0.00",
           "Total Earning: $"
         ],
@@ -319,6 +373,17 @@
         "messages": [
           "Thank you. You will be paid $1.00 for taking the End of Day survey.",
           "You will be paid $1.00",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "END_OF_DAY_EMA_LIMIT"
+        ]
+      },
+      {
+        "incentive": 0.00,
+        "messages": [
+          "Thank you. You have reached maximum limit of the End of Day survey",
+          "You will be paid $0.00",
           "Total Earning: $"
         ],
         "conditions": [

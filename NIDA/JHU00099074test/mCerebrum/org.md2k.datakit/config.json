@@ -9,7 +9,7 @@
     "interval": 86400000
   },
   "upload": {
-    "enabled": false,
+    "enabled": true,
     "interval": 900000,
     "url": "https://jhu-cerebralcortex.md2k.org/",
     "restricted_datasource": [
