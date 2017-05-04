@@ -203,7 +203,7 @@
     "values": [
       "42"
     ],
-    "source": {
+    "data_source": {
       "id": "SMOKING_EMA",
       "type": "EMA"
     }
@@ -215,7 +215,7 @@
     "values": [
       "42"
     ],
-    "source": {
+    "data_source": {
       "id": "RANDOM_EMA",
       "type": "EMA"
     }
@@ -227,7 +227,7 @@
     "values": [
       "14"
     ],
-    "source": {
+    "data_source": {
       "id": "END_OF_DAY_EMA",
       "type": "EMA"
     }
@@ -240,7 +240,7 @@
       "42",
       "0.75"
     ],
-    "source": {
+    "data_source": {
       "type": "INCENTIVE"
     }
   }

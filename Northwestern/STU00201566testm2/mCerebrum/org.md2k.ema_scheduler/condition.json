@@ -201,9 +201,9 @@
     "type": "EMA_LIMIT",
     "name": "SMOKING EMA limit=14",
     "values": [
-      "42"
+      "4"
     ],
-    "source": {
+    "data_source": {
       "id": "SMOKING_EMA",
       "type": "EMA"
     }
@@ -215,7 +215,7 @@
     "values": [
       "42"
     ],
-    "source": {
+    "data_source": {
       "id": "RANDOM_EMA",
       "type": "EMA"
     }
@@ -227,7 +227,7 @@
     "values": [
       "14"
     ],
-    "source": {
+    "data_source": {
       "id": "END_OF_DAY_EMA",
       "type": "EMA"
     }
@@ -237,10 +237,10 @@
     "type": "BONUS_INCENTIVE",
     "name": "Bonus Incentive of 0.25 for 42 EMAs",
     "values": [
-      "42",
+      "2",
       "0.75"
     ],
-    "source": {
+    "data_source": {
       "type": "INCENTIVE"
     }
   }

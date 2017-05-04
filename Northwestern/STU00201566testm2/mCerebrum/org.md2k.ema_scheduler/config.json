@@ -155,7 +155,7 @@
           "Total Earning: $"
         ],
         "conditions": [
-        "RANDOM_EMA_LIMIT"
+          "RANDOM_EMA_LIMIT"
         ]
       },
       {
@@ -214,14 +214,6 @@
           }
         },
         "conditions": [
-          "PRIVACY",
-          "VALID_BLOCK_SMOKING_EMA",
-          "RANDOM_EMA_10",
-          "SMOKING_EMA_30",
-          "EMI_10",
-          "DATA_QUALITY_5",
-          "NOT_DRIVING_5",
-          "PHONE_BATTERY_10"
         ]
       }
     ],
