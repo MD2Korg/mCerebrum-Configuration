@@ -1,0 +1,204 @@
+{
+  "scheduler": [
+    {
+      "id": "12:30pm",
+      "type": "TIME",
+      "title": "EMA at 12:30pm",
+      "summary": "Trigger EMA at 12:30pm",
+      "initiate":{
+          "datasource":[
+            {
+              "type":"STUDY_START"
+            }
+          ]
+      },
+      "when": {
+        "time": "12:30:00",
+        "block": [
+          "00:00:00 - 02:00:00"
+        ],
+        "repeat": "24:00:00"
+      },
+      "attempt": [
+        {
+          "type": "IMMEDIATE",
+          "retry": "00:01:00"
+        }
+      ],
+      "action": [
+        {
+          "condition": [
+            [
+              "WEEK_1",
+              "TUESDAY"
+            ]
+          ],
+          "notification": [
+            {
+              "when": "00:00:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            },
+            {
+              "when": "00:30:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            },
+            {
+              "when": "01:00:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            }
+          ],
+          "act": [
+            {
+              "id": "org.md2k.ema",
+              "type": "EMA",
+              "parameter": [
+                "contact2.1.1.1"
+              ],
+              "notification_response": "Ok",
+              "timeout": "02:00:00"
+            }
+          ]
+        },
+        {
+          "condition": [
+            [
+              "WEEK_1",
+              "SATURDAY"
+            ]
+          ],
+          "notification": [
+            {
+              "when": "00:00:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            },
+            {
+              "when": "00:30:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            },
+            {
+              "when": "01:00:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            }
+          ],
+          "act": [
+            {
+              "id": "org.md2k.ema",
+              "type": "EMA",
+              "parameter": [
+                "contact2.2.1.1"
+              ],
+              "notification_response": "Ok",
+              "timeout": "02:00:00"
+            }
+          ]
+        }      ]
+    },
+    {
+      "id": "7:30pm",
+      "type": "TIME",
+      "title": "EMA at 7:30pm",
+      "summary": "Trigger EMA at 7:30pm",
+      "initiate":{
+        "datasource":[
+          {
+            "type":"STUDY_START"
+          }
+        ]
+      },
+      "when": {
+        "time": "19:30:00",
+        "block": [
+          "00:00:00 - 02:00:00"
+        ],
+        "repeat": "24:00:00"
+      },
+      "attempt": [
+        {
+          "type": "IMMEDIATE",
+          "retry": "00:01:00"
+        }
+      ],
+
+      "action": [
+        {
+          "condition": [
+            [
+              "WEEK_2",
+              "MONDAY"
+            ]
+          ],
+          "notification": [
+            {
+              "when": "00:00:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            },
+            {
+              "when": "00:30:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            },
+            {
+              "when": "01:00:00",
+              "what": [
+                "PHONE_VIBRATE_3",
+                "PHONE_MESSAGE_EMA",
+                "PHONE_TONE_3",
+                "PHONE_SCREEN"
+              ]
+            }
+          ],
+          "act": [
+            {
+              "id": "org.md2k.ema",
+              "type": "EMA",
+              "parameter": [
+                "contact2.1.1.1"
+              ],
+              "notification_response": "Ok",
+              "timeout": "02:00:00"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

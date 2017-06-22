@@ -1,0 +1,70 @@
+[
+  {
+    "id": "self_report",
+    "type": "smoking_self_report",
+    "name": "Smoking Event",
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      },
+      "type": "SMOKING",
+      "id": "SELF_REPORT",
+      "metadata": {
+        "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
+        "NAME": "Smoking Event",
+        "DESCRIPTION": "Smoking event as json object (type: system, self report)"
+      },
+      "dataDescriptors": [
+        {
+          "DATA_TYPE": "org.md2k.utilities.data_format.Event",
+          "UNIT": "String",
+          "NAME": "Smoking event with type of occurring",
+          "DESCRIPTION": "Smoking event with type of occurring"
+        }
+      ]
+    },
+    "parameters": {
+      "title":"Smoking Report",
+      "description":"Are you smoking or did you just smoke?",
+      "type":"SINGLE_CHOICE",
+      "icon": "gmd_smoking_rooms",
+      "options":[
+        "YES - I smoked a cigarette or cigar.",
+        "YES - I smoked an e-cigarette or vaporizer.",
+        "NO - I did NOT smoke."
+        ],
+      "positive_button":"Ok",
+      "negative_button":null,
+      "neutral_button":null
+    }
+  },
+  {
+    "id": "system",
+    "type": "smoking_report",
+    "name": "Smoking Event",
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      },
+      "type": "SMOKING",
+      "id": "PUFF_MARKER",
+      "metadata": {
+        "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
+        "NAME": "Smoking Event",
+        "DESCRIPTION": "Smoking event as json object (type: system, self report)"
+      },
+      "dataDescriptors": [
+        {
+          "DATA_TYPE": "org.md2k.utilities.data_format.Event",
+          "UNIT": "String",
+          "NAME": "Smoking event with type of occurring",
+          "DESCRIPTION": "Smoking event with type of occurring"
+        }
+      ]
+    },
+    "listen_datasource": {
+      "type": "PUFFMARKER_SMOKING_EPISODE"
+    },
+    "trigger_time": 60000
+  }
+]

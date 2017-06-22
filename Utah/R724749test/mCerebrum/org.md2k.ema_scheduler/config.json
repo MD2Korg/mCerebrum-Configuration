@@ -1,0 +1,365 @@
+[
+  {
+    "id": "RANDOM_EMA",
+    "type": "EMA",
+    "trigger_type": "RANDOM",
+    "name": "Random EMA",
+    "enable": true,
+    "application": {
+      "id": "RANDOM_EMA",
+      "name": "Random EMA",
+      "file_name": "questionnaire.json",
+      "package_name": "org.md2k.ema",
+      "timeout": 600000
+    },
+    "blocks": [
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 0,
+        "end_offset": 14400000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 14400000,
+        "end_offset": 28800000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 28800000,
+        "end_offset": 43200000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 43200000,
+        "end_offset": 57600000
+      }
+    ],
+    "scheduler_rules": [
+      {
+        "type": "RANDOM",
+        "start_time": "BLOCK_START",
+        "end_time": "BLOCK_END",
+        "divide": 2,
+        "conditions": [
+          "PRIVACY",
+          "VALID_BLOCK_RANDOM_EMA",
+          "RANDOM_EMA_60",
+          "STRESS_EMA_5",
+          "SMOKING_EMA_5",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10"
+        ]
+      },
+      {
+        "type": "RANDOM",
+        "start_time": "LAST_SCHEDULE",
+        "end_time": "BLOCK_END",
+        "divide": 2,
+        "conditions": [
+          "PRIVACY",
+          "VALID_BLOCK_RANDOM_EMA",
+          "RANDOM_EMA_60",
+          "STRESS_EMA_5",
+          "SMOKING_EMA_5",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10"
+        ]
+      },
+      {
+        "type": "IMMEDIATE",
+        "conditions": [
+          "PRIVACY",
+          "VALID_BLOCK_RANDOM_EMA",
+          "RANDOM_EMA_60",
+          "STRESS_EMA_5",
+          "SMOKING_EMA_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10"
+        ]
+      }
+    ],
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      },
+      {
+        "time": 60000,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_SCREEN_30",
+          "PHONE_MESSAGE_DELAY_EMA"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.25,
+        "messages": [
+          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+          "You will be paid $1.25",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_LAST_EMA"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "SMOKING_EMA",
+    "type": "EMA",
+    "trigger_type": "SELF_REPORT",
+    "name": "Smoking EMA",
+    "enable": true,
+    "application": {
+      "id": "SMOKING_EMA",
+      "name": "Smoking EMA",
+      "file_name": "questionnaire.json",
+      "package_name": "org.md2k.ema",
+      "timeout": 600000
+    },
+    "blocks": [
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 0,
+        "end_offset": 14400000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 14400000,
+        "end_offset": 28800000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 28800000,
+        "end_offset": 43200000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 43200000,
+        "end_offset": 57600000
+      }
+    ],
+    "scheduler_rules": [
+      {
+        "type": "IMMEDIATE",
+        "data_source": {
+          "type": "SMOKING",
+          "id": "PUFF_MARKER"
+        },
+        "conditions": [
+          "PRIVACY",
+          "VALID_BLOCK_SMOKING_EMA",
+          "SMOKING_EMA_30",
+          "STRESS_EMA_5",
+          "RANDOM_EMA_5",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10"
+        ]
+      }
+    ],
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      },
+      {
+        "time": 60000,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.25,
+        "messages": [
+          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+          "You will be paid $1.25",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_LAST_EMA"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STRESS_EMA",
+    "type": "EMA",
+    "trigger_type": "SYSTEM",
+    "name": "Stress EMA",
+    "enable": true,
+    "application": {
+      "id": "STRESS_EMA",
+      "name": "Stress EMA",
+      "file_name": "questionnaire.json",
+      "package_name": "org.md2k.ema",
+      "timeout": 600000
+    },
+    "blocks": [
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 0,
+        "end_offset": 14400000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 14400000,
+        "end_offset": 28800000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 28800000,
+        "end_offset": 43200000
+      },
+      {
+        "total": 1,
+        "base": "DAY_START",
+        "start_offset": 43200000,
+        "end_offset": 57600000
+      }
+    ],
+    "scheduler_rules": [
+      {
+        "type": "IMMEDIATE",
+        "data_source": {
+          "type": "ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION"
+        },
+        "parameters": [
+          "2"
+        ],
+        "conditions": [
+          "PRIVACY",
+          "VALID_BLOCK_STRESS_EMA",
+          "STRESS_EMA_30",
+          "SMOKING_EMA_5",
+          "RANDOM_EMA_5",
+          "NOT_ACTIVE_5",
+          "DATA_QUALITY_5",
+          "NOT_DRIVING_5",
+          "PHONE_BATTERY_10"
+        ]
+      }
+    ],
+    "notifications": [
+      {
+        "time": 0,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      },
+      {
+        "time": 60000,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      },
+      {
+        "time": 120000,
+        "types": [
+          "PHONE_VIBRATE_30",
+          "PHONE_TONE_30",
+          "PHONE_MESSAGE_DELAY_EMA",
+          "PHONE_SCREEN_30"
+        ]
+      }
+    ],
+    "incentive_rules": [
+      {
+        "incentive": 1.25,
+        "messages": [
+          "Thank you. You will be paid $1.25 for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+          "You will be paid $1.25",
+          "Total Earning: $"
+        ],
+        "conditions": [
+          "DATA_QUALITY_LAST_EMA"
+        ]
+      },
+      {
+        "incentive": 0.50,
+        "messages": [
+          "Thank you. Unfortunately, you will only be paid $0.50 because you have not worn the sensors for at least 60% of the time since your last survey.",
+          "You will be paid $0.50",
+          "Total Earning: $"
+        ],
+        "conditions": [
+        ]
+      }
+    ]
+  }
+]
