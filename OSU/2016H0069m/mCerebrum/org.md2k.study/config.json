@@ -78,14 +78,14 @@
     {
       "id": "microsofthealth",
       "name": "MicrosoftHealth",
-      "enable": true,
+      "enable": false,
       "package_name": "com.microsoft.kapp",
       "download_link": "https://github.com/MD2Korg/MicrosoftHealth/releases/download/1.3.20913.1/microsofthealth.apk"
     },
     {
       "id": "microsoftband",
       "name": "MicrosoftBand",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.microsoftband",
       "service": "org.md2k.microsoftband.ServiceMicrosoftBands",
       "settings": "org.md2k.microsoftband.ActivityMicrosoftBandSettings",
