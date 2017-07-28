@@ -11,7 +11,7 @@
   "upload": {
     "enabled": true,
     "interval": 900000,
-    "url": "https://robas-cerebralcortex.md2k.org/",
+    "url": "https://ucla-cerebralcortex.md2k.org/",
     "restricted_datasource": [
       {
         "platform": {

@@ -24,6 +24,15 @@
     "metadata": {
       "FREQUENCY": "16"
     },
+    "type": "ACTIVITY_TYPE"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
     "type": "ACCELEROMETER"
   },
   {

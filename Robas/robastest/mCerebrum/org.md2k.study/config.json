@@ -11,12 +11,15 @@
       "org.md2k.datakit/default_config.json",
       "org.md2k.motionsense/default_config.json",
       "org.md2k.notificationmanager/tone.mp3",
+      "org.md2k.oralb/default_config.json",
       "org.md2k.phonesensor/default_config.json",
       "org.md2k.plotter/default_config.json",
+      "org.md2k.scheduler/config.json",
       "org.md2k.selfreport/config.json",
       "org.md2k.study/config.json",
       "org.md2k.study/notification.json",
-      "org.md2k.study/ic_toothbrush_48dp.json",
+      "org.md2k.study/ic_toothbrush_48dp.png",
+      "org.md2k.study/notification.json",
       "org.md2k.study/tutorial.pdf"
     ]
   },
@@ -83,11 +86,16 @@
       "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
     },
     {
-      "id": "oralb",
-      "name": "Oral-B app",
+      "id":"oralb",
+      "name":"OralB",
       "enable": true,
-      "package_name": "com.pg.oralb.oralbapp",
-      "download_link": "market://details?id=com.pg.oralb.oralbapp"
+      "package_name": "org.md2k.oralb",
+      "service": "org.md2k.oralb.ServiceOralB",
+      "settings": "org.md2k.oralb.ActivitySettings",
+      "config": "config.json",
+      "default_config": "default_config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-OralB/releases"
     },
     {
       "id": "selfreport",
@@ -117,6 +125,16 @@
       "config": "config.json",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases"
+    },
+    {
+      "id": "scheduler",
+      "name": "Scheduler",
+      "enable": true,
+      "package_name": "org.md2k.scheduler",
+      "service": "org.md2k.scheduler.ServiceScheduler",
+      "config": "config.json",
+      "permission": "org.md2k.utilities.permission.ActivityPermission",
+      "download_link": "https://github.com/MD2Korg/mCerebrum-Scheduler/releases"
     },
     {
       "id": "notificationmanager",
@@ -215,14 +233,6 @@
       "name": "Study"
     },
     {
-      "id": "oralb",
-      "name": "Brushing",
-      "icon": "ic_toothbrush_48dp.png",
-      "package_name": "com.pg.oralb.oralbapp",
-      "enable": true,
-      "rank": 2
-    },
-    {
       "id": "user_info",
       "type": "setup",
       "name": "User ID",
@@ -231,6 +241,26 @@
       "icon": "ic_user_teal_48dp",
       "package_name": "org.md2k.study",
       "class_name": "org.md2k.study.model_view.user_info.ActivityUserInfo"
+    },
+    {
+      "id": "study_start",
+      "type": "setup",
+      "name": "Study Start Date & Time",
+      "rank": 4,
+      "enable": true,
+      "icon": "ic_sleep_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.study_start.ActivityStudyStart"
+    },
+    {
+      "id": "study_end",
+      "type": "setup",
+      "name": "Study End Date & Time",
+      "rank": 4,
+      "enable": true,
+      "icon": "ic_sleep_teal_48dp",
+      "package_name": "org.md2k.study",
+      "class_name": "org.md2k.study.model_view.study_end.ActivityStudyEnd"
     },
     {
       "id": "wakeup_info",
@@ -390,6 +420,8 @@
           "config_info",
           "study_info",
           "user_info",
+          "study_start",
+          "study_end",
           "wakeup_info",
           "sleep_info",
           "clear_database"
@@ -434,7 +466,6 @@
         "id": "user_app",
         "enable": true,
         "values": [
-          "oralb",
           "app_reset"
         ]
       }
