@@ -7,7 +7,7 @@
   {
     "question_id": 1,
     "question_type": "multiple_choice",
-    "question_text": "Did you floss your teeth yesterday?",
+    "question_text": "Did you floss your teeth <u><i>yesterday</i></u>?",
     "response_option": [
       "Yes",
       "No"
@@ -16,7 +16,7 @@
   {
     "question_id": 2,
     "question_type": "hour_minute_ampm",
-    "question_text": "At approximately what time did you most recently floss your teeth yesterday?",
+    "question_text": "At approximately what time did you most recently floss your teeth <u><i>yesterday</i></u>?",
     "condition": [
       "1:Yes"
     ]

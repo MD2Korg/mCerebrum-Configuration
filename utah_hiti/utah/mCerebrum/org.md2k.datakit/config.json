@@ -1,17 +1,17 @@
 {
-  "database":{
-    "enabled":true,
-    "location":"INTERNAL_SDCARD"
+  "database": {
+    "enabled": true,
+    "location": "INTERNAL_SDCARD"
   },
-  "archive":{
-    "enabled":true,
-    "location":"EXTERNAL_SDCARD_PREFERRED",
-    "interval":86400000
+  "archive": {
+    "enabled": true,
+    "location": "EXTERNAL_SDCARD_PREFERRED",
+    "interval": 86400000
   },
-  "upload":{
-    "enabled":false,
+  "upload": {
+    "enabled": true,
     "interval": 900000,
-    "url": "https://google.com/",
+    "url": "https://northwestern-cerebralcortex.md2k.org/",
     "restricted_datasource": [
       {
         "platform": {
@@ -21,7 +21,7 @@
       }
     ]
   },
-  "privacy":{
+  "privacy": {
     "duration_options": [
       {
         "id": "300000",
@@ -51,7 +51,7 @@
         "summary": "",
         "datasource": [
           {
-            "type":"LOCATION"
+            "type": "LOCATION"
           }
         ]
       },
@@ -74,12 +74,12 @@
         "datasource": [
           {
             "platform": {
-              "type": "AUTOSENSE_WRIST"
+              "id": "LEFT_WRIST"
             }
           },
           {
             "platform": {
-              "type": "MICROSOFT_BAND"
+              "id": "RIGHT_WRIST"
             }
           }
         ]

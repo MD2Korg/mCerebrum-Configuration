@@ -148,7 +148,7 @@
     {
       "id": "ema",
       "name": "EMA",
-      "enable": false,
+      "enable": true,
       "package_name": "org.md2k.ema",
       "permission": "org.md2k.utilities.permission.ActivityPermission",
       "download_link": "https://github.com/MD2Korg/mCerebrum-EMA/releases"

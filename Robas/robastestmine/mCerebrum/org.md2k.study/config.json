@@ -3,7 +3,7 @@
     "id": "ROBUS_test",
     "version": "1.4.6",
     "name": "Robas Study-Test",
-    "filename": "robastestmine",
+    "filename": "robastest",
     "auto_update": true,
     "title": "Robas Study",
     "required_files": [
@@ -76,7 +76,7 @@
     {
       "id": "motionsense",
       "name": "MotionSense",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.motionsense",
       "service": "org.md2k.motionsense.ServiceMotionSense",
       "settings": "org.md2k.motionsense.ActivitySettings",
@@ -88,7 +88,7 @@
     {
       "id":"oralb",
       "name":"OralB",
-      "enable": true,
+      "enable": false,
       "package_name": "org.md2k.oralb",
       "service": "org.md2k.oralb.ServiceOralB",
       "settings": "org.md2k.oralb.ActivitySettings",
@@ -466,6 +466,7 @@
         "id": "user_app",
         "enable": true,
         "values": [
+          "oralb",
           "app_reset"
         ]
       }

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "self_report",
+    "type": "smoking_self_report",
+    "name": "Smoking Event",
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      },
+      "type": "SMOKING",
+      "id": "SELF_REPORT",
+      "metadata": {
+        "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
+        "NAME": "Smoking Event",
+        "DESCRIPTION": "Smoking event as json object (type: system, self report)"
+      },
+      "dataDescriptors": [
+        {
+          "DATA_TYPE": "org.md2k.utilities.data_format.Event",
+          "UNIT": "String",
+          "NAME": "Smoking event with type of occurring",
+          "DESCRIPTION": "Smoking event with type of occurring"
+        }
+      ]
+    },
+    "parameters": {
+      "title": "Smoking Report",
+      "description": "I have smoked",
+      "type": "SINGLE_CHOICE",
+      "icon": "gmd_smoking_rooms",
+      "options": [
+        "less than 5 minutes ago",
+        "5 - 15 minutes ago",
+        "15 - 30 minutes ago",
+        "more than 30 minutes ago"
+      ],
+      "positive_button": "Yes",
+      "negative_button": "Cancel",
+      "neutral_button": null
+    }
+  },
+  {
+    "id": "self_report",
+    "type": "eating_self_report",
+    "name": "Eating Event",
+    "datasource": {
+      "platform": {
+        "type": "PHONE"
+      },
+      "type": "EATING",
+      "id": "SELF_REPORT",
+      "metadata": {
+        "DATA_TYPE": "org.md2k.datakitapi.datatype.DataTypeJSONObject",
+        "NAME": "Eating Event",
+        "DESCRIPTION": "Eating event as json object (type: system, self report)"
+      },
+      "dataDescriptors": [
+        {
+          "DATA_TYPE": "org.md2k.utilities.data_format.Event",
+          "UNIT": "String",
+          "NAME": "Eating event with type of occurring",
+          "DESCRIPTION": "Eating event with type of occurring"
+        }
+      ]
+    },
+    "parameters": {
+      "title": "Eating Report",
+      "description": "I have taken food/drinks",
+      "icon": "gmd_local_dining",
+      "type": "SINGLE_CHOICE",
+      "options": [
+        "less than 5 minutes ago",
+        "5 - 15 minutes ago",
+        "15 - 30 minutes ago",
+        "more than 30 minutes ago"
+      ],
+      "positive_button": "Yes",
+      "negative_button": "Cancel",
+      "neutral_button": null
+    }
+  }
+]

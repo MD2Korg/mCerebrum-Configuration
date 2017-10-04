@@ -37,10 +37,10 @@
           ]
         },
         "blocks": [
-          "00:00:00 - 00:02:00"
+          "00:00:00 - 02:00:00"
         ],
         "condition": "ema_triggered_at_least_120_minutes_ago==TRUE",
-        "repeat": "00:10:00",
+        "repeat": "24:00:00",
         "rules": [
           {
             "type": "IMMEDIATE",
@@ -66,24 +66,24 @@
       ]
     },
     {
-      "id": "735pm",
+      "id": "730pm",
       "type": "EMA",
-      "title": "EMA at 7:35pm",
-      "summary": "Trigger EMA at 7:35pm",
+      "title": "EMA at 7:30pm",
+      "summary": "Trigger EMA at 7:30pm",
       "condition": "valid_study == TRUE",
       "when": {
         "search_by_value": {
           "type": "TIME",
           "data_type": "LONG",
           "values": [
-            "19:35:00"
+            "19:30:00"
           ]
         },
         "blocks": [
-          "00:00:00 - 00:02:00"
+          "00:00:00 - 02:00:00"
         ],
         "condition": "ema_triggered_at_least_120_minutes_ago==TRUE",
-        "repeat": "00:10:00",
+        "repeat": "24:00:00",
         "rules": [
           {
             "type": "IMMEDIATE",
@@ -231,8 +231,8 @@
         {
           "type": "PHONE_VIBRATION",
           "format": "3_500ms",
-          "repeat": 1,
-          "interval": "00:00:01",
+          "repeat": 3,
+          "interval": "00:00:03",
           "when": [
             "00:00:00",
             "00:00:20",
@@ -243,7 +243,7 @@
           "type": "PHONE_MESSAGE",
           "format": "dialog",
           "repeat": 1,
-          "interval": "00:02:00",
+          "interval": "00:00:30",
           "when": [
             "00:00:00"
           ],
@@ -301,15 +301,15 @@
           "interval": "00:00:01",
           "when": [
             "00:00:00",
-            "00:00:10",
-            "00:00:20"
+            "00:30:00",
+            "01:00:00"
           ]
         },
         {
           "type": "PHONE_MESSAGE",
           "format": "dialog",
           "repeat": 1,
-          "interval": "00:02:00",
+          "interval": "01:30:00",
           "when": [
             "00:00:00"
           ],
@@ -336,8 +336,8 @@
           "interval": "00:00:01",
           "when": [
             "00:00:00",
-            "00:00:20",
-            "00:00:40"
+            "00:30:00",
+            "01:00:00"
           ]
         },
         {
@@ -362,7 +362,7 @@
           "parameters": [
             "contact2.1.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -376,7 +376,7 @@
           "parameters": [
             "contact2.1.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -390,7 +390,7 @@
           "parameters": [
             "contact2.1.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -404,7 +404,7 @@
           "parameters": [
             "contact2.1.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -418,7 +418,7 @@
           "parameters": [
             "contact2.2.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -432,7 +432,7 @@
           "parameters": [
             "contact2.2.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -446,7 +446,7 @@
           "parameters": [
             "contact2.2.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -460,7 +460,7 @@
           "parameters": [
             "contact2.2.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -474,7 +474,7 @@
           "parameters": [
             "contact3.1.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -488,7 +488,7 @@
           "parameters": [
             "contact3.1.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -502,7 +502,7 @@
           "parameters": [
             "contact3.1.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -516,7 +516,7 @@
           "parameters": [
             "contact3.1.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -530,7 +530,7 @@
           "parameters": [
             "contact3.2.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -544,7 +544,7 @@
           "parameters": [
             "contact3.2.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -558,7 +558,7 @@
           "parameters": [
             "contact3.2.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -572,7 +572,7 @@
           "parameters": [
             "contact3.2.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -586,7 +586,7 @@
           "parameters": [
             "contact3.3.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -600,7 +600,7 @@
           "parameters": [
             "contact3.3.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -614,7 +614,7 @@
           "parameters": [
             "contact3.3.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -628,7 +628,7 @@
           "parameters": [
             "contact3.3.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -642,7 +642,7 @@
           "parameters": [
             "contact4.1.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -656,7 +656,7 @@
           "parameters": [
             "contact4.1.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -670,7 +670,7 @@
           "parameters": [
             "contact4.1.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -684,7 +684,7 @@
           "parameters": [
             "contact4.1.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -698,7 +698,7 @@
           "parameters": [
             "contact4.2.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -712,7 +712,7 @@
           "parameters": [
             "contact4.2.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -726,7 +726,7 @@
           "parameters": [
             "contact4.2.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -740,7 +740,7 @@
           "parameters": [
             "contact4.2.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -754,7 +754,7 @@
           "parameters": [
             "contact4.3.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -768,7 +768,7 @@
           "parameters": [
             "contact4.3.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -782,7 +782,7 @@
           "parameters": [
             "contact4.3.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -796,7 +796,7 @@
           "parameters": [
             "contact4.3.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -810,7 +810,7 @@
           "parameters": [
             "contact4.4.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -824,7 +824,7 @@
           "parameters": [
             "contact4.4.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -838,7 +838,7 @@
           "parameters": [
             "contact4.4.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -852,7 +852,7 @@
           "parameters": [
             "contact4.4.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -866,7 +866,7 @@
           "parameters": [
             "contact5.1.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -880,7 +880,7 @@
           "parameters": [
             "contact5.1.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -894,7 +894,7 @@
           "parameters": [
             "contact5.1.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -908,7 +908,7 @@
           "parameters": [
             "contact5.1.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -922,7 +922,7 @@
           "parameters": [
             "contact5.2.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -936,7 +936,7 @@
           "parameters": [
             "contact5.2.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -950,7 +950,7 @@
           "parameters": [
             "contact5.2.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -964,7 +964,7 @@
           "parameters": [
             "contact5.2.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -978,7 +978,7 @@
           "parameters": [
             "contact5.3.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -992,7 +992,7 @@
           "parameters": [
             "contact5.3.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1006,7 +1006,7 @@
           "parameters": [
             "contact5.3.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1020,7 +1020,7 @@
           "parameters": [
             "contact5.3.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1034,7 +1034,7 @@
           "parameters": [
             "contact5.4.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1048,7 +1048,7 @@
           "parameters": [
             "contact5.4.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1062,7 +1062,7 @@
           "parameters": [
             "contact5.4.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1076,7 +1076,7 @@
           "parameters": [
             "contact5.4.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1090,7 +1090,7 @@
           "parameters": [
             "contact5.5.1.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1104,7 +1104,7 @@
           "parameters": [
             "contact5.5.1.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1118,7 +1118,7 @@
           "parameters": [
             "contact5.5.2.1.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1132,7 +1132,7 @@
           "parameters": [
             "contact5.5.2.2.json"
           ],
-          "timeout": "00:02:00"
+          "timeout": "00:30:00"
         }
       ]
     },
@@ -1530,7 +1530,7 @@
             "type": "TIME",
             "data_type": "LONG",
             "values": [
-              "00:04:00"
+              "02:00:00"
             ]
           }
         }

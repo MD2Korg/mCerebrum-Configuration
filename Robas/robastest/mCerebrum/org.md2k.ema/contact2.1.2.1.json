@@ -10,7 +10,7 @@
   {
     "question_id": 2,
     "question_type": "multiple_choice",
-    "question_text": "Did you brush your teeth this morning?",
+    "question_text": "Did you brush your teeth <u><i>this morning</i></u>?",
     "response_option": [
       "Yes",
       "No"
@@ -39,7 +39,7 @@
   {
     "question_id": 5,
     "question_type": "minute_second",
-    "question_text": "For how long, in minutes and seconds, did you brush your teeth this morning?",
+    "question_text": "For how long, in minutes and seconds, did you brush your teeth <u><i>this morning</i></u>?",
     "condition": [
       "2:Yes"
     ]
@@ -47,7 +47,7 @@
   {
     "question_id": 6,
     "question_type": "multiple_choice",
-    "question_text": "When you brushed your teeth this morning, was it:",
+    "question_text": "When you brushed your teeth <u><i>this morning</i></u>, was it:",
     "response_option": [
       "Before breakfast",
       "After breakfast",
@@ -61,7 +61,7 @@
   {
     "question_id": 7,
     "question_type": "multiple_choice",
-    "question_text": "How much pressure did you use when you most recently brushed your teeth?",
+    "question_text": "How much pressure did you use when you <u><i>most recently</i></u> brushed your teeth?",
     "response_option": [
       "Light pressure",
       "Moderate pressure",

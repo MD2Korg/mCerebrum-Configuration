@@ -7,7 +7,7 @@
   {
     "question_id": 1,
     "question_type": "multiple_choice",
-    "question_text": "Did you brush your teeth yesterday?",
+    "question_text": "Did you brush your teeth <u><i>yesterday</i></u>?",
     "response_option": [
       "Yes",
       "No"
@@ -16,7 +16,7 @@
   {
     "question_id": 2,
     "question_type": "multiple_choice",
-    "question_text": "How many times did you brush your teeth yesterday?",
+    "question_text": "How many times did you brush your teeth <u><i>yesterday</i></u>?",
     "response_option": [
       "Once",
       "Twice",
@@ -30,7 +30,7 @@
   {
     "question_id": 3,
     "question_type": "hour_minute_ampm",
-    "question_text": "At approximately what time did you first brush your teeth yesterday?",
+    "question_text": "At approximately what time did you first brush your teeth <u><i>yesterday</i></u>?",
     "condition": [
       "1:Yes"
     ]
@@ -38,7 +38,7 @@
   {
     "question_id": 4,
     "question_type": "minute_second",
-    "question_text": "For how long, in minutes and seconds, did you first brush your teeth yesterday?",
+    "question_text": "For how long, in minutes and seconds, did you first brush your teeth <u><i>yesterday</i></u>?",
     "condition": [
       "1:Yes"
     ]
