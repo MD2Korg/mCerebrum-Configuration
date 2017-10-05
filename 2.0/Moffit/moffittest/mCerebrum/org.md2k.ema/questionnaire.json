@@ -47,6 +47,7 @@
       "Strongly Agree"
     ]
   },
+
   {
     "question_id": 4,
     "question_type": "multiple_choice",
@@ -371,7 +372,7 @@
   {
     "question_id": 31,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, did you drink any (Check all that apply)",
+    "question_text": "Since the last time you answered this set of questions, did you drink any (Check all that apply)",
     "response_option": [
       "Beer",
       "Wine",
@@ -382,7 +383,7 @@
   {
     "question_id": 32,
     "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, do you think that you have been treated unfairly?",
+    "question_text": "Since the last time you answered this set of questions, do you think that you have been treated unfairly?",
     "response_option": [
       "No",
       "Yes Somewhat Sure",
@@ -416,7 +417,7 @@
   {
     "question_id": 34,
     "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, have you smoked any cigarettes?",
+    "question_text": "Since the last time you answered this set of questions, have you smoked any cigarettes?",
     "response_option": [
       "Yes",
       "No"
@@ -454,7 +455,7 @@
   {
     "question_id": 37,
     "question_type": "multiple_choice",
-    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the most RECENT cigarette?",
+    "question_text": "You said you smoked more than one cigarette since the last time you answered this set of questions, how long ago did you smoke the most RECENT cigarette?",
     "response_option": [
       "0 - 2 hrs",
       "2 hrs - 4 hrs",
@@ -471,7 +472,7 @@
   {
     "question_id": 38,
     "question_type": "multiple_choice",
-    "question_text": "You said you smoked more than one cigarette since the last assessment, how long ago did you smoke the FIRST cigarette?",
+    "question_text": "You said you smoked more than one cigarette since the last time you answered this set of questions, how long ago did you smoke the FIRST cigarette?",
     "response_option": [
       "0 - 2 hrs",
       "2 hrs - 4 hrs",
@@ -488,7 +489,7 @@
   {
     "question_id": 39,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, did you use (check all that apply)",
+    "question_text": "Since the last time you answered this set of questions, did you use (check all that apply)",
     "response_option": [
       "Cigars, cigarillos, or little cigars",
       "Chew, snuff, or dip",
@@ -502,7 +503,7 @@
   {
     "question_id": 40,
     "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, I experienced or thought about a stressful issue or problem.",
+    "question_text": "Since the last time you answered this set of questions, I experienced or thought about a stressful issue or problem.",
     "response_option": [
       "Definitely No",
       "Mostly No",
@@ -513,7 +514,7 @@
   {
     "question_id": 41,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
+    "question_text": "Since the last time you answered this set of questions, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
     "response_option": [
       "Work/School",
       "Family Relationships",
@@ -530,18 +531,20 @@
   {
     "question_id": 42,
     "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, I experienced or thought about a positive experience.",
+    "question_text": "Since the last time I answered this set of questions, I felt little interest or pleasure while doing things.",
     "response_option": [
-      "Definitely No",
-      "Mostly No",
-      "Mostly Yes",
-      "Definitely Yes"
+      "0 (absolutely no pleasure)",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5 (extreme pleasure)"
     ]
   },
   {
     "question_id": 43,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, in which of the following areas did you have a positive experience? (Check all that apply)",
+    "question_text": "Since the last time I answered this set of questions, in which of the following areas did you have a positive experience? (Check all that apply)",
     "response_option": [
       "Work/School",
       "Family Relationships",
@@ -571,7 +574,7 @@
   {
     "question_id": 45,
     "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, someone in my life provided me with help for a worry, problem or difficulty.",
+    "question_text": "Since the last time I answered this set of questions, someone in my life provided me with help for a worry, problem or difficulty.",
     "response_option": [
       "Strongly Disagree",
       "Disagree",
@@ -592,7 +595,7 @@
   {
     "question_id": 47,
     "question_type": "multiple_choice",
-    "question_text": "Since the last assessment, how many times have you practiced a mindfulness strategy without using your phone?",
+    "question_text": "Since the last time you answered this set of questions, how many times have you practiced a mindfulness strategy without using your phone?",
     "response_option": [
       "0",
       "1",
