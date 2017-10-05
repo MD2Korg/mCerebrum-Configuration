@@ -1,0 +1,111 @@
+[
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "1.0 Hz"
+    },
+    "type": "BATTERY"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "LOCATION"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "ACTIVITY_TYPE"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "ACCELEROMETER"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "GYROSCOPE"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "STEP_COUNT"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "AMBIENT_LIGHT"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "PRESSURE"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "PROXIMITY"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "AMBIENT_TEMPERATURE"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "GEOFENCE",
+    "id": "LIST"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "ON_CHANGE"
+    },
+    "type": "TOUCH_SCREEN"
+  }
+]
