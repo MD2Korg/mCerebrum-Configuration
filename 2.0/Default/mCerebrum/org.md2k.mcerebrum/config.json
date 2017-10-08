@@ -22,7 +22,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://dl.dropboxusercontent.com/s/p80yu0ub8db2tis/version_mcerebrum.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/latest_version.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -34,8 +34,20 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://dl.dropboxusercontent.com/s/a7toc22k5frk3e3/version_datakit.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/latest_version.json",
       "icon": "datakit.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "study",
+      "type": "study",
+      "title": "mPerf UI",
+      "summary": "UI for mPerf Study",
+      "description": "UI for mPerf Study",
+      "package_name": "org.md2k.studymperf",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/latest_version.json",
+      "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
     },
@@ -46,7 +58,7 @@
       "summary": "Captures accelerometer, gyroscope, and location data from the phone",
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
-      "download_link": "https://dl.dropboxusercontent.com/s/2mme8nmwrhwftrz/version_phonesensor.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/latest_version.json",
       "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
@@ -58,7 +70,7 @@
       "summary": "Records ECG and respiration signals over ANT+ or BLE",
       "description": "Records ECG and respiration signals over ANT+ or BLE",
       "package_name": "org.md2k.autosense",
-      "download_link": "https://dl.dropboxusercontent.com/s/53do9veox7twfb6/version_autosense.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/latest_version.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "optional"
@@ -70,10 +82,22 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://dl.dropboxusercontent.com/s/lp3l36wvjkaoxl4/version_motionsense.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
+    },
+    {
+      "id": "Beacon",
+      "type": "sense",
+      "title": "Beacon",
+      "summary": "Captures signal from Red Beacon",
+      "description": "Captures signal from Red Beacon",
+      "package_name": "org.md2k.beacon",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.beacon/latest_version.json",
+      "icon": "beacon.png",
+      "update": "notify",
+      "use_as": "optional"
     }
   ]
 }
