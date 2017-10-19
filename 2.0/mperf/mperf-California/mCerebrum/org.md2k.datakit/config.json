@@ -11,7 +11,9 @@
   "upload": {
     "enabled": true,
     "interval": 900000,
-    "url": "https://fourtytwo.md2k.org/"
+    "url": "https://fourtytwo.md2k.org/",
+    "network_high_frequency":"WIFI",
+    "network_low_frequency": "ANY"
   },
   "privacy": {
     "duration_options": [
@@ -71,6 +73,31 @@
             "platform": {
               "id": "RIGHT_WRIST"
             }
+          }
+        ]
+      },
+      {
+        "id": "audio",
+        "title": "Audio Features",
+        "summary": "",
+        "datasource": [
+          {
+            "type": "CU_AUDIO_FEATURE"
+          },
+          {
+            "type": "CU_AUDIO_ENERGY"
+          },
+          {
+            "type": "CU_AUDIO_INFERENCE"
+          }
+        ]
+      },
+      {
+        "id": "all",
+        "title": "All",
+        "summary": "",
+        "datasource": [
+          {
           }
         ]
       }
