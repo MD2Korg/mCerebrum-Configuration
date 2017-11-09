@@ -22,7 +22,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/latest_version.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -34,7 +34,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.7.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/latest_version.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -42,11 +42,11 @@
     {
       "id": "study",
       "type": "study",
-      "title": "mPerf UI",
-      "summary": "UI for mPerf Study",
-      "description": "UI for mPerf Study",
-      "package_name": "org.md2k.studymperf",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/version2.0.5.json",
+      "title": "DataCollection Study",
+      "summary": "UI for Data Collection",
+      "description": "UI for Data Collection",
+      "package_name": "org.md2k.studydatacollection",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studydatacollection/latest_version.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
@@ -58,7 +58,7 @@
       "summary": "Captures accelerometer, gyroscope, and location data from the phone",
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/latest_version.json",
       "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
@@ -67,10 +67,10 @@
       "id": "autosense",
       "type": "sense",
       "title": "Chest Sensor",
-      "summary": "Records ECG and respiration signals over ANT+ or BLE",
-      "description": "Records ECG and respiration signals over ANT+ or BLE",
+      "summary": "Records ECG and respiration signals over ANT+",
+      "description": "Records ECG and respiration signals over ANT+",
       "package_name": "org.md2k.autosense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/latest_version.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "optional"
@@ -82,7 +82,7 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.3.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"

@@ -47,14 +47,6 @@
       "type": "MOTION_SENSE_HRV",
       "id": "LEFT_WRIST"
     },
-    "type": "DATA_QUALITY",
-    "id": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
     "type": "SEQUENCE_NUMBER"
   },
   {
@@ -99,14 +91,6 @@
     },
     "type": "DATA_QUALITY",
     "id": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "LED"
   },
   {
     "platform": {

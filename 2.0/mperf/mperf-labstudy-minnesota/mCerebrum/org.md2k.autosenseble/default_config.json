@@ -1,0 +1,68 @@
+[
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "RAW"
+  },
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "BATTERY"
+  },
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "ACCELEROMETER"
+  },
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "RESPIRATION"
+  },
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "RESPIRATION_BASELINE"
+  },
+
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "ECG"
+  },
+  {
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    },
+    "type": "SEQUENCE_NUMBER"
+  },
+  {
+    "type": "DATA_QUALITY",
+    "id": "RESPIRATION",
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    }
+  },
+  {
+    "type": "DATA_QUALITY",
+    "id": "ECG",
+    "platform": {
+      "type": "AUTOSENSE_BLE",
+      "id": "CHEST"
+    }
+  }
+]

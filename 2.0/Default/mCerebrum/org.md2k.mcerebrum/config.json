@@ -3,7 +3,8 @@
     "id": "default",
     "type": "freebie",
     "update": "notify",
-    "version": "0.0.2"
+    "version": "2.0.0",
+    "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/configurations/default/latest_version.json"
   },
   "study":{
     "id": "default",
@@ -11,8 +12,8 @@
     "title": "mCerebrum",
     "summary": "mCerebrum",
     "description": "mCerebrum",
-    "version":"0.0.2",
-    "start_at_boot": false
+    "version":"2.0.0",
+    "start_at_boot": true
   },
   "apps": [
     {
@@ -42,14 +43,13 @@
     {
       "id": "study",
       "type": "study",
-      "title": "mPerf UI",
-      "summary": "UI for mPerf Study",
-      "description": "UI for mPerf Study",
+      "title": "DataCollectionApp",
+      "summary": "Data Collection App",
+      "description": "DataCollectionApp",
       "package_name": "org.md2k.studymperf",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/latest_version.json",
-      "icon": "studymperf.png",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studydatacollection/latest_version.json",
       "update": "notify",
-      "use_as": "required"
+      "use_as": "optional"
     },
     {
       "id": "Phone",
@@ -66,11 +66,23 @@
     {
       "id": "autosense",
       "type": "sense",
-      "title": "Chest Sensor",
-      "summary": "Records ECG and respiration signals over ANT+ or BLE",
-      "description": "Records ECG and respiration signals over ANT+ or BLE",
+      "title": "AutoSense Chest Sensor (ANT)",
+      "summary": "Records ECG and respiration signals over ANT+",
+      "description": "Records ECG and respiration signals over ANT+",
       "package_name": "org.md2k.autosense",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/latest_version.json",
+      "icon": "autosense.png",
+      "update": "notify",
+      "use_as": "optional"
+    },
+    {
+      "id": "autosenseble",
+      "type": "sense",
+      "title": "AutoSense Chest Sensor (BLE)",
+      "summary": "Records ECG and respiration signals over BLE",
+      "description": "Records ECG and respiration signals over BLE",
+      "package_name": "org.md2k.autosenseble",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/latest_version.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "optional"
@@ -85,7 +97,7 @@
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
       "icon": "motionsense.png",
       "update": "notify",
-      "use_as": "required"
+      "use_as": "optional"
     },
     {
       "id": "Beacon",
@@ -98,6 +110,17 @@
       "icon": "beacon.png",
       "update": "notify",
       "use_as": "optional"
+    },
+    {
+      "id": "alertnesssensingframework",
+      "type": "sense",
+      "title": "Alertness Sensing Framework",
+      "summary": "Captures audio features, SMS, call, notification information (unidentifiable info)",
+      "description": "Captures audio features, SMS, call, notification information (unidentifiable info)",
+      "package_name": "edu.dartmouth.eureka",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/latest_version.json",
+      "update": "notify",
+      "use_as": "required"
     }
   ]
 }

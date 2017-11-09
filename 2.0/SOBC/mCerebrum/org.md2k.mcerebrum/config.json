@@ -1,18 +1,17 @@
 {
   "config":{
-    "id": "mPerf_labstudy_minnesota",
-    "type": "mPerf",
+    "id": "JHU00099074",
+    "type": "CTN-0073-Ot",
     "update": "notify",
     "version": "2.0.0"
   },
   "study":{
-    "id": "mPerf",
-    "type": "mPerf",
-    "title": "mPerf Lab Study - Minnesota",
-    "summary": "mPerf Lab Study - Minnesota",
-    "description": "mPerf Lab Study - Minnesota",
+    "id": "JHU00099074",
+    "type": "CTN-0073-Ot",
+    "title": "CTN-0073-Ot",
+    "summary": "CTN-0073-Ot",
+    "description": "CTN-0073-Ot",
     "version":"2.0.0",
-    "icon": "mperf.png",
     "start_at_boot": true
   },
   "apps": [
@@ -43,11 +42,11 @@
     {
       "id": "study",
       "type": "study",
-      "title": "mPerf LabStudy UI",
-      "summary": "UI for mPerf Lab Study",
-      "description": "UI for mPerf Lab Study",
-      "package_name": "org.md2k.studymperflab",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperflab/latest_version.json",
+      "title": "DataCollection Study",
+      "summary": "UI for Data Collection",
+      "description": "UI for Data Collection",
+      "package_name": "org.md2k.studydatacollection",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studydatacollection/latest_version.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
@@ -65,18 +64,6 @@
       "use_as": "required"
     },
     {
-      "id": "autosense_ble",
-      "type": "sense",
-      "title": "Chest Sensor (BLE)",
-      "summary": "Records ECG and respiration signals over BLE",
-      "description": "Records ECG and respiration signals over BLE",
-      "package_name": "org.md2k.autosenseble",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/latest_version.json",
-      "icon": "autosense.png",
-      "update": "notify",
-      "use_as": "required"
-    },
-    {
       "id": "MotionSenseHRV",
       "type": "sense",
       "title": "Wrist Sensor",
@@ -88,5 +75,5 @@
       "update": "notify",
       "use_as": "required"
     }
-   ]
+  ]
 }

@@ -12,7 +12,7 @@
     "enabled": true,
     "interval": 900000,
     "url": "https://fourtytwo.md2k.org/",
-    "network_high_frequency":"WIFI",
+    "network_high_frequency":"ANY",
     "network_low_frequency": "ANY"
   },
   "privacy": {

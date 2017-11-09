@@ -15,6 +15,15 @@
     "metadata": {
       "FREQUENCY": "16"
     },
+    "type": "LOCATION"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
     "type": "ACTIVITY_TYPE"
   },
   {

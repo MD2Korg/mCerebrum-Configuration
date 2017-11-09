@@ -5,13 +5,13 @@
   },
   "archive": {
     "enabled": true,
-    "location": "EXTERNAL_SDCARD_PREFERRED",
+    "location": "INTERNAL_SDCARD",
     "interval": 86400000
   },
   "upload": {
     "enabled": true,
     "interval": 900000,
-    "url": "https://utah-cerebralcortex.md2k.org/",
+    "url": "https://fourtytwo.md2k.org/",
     "restricted_datasource": [
       {
         "platform": {
@@ -42,18 +42,26 @@
         "id": "1800000",
         "title": "30 Minutes",
         "value": 1800000
+      },
+      {
+        "id": "3600000",
+        "title": "1 Hour",
+        "value": 3600000
+      },
+      {
+        "id": "7200000",
+        "title": "2 Hours",
+        "value": 7200000
       }
     ],
     "privacy_type_options": [
       {
-        "id": "chest_sensor",
-        "title": "Chest Sensor",
+        "id": "location",
+        "title": "Location",
         "summary": "",
         "datasource": [
           {
-            "platform": {
-              "type": "AUTOSENSE_CHEST"
-            }
+            "type": "LOCATION"
           }
         ]
       },
@@ -75,12 +83,11 @@
         ]
       },
       {
-        "id": "ema_intervention",
-        "title": "Surveys",
+        "id": "all",
+        "title": "All",
         "summary": "",
         "datasource": [
           {
-            "type": "SURVEY"
           }
         ]
       }

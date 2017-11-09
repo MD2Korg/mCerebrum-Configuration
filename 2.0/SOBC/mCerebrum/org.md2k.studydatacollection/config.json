@@ -7,11 +7,8 @@
       },
       {
         "id":"settings",
-        "title":"Settings"
-      },
-      {
-        "id":"reset",
-        "title":"Reset Application"
+        "title":"Settings",
+        "parameter":["password","1234"]
       },
       {
         "id":"start_stop_data_collection",
@@ -29,14 +26,14 @@
           "title": "Breathing",
           "read": {
             "platform": {
-              "type": "AUTOSENSE_BLE"
+              "type": "AUTOSENSE_CHEST"
             },
             "type": "DATA_QUALITY",
             "id": "RESPIRATION"
           },
           "plot": {
             "platform": {
-              "type": "AUTOSENSE_BLE"
+              "type": "AUTOSENSE_CHEST"
             },
             "type": "RESPIRATION"
           },
@@ -47,14 +44,14 @@
           "title": "Heart Rate",
           "read": {
             "platform": {
-              "type": "AUTOSENSE_BLE"
+              "type": "AUTOSENSE_CHEST"
             },
             "type": "DATA_QUALITY",
             "id": "ECG"
           },
           "plot": {
             "platform": {
-              "type": "AUTOSENSE_BLE"
+              "type": "AUTOSENSE_CHEST"
             },
             "type": "ECG"
           },
@@ -101,7 +98,10 @@
           "video_link": "e_CtHfjG_iQ",
           "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
         }
-      ]
+      ],
+      "privacy":{
+
+      }
     }
   }
 }

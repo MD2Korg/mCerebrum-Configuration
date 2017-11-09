@@ -466,29 +466,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "HEADSPACE",
-    "type": "EMI",
-    "name": "HeadSpace",
-    "trigger_type": "EVENT",
-    "enable": false,
-    "application": {
-      "id": "HEADSPACE",
-      "name": "HeadSpace",
-      "package_name": "com.getsomeheadspace.android",
-      "timeout": 1000
-    },
-    "notifications": [
-      {
-        "time": 0,
-        "types": [
-          "PHONE_VIBRATE_3",
-          "PHONE_SCREEN",
-          "PHONE_TONE_3",
-          "PHONE_MESSAGE_HEADSPACE"
-        ]
-      }
-    ]
   }
 ]

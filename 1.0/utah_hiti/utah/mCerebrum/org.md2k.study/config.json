@@ -177,7 +177,7 @@
     {
       "id": "headspace",
       "name": "HeadSpace",
-      "enable": true,
+      "enable": false,
       "package_name": "com.getsomeheadspace.android",
       "download_link": "market://details?id=com.getsomeheadspace.android"
     },
