@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "menu":[
+      {
+        "id":"home",
+        "title":"Home"
+      },
+      {
+        "id":"settings",
+        "title":"Settings"
+      },
+      {
+        "id":"reset",
+        "title":"Reset Application"
+      },
+      {
+        "id":"start_stop_data_collection",
+        "title":"Start Data Collection",
+        "parameter":["Start Data Collection","Stop Data Collection"]
+      },
+      {
+        "id":"update",
+        "title":"Check Update"
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Breathing",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "DATA_QUALITY",
+            "id": "RESPIRATION"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "RESPIRATION"
+          },
+          "video_link": "jIwhPiO7GmU",
+          "message": "1) Reset the application, wait 15 seconds and check it again.\n\n2) Restart the phone, wait about 1-2 minutes and check it again.\n\n3) Tighten the chest band so it fits snugly under the armpits.\n\n4) Make sure the cables marked in green and purple are plugged in all the way.\n\n5) Charge the white box."
+        },
+        {
+          "title": "Heart Rate",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ECG"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "ECG"
+          },
+          "video_link": "sIpg_IQTYjo",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the cables marked in green and purple are plugged in all the way.\n\n4) Make sure the connector marked in red is in the middle of your chest, and the connector marked in blue is on the left side of your chest.\n\n5) Move the white stickers slightly up or down.\n\n6) Charge the white box."
+        },
+        {
+          "title": "Left Wrist",
+          "read": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "LEFT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "LEFT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        },
+        {
+          "title": "Right Wrist",
+          "read": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "RIGHT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "RIGHT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ]
+    }
+  }
+}

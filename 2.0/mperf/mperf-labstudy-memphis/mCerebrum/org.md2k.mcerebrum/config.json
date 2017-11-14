@@ -1,19 +1,18 @@
 {
   "config":{
-    "id": "mPerf_field_study",
+    "id": "mPerf_labstudy_Memphis",
     "type": "mPerf",
     "update": "notify",
-    "version": "2.0.3"
+    "version": "2.0.0"
   },
   "study":{
     "id": "mPerf",
     "type": "mPerf",
-    "title": "mPerf Study",
-    "summary": "mPerf Study",
-    "description": "mPerf Study",
+    "title": "mPerf Lab Study - Memphis",
+    "summary": "mPerf Lab Study - Memphis",
+    "description": "mPerf Lab Study - Memphis",
     "version":"2.0.0",
     "icon": "mperf.png",
-    "cover_image": "ab.jpeg",
     "start_at_boot": true
   },
   "apps": [
@@ -44,11 +43,11 @@
     {
       "id": "study",
       "type": "study",
-      "title": "mPerf UI",
-      "summary": "UI for mPerf Study",
-      "description": "UI for mPerf Study",
-      "package_name": "org.md2k.studymperf",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/latest_version.json",
+      "title": "mPerf LabStudy UI",
+      "summary": "UI for mPerf Lab Study",
+      "description": "UI for mPerf Lab Study",
+      "package_name": "org.md2k.studymperflab",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperflab/latest_version.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
@@ -68,14 +67,14 @@
     {
       "id": "autosense_ble",
       "type": "sense",
-      "title": "Chest Sensor",
+      "title": "Chest Sensor (BLE)",
       "summary": "Records ECG and respiration signals over BLE",
-      "description": "Records ECG and respiration signals over or BLE",
+      "description": "Records ECG and respiration signals over BLE",
       "package_name": "org.md2k.autosenseble",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/latest_version.json",
       "icon": "autosense.png",
       "update": "notify",
-      "use_as": "optional"
+      "use_as": "required"
     },
     {
       "id": "MotionSenseHRV",
@@ -88,29 +87,6 @@
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
-    },
-    {
-      "id": "Beacon",
-      "type": "sense",
-      "title": "Beacon",
-      "summary": "Captures signal from Red Beacon",
-      "description": "Captures signal from Red Beacon",
-      "package_name": "org.md2k.beacon",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.beacon/latest_version.json",
-      "icon": "beacon.png",
-      "update": "notify",
-      "use_as": "optional"
-    },
-    {
-      "id": "alertnesssensingframework",
-      "type": "sense",
-      "title": "Alertness Sensing Framework",
-      "summary": "Captures audio features, SMS, call, notification information (unidentifiable info)",
-      "description": "Captures audio features, SMS, call, notification information (unidentifiable info)",
-      "package_name": "edu.dartmouth.eureka",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/latest_version.json",
-      "update": "notify",
-      "use_as": "required"
     }
-  ]
+   ]
 }
