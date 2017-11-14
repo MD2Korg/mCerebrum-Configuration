@@ -11,15 +11,7 @@
   "upload": {
     "enabled": true,
     "interval": 900000,
-    "url": "https://fourtytwo.md2k.org/",
-    "restricted_datasource": [
-      {
-        "platform": {
-          "type": "PHONE"
-        },
-        "type": "LOCATION"
-      }
-    ]
+    "url": "https://fourtytwo.md2k.org/"
   },
   "privacy": {
     "duration_options": [
@@ -56,28 +48,13 @@
     ],
     "privacy_type_options": [
       {
-        "id": "location",
-        "title": "Location",
-        "summary": "",
-        "datasource": [
-          {
-            "type": "LOCATION"
-          }
-        ]
-      },
-      {
         "id": "wrist_sensor",
         "title": "Wrist Sensors",
         "summary": "",
         "datasource": [
           {
             "platform": {
-              "id": "LEFT_WRIST"
-            }
-          },
-          {
-            "platform": {
-              "id": "RIGHT_WRIST"
+              "type": "MOTION_SENSE_HRV"
             }
           }
         ]

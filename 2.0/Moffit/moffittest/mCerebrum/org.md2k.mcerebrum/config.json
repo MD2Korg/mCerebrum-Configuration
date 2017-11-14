@@ -3,15 +3,15 @@
     "id": "moffitt",
     "type": "server",
     "update": "notify",
-    "version": "0.0.2"
+    "version": "2.0.0"
   },
   "study":{
     "id": "moffitt",
     "type": "moffitt",
-    "title": "moffitt Study",
-    "summary": "moffitt Study",
-    "description": "moffitt Study",
-    "version":"0.0.2",
+    "title": "Moffitt Study",
+    "summary": "Moffitt Study",
+    "description": "Moffitt Study",
+    "version":"2.0.0",
     "start_at_boot": true
   },
   "apps": [
@@ -42,11 +42,11 @@
     {
       "id": "study",
       "type": "study",
-      "title": "mPerf UI",
-      "summary": "UI for mPerf Study",
-      "description": "UI for mPerf Study",
-      "package_name": "org.md2k.studymperf",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/latest_version.json",
+      "title": "Study UI",
+      "summary": "UI for Moffitt Study",
+      "description": "UI for Moffitt Study",
+      "package_name": "org.md2k.studywithema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/latest_version.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
@@ -78,12 +78,34 @@
     {
       "id": "MotionSenseHRV",
       "type": "sense",
-      "title": "Wrist Sensor",
+      "title": "Motion Sense",
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
       "icon": "motionsense.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "ema",
+      "type": "sense",
+      "title": "EMA",
+      "summary": "Records EMA",
+      "description": "Records EMA",
+      "package_name": "org.md2k.ema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/latest_version.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "mindfulness",
+      "type": "sense",
+      "title": "Mindfulness Strategy",
+      "summary": "Intervention app",
+      "description": "Intervention app",
+      "package_name": "org.md2k.mindfulnessstrategy",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/latest_version.json",
       "update": "notify",
       "use_as": "required"
     }

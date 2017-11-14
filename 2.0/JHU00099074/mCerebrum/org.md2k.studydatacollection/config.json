@@ -16,6 +16,10 @@
         "parameter":["Start Data Collection","Stop Data Collection"]
       },
       {
+        "id":"reset",
+        "title":"Reset Application"
+      },
+      {
         "id":"update",
         "title":"Check Update"
       }
