@@ -1,16 +1,16 @@
 {
   "config":{
-    "id": "JHU00099074",
-    "type": "CTN-0073-Ot",
+    "id": "SOBC",
+    "type": "SOBC",
     "update": "notify",
     "version": "2.0.0"
   },
   "study":{
-    "id": "JHU00099074",
-    "type": "CTN-0073-Ot",
-    "title": "CTN-0073-Ot",
-    "summary": "CTN-0073-Ot",
-    "description": "CTN-0073-Ot",
+    "id": "SOBC",
+    "type": "SOBC",
+    "title": "SOBC Study",
+    "summary": "SOBC Study",
+    "description": "SOBC Study",
     "version":"2.0.0",
     "start_at_boot": true
   },
@@ -35,7 +35,6 @@
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/latest_version.json",
-      "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
     },
@@ -47,7 +46,6 @@
       "description": "UI for Data Collection",
       "package_name": "org.md2k.studydatacollection",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studydatacollection/latest_version.json",
-      "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
     },
@@ -59,7 +57,6 @@
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/latest_version.json",
-      "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
     },
@@ -71,7 +68,6 @@
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
-      "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
     }
