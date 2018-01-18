@@ -62,65 +62,6 @@
       "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
-    },
-    {
-      "id": "autosense",
-      "type": "sense",
-      "title": "AutoSense Chest Sensor (ANT)",
-      "summary": "Records ECG and respiration signals over ANT+",
-      "description": "Records ECG and respiration signals over ANT+",
-      "package_name": "org.md2k.autosense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/latest_version.json",
-      "icon": "autosense.png",
-      "update": "notify",
-      "use_as": "optional"
-    },
-    {
-      "id": "autosenseble",
-      "type": "sense",
-      "title": "AutoSense Chest Sensor (BLE)",
-      "summary": "Records ECG and respiration signals over BLE",
-      "description": "Records ECG and respiration signals over BLE",
-      "package_name": "org.md2k.autosenseble",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/latest_version.json",
-      "icon": "autosense.png",
-      "update": "notify",
-      "use_as": "optional"
-    },
-    {
-      "id": "MotionSenseHRV",
-      "type": "sense",
-      "title": "Wrist Sensor",
-      "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
-      "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
-      "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
-      "icon": "motionsense.png",
-      "update": "notify",
-      "use_as": "optional"
-    },
-    {
-      "id": "Beacon",
-      "type": "sense",
-      "title": "Beacon",
-      "summary": "Captures signal from Red Beacon",
-      "description": "Captures signal from Red Beacon",
-      "package_name": "org.md2k.beacon",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.beacon/latest_version.json",
-      "icon": "beacon.png",
-      "update": "notify",
-      "use_as": "optional"
-    },
-    {
-      "id": "alertnesssensingframework",
-      "type": "sense",
-      "title": "Alertness Sensing Framework",
-      "summary": "Captures audio features, SMS, call, notification information (unidentifiable info)",
-      "description": "Captures audio features, SMS, call, notification information (unidentifiable info)",
-      "package_name": "edu.dartmouth.eureka",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/latest_version.json",
-      "update": "notify",
-      "use_as": "required"
     }
   ]
 }

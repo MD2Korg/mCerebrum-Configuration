@@ -11,7 +11,7 @@
     "title": "mPerf Study",
     "summary": "mPerf Study",
     "description": "mPerf Study",
-    "version":"2.0.0",
+    "version": "2.0.0",
     "icon": "mperf.png",
     "cover_image": "ab.jpeg",
     "start_at_boot": true
@@ -70,7 +70,7 @@
       "type": "sense",
       "title": "Chest Sensor",
       "summary": "Records ECG and respiration signals over BLE",
-      "description": "Records ECG and respiration signals over or BLE",
+      "description": "Records ECG and respiration signals over BLE",
       "package_name": "org.md2k.autosenseble",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/latest_version.json",
       "icon": "autosense.png",

@@ -3,7 +3,7 @@
     "id": "mPerf_field_study",
     "type": "mPerf",
     "update": "notify",
-    "version": "2.0.1"
+    "version": "2.0.3"
   },
   "study":{
     "id": "mPerf",
@@ -36,7 +36,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.9.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.13.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -66,13 +66,13 @@
       "use_as": "required"
     },
     {
-      "id": "autosense",
+      "id": "autosense_ble",
       "type": "sense",
       "title": "Chest Sensor",
-      "summary": "Records ECG and respiration signals over ANT+ or BLE",
-      "description": "Records ECG and respiration signals over ANT+ or BLE",
-      "package_name": "org.md2k.autosense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.4.json",
+      "summary": "Records ECG and respiration signals over BLE",
+      "description": "Records ECG and respiration signals over BLE",
+      "package_name": "org.md2k.autosenseble",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/version2.0.2.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "optional"
@@ -84,7 +84,7 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.8.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.11.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
@@ -108,7 +108,7 @@
       "summary": "Captures audio features, SMS, call, notification information (unidentifiable info)",
       "description": "Captures audio features, SMS, call, notification information (unidentifiable info)",
       "package_name": "edu.dartmouth.eureka",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/version1.0.5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/version1.0.6.json",
       "update": "notify",
       "use_as": "required"
     }

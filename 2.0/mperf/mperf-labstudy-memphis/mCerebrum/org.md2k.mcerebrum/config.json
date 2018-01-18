@@ -3,7 +3,7 @@
     "id": "mPerf_labstudy_Memphis",
     "type": "mPerf",
     "update": "notify",
-    "version": "2.0.0"
+    "version": "2.0.1"
   },
   "study":{
     "id": "mPerf",
@@ -85,6 +85,17 @@
       "package_name": "org.md2k.motionsense",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
       "icon": "motionsense.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "alertnesssensingframework",
+      "type": "sense",
+      "title": "Alertness Sensing Framework",
+      "summary": "Captures audio features, SMS, call, notification information (unidentifiable info)",
+      "description": "Captures audio features, SMS, call, notification information (unidentifiable info)",
+      "package_name": "edu.dartmouth.eureka",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/version1.0.5.json",
       "update": "notify",
       "use_as": "required"
     }
