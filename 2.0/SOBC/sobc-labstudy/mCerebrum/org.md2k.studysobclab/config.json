@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "menu":[
+      {
+        "id":"home",
+        "title":"Home"
+      },
+      {
+        "id":"settings",
+        "title":"Settings"
+      },
+      {
+        "id":"reset",
+        "title":"Reset Application"
+      },
+      {
+        "id":"start_stop_data_collection",
+        "title":"Start Data Collection",
+        "parameter":["Start Data Collection","Stop Data Collection"]
+      },
+      {
+        "id":"update",
+        "title":"Check Update"
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Breathing",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "DATA_QUALITY",
+            "id": "RESPIRATION"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "RESPIRATION"
+          },
+          "video_link": "g5duKPIBwbs",
+          "message": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+        },
+        {
+          "title": "Heart Rate",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ECG"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_BLE"
+            },
+            "type": "ECG"
+          },
+          "video_link": "pCcLJxmoiJI",
+          "message": "1) Adjust the position of the electrodes on the body.\n\n2)  Make sure all cable connections are secure.\n\n3)  Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+        },
+        {
+          "title": "Left Wrist",
+          "read": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "LEFT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "LEFT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        },
+        {
+          "title": "Right Wrist",
+          "read": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "RIGHT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV",
+              "id": "RIGHT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ]
+    }
+  }
+}
