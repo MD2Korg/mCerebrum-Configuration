@@ -1,176 +1,20 @@
-[
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
+{
+  "required": 3,
+  "devices":[
+    {
+      "use_as":"required",
+      "platform_type":"MOTION_SENSE_HRV",
+      "platform_id":"LEFT_WRIST"
     },
-    "type": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
+    {
+      "use_as":"required",
+      "platform_type":"MOTION_SENSE_HRV",
+      "platform_id":"RIGHT_WRIST"
     },
-    "type": "GYROSCOPE"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
-    "type": "RAW"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
-    "type": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
-    "type": "BATTERY"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "LEFT_WRIST"
-    },
-    "type": "SEQUENCE_NUMBER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "GYROSCOPE"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "RAW"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "BATTERY"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "RIGHT_WRIST"
-    },
-    "type": "SEQUENCE_NUMBER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "GYROSCOPE"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "RAW"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "BATTERY"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "ACCELEROMETER"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "DATA_QUALITY",
-    "id": "LED"
-  },
-  {
-    "platform": {
-      "type": "MOTION_SENSE_HRV",
-      "id": "SLEEP_WRIST"
-    },
-    "type": "SEQUENCE_NUMBER"
-  }
-]
+    {
+      "use_as":"required",
+      "platform_type":"MOTION_SENSE_HRV",
+      "platform_id":"SLEEP_WRIST"
+    }
+  ]
+}

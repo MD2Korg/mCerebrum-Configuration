@@ -295,114 +295,35 @@
   "actions": [
     {
       "id": "action_notification_ema",
+      ""
       "start_state": "notification_ok_cancel",
       "transitions": [
-        {
-          "current_state": "notification_ok_cancel",
-          "input": "ok",
-          "next_state": "application"
-        },
-        {
-          "current_state": "notification_ok_cancel",
-          "input": "cancel",
-          "next_state": "save_notification_cancel"
-        },
-        {
-          "current_state": "notification_ok_cancel",
-          "input": "timeout",
-          "next_state": "save_notification_timeout"
-        },
-        {
-          "current_state": "application",
-          "input": "completed",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "application",
-          "input": "missed",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "application",
-          "input": "abandoned_by_timeout",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "application",
-          "input": "abandoned_by_user",
-          "next_state": "save_ema"
-        }
+        ["notification_ok_cancel_timeout", "ok", "application"],
+        ["notification_ok_cancel_timeout","cancel","quit"],
+        ["notification_ok_cancel_timeout","timeout","quit"],
+        ["application", "completed", "quit"],
+        ["application", "missed", "quit"],
+        ["application", "abandoned_by_timeout", "quit"],
+        ["application", "abandoned_by_user", "quit"]
       ]
     },
     {
       "id": "action_notification_reminder_delay_ema_incentive",
       "start_state": "notification",
       "transitions": [
-        {
-          "current_state": "notification",
-          "input": "ok",
-          "next_state": "application"
-        },
-        {
-          "current_state": "notification",
-          "input": "cancel",
-          "next_state": "save_notification_cancel"
-        },
-        {
-          "current_state": "notification",
-          "input": "delay",
-          "next_state": "notification_delay"
-        },
-        {
-          "current_state": "notification",
-          "input": "timeout",
-          "next_state": "save_notification_timeout"
-        },
-        {
-          "current_state": "notification_delay",
-          "input": "ok",
-          "next_state": "application"
-        },
-        {
-          "current_state": "notification_delay",
-          "input": "cancel",
-          "next_state": "save_notification_cancel"
-        },
-        {
-          "current_state": "notification_delay",
-          "input": "timeout",
-          "next_state": "save_notification_timeout"
-        },
-        {
-          "current_state": "application",
-          "input": "completed",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "application",
-          "input": "missed",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "application",
-          "input": "abandoned",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "application",
-          "input": "timeout",
-          "next_state": "save_ema"
-        },
-        {
-          "current_state": "incentive",
-          "input": "ok",
-          "next_state": "close"
-        },
-        {
-          "current_state": "incentive",
-          "input": "timeout",
-          "next_state": "close"
-        }
+        ["notification", "ok", "application"],
+        ["notification", "cancel", "save_notification_cancel"],
+        ["notification", "delay", "notification_delay"],
+        ["notification", "timeout", "save_notification_timeout"],
+        ["notification_delay", "ok", "application"],
+        ["notification_delay", "cancel", "save_notification_cancel"],
+        ["notification_delay", "timeout", "save_notification_timeout"],
+        ["application", "completed", "save_ema"],
+        ["application", "missed", "save_ema"],
+        ["application", "abandoned", "save_ema"],
+        ["application", "timeout", "save_ema"],
+        ["incentive", "ok", "close"],
+        ["incentive", "timeout", "close"]
       ]
     }
   ],
