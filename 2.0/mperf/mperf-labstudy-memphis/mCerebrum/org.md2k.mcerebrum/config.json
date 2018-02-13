@@ -3,7 +3,7 @@
     "id": "mPerf_labstudy_Memphis",
     "type": "mPerf",
     "update": "notify",
-    "version": "2.0.1"
+    "version": "2.0.2"
   },
   "study":{
     "id": "mPerf",
@@ -23,7 +23,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.12.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -35,7 +35,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.14.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -47,7 +47,7 @@
       "summary": "UI for mPerf Lab Study",
       "description": "UI for mPerf Lab Study",
       "package_name": "org.md2k.studymperflab",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperflab/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperflab/version2.0.2.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"
@@ -59,7 +59,7 @@
       "summary": "Captures accelerometer, gyroscope, and location data from the phone",
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.6.json",
       "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
@@ -71,7 +71,7 @@
       "summary": "Records ECG and respiration signals over BLE",
       "description": "Records ECG and respiration signals over BLE",
       "package_name": "org.md2k.autosenseble",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosenseble/version2.0.2.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "required"
@@ -83,7 +83,7 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.14.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
@@ -95,7 +95,7 @@
       "summary": "Captures audio features, SMS, call, notification information (unidentifiable info)",
       "description": "Captures audio features, SMS, call, notification information (unidentifiable info)",
       "package_name": "edu.dartmouth.eureka",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/version1.0.5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/edu.dartmouth.alertness/version1.0.6.json",
       "update": "notify",
       "use_as": "required"
     }

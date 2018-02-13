@@ -51,6 +51,15 @@
     "metadata": {
       "FREQUENCY": "16"
     },
+    "type": "COMPASS"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
     "type": "STEP_COUNT"
   },
   {

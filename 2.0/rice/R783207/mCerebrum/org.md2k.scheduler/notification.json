@@ -1,0 +1,124 @@
+{
+  "notification":[
+    {
+      "id":"NOTIFICATION_WITH_DELAY",
+      "notify":[
+        "PHONE_VIBRATE_30_WITH_0_60_120",
+        "PHONE_TONE_30_WITH_0_60_120",
+        "PHONE_SCREEN_30",
+        "PHONE_MESSAGE_DELAY_10_MINUTE"
+      ]
+    },
+    {
+      "id":"NOTIFICATION_DURING_DELAY",
+      "notify":[
+        "PHONE_MESSAGE_DURING_DELAY"
+      ]
+    },
+    {
+      "id":"NOTIFICATION_AFTER_DELAY",
+      "notify":[
+        "PHONE_VIBRATE_30_WITH_0_60_120",
+        "PHONE_TONE_30_WITH_0_60_120",
+        "PHONE_SCREEN_30",
+        "PHONE_MESSAGE_AFTER_DELAY"
+      ]
+    }
+  ],
+  "notification_format": [
+    {
+      "id": "PHONE_VIBRATE_30_WITH_0_60_120",
+      "type": "PHONE_VIBRATION",
+      "title": "Phone Vibration",
+      "format": "THREE_TONE",
+      "repeat": 10,
+      "within": "00:00:30",
+      "at":["00:00:00", "00:01:00","00:02:00"]
+    },
+    {
+      "id": "PHONE_TONE_30_WITH_0_60_120",
+      "type":"PHONE_TONE",
+      "title": "Phone Tone",
+      "format": "THREE_TONE_HIGH",
+      "repeat": 10,
+      "within": "00:00:30",
+      "at":["00:00:00", "00:01:00","00:02:00"]
+    },
+    {
+      "id": "PHONE_SCREEN_30",
+      "type": "PHONE_SCREEN",
+      "title": "Phone Screen",
+      "repeat": 1,
+      "within": "00:00:30",
+      "at":["00:00:00"]
+    },
+    {
+      "id": "PHONE_MESSAGE_SINGLE_CHOICE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message Single Choice",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at":["00:00:00"],
+      "message":{
+        "type":"SINGLE_CHOICE",
+        "title": "Smoking Report",
+        "message": "In the last 10 minutes, did you smoke?",
+        "choices":[
+          "YES - I smoked a cigarette or cigar.",
+          "YES - I smoked an e-cigarette or vaporizer.",
+          "NO - I did NOT smoke."
+        ],
+        "button":[
+          "Ok", "Cancel"
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10_MINUTE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at":["00:00:00"],
+      "message":{
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button":[
+          "Ok", "Cancel, Delay 10 Minutes"
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_AFTER_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at":["00:00:00"],
+      "message":{
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button":[
+          "Ok", "Cancel"
+        ]
+      }
+    },
+
+    {
+      "id": "PHONE_MESSAGE_DURING_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at":["00:00:00"],
+      "message":{
+        "type":"GENERAL",
+        "title": "Survey delayed for 10 minutes",
+        "message": "Please click \"Start\" when you are ready",
+        "button":[
+          "Start", "Cancel"
+        ]
+      }
+    }
+  ]
+}

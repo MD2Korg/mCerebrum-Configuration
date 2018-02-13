@@ -1,0 +1,13 @@
+{
+  "application": [
+    {
+      "id": "EMA",
+      "type": "EMA",
+      "package_name":"org.md2k.ema",
+      "timeout":"00:10:00",
+      "parameters":{
+        "file_name":"questionnaire.json"
+      }
+    }
+  ]
+}

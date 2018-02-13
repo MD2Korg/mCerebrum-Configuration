@@ -3,7 +3,7 @@
     "id": "SOBC",
     "type": "SOBC",
     "update": "notify",
-    "version": "2.0.1"
+    "version": "2.0.2"
   },
   "study":{
     "id": "SOBC",
@@ -67,7 +67,7 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.13.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.14.json",
       "update": "notify",
       "use_as": "required"
     }

@@ -1,0 +1,272 @@
+{
+  "scheduler": [
+    {
+      "id": "RANDOM",
+      "type": "EMA",
+      "title": "Random EMA",
+      "summary": "Random EMA",
+      "listen": [
+        {
+          "type": "DAY",
+          "id": "START"
+        },
+        {
+          "type": "DAY",
+          "id": "END"
+        }
+      ],
+      "block": [
+        {
+          "consider_if": "active_day() == TRUE && count_sample(get_last_sample(0,DAY,START)+time(00:00:00), get_last_sample(0,DAY,START)+time(04:00:00), EMA, RANDOM)==0",
+          "trigger_rule": [
+            {
+              "when": "RANDOM",
+              "start_time": "get_last_sample(0,DAY,START)",
+              "end_time": "get_last_sample(0,DAY,START)+time(02:00:00)",
+              "condition": "privacy()==FALSE && count_sample(now()-time(01:00,00),now(),EMA,RANDOM)==0 && "
+            },
+            {
+              "when": "RANDOM",
+              "start_time":"now",
+              "end_time": "get_sample(dt=DAY,di=START)+time(03:00:00)",
+              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
+            },
+            {
+              "when": "IMMEDIATE",
+              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
+              "retry_in":"00:01:00",
+              "retry_until":"get_last_sample(0,DAY,START)+time(04:00:00)"
+            }
+          ]
+        },
+        {
+          "start": "get_sample(dt=DAY,di=START)+time(04:00:00)",
+          "end": "get_sample(dt=DAY,di=START)+time(08:00:00)",
+          "trigger_rule": [
+            {
+              "when": "RANDOM",
+              "start_time": "get_sample(dt=DAY,di=START)+time(04:00:00)",
+              "end_time": "get_sample(dt=DAY,di=START)+time(06:00:00)",
+              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
+            },
+            {
+              "when": "RANDOM",
+              "start_time":"now",
+              "end_time": "get_sample(dt=DAY,di=START)+time(07:00:00)",
+              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
+            },
+            {
+              "when": "IMMEDIATE",
+              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
+              "retry_at":"00:01:00"
+            }
+          ]
+        },
+        {
+          "start": "get_sample(dt=DAY,di=START)+time(08:00:00)",
+          "end": "get_sample(dt=DAY,di=START)+time(12:00:00)"
+        },
+        {
+          "start": "get_sample(dt=DAY,di=START)+time(12:00:00)",
+          "end": "get_sample(dt=DAY,di=START)+time(16:00:00)"
+        }
+      ],
+      "what": [
+        [
+          {
+            "trigger_if": "(WEEK1==TRUE && TUESDAY==TRUE)",
+            "action": {
+              "id": "action_notification_ema",
+              "parameter": [
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK1==TRUE && SATURDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact2.2.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK2==TRUE && WEDNESDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact4.2.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK2==TRUE && FRIDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact4.3.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK3==TRUE && THURSDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact3.2.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK4==TRUE && MONDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact5.1.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK4==TRUE && SUNDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact5.5.1.1"
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": "730pm",
+      "type": "EMA",
+      "title": "EMA at 7:30pm",
+      "summary": "Trigger EMA at 7:30pm",
+      "condition": "valid_study == TRUE",
+      "when": {
+        "search_by_value": "time(19:30:00)",
+        "blocks": [
+          "00:00:00 - 02:00:00"
+        ],
+        "condition": "ema_triggered_at_least_120_minutes_ago==TRUE",
+        "repeat": "24:00:00",
+        "rules": [
+          {
+            "type": "IMMEDIATE",
+            "retry": "00:01:00"
+          }
+        ]
+      },
+      "what": {
+        "notification": "NOTIFICATION_WITH_DELAY"
+      },
+      "what": [
+        [
+          {
+            "condition": "(WEEK2==TRUE && MONDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact4.1.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK2==TRUE && SUNDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact4.4.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK3==TRUE && TUESDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact3.1.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK3==TRUE && SATURDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact3.3.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK4==TRUE && WEDNESDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact5.2.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK4==TRUE && THURSDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact5.3.1.1"
+                }
+              ]
+            }
+          },
+          {
+            "condition": "(WEEK4==TRUE && FRIDAY==TRUE)",
+            "act": {
+              "id": "action_notification_ema",
+              "parameters": [
+                {
+                  "id": "application",
+                  "value": "contact5.4.1.1"
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

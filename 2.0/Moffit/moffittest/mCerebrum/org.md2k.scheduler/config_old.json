@@ -1,5 +1,13 @@
 {
+  "id": "mofitt",
+  "type": "STUDY",
+  "title": "Mofitt Study",
+  "summary": "Mofitt Study",
   "create_datasource": [
+    {
+      "type": "EMA",
+      "id": "RANDOM"
+    },
     {
       "type": "EMI",
       "id": "LOW_STRESS"
@@ -45,6 +53,20 @@
   },
   "schedulers": [
     {
+      "id": "Random",
+      "type": "EMA",
+      "title": "Random EMA",
+      "summary": "Random EMA",
+      "listen": [
+        {
+          "type": "DAY",
+          "id": "START"
+        },
+        {
+          "type": "DAY",
+          "id": "END"
+        }
+      ],
       "condition": "is_active_day(now()) == TRUE",
       "when": {
         "base": "get_sample(dt=DAY,di=START)",
@@ -180,10 +202,6 @@
           }
         ]
       },
-      "what":{
-        "notification":"NOTIFICATION_WITH_DELAY"
-
-      },
       "what": [
         [
           {
@@ -277,7 +295,6 @@
   "actions": [
     {
       "id": "action_notification_ema",
-      "state":["notification","application"],
       "start_state": "notification_ok_cancel",
       "transitions": [
         ["notification", "ok", "application"],
@@ -294,19 +311,17 @@
       "start_state": "notification",
       "transitions": [
         ["notification", "ok", "application"],
-        ["notification", "cancel", "quit"],
-        ["notification", "timeout", "quit"],
-        ["notification", "delay", "notification_during_delay"],
-        ["notification_during_delay", "start", "application"],
-        ["notification_during_delay", "cancel", "quit"],
-        ["notification_during_delay", "timeout", "notification_after_delay"],
-        ["notification_after_delay", "ok", "application"],
-        ["notification_after_delay", "cancel", "quit"],
-        ["notification_after_delay", "timeout", "quit"],
-        ["application", "completed", "quit"],
-        ["application", "missed", "quit"],
-        ["application", "abandoned_by_timeout", "quit"],
-        ["application", "abandoned_by_user", "quit"],
+        ["notification", "cancel", "save_notification_cancel"],
+        ["notification", "delay", "notification_delay"],
+        ["notification", "timeout", "save_notification_timeout"],
+        ["notification_delay", "ok", "application"],
+        ["notification_delay", "cancel", "save_notification_cancel"],
+        ["notification_delay", "timeout", "save_notification_timeout"],
+        ["application", "completed", "save_ema"],
+        ["application", "missed", "save_ema"],
+        ["application", "abandoned", "save_ema"],
+        ["application", "timeout", "save_ema"],
+        ["incentive", "ok", "close"],
         ["incentive", "timeout", "close"]
       ]
     }
@@ -1294,23 +1309,6 @@
             "type": "json"
           }
         }
-      ]
-    }
-  ],
-  "notification":[
-    "id":
-  ],
-  "notification_formats":[
-    {
-      "id": "phone_vibrate_0_20_40",
-      "type": "PHONE_VIBRATION",
-      "format": "3_500ms",
-      "repeat": 3,
-      "interval": "00:00:03",
-      "when": [
-        "00:00:00",
-        "00:00:20",
-        "00:00:40"
       ]
     }
   ],
