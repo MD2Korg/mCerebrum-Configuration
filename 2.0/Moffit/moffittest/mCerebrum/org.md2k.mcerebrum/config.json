@@ -1,13 +1,13 @@
 {
   "config":{
     "id": "moffitt",
-    "type": "server",
+    "type": "field_study",
     "update": "notify",
     "version": "2.0.0"
   },
   "study":{
     "id": "moffitt",
-    "type": "moffitt",
+    "type": "field_study",
     "title": "Moffitt Study",
     "summary": "Moffitt Study",
     "description": "Moffitt Study",
@@ -22,7 +22,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.12.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -34,7 +34,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.15.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -46,8 +46,7 @@
       "summary": "UI for Moffitt Study",
       "description": "UI for Moffitt Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/latest_version.json",
-      "icon": "studymperf.png",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.5.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -58,7 +57,7 @@
       "summary": "Captures accelerometer, gyroscope, and location data from the phone",
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.7.json",
       "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
@@ -70,7 +69,7 @@
       "summary": "Records ECG and respiration signals over ANT+ or BLE",
       "description": "Records ECG and respiration signals over ANT+ or BLE",
       "package_name": "org.md2k.autosense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.5.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "required"
@@ -78,12 +77,34 @@
     {
       "id": "MotionSenseHRV",
       "type": "sense",
-      "title": "Motion Sense",
+      "title": "Wrist Sensor",
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.16.json",
       "icon": "motionsense.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "stream_processor",
+      "type": "analyze",
+      "title": "Stress & Smoking Detector",
+      "summary": "Detects stress and smoking events from autosense and motionsense device",
+      "description": "Detects stress and smoking events from autosense and motionsense device",
+      "package_name": "org.md2k.streamprocessor",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.streamprocessor/version2.0.1.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "scheduler",
+      "type": "act",
+      "title": "Scheduler",
+      "summary": "Scheduler app",
+      "description": "Scheduler app",
+      "package_name": "org.md2k.scheduler",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.2.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -94,7 +115,7 @@
       "summary": "Records EMA",
       "description": "Records EMA",
       "package_name": "org.md2k.ema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.1.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -105,7 +126,7 @@
       "summary": "Intervention app",
       "description": "Intervention app",
       "package_name": "org.md2k.mindfulnessstrategy",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/latest_version.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/version2.0.2.json",
       "update": "notify",
       "use_as": "required"
     }

@@ -1,0 +1,32 @@
+[
+  {
+    "platform": {
+      "type": "BEACON",
+      "id": "HOME"
+    }
+  },
+  {
+    "platform": {
+      "type": "BEACON",
+      "id": "WORK 1"
+    }
+  },
+  {
+    "platform": {
+      "type": "BEACON",
+      "id": "WORK 2"
+    }
+  },
+  {
+    "platform": {
+      "type": "BEACON",
+      "id": "CAR"
+    }
+  },
+  {
+    "platform": {
+      "type": "BEACON",
+      "id": "OTHER"
+    }
+  }
+]

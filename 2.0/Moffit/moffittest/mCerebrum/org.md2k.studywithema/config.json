@@ -76,14 +76,6 @@
         ]
       },
       {
-        "id": "start_stop_data_collection",
-        "title": "Start Data Collection",
-        "parameter": [
-          "Start Data Collection",
-          "Stop Data Collection"
-        ]
-      },
-      {
         "id": "reset",
         "title": "Reset Application"
       },
@@ -100,7 +92,7 @@
             "platform": {
               "type": "AUTOSENSE_CHEST"
             },
-            "type": "DATA_QUALITY",
+            "type": "DATA_VARIANCE",
             "id": "RESPIRATION"
           },
           "plot": {
@@ -134,15 +126,13 @@
           "title": "Left Wrist",
           "read": {
             "platform": {
-              "type": "MOTION_SENSE_HRV",
               "id": "LEFT_WRIST"
             },
             "type": "DATA_QUALITY",
-            "id": "LED"
+            "id": "ACCELEROMETER"
           },
           "plot": {
             "platform": {
-              "type": "MOTION_SENSE_HRV",
               "id": "LEFT_WRIST"
             },
             "type": "ACCELEROMETER"
@@ -154,15 +144,13 @@
           "title": "Right Wrist",
           "read": {
             "platform": {
-              "type": "MOTION_SENSE_HRV",
               "id": "RIGHT_WRIST"
             },
             "type": "DATA_QUALITY",
-            "id": "LED"
+            "id": "ACCELEROMETER"
           },
           "plot": {
             "platform": {
-              "type": "MOTION_SENSE_HRV",
               "id": "RIGHT_WRIST"
             },
             "type": "ACCELEROMETER"
@@ -179,27 +167,6 @@
       },
       "button": {
         "list": [
-          {
-            "id": "ema",
-            "title": "Survey",
-            "icon": "survey.png",
-            "run": {
-              "package_name": "org.md2k.ema",
-              "activity": "org.md2k.ema.ActivityMain",
-              "parameter": [
-                "id",
-                "ema",
-                "name",
-                "Survey",
-                "display_name",
-                "EMA Questionnaire",
-                "file_name",
-                "questionnaire.json",
-                "timeout",
-                "300000"
-              ]
-            }
-          },
           {
             "id": "mindful",
             "title": "Mindfulness Strategies",

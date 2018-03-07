@@ -2,7 +2,7 @@
   "action":[
     {
       "id": "action_notification_ema",
-      "statxe":["notification","application"],
+      "state":["notification","application"],
       "start_state": "notification",
       "transitions": [
         ["notification", "ok", "application"]

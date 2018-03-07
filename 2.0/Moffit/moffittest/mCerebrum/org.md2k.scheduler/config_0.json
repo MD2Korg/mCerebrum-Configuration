@@ -1,0 +1,667 @@
+{
+  "id": "MOFFITT",
+  "type": "STUDY",
+  "title": "Mofitt Study",
+  "scheduler_list": [
+    {
+      "id": "RANDOM",
+      "type": "EMA",
+      "title": "Random EMA",
+      "listen": {
+        "datasource": [
+          {
+            "type": "DAY",
+            "id": "START"
+          },
+          {
+            "type": "DAY",
+            "id": "END"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,DAY,START)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "praivacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(04:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(04:00:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(08:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(08:00:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(12:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(12:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(01:00,00),now(),EMA,RANDOM)==0 && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:15:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(12:00:00)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "EMA"],
+                ["EMA", "COMPLETED", "INCENTIVE_DATA_QUALITY_LAST_EMA"]
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": "LOW_STRESS",
+      "type": "EMI",
+      "title": "EMI for low stress",
+      "listen": {
+        "datasource": [
+          {
+            "type": "DAY",
+            "id": "START"
+          },
+          {
+            "type": "DAY",
+            "id": "END"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMI, LOW_STRESS)==0",
+          "start_time": "get_last_sample(0,DAY,START)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(04:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(04:00:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMI, LOW_STRESS)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(08:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(08:00:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMI, LOW_STRESS)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(12:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(12:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(12:00:00)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HIGH_STRESS",
+      "type": "EMI",
+      "title": "EMI for high stress",
+      "listen": {
+        "datasource": [
+          {
+            "type": "ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMI, HIGH_STRESS)==0",
+          "start_time": "get_last_sample(0,DAY,START)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6",
+              "retry_until": "get_last_sample_time_offset(ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION)+time_offset(00:04:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMI, HIGH_STRESS)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6",
+              "retry_until": "get_last_sample_time_offset(ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION)+time_offset(00:04:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMI, HIGH_STRESS)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(12:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6",
+              "retry_until": "get_last_sample_time_offset(ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION)+time_offset(00:04:00)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SMOKING",
+      "type": "EMI",
+      "title": "EMI for smoking",
+      "listen": {
+        "datasource": [
+          {
+            "type": "SMOKING",
+            "id": "PUFF_MARKER"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMI, SMOKING)==0",
+          "start_time": "get_last_sample(0,DAY,START)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6",
+              "retry_until": "get_last_sample_time_offset(SMOKING,PUFF_MARKER)+time_offset(00:03:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMI, SMOKING)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6",
+              "retry_until": "get_last_sample_time_offset(SMOKING,PUFF_MARKER)+time_offset(00:03:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMI, SMOKING)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(12:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6",
+              "retry_until": "get_last_sample_time_offset(SMOKING,PUFF_MARKER)+time_offset(00:03:00)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOT_SMOKING",
+      "type": "EMI",
+      "title": "EMI for not smoking",
+      "listen": {
+        "datasource": [
+          {
+            "type": "DAY",
+            "id": "START"
+          },
+          {
+            "type": "DAY",
+            "id": "END"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMI, NOT_SMOKING)==0",
+          "start_time": "get_last_sample(0,DAY,START)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(01:00:00), now(), EMI, SMOKING)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(04:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(01:00:00), now(), EMI, SMOKING)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(01:00:00), now(), EMI, SMOKING)==0 && count_sample(now-time_offset(01:00:00), now(), EMI, SMOKING)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(04:00:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMI, NOT_SMOKING)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+time_offset(04:00:00)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(08:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(08:00:00)"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMI, NOT_SMOKING)==0",
+          "start_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)",
+          "end_time": "get_last_sample(0,DAY,START)+time_offset(12:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,DAY,START)+time_offset(08:00:00)+RANDOM(time_offset(04:00:00)/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+RANDOM((get_last_sample(0,DAY,START)+time_offset(12:00:00)-last_schedule())/2)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && get_phone_battery()>10 && not_driving(time_offset(00:05:00))==true && not_active(time_offset(00:01:00))==true && data_quality(time_offset(00:05:00), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)>=66.6"
+            },
+            {
+              "trigger_time": "last_schedule()+time_offset(00:01:00)",
+              "condition": "privacy()==false && count_sample(now()-time_offset(00:15:00), now(), EMA)==0 && count_sample(now-time_offset(00:30:00), now(), EMI)==0 && not_driving(time_offset(00:05:00))==true",
+              "retry_until": "get_last_sample(0,DAY,START)+time_offset(12:00:00)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SMOKING_EMI",
+      "type": "EMA",
+      "title": "EMA for smoking",
+      "listen": {
+        "datasource": [
+          {
+            "type": "EMI",
+            "id": "SMOKING"
+          },
+          {
+            "type": "EMI",
+            "id": "NOT_SMOKING"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMA, SMOKING_EMI)==0",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMA, SMOKING_EMI)==0",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMA, SMOKING_EMI)==0",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STRESS_EMI",
+      "type": "EMA",
+      "title": "EMA for not smoking",
+      "listen": {
+        "datasource": [
+          {
+            "type": "EMI",
+            "id": "HIGH_STRESS"
+          },
+          {
+            "type": "EMI",
+            "id": "LOW_STRESS"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time_offset(04:00:00), EMA, STRESS_EMI)==0",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(04:00:00), get_last_sample(0,DAY,START)+time_offset(08:00:00), EMA, STRESS_EMI)==0",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()"
+            }
+          ]
+        },
+        {
+          "condition": "active_day() == true && count_sample(get_last_sample(0,DAY,START)+time_offset(08:00:00), get_last_sample(0,DAY,START)+time_offset(12:00:00), EMA, STRESS_EMI)==0",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notification_details": [
+    {
+      "id": "PHONE_VIBRATE_30_WITH_0_60_120",
+      "type": "PHONE_VIBRATION",
+      "title": "Phone Vibration",
+      "format": "THREE_TONE",
+      "repeat": 10,
+      "within": "00:00:30",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_TONE_30_WITH_0_60_120",
+      "type": "PHONE_TONE",
+      "title": "Phone Tone",
+      "format": "THREE_TONE_HIGH",
+      "repeat": 10,
+      "within": "00:00:30",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_SCREEN_30",
+      "type": "PHONE_SCREEN",
+      "title": "Phone Screen",
+      "repeat": 1,
+      "within": "00:00:30",
+      "at": [
+        "00:00:00"
+      ]
+    },
+    {
+      "id": "PHONE_MESSAGE_SINGLE_CHOICE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message Single Choice",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "type": "SINGLE_CHOICE",
+        "title": "Smoking Report",
+        "message": "In the last 10 minutes, did you smoke?",
+        "choices": [
+          "YES - I smoked a cigarette or cigar.",
+          "YES - I smoked an e-cigarette or vaporizer.",
+          "NO - I did NOT smoke."
+        ],
+        "button": [
+          "Ok",
+          "Cancel"
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10_MINUTE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          "Ok",
+          "Cancel, Delay 10 Minutes"
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_AFTER_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          "Ok",
+          "Cancel"
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          "Ok",
+          "Cancel"
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DURING_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "within": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "type": "GENERAL",
+        "title": "Survey delayed for 10 minutes",
+        "message": "Please click \"Start\" when you are ready",
+        "button": [
+          "Start",
+          "Cancel"
+        ]
+      }
+    }
+  ],
+  "notification_list": [
+    {
+      "id": "NOTIFICATION_0_60_120",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_SCREEN_30",
+            "PHONE_MESSAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_WITH_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_SCREEN_30",
+            "PHONE_MESSAGE_DELAY_10_MINUTE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_DURING_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_MESSAGE_DURING_DELAY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_AFTER_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_SCREEN_30",
+            "PHONE_MESSAGE_AFTER_DELAY"
+          ]
+        }
+      ]
+    }
+  ],
+  "application_list": [
+    {
+      "id": "EMA",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "questionnaire.json"
+          }
+        }
+      ]
+    }
+  ],
+  "incentive_list": [
+    {
+      "id": "INCENTIVE_DATA_QUALITY_LAST_EMA",
+      "incentive": [
+        {
+          "condition": "data_quality(max(get_last_sample_time_offset(EMA), get_last_sample(0,DAY,START)), now(), DATA_QUALITY, RESPIRATION, AUTOSENSE, CHEST)",
+          "amount": 1.25,
+          "message": [
+            "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ]
+        },
+        {
+          "amount": 0.50,
+          "message": [
+            "Thank you. Unfortunately, you will only be paid $<AMOUNT> because you have not worn the sensors for at least 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ]
+        }
+      ]
+    }
+  ]
+}

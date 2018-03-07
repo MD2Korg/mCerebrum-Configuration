@@ -47,7 +47,7 @@
       "summary": "UI for mPerf Lab Study",
       "description": "UI for mPerf Lab Study",
       "package_name": "org.md2k.studymperflab",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperflab/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperflab/version2.0.3.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"

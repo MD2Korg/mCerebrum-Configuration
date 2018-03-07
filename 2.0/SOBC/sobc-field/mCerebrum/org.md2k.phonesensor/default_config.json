@@ -34,5 +34,14 @@
       "FREQUENCY": "16"
     },
     "type": "GYROSCOPE"
+  },
+  {
+    "platform": {
+      "type": "PHONE"
+    },
+    "metadata": {
+      "FREQUENCY": "16"
+    },
+    "type": "COMPASS"
   }
 ]

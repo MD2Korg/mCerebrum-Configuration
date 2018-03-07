@@ -17,25 +17,27 @@
       ],
       "block": [
         {
-          "consider_if": "active_day() == TRUE && count_sample(get_last_sample(0,DAY,START)+time(00:00:00), get_last_sample(0,DAY,START)+time(04:00:00), EMA, RANDOM)==0",
+          "consider_if": "active_day() == TRUE && count_sample(get_last_sample(0,DAY,START), get_last_sample(0,DAY,START)+time(04:00:00), EMA, RANDOM)==0",
+          "start_time":"get_last_sample(0,DAY,START)",
+          "end_time":"get_last_sample(0,DAY,START)+time(04:00:00)",
           "trigger_rule": [
             {
-              "when": "RANDOM",
+              "type": "RANDOM",
               "start_time": "get_last_sample(0,DAY,START)",
               "end_time": "get_last_sample(0,DAY,START)+time(02:00:00)",
-              "condition": "privacy()==FALSE && count_sample(now()-time(01:00,00),now(),EMA,RANDOM)==0 && "
+              "trigger_if": "privacy()==FALSE && count_sample(now()-time(01:00,00),now(),EMA,RANDOM)==0 && "
             },
             {
-              "when": "RANDOM",
-              "start_time":"now",
+              "type": "RANDOM",
+              "start_time": "now()",
               "end_time": "get_sample(dt=DAY,di=START)+time(03:00:00)",
-              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
+              "trigger_if": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
             },
             {
-              "when": "IMMEDIATE",
-              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
-              "retry_in":"00:01:00",
-              "retry_until":"get_last_sample(0,DAY,START)+time(04:00:00)"
+              "type": "IMMEDIATE",
+              "trigger_if": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)",
+              "retry_in": "00:01:00",
+              "retry_until": "get_last_sample(0,DAY,START)+time(04:00:00)"
             }
           ]
         },
@@ -51,14 +53,14 @@
             },
             {
               "when": "RANDOM",
-              "start_time":"now",
+              "start_time": "now",
               "end_time": "get_sample(dt=DAY,di=START)+time(07:00:00)",
               "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
             },
             {
               "when": "IMMEDIATE",
-              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)"
-              "retry_at":"00:01:00"
+              "condition": "get_sample(dt=EMA,di=RANDOM)>now()-time(01:00:00) && get_sample(dt=EMI)>now()-time(00:15:00)",
+              "retry_at": "00:01:00"
             }
           ]
         },
