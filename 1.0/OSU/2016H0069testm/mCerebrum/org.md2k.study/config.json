@@ -3,7 +3,7 @@
     "id": "2016H0069-Test",
     "version": "1.4.5",
     "name": "OSU CHF Study-Test",
-    "filename": "2016H0069testm",
+    "filename": "2016H0069testmhrv",
     "auto_update": true,
     "title": "OSU CHF Study - Test",
     "required_files": [
@@ -72,8 +72,8 @@
       "settings": "org.md2k.motionsense.ActivitySettings",
       "config": "config.json",
       "default_config": "default_config.json",
-      "permission": "org.md2k.utilities.permission.ActivityPermission",
-      "download_link": "https://github.com/MD2Korg/mCerebrum-MotionSense/releases"
+      "permission": "org.md2k.commons.permission.ActivityPermission",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/motionsense2.0.16.apk"
     },
     {
       "id": "microsofthealth",
