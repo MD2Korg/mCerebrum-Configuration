@@ -468,7 +468,7 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "MOTION_SENSE",
+            "type": "MOTION_SENSE_HRV",
             "id": "LEFT_WRIST"
           },
           "type": "ACCELEROMETER"
@@ -489,7 +489,7 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "MOTION_SENSE",
+            "type": "MOTION_SENSE_HRV",
             "id": "RIGHT_WRIST"
           },
           "type": "ACCELEROMETER"
