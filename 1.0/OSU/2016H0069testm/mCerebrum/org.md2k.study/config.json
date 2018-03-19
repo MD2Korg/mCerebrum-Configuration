@@ -72,7 +72,7 @@
       "settings": "org.md2k.motionsense.ActivitySettings",
       "config": "config.json",
       "default_config": "default_config.json",
-      "permission": "org.md2k.commons.permission.ActivityPermission",
+      "permission": "org.md2k.motionsense.permission.ActivityPermission",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/motionsense2.0.16.apk"
     },
     {
