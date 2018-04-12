@@ -1,0 +1,179 @@
+{
+  "settings": {
+    "list": [
+      {
+        "id": "wakeup_time",
+        "title": "Wakeup Time",
+        "input_type": "TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP"
+        }
+      },
+      {
+        "id": "sleep_time",
+        "title": "Sleep Time",
+        "input_type": "TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "SLEEP"
+        }
+      },
+      {
+        "id": "pre_quit_start",
+        "title": "Pre-Quit Start",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "PRE_QUIT",
+          "id": "START"
+        }
+      },
+      {
+        "id": "pre_quit_end",
+        "title": "Pre-Quit End",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "PRE_QUIT",
+          "id": "END"
+        }
+      },
+      {
+        "id": "post_quit_start",
+        "title": "Post-Quit Start",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "POST_QUIT",
+          "id": "START"
+        }
+      },
+      {
+        "id": "post_quit_end",
+        "title": "Post-Quit End",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "POST_QUIT",
+          "id": "END"
+        }
+      }
+    ]
+  },
+  "ui": {
+    "icon": "logo_aa.png",
+    "menu": [
+      {
+        "id": "home",
+        "title": "Home"
+      },
+      {
+        "id": "settings",
+        "title": "Settings",
+        "parameter": [
+          "password",
+          "1234"
+        ]
+      },
+      {
+        "id": "reset",
+        "title": "Reset Application"
+      },
+      {
+        "id": "update",
+        "title": "Check Update"
+      },
+      {
+        "id": "tutorial",
+        "title": "Tutorial",
+        "parameter": [
+          "filename",
+          "tutorial.pdf"
+        ]
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Breathing",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "DATA_VARIANCE",
+            "id": "RESPIRATION"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "RESPIRATION"
+          },
+          "video_link": "g5duKPIBwbs",
+          "message": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+        },
+        {
+          "title": "Heart Rate",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ECG"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "ECG"
+          },
+          "video_link": "pCcLJxmoiJI",
+          "message": "1) Adjust the position of the electrodes on the body.\n\n2)  Make sure all cable connections are secure.\n\n3)  Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+        },
+        {
+          "title": "Left Wrist",
+          "read": {
+            "platform": {
+              "id": "LEFT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ACCELEROMETER"
+          },
+          "plot": {
+            "platform": {
+              "id": "LEFT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        },
+        {
+          "title": "Right Wrist",
+          "read": {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ACCELEROMETER"
+          },
+          "plot": {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ],
+      "privacy": {
+      },
+      "day": {
+        "wakeup_offset": "02:00:00",
+        "sleep_offset": "02:00:00"
+      }
+    }
+  }
+}

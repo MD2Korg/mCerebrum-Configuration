@@ -22,7 +22,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.12.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.14.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -46,7 +46,7 @@
       "summary": "UI for Moffitt Study",
       "description": "UI for Moffitt Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.7.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -69,7 +69,7 @@
       "summary": "Records ECG and respiration signals over ANT+ or BLE",
       "description": "Records ECG and respiration signals over ANT+ or BLE",
       "package_name": "org.md2k.autosense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.6.json",
       "icon": "autosense.png",
       "update": "notify",
       "use_as": "required"
@@ -104,7 +104,7 @@
       "summary": "Scheduler app",
       "description": "Scheduler app",
       "package_name": "org.md2k.scheduler",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.8.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -126,7 +126,7 @@
       "summary": "Intervention app",
       "description": "Intervention app",
       "package_name": "org.md2k.mindfulnessstrategy",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/version2.0.4.json",
       "update": "notify",
       "use_as": "required"
     }

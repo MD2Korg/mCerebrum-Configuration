@@ -1,0 +1,1706 @@
+{
+  "id": "robas_calendar4",
+  "type": "STUDY",
+  "title": "Robas Study - Calendar 4",
+  "scheduler_list": [
+    {
+      "id": "1230pm",
+      "type": "EMA",
+      "title": "EMA at 12:30pm",
+      "listen": {
+        "time":[
+          "12:30:00"
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample(0,STUDY,START)<=now() && now()>=today()+time_offset(12:30:00) && now()<today()+time_offset(14:30:00) && get_sample_no(today()+time_offset(12:30:00),today()+time_offset(14:30:00),EMA,\"1230pm\")==0",
+          "start_time": "today()+time_offset(12:30:00)",
+          "end_time": "today()+time_offset(14:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "condition":"is_day_of_week(TUESDAY)==true && get_study_week()==1",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact2.1.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(SATURDAY)==true && get_study_week()==1",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact2.2.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(WEDNESDAY)==true && get_study_week()==2",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact4.2.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(FRIDAY)==true && get_study_week()==2",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact4.3.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(THURSDAY)==true && get_study_week()==3",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact3.2.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(MONDAY)==true && get_study_week()==4",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact5.1.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(SUNDAY)==true && get_study_week()==4",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact5.5.2.2"]
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": "730pm",
+      "type": "EMA",
+      "title": "EMA at 7:30pm",
+      "listen": {
+        "time":[
+          "19:30:00"
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample(0,STUDY,START)<=now() && now()>=today()+time_offset(19:30:00) && now()<today()+time_offset(21:30:00) && get_sample_no(today()+time_offset(19:30:00),today()+time_offset(21:30:00),EMA,\"730pm\")==0",
+          "start_time": "today()+time_offset(19:30:00)",
+          "end_time": "today()+time_offset(21:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "condition":"is_day_of_week(MONDAY)==true && get_study_week()==2",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact4.1.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(SUNDAY)==true && get_study_week()==2",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact4.4.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(TUESDAY)==true && get_study_week()==3",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact3.1.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(SATURDAY)==true && get_study_week()==3",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact3.3.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(WEDNESDAY)==true && get_study_week()==4",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact5.2.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(THURSDAY)==true && get_study_week()==4",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact5.3.2.2"]
+              ]
+            }
+          },
+          {
+            "condition":"is_day_of_week(FRIDAY)==true && get_study_week()==4",
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120", "OK", "contact5.4.2.2"]
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "notification_details": [
+    {
+      "id": "PHONE_VIBRATE_30_WITH_0_60_120",
+      "type": "PHONE_VIBRATION",
+      "title": "Phone Vibration",
+      "format": "THREE_TONE",
+      "repeat": 6,
+      "interval": "00:00:05",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_TONE_30_WITH_0_60_120",
+      "type": "PHONE_TONE",
+      "title": "Phone Tone",
+      "format": "THREE_TONE_HIGH",
+      "repeat": 6,
+      "interval": "00:00:05",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_SCREEN_30",
+      "type": "PHONE_SCREEN",
+      "title": "Phone Screen",
+      "repeat": 1,
+      "interval": "00:00:30",
+      "at": [
+        "00:00:00"
+      ]
+    },
+    {
+      "id": "PHONE_MESSAGE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10_MINUTE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          },
+          {
+            "title": "Delay 10 Minutes",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_AFTER_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DURING_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "type": "GENERAL",
+        "title": "Survey delayed for 10 minutes",
+        "message": "Please click \"Start\" when you are ready",
+        "button": [
+          {
+            "title": "Start",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    }
+  ],
+  "notification_list": [
+    {
+      "id": "NOTIFICATION_0_60_120",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_WITH_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_DELAY_10_MINUTE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_DURING_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_MESSAGE_DURING_DELAY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_AFTER_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_AFTER_DELAY"
+          ]
+        }
+      ]
+    }
+  ],
+  "application_list": [
+    {
+      "id": "contact2.1.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.1.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.1.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.1.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.1.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.1.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.1.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.1.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.2.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.2.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.2.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.2.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.2.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.2.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact2.2.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact2.2.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.1.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.1.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.1.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.1.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.1.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.1.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.1.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.1.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.2.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.2.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.2.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.2.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.2.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.2.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.2.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.2.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.3.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.3.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.3.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.3.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.3.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.3.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact3.3.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact3.3.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.1.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.1.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.1.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.1.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.1.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.1.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.1.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.1.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.2.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.2.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.2.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.2.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.2.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.2.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.2.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.2.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.3.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.3.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.3.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.3.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.3.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.3.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.3.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.3.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.4.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.4.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.4.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.4.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.4.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.4.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact4.4.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact4.4.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.1.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.1.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.1.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.1.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.1.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.1.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.1.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.1.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.2.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.2.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.2.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.2.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.2.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.2.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.2.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.2.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.3.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.3.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.3.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.3.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.3.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.3.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.3.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.3.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.4.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.4.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.4.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.4.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.4.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.4.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.4.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.4.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.5.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.5.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.5.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.5.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.5.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.5.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact5.5.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact5.5.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.1.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.1.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.1.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.1.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.1.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.1.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.1.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.1.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.2.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.2.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.2.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.2.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.2.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.2.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.2.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.2.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.3.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.3.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.3.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.3.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.3.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.3.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.3.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.3.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.4.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.4.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.4.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.4.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.4.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.4.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.4.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.4.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.5.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.5.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.5.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.5.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.5.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.5.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.5.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.5.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.6.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.6.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.6.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.6.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.6.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.6.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.6.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.6.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.7.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.7.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.7.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.7.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.7.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.7.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.7.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.7.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.8.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.8.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.8.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.8.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.8.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.8.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.8.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.8.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.9.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.9.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.9.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.9.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.9.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.9.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.9.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.9.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.10.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.10.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.10.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.10.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.10.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.10.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.10.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.10.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.11.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.11.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.11.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.11.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.11.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.11.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.11.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.11.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.12.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.12.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.12.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.12.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.12.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.12.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.12.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.12.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.13.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.13.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.13.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.13.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.13.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.13.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.13.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.13.2.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.14.1.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.14.1.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.14.1.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.14.1.2.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.14.2.1",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.14.2.1.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact14.14.2.2",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "contact14.14.2.2.json"
+          }
+        }
+      ]
+    }
+  ]
+}

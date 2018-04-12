@@ -151,7 +151,7 @@
             }
           },
           {
-            "condition":"is_day_of_week(THRUSDAY)==true && get_study_week()==4",
+            "condition":"is_day_of_week(THURSDAY)==true && get_study_week()==4",
             "action": {
               "transition": [
                 ["NOTIFICATION_0_60_120", "OK", "contact5.3.1.1"]

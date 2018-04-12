@@ -1,0 +1,75 @@
+[
+  {
+    "question_id": 0,
+    "question_text": "Expect 14 contacts this week."
+  },
+  {
+    "question_id": 1,
+    "question_text": "In this contact, you will be asked up to seven questions. Please check the answers that best describe your oral health behavior."
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "Did you brush your teeth <u><i>this morning</i></u>?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "Which kind of toothbrush did you use?",
+    "response_option": [
+      "Smart toothbrush",
+      "Regular toothbrush"
+    ],
+    "condition": [
+      "2:Yes"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "hour_minute_ampm",
+    "question_text": "At approximately what time did you first brush your teeth in the morning?",
+    "condition": [
+      "2:Yes"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "minute_second",
+    "question_text": "For how long, in minutes and seconds, did you brush your teeth <u><i>this morning</i></u>?",
+    "condition": [
+      "2:Yes"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "multiple_choice",
+    "question_text": "When you brushed your teeth <u><i>this morning</i></u>, was it:",
+    "response_option": [
+      "Before breakfast",
+      "After breakfast",
+      "Not applicable (I did not have breakfast)",
+      "Don't recall"
+    ],
+    "condition": [
+      "2:Yes"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_choice",
+    "question_text": "How much pressure did you use when you <u><i>most recently</i></u> brushed your teeth?",
+    "response_option": [
+      "Light pressure",
+      "Moderate pressure",
+      "Heavy pressure"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

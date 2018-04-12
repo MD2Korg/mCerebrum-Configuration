@@ -22,7 +22,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.12.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.14.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -46,7 +46,7 @@
       "summary": "UI for ROBAS Study",
       "description": "UI for ROBAS Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.4.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.7.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -92,7 +92,7 @@
       "summary": "Scheduler app",
       "description": "Scheduler app",
       "package_name": "org.md2k.scheduler",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.1.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.7.json",
       "update": "notify",
       "use_as": "required"
     },

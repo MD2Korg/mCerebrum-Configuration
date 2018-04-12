@@ -1,0 +1,71 @@
+[
+
+  {
+    "question_id": 0,
+    "question_text": "In this contact, you will be asked up to five questions. Please check the answers that best describe your oral health behavior."
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "Overall, the smart toothbrush is easy to use.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "Overall, the smart toothbrush is a nuisance.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "Overall, the smart toothbrush is enjoyable to use.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "I feel that good oral hygiene is attractive and appealing in social contexts.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "multiple_choice",
+    "question_text": "I feel that using the ROBAS will make me feel more self-confident about my oral hygiene in social situations.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

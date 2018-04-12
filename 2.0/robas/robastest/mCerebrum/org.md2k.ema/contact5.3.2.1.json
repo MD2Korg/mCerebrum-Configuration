@@ -7,7 +7,7 @@
   {
     "question_id": 1,
     "question_type": "multiple_choice",
-    "question_text": "Overall, the phone and/or app was easy to use.",
+    "question_text": "Overall, the phone and/or app is easy to use.",
     "response_option": [
       "Strongly agree",
       "Agree",
@@ -19,7 +19,7 @@
   {
     "question_id": 2,
     "question_type": "multiple_choice",
-    "question_text": "Overall, carrying an additional phone was a burden.",
+    "question_text": "Overall, carrying an additional phone is a burden.",
     "response_option": [
       "Strongly agree",
       "Agree",
@@ -31,7 +31,7 @@
   {
     "question_id": 3,
     "question_type": "multiple_choice",
-    "question_text": "Overall, the phone and/or app was enjoyable to use.",
+    "question_text": "Overall, the phone and/or app is enjoyable to use.",
     "response_option": [
       "Strongly agree",
       "Agree",

@@ -1,0 +1,52 @@
+[
+
+  {
+    "question_id": 0,
+    "question_text": "In this contact, you will be asked up to four questions. Please check the answers that best describe your oral health behavior."
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "Did you floss your teeth <u><i>yesterday</i></u>?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "hour_minute_ampm",
+    "question_text": "At approximately what time did you most recently floss your teeth <u><i>yesterday</i></u>?",
+    "condition": [
+      "1:Yes"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "People close to me feel that good dental hygiene is important.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "I believe that the person closest to me (partner, best friend, family member, etc.) wants me to practice good oral hygiene every day.",
+    "response_option": [
+      "Strongly agree",
+      "Agree",
+      "Neither agree nor disagree",
+      "Disagree",
+      "Strongly disagree"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

@@ -48,7 +48,7 @@
       "summary": "UI for mPerf Study",
       "description": "UI for mPerf Study",
       "package_name": "org.md2k.studymperf",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/version2.0.12.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studymperf/version2.0.13.json",
       "icon": "studymperf.png",
       "update": "notify",
       "use_as": "required"

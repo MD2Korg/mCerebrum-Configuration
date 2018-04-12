@@ -1,0 +1,15 @@
+{
+  "required": 2,
+  "devices":[
+    {
+      "use_as":"required",
+      "platform_type":"MOTION_SENSE",
+      "platform_id":"LEFT_WRIST"
+    },
+    {
+      "use_as":"required",
+      "platform_type":"MOTION_SENSE",
+      "platform_id":"RIGHT_WRIST"
+    }
+  ]
+}

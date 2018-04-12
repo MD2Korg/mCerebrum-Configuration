@@ -7,7 +7,7 @@
   {
     "question_id": 1,
     "question_type": "multiple_choice",
-    "question_text": "Overall, the smart toothbrush was easy to use.",
+    "question_text": "Overall, the smart toothbrush is easy to use.",
     "response_option": [
       "Strongly agree",
       "Agree",
@@ -19,7 +19,7 @@
   {
     "question_id": 2,
     "question_type": "multiple_choice",
-    "question_text": "Overall, the smart toothbrush was a nuisance.",
+    "question_text": "Overall, the smart toothbrush is a nuisance.",
     "response_option": [
       "Strongly agree",
       "Agree",
@@ -31,7 +31,7 @@
   {
     "question_id": 3,
     "question_type": "multiple_choice",
-    "question_text": "Overall, the smart toothbrush was enjoyable to use.",
+    "question_text": "Overall, the smart toothbrush is enjoyable to use.",
     "response_option": [
       "Strongly agree",
       "Agree",
