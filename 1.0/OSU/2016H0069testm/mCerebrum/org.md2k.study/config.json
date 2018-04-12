@@ -72,7 +72,7 @@
       "settings": "org.md2k.motionsense.ActivitySettings",
       "config": "config.json",
       "default_config": "default_config.json",
-      "permission": "org.md2k.commons.permission.ActivityPermission",
+      "permission": "org.md2k.motionsense.permission.ActivityPermission",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/motionsense2.0.16.apk"
     },
     {
@@ -468,7 +468,7 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "MOTION_SENSE",
+            "type": "MOTION_SENSE_HRV",
             "id": "LEFT_WRIST"
           },
           "type": "ACCELEROMETER"
@@ -476,7 +476,7 @@
       },
       "video": {
         "enable": true,
-        "link": "2n7HwLWlgtQ"
+        "link": "-_mxXVg8KSA"
       },
       "message": {
         "enable": true,
@@ -489,7 +489,7 @@
         "enable": true,
         "datasource": {
           "platform": {
-            "type": "MOTION_SENSE",
+            "type": "MOTION_SENSE_HRV",
             "id": "RIGHT_WRIST"
           },
           "type": "ACCELEROMETER"
@@ -497,7 +497,7 @@
       },
       "video": {
         "enable": true,
-        "link": "2n7HwLWlgtQ"
+        "link": "-_mxXVg8KSA"
       },
       "message": {
         "enable": true,
