@@ -104,7 +104,7 @@
       "summary": "Scheduler app",
       "description": "Scheduler app",
       "package_name": "org.md2k.scheduler",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.8.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.10.json",
       "update": "notify",
       "use_as": "required"
     },

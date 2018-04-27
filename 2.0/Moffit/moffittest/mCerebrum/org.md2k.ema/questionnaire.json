@@ -495,7 +495,7 @@
       "Chew, snuff, or dip",
       "Vaporizer or e-cigarettes",
       "Hookah or waterpipe",
-      "Pipe will with tobacco (not waterpipe)",
+      "Pipe with tobacco (not waterpipe)",
       "Other tobacco product",
       "<UNSELECT_OTHER>I did not use other tobacco products"
     ]
@@ -503,7 +503,7 @@
   {
     "question_id": 40,
     "question_type": "multiple_choice",
-    "question_text": "Since the last time you answered this set of questions, I experienced or thought about a stressful issue or problem.",
+    "question_text": "Since the last time I answered this set of questions, I experienced or thought about a stressful issue or problem.",
     "response_option": [
       "Definitely No",
       "Mostly No",
