@@ -3,7 +3,7 @@
     "id": "Opioid",
     "type": "Opioid",
     "update": "notify",
-    "version": "2.0.0"
+    "version": "2.0.4"
   },
   "study":{
     "id": "Opioid",
@@ -68,6 +68,17 @@
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.16.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "ema",
+      "type": "sense",
+      "title": "EMA",
+      "summary": "Records EMA",
+      "description": "Records EMA",
+      "package_name": "org.md2k.ema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.3.json",
       "update": "notify",
       "use_as": "required"
     }
