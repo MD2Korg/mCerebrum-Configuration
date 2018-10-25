@@ -2,7 +2,7 @@
   {
     "question_id": 0,
     "question_type": "multiple_choice",
-    "question_text": "Rate your current level of pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_text": "Rate your current pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
     "response_option": [
       "0 - No pain",
       "1",
@@ -19,6 +19,22 @@
   },
   {
     "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "Indicate the location of your pain flair (front). TWH: FIX THIS WITH A GRAPHIC, INCLUDE A NONE OPTION",
+    "response_option": [
+      "INSERT GRAPHIC HERE"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "Indicate the location of your pain flair (back). TWH: FIX THIS WITH A GRAPHIC, INCLUDE A NONE OPTION",
+    "response_option": [
+      "INSERT GRAPHIC HERE"
+    ]
+  },
+  {
+    "question_id": 3,
     "question_type": "text_numeric",
     "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
     "response_option": [
@@ -27,7 +43,7 @@
     ]
   },
   {
-    "question_id": 2,
+    "question_id": 4,
     "question_type": "text_numeric",
     "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
     "response_option": [
@@ -36,7 +52,7 @@
     ]
   },
   {
-    "question_id": 3,
+    "question_id": 5,
     "question_type": "text_numeric",
     "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
     "response_option": [
@@ -45,7 +61,7 @@
     ]
   },
   {
-    "question_id": 4,
+    "question_id": 6,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]

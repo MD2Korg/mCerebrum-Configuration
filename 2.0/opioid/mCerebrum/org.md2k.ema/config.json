@@ -17,4 +17,11 @@
     "title":"Event Contingent Entry",
     "filename":"event_contingent_entry.json"
   }
+  ,
+  {
+    "id":"RANDOM_PROMPT_TEST",
+    "type":"DATA",
+    "title":"Random Prompt",
+    "filename":"random_prompt.json"
+  }
 ]

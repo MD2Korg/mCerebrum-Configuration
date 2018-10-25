@@ -1,0 +1,313 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "Rate your current pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - No pain",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Worst pain imaginable"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate the worst pain you experienced. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - No pain",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Worst pain imaginable"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "Indicate the location of your pain flair (front). TWH: FIX THIS WITH A GRAPHIC, INCLUDE A NONE OPTION",
+    "response_option": [
+      "INSERT GRAPHIC HERE"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "Indicate the location of your pain flair (back). TWH: FIX THIS WITH A GRAPHIC, INCLUDE A NONE OPTION",
+    "response_option": [
+      "INSERT GRAPHIC HERE"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "10"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "100"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "100"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_select",
+    "question_text": "The following are different types of sensations that some people associate with their pain. Please check all the apply to the type of pain you have experienced since the last report.",
+    "response_option": [
+      "Aching",
+      "Penetrating",
+      "Shooting",
+      "Stabbing",
+      "Tight",
+      "Hurting",
+      "Pounding",
+      "Sharp",
+      "Sore",
+      "Throbbing",
+      "<UNSELECT_OTHER>None"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, indicate the degree to which you had these thoughts and feelings. <br><br> I couldn’t seem to keep my pain out of my mind",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, indicate the degree to which you had these thoughts and feelings. <br><br> I felt like my pain overwhelmed me",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, indicate the degree to which you had these thoughts and feelings. <br><br> I was afraid my pain would get worse",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate your level of stress. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extreme stress"
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate how happy you felt. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extremely happy"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate how anxious you felt. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extremely anxious"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate how content you felt. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extremely content"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate how sad you felt. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extremely sad"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, did you smoke any cigarettes?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "text_numeric",
+    "question_text": "How many cigarettes did you smoke? TWH: THIS INPUT SHOULD BE A SCROLLING NUMBER",
+    "response_option": [
+      "1",
+      "25"
+    ],
+    "condition": [
+      "16:Yes"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, rate how strongly you craved pain medications. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extreme craving"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "multiple_choice",
+    "question_text": "Since the last report you completed, did you take any pain medications?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 20,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: THIS INPUT SHOULD BE A SCROLLING NUMBER",
+    "response_option": [
+      "1",
+      "10"
+    ],
+    "condition": [
+      "19:Yes"
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: THIS INPUT SHOULD BE A SCROLLING NUMBER",
+    "response_option": [
+      "1",
+      "10"
+    ],
+    "condition": [
+      "19:Yes"
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: THIS INPUT SHOULD BE A SCROLLING NUMBER",
+    "response_option": [
+      "1",
+      "10"
+    ],
+    "condition": [
+      "19:Yes"
+    ]
+  },
+  {
+    "question_id": 23,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]
