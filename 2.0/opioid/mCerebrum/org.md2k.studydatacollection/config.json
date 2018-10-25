@@ -1,0 +1,53 @@
+{
+  "ui": {
+    "menu":[
+      {
+        "id":"home",
+        "title":"Home"
+      },
+      {
+        "id":"settings",
+        "title":"Settings",
+        "parameter":["password","1234"]
+      },
+      {
+        "id":"start_stop_data_collection",
+        "title":"Start Data Collection",
+        "parameter":["Start Data Collection","Stop Data Collection"]
+      },
+      {
+        "id":"reset",
+        "title":"Reset Application"
+      },
+      {
+        "id":"update",
+        "title":"Check Update"
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Wrist",
+          "read": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "e_CtHfjG_iQ",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ],
+      "privacy":{
+
+      }
+    }
+  }
+}
