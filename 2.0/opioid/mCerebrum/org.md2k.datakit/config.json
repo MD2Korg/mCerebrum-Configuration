@@ -1,0 +1,73 @@
+{
+  "database": {
+    "enabled": true,
+    "location": "INTERNAL_SDCARD"
+  },
+  "archive": {
+    "enabled": true,
+    "location": "INTERNAL_SDCARD",
+    "interval": 86400000
+  },
+  "upload": {
+    "enabled": true,
+    "interval": 900000,
+    "url": "https://fourtytwo.md2k.org/"
+  },
+  "privacy": {
+    "duration_options": [
+      {
+        "id": "300000",
+        "title": "5 Minutes",
+        "value": 300000
+      },
+      {
+        "id": "600000",
+        "title": "10 Minutes",
+        "value": 600000
+      },
+      {
+        "id": "900000",
+        "title": "15 Minutes",
+        "value": 900000
+      },
+      {
+        "id": "1800000",
+        "title": "30 Minutes",
+        "value": 1800000
+      },
+      {
+        "id": "3600000",
+        "title": "1 Hour",
+        "value": 3600000
+      },
+      {
+        "id": "7200000",
+        "title": "2 Hours",
+        "value": 7200000
+      }
+    ],
+    "privacy_type_options": [
+      {
+        "id": "wrist_sensor",
+        "title": "Wrist Sensor",
+        "summary": "",
+        "datasource": [
+          {
+            "platform": {
+              "type": "MOTION_SENSE_HRV"
+            }
+          }
+        ]
+      },
+      {
+        "id": "all",
+        "title": "All",
+        "summary": "",
+        "datasource": [
+          {
+          }
+        ]
+      }
+    ]
+  }
+}

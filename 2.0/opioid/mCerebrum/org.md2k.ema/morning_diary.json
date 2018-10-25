@@ -1,0 +1,237 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "hour_minute_ampm",
+    "question_text": "What time did you do to bed last night? (lights out with the intention of going to sleep)"
+  },
+  {
+    "question_id": 1,
+    "question_type": "minute_second",
+    "question_text": "After turning out the lights, how long did it take you to all asleep? TWH: MAKE THIS MINUTES ONLY"
+  },
+  {
+    "question_id": 2,
+    "question_type": "text_numeric",
+    "question_text": "How many times did you awaken during the night? (do not include final awakening) TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "100"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "minute_second",
+    "question_text": "Please add up the total amount of time you were awake during the middle of the night (don’t include the time it took you to fall asleep). TWH: MAKE THIS MINUTES ONLY"
+  },
+  {
+    "question_id": 4,
+    "question_type": "hour_minute_ampm",
+    "question_text": "What time was the time of your final awakening? (woke up and did not return to sleep)"
+  },
+  {
+    "question_id": 5,
+    "question_type": "hour_minute_ampm",
+    "question_text": "What time did you get out of bed? (time actually got up to start day)"
+  },
+  {
+    "question_id": 6,
+    "question_type": "hour_minute_ampm",
+    "question_text": "Estimate how many hours and minutes you slept last night. TWH: FIX THIS WITH HOURS AND MINUTES"
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_choice",
+    "question_text": "Rate your overall sleep quality. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - Extremely poor sleep quality",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Excellent sleep quality"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "multiple_choice",
+    "question_text": "Rate the degree to which pain interfered with your sleep last night. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - No interference",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Extreme interference"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "multiple_choice",
+    "question_text": "Rate the average (typical) level of pain you experienced last night while trying to sleep. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - No pain",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Worst pain imaginable"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "multiple_choice",
+    "question_text": "Rate your current level of pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "response_option": [
+      "0 - No pain",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10 - Worst pain imaginable"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Did you take any of your pain medications after you fell asleep last night?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "10"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "100"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "text_numeric",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "response_option": [
+      "1",
+      "100"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought that I would be awake all night.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I could not seem to keep the pain out of my mind.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought about how a lack of sleep would impact me today.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought that the pain was never going to get any better.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought about how I could not stop my mind from racing or slowing down.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 20,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I tried to ignore the pain.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I kept thinking about how much it hurt.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Greate degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]
