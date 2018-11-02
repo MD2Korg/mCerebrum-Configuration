@@ -27,7 +27,7 @@
           "trigger_rule": [
             {
               "trigger_time": "get_last_sample(0,DAY,START)+random(time_offset(02:00:00))",
-              "condition": "is_privacy_on()==false && get_sample_no(now()-time_offset(01:00:00),now(),EMA,RANDOM)==0 && get_sample_no(now()-time_offset(00:05:00), now(), EMA)==0 && get_phone_battery()>10 && is_driving(now()-time_offset(00:05:00), now())==false && get_data_quality(now()-time_offset(00:05:00), now(), DATA_QUALITY_SUMMARY_MINUTE, RESPIRATION, AUTOSENSE_CHEST, CHEST)>=66.6"
+              "condition": "is_privacy_on()==false && get_sample_no(now()-time_offset(01:00:00),now(),EMA,RANDOM)==0 && get_sample_no(now()-time_offset(00:05:00), now(), EMA)==0 && get_phone_battery()>10 && is_driving(now()-time_offset(00:05:00), now())==false && get_data_quality(now()-time_offset(00:05:00), now(), DATA_VARIANCE_SUMMARY_MINUTE, RESPIRATION, AUTOSENSE_CHEST, CHEST)>=66.6"
             },
             {
               "trigger_time": "get_last_sample(0,DAY,START)+time_offset(2:00:00)+random(time_offset(01:00:00))",
@@ -35,7 +35,7 @@
             },
             {
               "trigger_time": "now()",
-              "condition": "is_privacy_on()==false && get_sample_no(now()-time_offset(01:00:00),now(),EMA,RANDOM)==0 && get_sample_no(now()-time_offset(00:05:00), now(), EMA)==0 && get_phone_battery()>10 && is_driving(now()-time_offset(00:05:00), now())==false",
+              "condition": "is_privacy_on()==false && get_sample_no(now()-time_offset(01:00:00),now(),EMA,RANDOM)==0 && get_sample_no(now()-time_offset(00:05:00), now(), EMA)==0 && is_driving(now()-time_offset(00:05:00), now())==false",
               "retry_after": "time_offset(00:01:00)"
             }
           ]
@@ -255,7 +255,7 @@
           },
           {
             "title": "Cancel",
-            "confirm": true
+            "confirm": false
           }
         ]
       }
@@ -271,7 +271,7 @@
       ],
       "message": {
         "title": "Strategy",
-        "content": "Time to take a strategy",
+        "content": "Time to take practice a strategy",
         "button": [
           {
             "title": "Ok",
@@ -279,7 +279,7 @@
           },
           {
             "title": "Cancel",
-            "confirm": true
+            "confirm": false
           }
         ]
       }
@@ -347,8 +347,8 @@
       ],
       "message": {
         "type": "GENERAL",
-        "title": "Survey Delayed",
-        "content": "You will be notified after 10 minutes.\n\nPlease click \"Start Now\" if you are ready",
+        "title": "Survey delayed for 10 minutes",
+        "message": "Please click \"Start\" when you are ready",
         "button": [
           {
             "title": "Start Now",
@@ -370,7 +370,8 @@
           "notification_details_id": [
             "PHONE_VIBRATE_30_WITH_0_60_120",
             "PHONE_TONE_30_WITH_0_60_120",
-            "PHONE_MESSAGE"
+            "PHONE_MESSAGE",
+            "PHONE_SCREEN_30"
           ]
         }
       ]
@@ -382,7 +383,8 @@
           "notification_details_id": [
             "PHONE_VIBRATE_30_WITH_0_60_120",
             "PHONE_TONE_30_WITH_0_60_120",
-            "PHONE_MESSAGE_DELAY_10_MINUTE"
+            "PHONE_MESSAGE_DELAY_10_MINUTE",
+            "PHONE_SCREEN_30"
           ]
         }
       ]
@@ -404,7 +406,8 @@
           "notification_details_id": [
             "PHONE_VIBRATE_30_WITH_0_60_120",
             "PHONE_TONE_30_WITH_0_60_120",
-            "PHONE_MESSAGE_AFTER_DELAY"
+            "PHONE_MESSAGE_AFTER_DELAY",
+            "PHONE_SCREEN_30"
           ]
         }
       ]
@@ -429,7 +432,7 @@
       "id": "INCENTIVE_DATA_QUALITY_LAST_EMA",
       "incentive": [
         {
-          "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,DAY,START)), now(), DATA_VARIANCE_SUMMARY_MINUTE, RESPIRATION, AUTOSENSE_CHEST, CHEST)",
+          "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,DAY,START)), now(), DATA_VARIANCE_SUMMARY_MINUTE, RESPIRATION, AUTOSENSE_CHEST, CHEST)>=66.6",
           "amount": 1.25,
           "message": [
             "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",

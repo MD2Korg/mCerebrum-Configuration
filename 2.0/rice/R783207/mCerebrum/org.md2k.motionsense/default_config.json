@@ -1,5 +1,6 @@
 {
   "required": 2,
+  "foreground_app": true,
   "devices":[
     {
       "use_as":"required",
@@ -12,4 +13,4 @@
       "platform_id":"RIGHT_WRIST"
     }
   ]
-}
+}z

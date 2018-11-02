@@ -1,0 +1,32 @@
+{
+  "number_of_device_required": "1",                       // value: integer,      default: null (not required)
+  "run_as_foreground_service": "true",          // value: true/false,   default: null (means false)
+  "log_app_usage": "true",                      // value: true/false,   default: true
+  "log_system_status": "true",                  // value: true/false,   default: false
+  "permission_to_edit_configuration": "true",                // value: true/false,   default: true
+  "devices": [
+    {
+      "required": "true",                       // value: true/false    default: false
+      "platform_type": "PHONE",       // value: fixed
+
+      "sensors": {
+        "sensor_list":"all",            // value: sensorType, id, default: null
+        "add_to_list": [
+          {
+            "datasource_type": "ACCELEROMETER",
+            "read_frequency": "16",
+            "write_frequency": "16",        //value: integer/onchange
+            "on_change_value": ">=0.001"
+          },
+          {
+            "datasource_type": "ECG"
+          }
+        ],
+        "remove_from_list":[
+
+        ]
+      }
+    }
+  ]
+}
+

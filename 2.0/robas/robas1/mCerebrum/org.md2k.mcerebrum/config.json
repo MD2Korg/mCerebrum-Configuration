@@ -22,7 +22,7 @@
       "summary": "Launcher app for mCerebrum",
       "description": "Launcher app for mCerebrum",
       "package_name": "org.md2k.mcerebrum",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.14.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.15.json",
       "icon": "mcerebrum.png",
       "update": "notify",
       "use_as": "required"
@@ -34,7 +34,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.15.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.16.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -46,7 +46,7 @@
       "summary": "UI for ROBAS Study",
       "description": "UI for ROBAS Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.7.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC3.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -69,7 +69,7 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.16.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.17-RC1.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
@@ -81,18 +81,18 @@
       "summary": " Oral B data collection",
       "description": "Captures data from oral B toothbrush",
       "package_name": "org.md2k.oralb",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.3-RC3.json",
       "update": "notify",
       "use_as": "required"
     },
     {
       "id": "scheduler",
       "type": "act",
-      "title": "Scheduler",
+      "title": "SchedulerRobas",
       "summary": "Scheduler app",
       "description": "Scheduler app",
-      "package_name": "org.md2k.scheduler",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.7.json",
+      "package_name": "org.md2k.schedulerrobas",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.schedulerrobas/version2.0.0-RC5.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -103,7 +103,7 @@
       "summary": "Records EMA",
       "description": "Records EMA",
       "package_name": "org.md2k.ema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.1.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.3.json",
       "update": "notify",
       "use_as": "required"
     }
