@@ -86,6 +86,20 @@
         }
       ],
       "privacy": {
+      },
+      "button": {
+        "column": 2,
+        "list": [
+          {
+            "id": "toothbrush",
+            "title": "Brush",
+            "icon": "ic_toothbrush.png",
+            "run": {
+              "package_name": "org.md2k.oralb",
+              "activity": "org.md2k.oralb.ActivityBrush"
+            }
+          }
+        ]
       }
     }
   }

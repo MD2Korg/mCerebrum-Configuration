@@ -1,0 +1,81 @@
+{
+  "devices": [
+    {
+      "platform_type": "AUTOSENSE_CHEST",
+      "sensors": [
+        {
+          "datasource_type": "RESPIRATION",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "21.3333333333"
+        },
+        {
+          "datasource_type": "ECG",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "64"
+        },
+        {
+          "datasource_type": "ACCELEROMETER_X",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "10.666666667"
+        },
+        {
+          "datasource_type": "ACCELEROMETER_Y",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "10.666666667"
+        },
+        {
+          "datasource_type": "ACCELEROMETER_Z",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "10.666666667"
+        },
+        {
+          "datasource_type": "BATTERY",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "ON_CHANGE",
+          "write_when": ">=0.0001"
+        },
+        {
+          "datasource_type": "SKIN_TEMPERATURE",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "1.28"
+        },
+        {
+          "datasource_type": "AMBIENT_TEMPERATURE",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "1.28"
+        },
+        {
+          "datasource_type": "DATA_QUALITY",
+          "datasource_id": "RESPIRATION",
+          "write_frequency": "0.33333333333"
+        },
+        {
+          "datasource_type": "DATA_QUALITY",
+          "datasource_id": "ECG",
+          "write_frequency": "0.33333333333"
+        },
+        {
+          "datasource_type": "RESPIRATION_RAW",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "21.3333333333"
+        },
+        {
+          "datasource_type": "RESPIRATION_BASELINE",
+          "read_frequency": "AS_RECEIVED",
+          "write_frequency": "10.666666667"
+        },
+        {
+          "datasource_type": "DATA_VARIANCE",
+          "datasource_id": "RESPIRATION",
+          "write_frequency": "0.33333333333"
+        },
+        {
+          "datasource_type": "DATA_VARIANCE",
+          "datasource_id": "ECG",
+          "write_frequency": "0.33333333333"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,140 @@
+{
+  "run_as_foreground_service": "true",          // value: true/false,   default: null (means false)
+  "log_app_usage": "true",                      // value: true/false,   default: true
+  "log_system_status": "true",                  // value: true/false,   default: false
+  "permission_to_edit_configuration": "true",                // value: true/false,   default: true
+  "database":{
+      "id":"SQLITE",
+      "store_at":"INTERNAL_SDCARD",
+      "directory":"abc",
+      "size_limit":"40000",
+      "prune_rule":"get_sample_no(-)<50000",
+      "prune_when": "time_offset(00:15:00)"
+  },
+  "archive":[
+    {
+      "id":"CSV",
+      "store_at":"INTERNAL_SDCARD",
+      "directory":"abc",
+      "size_limit":"40000",
+      "prune_rule":"archive_size()>50000",
+      "prune_when": "time_offset(00:15:00)"
+    }
+  ],
+  "upload":{
+    "id":"CEREBRAL_CORTEX",
+    "store_at":"INTERNAL_SDCARD",
+    "directory":"abc",
+    "server_url": "https://fourtytwo.md2k.org/",
+    "server_username":"abc",
+    "server_password": "abc",
+    "upload_rules":[
+      {
+        "id":"SUMMARY",
+        "what":"",
+        "when":""
+      }
+    ]
+  },
+
+  "upload": {
+    "enabled": true,
+    "interval": 900000,
+    "url": "https://fourtytwo.md2k.org/",
+    "network_high_frequency":"ANY",
+    "network_low_frequency": "ANY",
+    "restricted_datasource": [
+      {
+        "platform": {
+          "type": "PHONE"
+        },
+        "type": "LOCATION"
+      }
+    ]
+  },
+  "privacy": {
+    "duration_options": [
+      {
+        "id": "300000",
+        "title": "5 Minutes",
+        "value": 300000
+      },
+      {
+        "id": "600000",
+        "title": "10 Minutes",
+        "value": 600000
+      },
+      {
+        "id": "900000",
+        "title": "15 Minutes",
+        "value": 900000
+      },
+      {
+        "id": "1800000",
+        "title": "30 Minutes",
+        "value": 1800000
+      },
+      {
+        "id": "3600000",
+        "title": "1 Hour",
+        "value": 3600000
+      },
+      {
+        "id": "7200000",
+        "title": "2 Hours",
+        "value": 7200000
+      }
+    ],
+    "privacy_type_options": [
+      {
+        "id": "location",
+        "title": "Location",
+        "summary": "",
+        "datasource": [
+          {
+            "type": "LOCATION"
+          }
+        ]
+      },
+      {
+        "id": "chest_sensor",
+        "title": "Chest Sensor",
+        "summary": "",
+        "datasource": [
+          {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            }
+          }
+        ]
+      },
+      {
+        "id": "wrist_sensor",
+        "title": "Wrist Sensors",
+        "summary": "",
+        "datasource": [
+          {
+            "platform": {
+              "id": "LEFT_WRIST"
+            }
+          },
+          {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ema_intervention",
+        "title": "Survey/Strategy",
+        "summary": "",
+        "datasource": [
+          {
+            "type": "SURVEY"
+          }
+        ]
+      }
+    ]
+  }
+}

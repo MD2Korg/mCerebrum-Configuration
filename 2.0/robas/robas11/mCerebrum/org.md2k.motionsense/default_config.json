@@ -1,5 +1,6 @@
 {
   "required": 2,
+  "foreground_app": true,
   "devices":[
     {
       "use_as":"required",
