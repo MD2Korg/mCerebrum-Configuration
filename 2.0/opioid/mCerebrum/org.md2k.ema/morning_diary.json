@@ -6,22 +6,23 @@
   },
   {
     "question_id": 1,
-    "question_type": "minute_second",
-    "question_text": "After turning out the lights, how long did it take you to all asleep? TWH: MAKE THIS MINUTES ONLY"
+    "question_type": "hour_minute",
+    "question_text": "After turning out the lights, how long did it take you to all asleep? "
   },
   {
     "question_id": 2,
-    "question_type": "text_numeric",
-    "question_text": "How many times did you awaken during the night? (do not include final awakening) TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many times did you awaken during the night? (do not include final awakening)",
     "response_option": [
-      "1",
-      "100"
+      "Select:",
+      "0",
+      "50"
     ]
   },
   {
     "question_id": 3,
-    "question_type": "minute_second",
-    "question_text": "Please add up the total amount of time you were awake during the middle of the night (don’t include the time it took you to fall asleep). TWH: MAKE THIS MINUTES ONLY"
+    "question_type": "hour_minute",
+    "question_text": "Please add up the total amount of time you were awake during the middle of the night (don’t include the time it took you to fall asleep)."
   },
   {
     "question_id": 4,
@@ -35,79 +36,67 @@
   },
   {
     "question_id": 6,
-    "question_type": "hour_minute_ampm",
-    "question_text": "Estimate how many hours and minutes you slept last night. TWH: FIX THIS WITH HOURS AND MINUTES"
+    "question_type": "hour_minute",
+    "question_text": "Estimate how many hours and minutes you slept last night."
   },
   {
     "question_id": 7,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your overall sleep quality. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your overall sleep quality.",
     "response_option": [
-      "0 - Extremely poor sleep quality",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Excellent sleep quality"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Sleep Quality:", //header
+      "Extremely Poor", //min value text
+      "Excellent"  //max value text
     ]
   },
   {
     "question_id": 8,
-    "question_type": "multiple_choice",
-    "question_text": "Rate the degree to which pain interfered with your sleep last night. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate the degree to which pain interfered with your sleep last night.",
     "response_option": [
-      "0 - No interference",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extreme interference"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
     ]
   },
   {
     "question_id": 9,
-    "question_type": "multiple_choice",
-    "question_text": "Rate the average (typical) level of pain you experienced last night while trying to sleep. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate the average (typical) level of pain you experienced last night while trying to sleep.",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain level:", //header
+      "No pain", //min value text
+      "Worst pain imaginable"  //max value text
     ]
   },
   {
     "question_id": 10,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your current level of pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your current level of pain.",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain level:", //header
+      "No pain", //min value text
+      "Worst pain imaginable"  //max value text
     ]
   },
   {
@@ -121,29 +110,32 @@
   },
   {
     "question_id": 12,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take?",
     "response_option": [
-      "1",
+      "Number of Pills:",
+      "0",
       "10"
     ]
   },
   {
     "question_id": 13,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take?",
     "response_option": [
-      "1",
-      "100"
+      "Number of Pills:",
+      "0",
+      "10"
     ]
   },
   {
     "question_id": 14,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take?",
     "response_option": [
-      "1",
-      "100"
+      "Number of Pills:",
+      "0",
+      "10"
     ]
   },
   {
@@ -154,7 +146,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -166,7 +158,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -178,7 +170,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -190,7 +182,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -202,7 +194,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -214,7 +206,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -226,7 +218,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },

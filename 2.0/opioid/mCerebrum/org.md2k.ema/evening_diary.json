@@ -84,92 +84,77 @@
   },
   {
     "question_id": 7,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your <u><i>lowest</i></u> level of pain experienced throughout the entire day. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your <u><i>lowest</i></u> level of pain experienced throughout the entire day.",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
     ]
   },
   {
     "question_id": 8,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your <u><i>highest</i></u> level of pain experienced throughout the entire day. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your <u><i>highest</i></u> level of pain experienced throughout the entire day.",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
     ]
   },
   {
     "question_id": 9,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your <u><i>average</i></u> (typical) level of pain experienced throughout the entire day. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your <u><i>average</i></u> (typical) level of pain experienced throughout the entire day.",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
     ]
   },
   {
     "question_id": 10,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your current level of pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your current level of pain. ",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
     ]
   },
   {
     "question_id": 11,
-    "question_type": "multiple_choice",
-    "question_text": "Rate the degree to which pain interfered with WORK related activities today. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate the degree to which pain interfered with WORK related activities today.",
     "response_option": [
-      "0 - No interference",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extreme interference"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
     ]
   },
   {
@@ -180,7 +165,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -192,7 +177,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -204,7 +189,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -216,7 +201,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -228,7 +213,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -240,7 +225,7 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
@@ -252,19 +237,19 @@
       "Not at all",
       "Slight degree",
       "Moderate degree",
-      "Greate degree",
+      "Great degree",
       "All the time"
     ]
   },
   {
     "question_id": 19,
-    "question_type": "hour_minute_ampm",
-    "question_text": "How much time did you spend today lying down, either in bed or on a couch? TWH: FIX THIS WITH HOURS AND MINUTES"
+    "question_type": "hour_minute",
+    "question_text": "How much time did you spend today lying down, either in bed or on a couch? "
   },
   {
     "question_id": 20,
     "question_type": "minute_second",
-    "question_text": "How much time did you spend today napping? TWH: MAKE THIS MINUTES ONLY"
+    "question_text": "How much time did you spend today napping?"
   },
   {
     "question_id": 21,
@@ -277,119 +262,107 @@
   },
   {
     "question_id": 22,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take?",
     "response_option": [
-      "1",
-      "10"
+      "Number of pills",
+      "0",
+      "50"
     ]
   },
   {
     "question_id": 23,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take?",
     "response_option": [
-      "1",
-      "100"
+      "Number of pills",
+      "0",
+      "50"
     ]
   },
   {
     "question_id": 24,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take?",
     "response_option": [
-      "1",
-      "100"
+      "Number of pills",
+      "0",
+      "50"
     ]
   },
   {
     "question_id": 25,
-    "question_type": "multiple_choice",
-    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>happy</i></u> you felt today. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>happy</i></u> you felt today.",
     "response_option": [
-      "0 - Not at all happy",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extremely happy"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Happy:", //header
+      "Not at all happy", //min value text
+      "Extremely happy"  //max value text
     ]
   },
   {
     "question_id": 26,
-    "question_type": "multiple_choice",
-    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>sad</i></u> you felt today. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>sad</i></u> you felt today.",
     "response_option": [
-      "0 - Not at all sad",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extremely sad"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Sad:", //header
+      "Not at all Sad", //min value text
+      "Extremely Sad"  //max value text
     ]
   },
   {
     "question_id": 27,
-    "question_type": "multiple_choice",
-    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>irritable</i></u> you felt today. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>irritable</i></u> you felt today.",
     "response_option": [
-      "0 - Not at all irritable",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extremely irritable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Irritable:", //header
+      "Not at all irritable", //min value text
+      "Extremely irritable"  //max value text
     ]
   },
   {
     "question_id": 28,
-    "question_type": "multiple_choice",
-    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>anxious</i></u> you felt today. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>anxious</i></u> you felt today.",
     "response_option": [
-      "0 - Not at all anxious",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extremely anxious"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Anxious", //header
+      "Not at all anxious", //min value text
+      "Extremely anxious"  //max value text
     ]
   },
   {
     "question_id": 29,
-    "question_type": "multiple_choice",
-    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>content</i></u> you felt today. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>content</i></u> you felt today.",
     "response_option": [
-      "0 - Not at all content",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Extremely content"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Content:", //header
+      "Not at all content", //min value text
+      "Extremely content"  //max value text
     ]
   },
   {

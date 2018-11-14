@@ -1,20 +1,17 @@
 [
   {
     "question_id": 0,
-    "question_type": "multiple_choice",
-    "question_text": "Rate your current pain. TWH: FIX THIS AS A SLIDER WITH TOP AND BOTTOM LABELS",
+    "question_type": "seek_bar",
+    "question_text": "Rate your current pain.",
     "response_option": [
-      "0 - No pain",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10 - Worst pain imaginable"
+      "0",//min value
+      "10", //max value
+      "5",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain level:", //header
+      "No pain", //min value text
+      "Worst pain imaginable"  //max value text
     ]
   },
   {
@@ -35,29 +32,32 @@
   },
   {
     "question_id": 3,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take?",
     "response_option": [
-      "1",
-      "10"
+      "Number of pills:",
+      "0",
+      "50"
     ]
   },
   {
     "question_id": 4,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take? ",
     "response_option": [
-      "1",
-      "100"
+      "Number of pills",
+      "0",
+      "50"
     ]
   },
   {
     "question_id": 5,
-    "question_type": "text_numeric",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? TWH: FIX THIS AS A NUMBER CHOOSER",
+    "question_type": "number_picker",
+    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take? ",
     "response_option": [
-      "1",
-      "100"
+      "Number of pills",
+      "0",
+      "50"
     ]
   },
   {
