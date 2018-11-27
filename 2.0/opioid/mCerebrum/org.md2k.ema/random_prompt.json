@@ -78,7 +78,7 @@
   {
     "question_id": 7,
     "question_type": "multiple_select",
-    "question_text": "The following are different types of sensations that some people associate with their pain. Please check all the apply to the type of pain you have experienced since the last report.",
+    "question_text": "The following are different types of sensations that some people associate with their pain. Please check all the apply to the type of pain you have experienced since the last report. <br><br> Please scroll with your finger to see all options.",
     "response_option": [
       "Aching",
       "Penetrating",
@@ -236,7 +236,7 @@
       "5",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
-      "Happy:", //header
+      "Craving:", //header
       "None", //min value text
       "Extreme craving"  //max value text
     ]

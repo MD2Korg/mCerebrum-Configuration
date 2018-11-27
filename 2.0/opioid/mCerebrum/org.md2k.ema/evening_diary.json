@@ -248,7 +248,7 @@
   },
   {
     "question_id": 20,
-    "question_type": "minute_second",
+    "question_type": "hour_minute",
     "question_text": "How much time did you spend today napping?"
   },
   {

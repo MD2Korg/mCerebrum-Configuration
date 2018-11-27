@@ -8,9 +8,9 @@
   "study":{
     "id": "Opioid",
     "type": "Opioid",
-    "title": "Opioid Study",
-    "summary": "Opioid Study",
-    "description": "Opioid Study",
+    "title": "Hopkins Sleep and Pain Study",
+    "summary": "Hopkins Sleep and Pain Study",
+    "description": "Hopkins Sleep and Pain Study",
     "version":"2.0.0",
     "start_at_boot": true
   },
