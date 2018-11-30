@@ -82,6 +82,13 @@
       {
         "id": "update",
         "title": "Check Update"
+      },
+      {
+        "id":"tutorial",
+        "title":"Tutorial",
+        "parameter":[
+          "https://md2k.org/software-how-to/software-howto-studyguides/moffitt-pg.html"
+        ]
       }
     ],
     "home_screen": {

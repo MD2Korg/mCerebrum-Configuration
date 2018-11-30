@@ -11,7 +11,11 @@
   "upload": {
     "enabled": true,
     "interval": 900000,
-    "url": "https://fourtytwo.md2k.org/"
+    "url": "https://fourtytwo.md2k.org/",
+    "network_high_frequency":"ANY",
+    "network_low_frequency": "ANY",
+    "restricted_datasource": [
+    ]
   },
   "privacy": {
     "duration_options": [
@@ -60,11 +64,12 @@
         ]
       },
       {
-        "id": "all",
-        "title": "All",
+        "id": "ema_intervention",
+        "title": "Survey/Strategy",
         "summary": "",
         "datasource": [
           {
+            "type": "SURVEY"
           }
         ]
       }

@@ -46,7 +46,7 @@
       "summary": "UI for ROBAS Study",
       "description": "UI for ROBAS Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC3.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC4.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -92,7 +92,7 @@
       "summary": "Scheduler app",
       "description": "Scheduler app",
       "package_name": "org.md2k.schedulerrobas",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.schedulerrobas/version2.0.0-RC5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.schedulerrobas/version2.0.0-RC6.json",
       "update": "notify",
       "use_as": "required"
     },    {

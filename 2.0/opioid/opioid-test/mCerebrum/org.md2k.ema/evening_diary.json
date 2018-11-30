@@ -14,8 +14,8 @@
     "question_text": "Did you seek medical care, including calling, for this crisis? (Mark all that apply)",
     "response_option": [
       "Outpatient primary care",
-      "Outpatient hemotologist",
-      "Infustion center",
+      "Outpatient hematologist",
+      "Infusion center",
       "Emergency room",
       "Other",
       "<UNSELECT_OTHER>None"
@@ -27,8 +27,8 @@
     "question_text": "Did you seek medical care <u><i>TODAY</i></u>, including calling, for any reason other than a crisis? (Mark all that apply)",
     "response_option": [
       "Outpatient primary care",
-      "Outpatient hemotologist",
-      "Infustion center",
+      "Outpatient hematologist",
+      "Infusion center",
       "Emergency room",
       "Other",
       "<UNSELECT_OTHER>None"
@@ -89,7 +89,7 @@
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Pain Interference:", //header
@@ -104,7 +104,7 @@
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Pain Interference:", //header
@@ -119,7 +119,7 @@
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Pain Interference:", //header
@@ -134,7 +134,7 @@
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Pain Interference:", //header
@@ -149,7 +149,7 @@
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Pain Interference:", //header
@@ -263,41 +263,245 @@
   {
     "question_id": 22,
     "question_type": "number_picker",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 1 did you take?",
+    "question_text": "How many pills of <u><i>Morphine Sulfates</i></u> did you take?",
     "response_option": [
       "Number of pills",
       "0",
       "50"
+    ],
+    "condition": [
+      "0:null"
     ]
   },
   {
     "question_id": 23,
     "question_type": "number_picker",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION 2 did you take?",
+    "question_text": "How many pills of <u><i>Oxymorphone Hydrochloride</i></u> did you take?",
     "response_option": [
       "Number of pills",
       "0",
       "50"
+    ],
+    "condition": [
+      "0:null"
     ]
   },
   {
     "question_id": 24,
     "question_type": "number_picker",
-    "question_text": "How many pills of PRE-POPULATED OPIOID MEDICATION N did you take?",
+    "question_text": "How many pills of <u><i>Oxycodone HCl</i></u> did you take?",
     "response_option": [
       "Number of pills",
       "0",
       "50"
+    ],
+    "condition": [
+      "0:null"
     ]
   },
   {
     "question_id": 25,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Methadone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 26,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Fentanyl Patch</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 27,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone SR</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 28,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Codeine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 29,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydrocodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 30,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Nicomorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 31,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 32,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Dihydromorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 33,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 34,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 35,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/aspirin</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 36,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/ibuprofen</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 37,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 38,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Demerol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 39,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Tramadol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 40,
     "question_type": "seek_bar",
     "question_text": "Thinking back over your day: <br><br> Rate how <u><i>happy</i></u> you felt today.",
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Happy:", //header
@@ -306,13 +510,13 @@
     ]
   },
   {
-    "question_id": 26,
+    "question_id": 41,
     "question_type": "seek_bar",
     "question_text": "Thinking back over your day: <br><br> Rate how <u><i>sad</i></u> you felt today.",
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Sad:", //header
@@ -321,13 +525,13 @@
     ]
   },
   {
-    "question_id": 27,
+    "question_id": 42,
     "question_type": "seek_bar",
     "question_text": "Thinking back over your day: <br><br> Rate how <u><i>irritable</i></u> you felt today.",
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Irritable:", //header
@@ -336,13 +540,13 @@
     ]
   },
   {
-    "question_id": 28,
+    "question_id": 43,
     "question_type": "seek_bar",
     "question_text": "Thinking back over your day: <br><br> Rate how <u><i>anxious</i></u> you felt today.",
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Anxious", //header
@@ -351,13 +555,13 @@
     ]
   },
   {
-    "question_id": 29,
+    "question_id": 44,
     "question_type": "seek_bar",
     "question_text": "Thinking back over your day: <br><br> Rate how <u><i>content</i></u> you felt today.",
     "response_option": [
       "0",//min value
       "10", //max value
-      "5",  //default value
+      "0",  //default value
       "10", //section count
       "AUTO_ADJUST", //value always
       "Content:", //header
@@ -366,7 +570,7 @@
     ]
   },
   {
-    "question_id": 30,
+    "question_id": 45,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]

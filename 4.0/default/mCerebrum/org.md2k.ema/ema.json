@@ -1,18 +1,27 @@
-[
-  {
-    "question_id": 0,
-    "question_type": "multiple_choice",
-    "question_text": "When the phone beeped, I was doing things automatically, without being aware of what I was doing.",
-    "response_option": [
-      "Strongly Disagree",
-      "Disagree",
-      "Neutral",
-      "Agree",
-      "Strongly Agree"
-    ]
-  },
-  {
-    "question_id": 48,
-    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
-  }
-]
+{
+  "pages":[
+    {
+      "name":"page1",
+      "elements":[
+        {
+          "type":"text", // checkbox, radiogroup, dropdown, rating, imagepicker, multiple
+          "name": "question1",
+          "isRequired": true,
+          "inputType":"number", //text, password, number
+          "placeHolder": "0",
+          "readOnly": true,
+          "titleLocation":"top", // bottom, left,
+          "maxLength":26,
+          "visible":false,
+          "visibleIf":"",
+          "validators":[
+
+          ]
+        },
+        {
+
+        }
+      ]
+    }
+  ]
+}

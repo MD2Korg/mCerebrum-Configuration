@@ -46,7 +46,7 @@
       "summary": "UI for Moffitt Study",
       "description": "UI for Moffitt Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC3.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC4.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -104,7 +104,7 @@
       "summary": "Scheduler app",
       "description": "Scheduler app",
       "package_name": "org.md2k.scheduler",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.12-RC14.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.12-RC15.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -126,7 +126,7 @@
       "summary": "Intervention app",
       "description": "Intervention app",
       "package_name": "org.md2k.mindfulnessstrategy",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/version2.0.7.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mindfulnessstrategy/version2.0.8.json",
       "update": "notify",
       "use_as": "required"
     }

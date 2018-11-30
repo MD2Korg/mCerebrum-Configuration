@@ -36,7 +36,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.13.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.16.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"

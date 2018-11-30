@@ -1,6 +1,6 @@
 {
   "number_of_device_required": "1",                       // value: integer,      default: null (not required)
-  "run_as_foreground_service": "true",          // value: true/false,   default: null (means false)
+  "run_as_foreground_service": true,          // value: true/false,   default: null (means false)
   "log_app_usage": "true",                      // value: true/false,   default: true
   "log_system_status": "true",                  // value: true/false,   default: false
   "permission_to_edit_configuration": "true",                // value: true/false,   default: true
