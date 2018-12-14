@@ -2,7 +2,7 @@
   {
     "question_id": 0,
     "question_type": "hour_minute_ampm",
-    "question_text": "What time did you do to bed last night? (lights out with the intention of going to sleep)",
+    "question_text": "What time did you go to bed last night? (lights out with the intention of going to sleep)",
     "response_option":[
       "22:00:00"
     ]
