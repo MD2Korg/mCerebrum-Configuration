@@ -1,0 +1,21 @@
+{
+  "sensors":[
+    {
+      "sensorType":"RR_INTERVAL",
+      "enable":true
+    },
+    {
+      "sensorType":"HEART_RATE",
+      "enable":true
+    },
+    {
+      "sensorType":"STRESS",
+      "enable":true
+    },
+    {
+      "sensorType":"STRESS_DETAILS",
+      "enable":true
+    }
+  ],
+  "sync_time":60000
+}

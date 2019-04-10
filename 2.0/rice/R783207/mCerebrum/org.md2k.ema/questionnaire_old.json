@@ -484,10 +484,9 @@
   },
   {
     "question_id": 40,
-    "question_type": "number_picker",
+    "question_type": "text_numeric",
     "question_text": "How many cigarettes did you smoke?",
     "response_option": [
-      "Please Select:",
       "1",
       "100"
     ],
@@ -549,126 +548,19 @@
   {
     "question_id": 44,
     "question_type": "multiple_select",
-    "question_text": "Since the last assessment, did you use any of the following (check all that apply)",
+    "question_text": "Since the last assessment, did you use (check all that apply)",
     "response_option": [
       "Cigars, cigarillos, or little cigars",
-      "Vape pen, JUUL or e-cigarettes",
-      "Marijuana/Cannabis (inhaled/vaped/smoked)",
-      "Marijuana/Cannabis (edible)",
-      "<UNSELECT_OTHER>NONE"
+      "Chew, snuff, or dip",
+      "Vaporizer or e-cigarettes",
+      "Hookah or waterpipe",
+      "Pipe will with tobacco (not waterpipe)",
+      "Other tobacco product",
+      "<UNSELECT_OTHER>I did not use other tobacco products"
     ]
   },
   {
     "question_id": 45,
-    "question_type": "number_picker",
-    "question_text": "How many cigars, cigarillos, or little cigars did you smoke?",
-    "response_option": [
-      "Please Select:",
-      "1",
-      "50"
-    ],
-    "condition": [
-      "44:Cigars, cigarillos, or little cigars"
-    ]
-  },
-  {
-    "question_id": 46,
-    "question_type": "hour_minute",
-    "question_text": "How long ago did you smoke the cigar, cigarillo, or little cigar?",
-    "condition": [
-      "45:1"
-    ]
-  },
-  {
-    "question_id": 47,
-    "question_type": "hour_minute",
-    "question_text": "You said you smoked more than one cigar, cigarillo, or little cigar since the last assessment. How long ago did you smoke the most RECENT cigar, cigarillo, or little cigar?",
-    "condition": [
-      "45:~1"
-    ]
-  },
-  {
-    "question_id": 48,
-    "question_type": "hour_minute",
-    "question_text": "You said you smoked more than one cigar, cigarillo, or little cigar since the last assessment. How long ago did you smoke the most FIRST cigar, cigarillo, or little cigar?",
-    "condition": [
-      "45:~1"
-    ]
-  },
-  {
-    "question_id": 49,
-    "question_type": "hour_minute",
-    "question_text": "You said you used a vape pen, JUUL, or e-cigarette since the last assessment. How long ago was the most RECENT puff of the vape pen, JUUL, or e-cigarette?",
-    "condition": [
-      "44:Vape pen, JUUL or e-cigarettes"
-    ]
-  },
-  {
-    "question_id": 50,
-    "question_type": "hour_minute",
-    "question_text": "You said you used a vape pen, JUUL, or e-cigarette since the last assessment. How long ago was the FIRST puff of the vape pen, JUUL, or e-cigarette?",
-    "condition": [
-      "44:Vape pen, JUUL or e-cigarettes"
-    ]
-  },
-  {
-    "question_id": 51,
-    "question_type": "number_picker",
-    "question_text": "About how many puffs of the vape pen, JUUL, or e-cigarette did you take since the last assessment?",
-    "response_option": [
-      "# of puffs: ",
-      "1",
-      "50"
-    ],
-    "condition": [
-      "44:Vape pen, JUUL or e-cigarettes"
-    ]
-  },
-  {
-    "question_id": 52,
-    "question_type": "multiple_select",
-    "question_text": "What method of marijuana/cannabis inhalation did you use (check all that apply)",
-    "response_option": [
-      "Joint/blunt",
-      "Bong",
-      "Vaporizer",
-      "Pipe/bowl"
-    ],
-    "condition": [
-      "44:Marijuana/Cannabis (inhaled/vaped/smoked)"
-    ]
-  },
-  {
-    "question_id": 53,
-    "question_type": "hour_minute",
-    "question_text": "You said you used marijuana/cannabis since the last assessment. How long ago was the most RECENT puff?",
-    "condition": [
-      "44:Marijuana/Cannabis (inhaled/vaped/smoked)"
-    ]
-  },
-  {
-    "question_id": 54,
-    "question_type": "hour_minute",
-    "question_text": "You said you used marijuana/cannabis since the last assessment. How long ago was the FIRST puff?",
-    "condition": [
-      "44:Marijuana/Cannabis (inhaled/vaped/smoked)"
-    ]
-  },
-  {
-    "question_id": 55,
-    "question_type": "number_picker",
-    "question_text": "About how many puffs of marijuana/cannabis did you take since the last assessment?",
-    "response_option": [
-      "# of puffs: ",
-      "1",
-      "50"
-    ],
-    "condition": [
-      "44:Marijuana/Cannabis (inhaled/vaped/smoked)"
-    ]
-  },
-  {
-    "question_id": 56,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I experienced or thought about a stressful issue or problem.",
     "response_option": [
@@ -679,7 +571,7 @@
     ]
   },
   {
-    "question_id": 57,
+    "question_id": 46,
     "question_type": "multiple_select",
     "question_text": "Since the last assessment, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
     "response_option": [
@@ -692,11 +584,11 @@
       "Miscellaneous/Other"
     ],
     "condition": [
-      "56:~Definitely No"
+      "45:~Definitely No"
     ]
   },
   {
-    "question_id": 58,
+    "question_id": 47,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I experienced or thought about a positive experience.",
     "response_option": [
@@ -707,7 +599,7 @@
     ]
   },
   {
-    "question_id": 59,
+    "question_id": 48,
     "question_type": "multiple_select",
     "question_text": "Since the last assessment, in which of the following areas did you have a positive experience? (Check all that apply)",
     "response_option": [
@@ -720,11 +612,11 @@
       "Miscellaneous/Other"
     ],
     "condition": [
-      "58:~Definitely No"
+      "47:~Definitely No"
     ]
   },
   {
-    "question_id": 60,
+    "question_id": 49,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, I felt little interest or pleasure while doing things.",
     "response_option": [
@@ -737,7 +629,7 @@
     ]
   },
   {
-    "question_id": 61,
+    "question_id": 50,
     "question_type": "multiple_choice",
     "question_text": "Since the last assessment, someone in my life provided me with help for a worry, problem or difficulty.",
     "response_option": [
@@ -749,7 +641,7 @@
     ]
   },
   {
-    "question_id": 62,
+    "question_id": 51,
     "question_type": "multiple_choice",
     "question_text": "At this moment, I feel that a Higher Power/God/Universal Spirit is with me.",
     "response_option": [
@@ -761,7 +653,7 @@
     ]
   },
   {
-    "question_id": 63,
+    "question_id": 52,
     "question_type": "multiple_choice",
     "question_text": "At this moment, I feel spiritually connected to other people.",
     "response_option": [
@@ -773,7 +665,7 @@
     ]
   },
   {
-    "question_id": 64,
+    "question_id": 53,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]

@@ -1,0 +1,24 @@
+{
+  "sensors": [
+    {
+      "sensorType": "ACTIVITY_TYPE",
+      "enable":true,
+      "readFrequency": 1,
+      "readTimeUnit":"SECONDS",
+      "writeType": "AS_RECEIVED"
+    },
+    {
+      "sensorType": "BATTERY",
+      "enable":true,
+      "writeType": "ON_CHANGE",
+      "writeOnChangeType": "NOT_EQUAL"
+    },
+    {
+      "sensorType": "LOCATION",
+      "enable": true,
+      "readFrequency": 1,
+      "readTimeUnit":"SECONDS",
+      "writeType": "AS_RECEIVED"
+    }
+  ]
+}

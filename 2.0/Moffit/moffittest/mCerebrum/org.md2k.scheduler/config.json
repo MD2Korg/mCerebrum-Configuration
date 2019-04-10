@@ -1,7 +1,7 @@
 {
   "id": "MOFFITT",
   "type": "STUDY",
-  "title": "Mofitt Study",
+  "title": "Moffitt Study",
   "scheduler_list": [
     {
       "type": "EMA",
@@ -550,7 +550,7 @@
           "trigger_rule": [
             {
               "trigger_time": "now()",
-              "retry_after": "time_offset(00:00:05)"
+              "retry_after": "time_offset(00:00:02)"
             }
           ]
         }
@@ -613,7 +613,7 @@
           "trigger_rule": [
             {
               "trigger_time": "now()",
-              "retry_after": "time_offset(00:00:05)"
+              "retry_after": "time_offset(00:00:02)"
             }
           ]
         }

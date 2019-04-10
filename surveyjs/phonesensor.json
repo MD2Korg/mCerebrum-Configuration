@@ -1,0 +1,1230 @@
+{
+  "pages": [
+    {
+      "name": "phonesensor",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "phonesensor_accelerometer_enable",
+          "useDisplayValuesInTitle": false,
+          "startWithNewLine": false,
+          "title": "Accelerometer",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_accelerometer_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_accelerometer_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_accelerometer_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_accelerometer_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_accelerometer_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_accelerometer_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_accelerometer_write_type} = \"ON_CHANGE\" and {phonesensor_accelerometer_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_accelerometer_linear_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Accelerometer (Linear)",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_accelerometer_linear_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_accelerometer_linear_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_accelerometer_linear_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_accelerometer_linear_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_accelerometer_linear_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_accelerometer_linear_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_accelerometer_linear_write_type} = \"ON_CHANGE\" and {phonesensor_accelerometer_linear_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_gyroscope_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Gyroscope",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_gyroscope_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gyroscope_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gyroscope_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gyroscope_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_gyroscope_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_gyroscope_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_gyroscope_write_type} = \"ON_CHANGE\" and {phonesensor_gyroscope_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_magnetometer_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Magnetometer",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_magnetometer_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_magnetometer_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_magnetometer_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_magnetometer_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_magnetometer_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_magnetometer_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_magnetometer_write_type} = \"ON_CHANGE\" and {phonesensor_magnetometer_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_gravity_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Gravity",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_gravity_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gravity_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gravity_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gravity_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_gravity_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_gravity_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_gravity_write_type} = \"ON_CHANGE\" and {phonesensor_gravity_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_ambient_light_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Ambient Light",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_ambient_light_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_ambient_light_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_ambient_light_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_ambient_light_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_ambient_light_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_ambient_light_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_ambient_light_write_type} = \"ON_CHANGE\" and {phonesensor_ambient_light_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_air_pressure_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Air Pressure",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_air_pressure_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_air_pressure_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_air_pressure_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_air_pressure_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_air_pressure_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_air_pressure_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "write_on_change_value\n",
+          "enableIf": "{phonesensor_air_pressure_write_type} = \"ON_CHANGE\" and {phonesensor_air_pressure_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_ambient_temperature_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Ambient Temperature",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_ambient_temperature_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 16,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_ambient_temperature_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_ambient_temperature_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "FIXED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_ambient_temperature_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_ambient_temperature_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "SAMPLE_DIFFERENCE",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_ambient_temperature_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "write_on_change_value\n",
+          "enableIf": "{phonesensor_ambient_temperature_write_type} = \"ON_CHANGE\" and {phonesensor_ambient_temperature_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_proximity_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Proximity",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_proximity_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 6,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_proximity_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_proximity_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_proximity_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_proximity_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_proximity_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "write_on_change_value\n",
+          "enableIf": "{phonesensor_proximity_write_type} = \"ON_CHANGE\" and {phonesensor_proximity_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_relative_humidity_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Relative Humidity",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_relative_humidity_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 6,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_relative_humidity_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "SECONDS",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_relative_humidity_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_relative_humidity_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_relative_humidity_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_relative_humidity_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "write_on_change_value\n",
+          "enableIf": "{phonesensor_relative_humidity_write_type} = \"ON_CHANGE\" and {phonesensor_relative_humidity_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_significant_motion_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Significant Motion",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_significant_motion_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "enableIf": "false",
+          "defaultValue": "AS_RECEIVED",
+          "choices": [
+            {
+              "value": "AS_RECEIVED",
+              "text": "AS_RECEIVED"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_charging_status_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Charging Status",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_charging_status_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "enableIf": "false",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_charging_status_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "false",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_bluetooth_status_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Bluetooth Status",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_bluetooth_status_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "enableIf": "false",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_bluetooth_status_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "false",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_gps_status_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "GPS Status",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gps_status_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "enableIf": "false",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gps_status_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "false",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_wifi_status_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Wifi Status",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_wifi_status_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "enableIf": "false",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_wifi_status_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "false",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_battery_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Battery",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_battery_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "ON_CHANGE",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_battery_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 1,
+          "enableIf": "{phonesensor_battery_write_type} = \"FIXED\"",
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_battery_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "MINUTES",
+          "enableIf": "{phonesensor_battery_write_type} = \"FIXED\"",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_battery_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_battery_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_battery_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_battery_write_type} = \"ON_CHANGE\" and {phonesensor_battery_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_activity_type_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "Activity Type",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_activity_type_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 1,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_activity_type_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "MINUTES",
+          "enableIf": "{phonesensor_activity_type_write_type} = \"FIXED\"",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_activity_type_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "AS_RECEIVED",
+          "enableIf": "false",
+          "choices": [
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_activity_type_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_activity_type_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_activity_type_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "_write_on_change_value\n",
+          "enableIf": "{phonesensor_activity_type_write_type} = \"ON_CHANGE\" and {phonesensor_activity_type_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        },
+        {
+          "type": "boolean",
+          "name": "phonesensor_gps_enable",
+          "useDisplayValuesInTitle": false,
+          "title": "GPS",
+          "defaultValue": "true",
+          "showTitle": true
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_gps_sample_rate",
+          "startWithNewLine": false,
+          "title": "Sample Rate",
+          "defaultValue": 12,
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gps_sample_rate_unit",
+          "startWithNewLine": false,
+          "title": "Sample Rate Unit",
+          "defaultValue": "MINUTES",
+          "choices": [
+            {
+              "value": "SECONDS",
+              "text": "Second"
+            },
+            {
+              "value": "MINUTES",
+              "text": "Minute"
+            },
+            {
+              "value": "HOURS",
+              "text": "Hour"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gps_write_type",
+          "startWithNewLine": false,
+          "title": "Write Type",
+          "defaultValue": "AS_RECEIVED",
+          "choices": [
+            {
+              "value": "FIXED",
+              "text": "Fixed"
+            },
+            {
+              "value": "AS_RECEIVED",
+              "text": "As Received"
+            },
+            {
+              "value": "ON_CHANGE",
+              "text": "On Change"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "phonesensor_gps_write_on_change_type",
+          "startWithNewLine": false,
+          "title": "Write OnChangeType",
+          "enableIf": "{phonesensor_gps_write_type} = \"ON_CHANGE\"",
+          "defaultValue": "NOT_EQUAL",
+          "choices": [
+            {
+              "value": "NOT_EQUAL",
+              "text": "Not Equal"
+            },
+            {
+              "value": "SAMPLE_DIFFERENCE",
+              "text": "Sample Difference"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "phonesensor_gps_write_on_change_value",
+          "startWithNewLine": false,
+          "title": "Write OnChangeValue\n",
+          "enableIf": "{phonesensor_gps_write_type} = \"ON_CHANGE\" and {phonesensor_gps_write_on_change_type} = \"SAMPLE_DIFFERENCE\"",
+          "defaultValue": "0.1",
+          "inputType": "number"
+        }
+      ]
+    }
+  ],
+  "showQuestionNumbers": "off"
+}

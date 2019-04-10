@@ -1,0 +1,32 @@
+{
+  "upload": {
+    "enabled": true,
+    "uploader_options": [
+      {
+        "id":"no_upload",
+        "rules":"is_wifi_active()",
+        "datasource_list":[
+          "LOCATION-------"
+        ]
+      },
+      {
+        "id":"low_frequency",
+        "interval": 900000,
+        "datasources":[
+          "--------"
+        ]
+      },
+      {
+        "id":"high_frequency",
+        "interval": 900000,
+        "rules":"is_wifi_active()",
+        "datasources":[
+          "--------"
+        ]
+      }
+    ],
+    "url": "https://fourtytwo.md2k.org/",
+    "network_high_frequency": "ANY",
+    "network_low_frequency": "ANY",
+  }
+}

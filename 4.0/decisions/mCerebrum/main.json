@@ -1,0 +1,19 @@
+{
+  "id":"decisions",
+  "version":"4.0.0",
+  "title": "Decisions",
+  "libraries": [
+    {
+      "id": "org.md2k.core",
+      "enable":true
+    },
+    {
+      "id": "org.md2k.phonesensor",
+      "enable":true
+    },
+    {
+      "id": "org.md2k.samsungwatch",
+      "enable":true
+    }
+  ]
+}

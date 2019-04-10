@@ -82,13 +82,6 @@
       {
         "id": "update",
         "title": "Check Update"
-      },
-      {
-        "id":"tutorial",
-        "title":"Tutorial",
-        "parameter":[
-          "https://md2k.org/software-how-to/software-howto-studyguides/moffitt-pg.html"
-        ]
       }
     ],
     "home_screen": {
@@ -144,7 +137,7 @@
             },
             "type": "ACCELEROMETER"
           },
-          "video_link": "eyn9sMnRcCk",
+          "video_link": "e_CtHfjG_iQ",
           "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
         },
         {
@@ -162,7 +155,7 @@
             },
             "type": "ACCELEROMETER"
           },
-          "video_link": "eyn9sMnRcCk",
+          "video_link": "e_CtHfjG_iQ",
           "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
         }
       ],

@@ -103,7 +103,7 @@
       "summary": "Mark pain level",
       "description": "Mark pain level",
       "package_name": "org.md2k.mcerebrum.opioidlabstudy",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum.opioidlabstudy/version2.0.0-RC3.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum.opioidlabstudy/version2.0.0-RC4.json",
       "update": "notify",
       "use_as": "required"
     }

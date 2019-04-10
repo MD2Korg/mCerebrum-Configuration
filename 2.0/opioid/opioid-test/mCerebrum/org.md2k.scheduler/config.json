@@ -335,27 +335,6 @@
       ],
       "message": {
         "type": "GENERAL",
-        "title": "Survey delayed for 5 minutes",
-        "message": "Please click \"Start\" when you are ready",
-        "button": [
-          {
-            "title": "Start Now",
-            "confirm": false
-          }
-        ]
-      }
-    },
-    {
-      "id": "PHONE_MESSAGE_DURING_DELAY",
-      "type": "PHONE_DIALOG",
-      "title": "Phone Message",
-      "repeat": 1,
-      "interval": "00:10:00",
-      "at": [
-        "00:00:00"
-      ],
-      "message": {
-        "type": "GENERAL",
         "title": "Survey delayed for 10 minutes",
         "message": "Please click \"Start\" when you are ready",
         "button": [
