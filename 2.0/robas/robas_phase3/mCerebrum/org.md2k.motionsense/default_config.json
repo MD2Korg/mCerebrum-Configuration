@@ -1,0 +1,16 @@
+{
+  "required": 2,
+  "foreground_app": true,
+  "devices": [
+    {
+      "use_as": "required",
+      "platform_type": "MOTION_SENSE_HRV_PLUS",
+      "platform_id": "LEFT_WRIST"
+    },
+    {
+      "use_as": "required",
+      "platform_type": "MOTION_SENSE_HRV_PLUS",
+      "platform_id": "RIGHT_WRIST"
+    }
+  ]
+}
