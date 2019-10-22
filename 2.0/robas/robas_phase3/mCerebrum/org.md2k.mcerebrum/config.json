@@ -3,7 +3,7 @@
     "id": "robas_phase3",
     "type": "field_study",
     "update": "notify",
-    "version": "2.0.0"
+    "version": "2.0.1"
   },
   "study": {
     "id": "robas_phase3",
@@ -11,7 +11,7 @@
     "title": "ROBAS Phase 3",
     "summary": "ROBAS Phase 3",
     "description": "ROBAS Study Phase 3",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "start_at_boot": true
   },
   "apps": [
@@ -81,7 +81,7 @@
       "summary": " Oral B data collection",
       "description": "Captures data from oral B toothbrush",
       "package_name": "org.md2k.oralb",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.3-RC3.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.4-RC1.json",
       "update": "notify",
       "use_as": "required"
     }
