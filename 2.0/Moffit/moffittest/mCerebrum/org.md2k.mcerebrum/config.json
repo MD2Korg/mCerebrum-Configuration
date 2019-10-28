@@ -93,7 +93,7 @@
       "summary": "Detects stress and smoking events from autosense and motionsense device",
       "description": "Detects stress and smoking events from autosense and motionsense device",
       "package_name": "org.md2k.streamprocessor",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.streamprocessor/version2.0.2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.streamprocessor/version2.0.3.json",
       "update": "notify",
       "use_as": "required"
     },
