@@ -1,0 +1,484 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel angry.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel ashamed.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel grateful.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel guilty.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel happy.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel irritable.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel lonely.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel proud.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel anxious.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel sad.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel restless.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel bored.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel relaxed.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel hopeless.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "multiple_choice",
+    "question_text": "Right now, I feel enthusiastic.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "multiple_select",
+    "question_text": "Since the last assessment, did you use any of the following? (check all that apply)",
+    "response_option": [
+      "<UNSELECT_OTHER>None",
+      "Cigarettes",
+      "Vape pen, JUUL, or e-cigarettes",
+      "Cigars, cigarillos, or little cigars",
+      "Smokeless tobacco/snus/dissolvable tobacco",
+      "Marijuana/Cannabis",
+      "Alcohol"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "number_picker",
+    "question_text": "Since the last assessment, how many cigarettes did you smoke?",
+    "response_option": [
+      "Please Select:",
+      "1",
+      "100"
+    ],
+    "condition": [
+      "15:Cigarettes"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "hour_minute",
+    "question_text": "You said you smoked 1 cigarette since the last assessment. What time was it when you smoked that cigarette?",
+    "condition": [
+      "16:1"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "hour_minute",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. What time was it when you smoked your last cigarette?",
+    "condition": [
+      "16:~1"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "hour_minute",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. What time was it when you smoked your first cigarette?",
+    "condition": [
+      "16:~1"
+    ]
+  },
+  {
+    "question_id": 20,
+    "question_type": "number_picker",
+    "question_text": "Since the last assessment about how many puffs of the vape pen, JUUL, or e-cigarette did you take?",
+    "response_option": [
+      "Please Select:",
+      "1",
+      "100"
+    ],
+    "condition": [
+      "15:Vape pen, JUUL, or e-cigarettes"
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_type": "hour_minute",
+    "question_text": "You said you vaped 1 puff since the last assessment. What time was it when you vaped?",
+    "condition": [
+      "20:1"
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_type": "hour_minute",
+    "question_text": "You said you vaped more than 1 puff since the last assessment. What time was it when you last vaped?",
+    "condition": [
+      "20:~1"
+    ]
+  },
+  {
+    "question_id": 23,
+    "question_type": "hour_minute",
+    "question_text": "You said you vaped more than 1 puff since the last assessment. What time was it when you first vaped?",
+    "condition": [
+      "20:~1"
+    ]
+  },
+  {
+    "question_id": 24,
+    "question_type": "multiple_select",
+    "question_text": "How did you use marijuana/cannabis? (check all that apply)",
+    "response_option": [
+      "Joint/blunt",
+      "Vaporizer",
+      "Bong/Pipe/Bowl",
+      "Edible",
+      "<UNSELECT_OTHER>None (I did not use marijuana)"
+    ],
+    "condition": [
+      "15:Marijuana/Cannabis"
+    ]
+  },
+  {
+    "question_id": 25,
+    "question_type": "hour_minute",
+    "question_text": "What time was it when you last used marijuana/cannabis?",
+    "condition": [
+      "24:~None (I did not use marijuana)"
+    ]
+  },
+  {
+    "question_id": 26,
+    "question_type": "number_picker",
+    "question_text": "How many servings did you drink? \nServing Sizes:\nBeer = 12 oz. (1 can)\nWine = 5 oz. (1/2 wine glass)\nLiquor = 1.5 oz. (1 shot)",
+    "response_option": [
+      "Please Select:",
+      "1",
+      "100"
+    ],
+    "condition": [
+      "15:Alcohol"
+    ]
+  },
+  {
+    "question_id": 27,
+    "question_type": "multiple_select",
+    "question_text": "Since the last assessment, in which of the following areas did you experience a stressful issue or problem? (Check all that apply)",
+    "response_option": [
+      "Work/School",
+      "Family/other relationships",
+      "Financial",
+      "Housing/Where you live",
+      "Health",
+      "<UNSELECT_OTHER>None"
+    ]
+  },
+  {
+    "question_id": 28,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nI am motivated to be abstinent from cigarettes.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 29,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nI am motivated to be abstinent from vape pen/e-cigarette/JUUL.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 30,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nI have an urge to smoke a cigarette.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very much"
+    ]
+  },
+  {
+    "question_id": 31,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nI have an urge to use a vape pen/e-cigarette/JUUL",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very much"
+    ]
+  },
+  {
+    "question_id": 32,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nSmoking a cigarette would improve my mood, make me feel good, or help me cope with this situation.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very much"
+    ]
+  },
+  {
+    "question_id": 33,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nUsing a vape pen/e-cigarette/JUUL would improve my mood, make me feel good, or help me cope with this situation.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very much"
+    ]
+  },
+  {
+    "question_id": 34,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nI am confident in my ability to be abstinent from cigarettes.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 35,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nI am confident in my ability to be abstinent from vape pen/e-cigarette/JUUL use.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Extremely"
+    ]
+  },
+  {
+    "question_id": 36,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nCigarettes are available to me.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very easily"
+    ]
+  },
+  {
+    "question_id": 37,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n \nVape pens/e-cigarettes/JUULs are available to me.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very easily"
+    ]
+  },
+  {
+    "question_id": 38,
+    "question_type": "multiple_select",
+    "question_text": "RIGHT NOW, \n\nAre any of the following allowed where you are? (check all that apply)",
+    "response_option": [
+      "Cigarettes are allowed",
+      "Vape pens/e-cigarettes/JUULs are allowed",
+      "<UNSELECT_OTHER>Neither is allowed"
+    ]
+  },
+  {
+    "question_id": 39,
+    "question_type": "multiple_select",
+    "question_text": "RIGHT NOW,\n\nAre other people around you using any of the following? (check all that apply)",
+    "response_option": [
+      "Cigarettes",
+      "Vape pens/e-cigarettes/JUULs",
+      "<UNSELECT_OTHER>Neither"
+    ]
+  },
+  {
+    "question_id": 40,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW\n\nAre you wearing the patch?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 41,
+    "question_type": "multiple_choice",
+    "question_text": "RIGHT NOW,\n\nI feel capable of controlling my behavior and emotions.",
+    "response_option": [
+      "0 Not at all",
+      "1",
+      "2",
+      "3",
+      "4 Very much"
+    ]
+  },
+  {
+    "question_id": 42,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

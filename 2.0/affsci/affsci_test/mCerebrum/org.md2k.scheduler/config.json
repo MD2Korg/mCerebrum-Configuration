@@ -1,0 +1,1375 @@
+{
+  "id": "AFFSCI",
+  "type": "STUDY",
+  "title": "Affective Science Study",
+  "scheduler_list": [
+    {
+      "type": "EMA",
+      "id": "RANDOM",
+      "title": "Random EMA",
+      "listen": {
+        "datasource": [
+          {
+            "type": "WAKEUP",
+            "id": "P0"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1), get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,N1)",
+          "end_time": "get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,N1)+time_offset(03:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1)+time_offset(02:20:00), get_last_sample(0,WAKEUP,N1)+time_offset(03:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,N1)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,N1)+time_offset(03:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(02:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(02:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,N1)+time_offset(05:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1)+time_offset(04:40:00), get_last_sample(0,WAKEUP,N1)+time_offset(05:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,N1)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,N1)+time_offset(05:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(04:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(04:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,N1)+time_offset(08:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1)+time_offset(07:00:00), get_last_sample(0,WAKEUP,N1)+time_offset(08:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,N1)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,N1)+time_offset(08:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(07:00:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(07:00:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,N1)+time_offset(10:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1)+time_offset(09:20:00), get_last_sample(0,WAKEUP,N1)+time_offset(10:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,N1)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,N1)+time_offset(10:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(09:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(09:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,N1)+time_offset(12:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1)+time_offset(11:40:00), get_last_sample(0,WAKEUP,N1)+time_offset(12:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,N1)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,N1)+time_offset(12:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(11:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,N1)+time_offset(11:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0), get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00), get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(01:10:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00), get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(02:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00), get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(03:30:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00), get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(04:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00), get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(05:50:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00), get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(07:00:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00), get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(08:10:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00), get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(09:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00), get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(10:30:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00), get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(11:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P0)+time_offset(14:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00), get_last_sample(0,WAKEUP,P0)+time_offset(14:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P0)+time_offset(14:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P0)+time_offset(12:50:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1), get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00), get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(01:10:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00), get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(02:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00), get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(03:30:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00), get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(04:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00), get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(05:50:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00), get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(07:00:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00), get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(08:10:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00), get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(09:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00), get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(10:30:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00), get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(11:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P1)+time_offset(14:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00), get_last_sample(0,WAKEUP,P1)+time_offset(14:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P1)+time_offset(14:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P1)+time_offset(12:50:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2), get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00), get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(01:10:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00), get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(02:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00), get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(03:30:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00), get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(04:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00), get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(05:50:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00), get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(07:00:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00), get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(08:10:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00), get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(09:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00), get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(10:30:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00), get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(11:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P2)+time_offset(14:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00), get_last_sample(0,WAKEUP,P2)+time_offset(14:00:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P2)+time_offset(14:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P2)+time_offset(12:50:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+
+        {
+          "condition": "get_last_sample(0,WAKEUP,P3)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P3), get_last_sample(0,WAKEUP,P3)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P3)",
+          "end_time": "get_last_sample(0,WAKEUP,P3)+time_offset(01:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P3)+time_offset(03:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P3)+time_offset(02:20:00), get_last_sample(0,WAKEUP,P3)+time_offset(03:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P3)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P3)+time_offset(03:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(02:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(02:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P3)+time_offset(05:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P3)+time_offset(04:40:00), get_last_sample(0,WAKEUP,P3)+time_offset(05:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P3)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P3)+time_offset(05:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(04:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(04:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P3)+time_offset(08:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P3)+time_offset(07:00:00), get_last_sample(0,WAKEUP,P3)+time_offset(08:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P3)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P3)+time_offset(08:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(07:00:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(07:00:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P3)+time_offset(10:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P3)+time_offset(09:20:00), get_last_sample(0,WAKEUP,P3)+time_offset(10:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P3)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P3)+time_offset(10:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(09:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(09:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P3)+time_offset(12:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P3)+time_offset(11:40:00), get_last_sample(0,WAKEUP,P3)+time_offset(12:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P3)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P3)+time_offset(12:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(11:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P3)+time_offset(11:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+
+        {
+          "condition": "get_last_sample(0,WAKEUP,P4)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P4), get_last_sample(0,WAKEUP,P4)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P4)",
+          "end_time": "get_last_sample(0,WAKEUP,P4)+time_offset(01:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P4)+time_offset(03:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P4)+time_offset(02:20:00), get_last_sample(0,WAKEUP,P4)+time_offset(03:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P4)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P4)+time_offset(03:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(02:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(02:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P4)+time_offset(05:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P4)+time_offset(04:40:00), get_last_sample(0,WAKEUP,P4)+time_offset(05:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P4)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P4)+time_offset(05:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(04:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(04:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P4)+time_offset(08:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P4)+time_offset(07:00:00), get_last_sample(0,WAKEUP,P4)+time_offset(08:10:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P4)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P4)+time_offset(08:10:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(07:00:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(07:00:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P4)+time_offset(10:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P4)+time_offset(09:20:00), get_last_sample(0,WAKEUP,P4)+time_offset(10:30:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P4)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P4)+time_offset(10:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(09:20:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(09:20:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,P4)+time_offset(12:50:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,P4)+time_offset(11:40:00), get_last_sample(0,WAKEUP,P4)+time_offset(12:50:00), EMA, RANDOM)==0",
+          "start_time": "get_last_sample(0,WAKEUP,P4)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,P4)+time_offset(12:50:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(11:40:00)+random(time_offset(00:35:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "get_last_sample(0,WAKEUP,P4)+time_offset(11:40:00)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_WITH_DELAY", "Ok", "EMA"],
+                ["NOTIFICATION_WITH_DELAY", "Delay (10 Min)", "NOTIFICATION_DURING_DELAY"],
+                ["NOTIFICATION_DURING_DELAY", "Start Now", "EMA"],
+                ["NOTIFICATION_DURING_DELAY", "MISSED", "NOTIFICATION_AFTER_DELAY"],
+                ["NOTIFICATION_AFTER_DELAY", "Ok", "EMA"],
+                ["EMA", "COMPLETED", "INCENTIVE_DATA_QUALITY_LAST_EMA"]
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "notification_details": [
+    {
+      "id": "PHONE_VIBRATE_30_WITH_0_60_120",
+      "type": "PHONE_VIBRATION",
+      "title": "Phone Vibration",
+      "format": "THREE_TONE",
+      "repeat": 6,
+      "interval": "00:00:05",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_TONE_30_WITH_0_60_120",
+      "type": "PHONE_TONE",
+      "title": "Phone Tone",
+      "format": "THREE_TONE_HIGH",
+      "repeat": 6,
+      "interval": "00:00:05",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_SCREEN_30",
+      "type": "PHONE_SCREEN",
+      "title": "Phone Screen",
+      "repeat": 1,
+      "interval": "00:00:30",
+      "at": [
+        "00:00:00"
+      ]
+    },
+    {
+      "id": "PHONE_MESSAGE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_EMI",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Strategy",
+        "content": "Time to take practice a strategy",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10_MINUTE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          },
+          {
+            "title": "Delay (10 Min)",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_AFTER_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DURING_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "type": "GENERAL",
+        "title": "Survey delayed for 10 minutes",
+        "message": "Please click \"Start\" when you are ready",
+        "button": [
+          {
+            "title": "Start Now",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    }
+  ],
+  "notification_list": [
+    {
+      "id": "NOTIFICATION_0_60_120",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_WITH_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_DELAY_10_MINUTE",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_DURING_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_MESSAGE_DURING_DELAY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_AFTER_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_AFTER_DELAY",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    }
+  ],
+  "application_list": [
+    {
+      "id": "EMA",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "questionnaire.json"
+          }
+        }
+      ]
+    }
+  ],
+  "incentive_list": [
+    {
+      "id": "INCENTIVE_DATA_QUALITY_LAST_EMA",
+      "incentive": [
+        {
+          "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,DAY,START)), now(), DATA_VARIANCE_SUMMARY_MINUTE, RESPIRATION, AUTOSENSE_CHEST, CHEST)>=66.6",
+          "amount": 1.25,
+          "message": [
+            "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ]
+        },
+        {
+          "amount": 0.50,
+          "message": [
+            "Thank you. Unfortunately, you will only be paid $<AMOUNT> because you have not worn the sensors for at least 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ]
+        }
+      ]
+    }
+  ]
+}

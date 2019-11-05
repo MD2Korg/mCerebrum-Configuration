@@ -1,0 +1,100 @@
+{
+  "config":{
+    "id": "affsci",
+    "type": "field_study",
+    "update": "notify",
+    "version": "2.0.0"
+  },
+  "study":{
+    "id": "affsci",
+    "type": "field_study",
+    "title": "Affective Science Study",
+    "summary": "Affective Science Study",
+    "description": "Affective Science Study",
+    "version":"2.0.0",
+    "start_at_boot": true
+  },
+  "apps": [
+    {
+      "id": "mcerebrum",
+      "type": "mcerebrum",
+      "title": "mCerebrum",
+      "summary": "Launcher app for mCerebrum",
+      "description": "Launcher app for mCerebrum",
+      "package_name": "org.md2k.mcerebrum",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.15.json",
+      "icon": "mcerebrum.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "datakit",
+      "type": "datakit",
+      "title": "Storage",
+      "summary": "Handles routing, privacy, and storage for mCerebrum applications",
+      "description": "Handles routing, privacy, and storage for mCerebrum applications",
+      "package_name": "org.md2k.datakit",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.17.json",
+      "icon": "datakit.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "study",
+      "type": "study",
+      "title": "Study UI",
+      "summary": "UI for Moffitt Study",
+      "description": "UI for Moffitt Study",
+      "package_name": "org.md2k.studywithema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC5.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "phone",
+      "type": "sense",
+      "title": "PhoneSensor",
+      "summary": "Captures accelerometer, gyroscope, and location data from the phone",
+      "description": "Captures accelerometer, gyroscope, and location data from the phone",
+      "package_name": "org.md2k.phonesensor",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.8.json",
+      "icon": "phonesensor.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "MotionSenseHRV",
+      "type": "sense",
+      "title": "Wrist Sensor",
+      "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
+      "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
+      "package_name": "org.md2k.motionsense",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.17-RC1.json",
+      "icon": "motionsense.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "scheduler",
+      "type": "act",
+      "title": "Scheduler",
+      "summary": "Scheduler app",
+      "description": "Scheduler app",
+      "package_name": "org.md2k.scheduler",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.12-RC17.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "ema",
+      "type": "sense",
+      "title": "EMA",
+      "summary": "Records EMA",
+      "description": "Records EMA",
+      "package_name": "org.md2k.ema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.4-RC4.json",
+      "update": "notify",
+      "use_as": "required"
+    }
+  ]
+}
