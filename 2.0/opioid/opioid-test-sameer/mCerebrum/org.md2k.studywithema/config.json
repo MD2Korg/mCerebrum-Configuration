@@ -1,0 +1,99 @@
+{
+  "settings": {
+    "list": [
+      {
+        "id": "wakeup_time",
+        "title": "Wakeup Time",
+        "input_type": "TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP"
+        }
+      },
+      {
+        "id": "sleep_time",
+        "title": "Sleep Time",
+        "input_type": "TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "SLEEP"
+        }
+      }
+    ]
+  },
+  "ui": {
+    "menu": [
+      {
+        "id": "home",
+        "title": "Home"
+      },
+      {
+        "id": "settings",
+        "title": "Settings",
+        "parameter": [
+          "password",
+          "1234"
+        ]
+      },
+      {
+        "id": "reset",
+        "title": "Reset Application"
+      },
+      {
+        "id": "update",
+        "title": "Check Update"
+      },
+      {
+        "id":"tutorial",
+        "title":"Tutorial",
+        "parameter":[
+          "https://md2k.org/software-how-to/software-howto-studyguides/opioid-pg.html"
+        ]
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Wrist Device",
+          "read": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "type": "MOTION_SENSE_HRV"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "eyn9sMnRcCk",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ],
+      "privacy": {
+      },
+      "day": {
+        "wakeup_offset": "02:00:00",
+        "sleep_offset": "02:00:00"
+      },
+      "button": {
+        "column": 2,
+        "list": [
+          {
+            "id": "pain",
+            "title": "Pain Medication",
+            "icon": "medication.png",
+            "run": {
+              "package_name": "org.md2k.mcerebrum.opioidlabstudy",
+              "activity": "org.md2k.mcerebrum.opioidlabstudy.dialog.ActivityDialogPain",
+              "parameter": [
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
