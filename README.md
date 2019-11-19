@@ -22,15 +22,15 @@ You can find more information about MD2K software on our [software website](http
 |`core_config_title` | &#9745;|
 |`core_config_description` | &#9745;|
 |`core_config_version` | &#9745;|
-|`core_config_filename` | |&#9745;|
+|`core_config_filename` |&#9745; |&#9745;|
 |`core_config_from` |  |&#9745;|local, cerebral_cortex
 |`core_config_createTime`||&#9745;|
-|`core_config_icon[name,type,content]`|&#9745;||
+|`core_config_icon`<br> ` - name`<br>` - type`<br>` - content`|&#9745;||
 ##### Login
 | Name | Default Config| Config|Description
 |---|---|---|---|
 |`core_login_serverAddress` | &#9745; |&#9745;|Example: `https://odin.md2k.org`|
-|`core_login_isLoggedIn` | &#9745;|
+|`core_login_isLoggedIn`| | &#9745;|
 |`core_login_username`| | &#9745;|
 |`core_login_password`| | &#9745;|
 |`core_login_accessToken`| | &#9745;|
@@ -38,14 +38,14 @@ You can find more information about MD2K software on our [software website](http
 ##### privacy
 | Name | Default Config| Config|Description
 |---|---|---|---|
-|`core_privacy_durationChoices[id,title,timestamp]` | &#9745; ||
-|`core_privacy_dataSourceChoices[id,title,dataSources]` | &#9745; ||
+|`core_privacy_durationChoices`<br>`- id`<br>`- title`<br>`- timestamp` | &#9745; ||
+|`core_privacy_dataSourceChoices`<br>`- id`<br>`- title`<br>`- dataSources` | &#9745; ||
 
 ##### upload
 | Name | Default Config| Config|Description
 |---|---|---|---|
 |`core_upload_enable`||&#9745;|
-|`core_upload_rules[id,enable,title,interval,condition,includeDataSources,excludeDataSources]` | &#9745; ||
+|`core_upload_rules`<br>`- id`<br>`- enable`<br>`- title`<br>`- interval`<br>`- condition`<br>`- includeDataSources`<br>`- excludeDataSources` | &#9745; ||
 
 ##### PhoneSensor
 | Name | Default Config| Config|Description
@@ -143,6 +143,65 @@ You can find more information about MD2K software on our [software website](http
 |`phonesensor_gps_writeOnChangeType`| &#9745; |&#9745;|
 |`phonesensor_gps_writeOnChangeValue`| &#9745; |&#9745;|
 
+##### MotionSense
+|Varialble |Default Config| Config|Description
+|---|:---:|:---:|-----|
+|`motionsense_requiredDevice`<br>`- RequiredDevice[]`| &#9745; ||
+|`motionsense_runAsForegroundService`| &#9745; |&#9745;|
+|`motionsense_deviceSettings`<br> `- DeviceSettings[]`| &#9745; |&#9745;||
+|`motionsense_devices[Device]`| &#9745; |&#9745;||
+##### RequiredDevice
+| Variable| Default Config| Config|Description|
+|---|---|---|---|
+|`motionsense_device_platformType`| &#9745; ||
+|`motionsense_device_platformId`| &#9745; |&#9745;|
+|`motionsense_device_version`|&#9745;||
+|`motionsense_device_required`|&#9745;||
+##### DeviceSettings
+| Variable| Default Config| Config|Description|Supported devices|
+|---|---|---|---|-----|
+|`motionsense_device_platformType`| &#9745; |||MotionSense, MotionSenseHRV|
+|`motionsense_device_platformId`| &#9745; |&#9745;||MotionSense, MotionSenseHRV|
+|`motionsense_device_version`|&#9745;|||MotionSense, MotionSenseHRV|
+|`motionsense_device_minimumConnectionInterval`| &#9745; |&#9745;|
+|`motionsense_accelerometer_enable`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+, MotionSenseHRV+Gen2|
+|`motionsense_accelerometer_frequency`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+, MotionSenseHRV+Gen2|
+|`motionsense_accelerometer_sensitivity`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_gyroscope_enable`| &#9745; |&#9745;||MotionSense, MotionSenseHRV|
+|`motionsense_gyroscope_frequency`| &#9745; |&#9745;||MotionSense, MotionSenseHRV|
+|`motionsense_gyroscope_sensitivity`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_sequenceNumberMotion_enable`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_sequenceNumberMotion_frequency`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_rawMotion_enable`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_rawMotion_frequency`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_battery_enable`| &#9745; |&#9745;||MotionSense, MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_led_enable`| &#9745; |&#9745;||MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_led_frequency`| &#9745; |&#9745;||MotionSenseHRV, MotionSenseHRV+|
+|`motionsense_led_filteredEnable`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_led_red`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_led_green`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_led_infrared`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_rawLed_enable`| &#9745; |&#9745;||MotionSenseHRV+Gen2|
+|`motionsense_quaternion_enable`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_quaternion_frequency`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_magnetometer_enable`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_magnetometer_frequency`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_magnetometerSensitivity_enable`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_magnetometerSensitivity_frequency`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_rawMagnetometer_enable`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_rawMagnetometer_frequency`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_sequenceNumberMagnetometer_enable`| &#9745; |&#9745;||MotionSenseHRV+|
+|`motionsense_sequenceNumberMagnetometer_frequency`| &#9745; |&#9745;||MotionSenseHRV+|
+
+
+##### Device
+| Variable| Default Config| Config|Description|Device
+|---|---|---|---|-----|
+|`motionsense_device_id`|&#9745;|||MotionSense, MotionSenseHRV|
+|`motionsense_device_enable`| &#9745; |||MotionSense, MotionSenseHRV|
+|`motionsense_device_platformType`| &#9745; |||MotionSense, MotionSenseHRV|
+|`motionsense_device_platformId`| &#9745; |&#9745;||MotionSense, MotionSenseHRV|
+|`motionsense_device_version`|&#9745;|||MotionSense, MotionSenseHRV|
 
 ## Contributing
 Please read our [Contributing Guidelines](https://md2k.org/software/under-the-hood/contributing) for details on the process for submitting pull requests to us.

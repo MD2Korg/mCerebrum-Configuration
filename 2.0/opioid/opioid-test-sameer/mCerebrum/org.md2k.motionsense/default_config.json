@@ -3,7 +3,7 @@
   "motionsense_title": "MotionSense",
   "motionsense_enable": true,
   "motionsense_description": "Collects data from MotionSense Sensors",
-  "motionsense_requiredDeviceNo": 2,
+  "motionsense_requiredDeviceNo": 1,
   "motionsense_requiredDevices": [
     {
       "platformType": "MOTION_SENSE_HRV",

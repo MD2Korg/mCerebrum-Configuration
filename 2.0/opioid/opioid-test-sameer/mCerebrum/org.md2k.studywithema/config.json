@@ -57,14 +57,14 @@
           "title": "Wrist Device",
           "read": {
             "platform": {
-              "type": "MOTION_SENSE_HRV"
+              "type": "MOTION_SENSE_HRV_PLUS_GEN2_RED"
             },
             "type": "DATA_QUALITY",
-            "id": "LED"
+            "id": "ACCELEROMETER"
           },
           "plot": {
             "platform": {
-              "type": "MOTION_SENSE_HRV"
+              "type": "MOTION_SENSE_HRV_PLUS_GEN2_RED"
             },
             "type": "ACCELEROMETER"
           },

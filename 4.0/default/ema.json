@@ -1,0 +1,1998 @@
+{
+  "ema_list": [
+    {
+      "id": "random",
+      "title": "Random EMA",
+      "showTitleBar": true,
+      "pagePrevText": "Prev",
+      "pageNextText": "Next",
+      "completeText": "Finish",
+      "showPrevButton": true,
+      "showNextButton": true,
+      "showPrevIcon": true,
+      "showNextIcon": true,
+
+      "pages": [
+        {
+          "id": "page_study",
+          "questions": [
+            {
+              "id": "question1",
+              "type": "radiogroup",
+              "title": "My Title",
+              "description": "abc",
+              "hint": "abc",
+              "defaultValue": "item1",
+              "isRequired": true,
+              "requiredErrorText": "abc",
+              "choices": [
+                {
+                  "value": "item1",
+                  "text": "abc"
+                },
+                {
+                  "value": "item1",
+                  "text": "abc"
+                },
+                {
+                  "value": "item1",
+                  "text": "abc"
+                }
+              ],
+              "colCount": 2
+            },
+            {
+              "id": "question_apps_md2k",
+              "type": "checkbox",
+              "title": "Phone Sensor:",
+              "defaultValue": [
+                "Phone Sensor"
+              ],
+              "titleLocation": "left",
+              "choices": [
+                "Phone Sensor",
+                "Phone Sensor Extended"
+              ],
+              "storeOthersAsComment": false,
+              "colCount": 4
+            },
+            {
+              "type": "checkbox",
+              "name": "question26",
+              "title": "Device:",
+              "defaultValue": [
+                "Phone Sensor"
+              ],
+              "titleLocation": "left",
+              "choices": [
+                "Android Wear",
+                "MotionSense",
+                "MotionSenseGen2",
+                "FitBit",
+                "Microsoft Band",
+                "Jins Meme Eye Glass",
+                "Omron Weight Scale",
+                "Omron Blood Pressure",
+                "OralB 7000 Toothbrush",
+                "EasySense Device",
+                "AutoSenseBLE",
+                "AutoSense",
+                "Beacon"
+              ],
+              "storeOthersAsComment": false,
+              "colCount": 4
+            },
+            {
+              "type": "checkbox",
+              "name": "question27",
+              "title": "Survey/Intervention",
+              "defaultValue": [
+                "Phone Sensor"
+              ],
+              "titleLocation": "left",
+              "choices": [
+                "Stream Processor",
+                "Scheduler",
+                "Survey",
+                "Mood Surfing",
+                "Thought Shakeup",
+                "Mindfulness",
+                "Annotation",
+                "Study UI",
+                "Basic UI"
+              ],
+              "storeOthersAsComment": false,
+              "colCount": 4
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "pages": [
+            {
+              "name": "page_study",
+              "elements": [
+                {
+                  "type": "radiogroup",
+                  "name": "question1",
+                  "title": "My Title",
+                  "description": "abc",
+                  "defaultValue": "item1",
+                  "isRequired": true,
+                  "requiredErrorText": "abc",
+                  "choices": [
+                    {
+                      "value": "item1",
+                      "text": "abc"
+                    },
+                    {
+                      "value": "item1",
+                      "text": "abc"
+                    },
+                    {
+                      "value": "item1",
+                      "text": "abc"
+                    }
+                  ],
+                  "colCount": 2
+                },
+
+                {
+                  "type": "radiogroup",
+                  "name": "study_status",
+                  "title": "Study Status:",
+                  "defaultValue": "item_active",
+                  "choices": [
+                    {
+                      "value": "item_active",
+                      "text": "Active"
+                    },
+                    {
+                      "value": "item_suspended",
+                      "text": "Suspended"
+                    },
+                    {
+                      "value": "item_closed",
+                      "text": "Closed"
+                    }
+                  ]
+                },
+                {
+                  "type": "multipletext",
+                  "name": "question_study_info",
+                  "title": "Study Info",
+                  "defaultValue": {
+                    "study_version": "1.0.0",
+                    "study_description": "My Study"
+                  },
+                  "isRequired": true,
+                  "items": [
+                    {
+                      "name": "study_name",
+                      "title": "Study name"
+                    },
+                    {
+                      "name": "study_description",
+                      "title": "Study Description:"
+                    },
+                    {
+                      "name": "study_version",
+                      "title": "Version (x.y.z):"
+                    }
+                  ]
+                },
+                {
+                  "type": "file",
+                  "name": "study_icon",
+                  "title": "Study Icon:",
+                  "maxSize": 0
+                },
+                {
+                  "type": "checkbox",
+                  "name": "question_apps_md2k",
+                  "title": "Phone Sensor:",
+                  "defaultValue": [
+                    "Phone Sensor"
+                  ],
+                  "titleLocation": "left",
+                  "choices": [
+                    "Phone Sensor",
+                    "Phone Sensor Extended"
+                  ],
+                  "storeOthersAsComment": false,
+                  "colCount": 4
+                },
+                {
+                  "type": "checkbox",
+                  "name": "question26",
+                  "title": "Device:",
+                  "defaultValue": [
+                    "Phone Sensor"
+                  ],
+                  "titleLocation": "left",
+                  "choices": [
+                    "Android Wear",
+                    "MotionSense",
+                    "MotionSenseGen2",
+                    "FitBit",
+                    "Microsoft Band",
+                    "Jins Meme Eye Glass",
+                    "Omron Weight Scale",
+                    "Omron Blood Pressure",
+                    "OralB 7000 Toothbrush",
+                    "EasySense Device",
+                    "AutoSenseBLE",
+                    "AutoSense",
+                    "Beacon"
+                  ],
+                  "storeOthersAsComment": false,
+                  "colCount": 4
+                },
+                {
+                  "type": "checkbox",
+                  "name": "question27",
+                  "title": "Survey/Intervention",
+                  "defaultValue": [
+                    "Phone Sensor"
+                  ],
+                  "titleLocation": "left",
+                  "choices": [
+                    "Stream Processor",
+                    "Scheduler",
+                    "Survey",
+                    "Mood Surfing",
+                    "Thought Shakeup",
+                    "Mindfulness",
+                    "Annotation",
+                    "Study UI",
+                    "Basic UI"
+                  ],
+                  "storeOthersAsComment": false,
+                  "colCount": 4
+                }
+              ],
+              "title": "Study Info"
+            },
+            {
+              "name": "page_application",
+              "elements": [
+                {
+                  "type": "paneldynamic",
+                  "name": "question30",
+                  "title": "Other Applications:",
+                  "elements": [
+                    {
+                      "type": "multipletext",
+                      "name": "question31",
+                      "title": "App Info:",
+                      "items": [
+                        {
+                          "name": "text1",
+                          "title": "name"
+                        },
+                        {
+                          "name": "text2",
+                          "title": "Description:"
+                        },
+                        {
+                          "name": "text3",
+                          "title": "Download Link (Android):"
+                        },
+                        {
+                          "name": "text4",
+                          "title": "Download Link (IOS):"
+                        }
+                      ]
+                    }
+                  ],
+                  "panelCount": 1
+                }
+              ],
+              "title": "Configure Application"
+            },
+            {
+              "name": "page_phonesensor",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "name": "question_phonesensor_settings",
+                  "title": "App Settings:",
+                  "titleLocation": "left",
+                  "choices": [
+                    {
+                      "value": "item_app_activity",
+                      "text": "Log User Activity"
+                    },
+                    {
+                      "value": "item_debug",
+                      "text": "Log Debug Information"
+                    },
+                    {
+                      "value": "item_foreground",
+                      "text": "Run as Foreground Service (Android)"
+                    }
+                  ]
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "question_phonesensor_settings_type",
+                  "title": "Sensor Settings:",
+                  "defaultValue": "item1",
+                  "choices": [
+                    {
+                      "value": "item1",
+                      "text": "Standard"
+                    },
+                    {
+                      "value": "item2",
+                      "text": "Advanced"
+                    }
+                  ]
+                },
+                {
+                  "type": "panel",
+                  "name": "panel8",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question4",
+                      "title": "Sensors:",
+                      "defaultValue": [
+                        "Accelerometer",
+                        "Gyroscope",
+                        "Proximity",
+                        "Air Pressure",
+                        "Ambient Light",
+                        "Ambient Temperature",
+                        "Step Count",
+                        "Battery",
+                        "Barometer",
+                        "Significant Motion"
+                      ],
+                      "choices": [
+                        {
+                          "value": "ACCELEROMETER",
+                          "text": "Accelerometer (16 Hz)"
+                        },
+                        {
+                          "value": "GYROSCOPE",
+                          "text": "Gyroscope (16 Hz)"
+                        },
+                        {
+                          "value": "GRAVITY",
+                          "text": "Gravity (16 Hz)"
+                        },
+                        {
+                          "value": "MAGNETOMETER",
+                          "text": "Magnetometer (16 Hz)"
+                        },
+                        {
+                          "value": "PROXIMITY",
+                          "text": "Proximity (On Change)"
+                        },
+                        {
+                          "value": "AIR_PRESSURE",
+                          "text": "Air Pressure (On Change)"
+                        },
+                        {
+                          "value": "AMBIENT_LIGHT",
+                          "text": "Ambient Light (On Change)"
+                        },
+                        {
+                          "value": "AMBIENT_TEMPERATURE",
+                          "text": "Ambient Temperature (On Change)"
+                        },
+                        {
+                          "value": "RELATIVE_HUMIDITY",
+                          "text": "Relative Humidity (On Change)"
+                        },
+                        {
+                          "value": "STEP_COUNT",
+                          "text": "Step Count (30 second)"
+                        },
+                        {
+                          "value": "SIGNIFICANT_MOTION",
+                          "text": "Significant Motion (On Change)"
+                        },
+                        {
+                          "value": "BATTERY",
+                          "text": "Battery (On Change)"
+                        },
+                        {
+                          "value": "BAROMETER",
+                          "text": "Barometer (On Change)"
+                        },
+                        {
+                          "value": "NETWORK_STATUS",
+                          "text": "Network Status (On Chnage)"
+                        },
+                        {
+                          "value": "ACCELEROMETER_LINEAR",
+                          "text": "Accelerometer (Linear, 16 Hz)"
+                        },
+                        {
+                          "value": "ACCELEROMETER_UNCALIBRATED",
+                          "text": "Accelerometer (Uncalibrated, 16 Hz)"
+                        },
+                        "Gyroscope (Uncalibrated)",
+                        "Rotation",
+                        "Magnetometer (Uncalibrated)",
+                        "Orientation",
+                        "Rotation Vector",
+                        {
+                          "value": "STEP_DETECT",
+                          "text": "Step Detect (On Change)"
+                        },
+                        {
+                          "value": "CPU_USAGE",
+                          "text": "CPU Usage (1 Minute)"
+                        },
+                        {
+                          "value": "WIFI",
+                          "text": "WIFI (1 Minute)"
+                        },
+                        {
+                          "value": "BLUETOOTH",
+                          "text": "Bluetooth (1 Minute)"
+                        },
+                        "Telephony"
+                      ],
+                      "colCount": 3,
+                      "hasSelectAll": true
+                    }
+                  ],
+                  "visibleIf": "{question_phonesensor_settings_type} = \"item1\"",
+                  "title": "Settings:",
+                  "state": "expanded"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel5",
+                  "elements": [
+                    {
+                      "type": "matrixdropdown",
+                      "name": "question_phonesensor_sensorlist1",
+                      "title": "Motion Sensor",
+                      "defaultValue": {
+                        "Accelerometer": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Gyroscope": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Gravity": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Magnetometer": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Proximity": {
+                          "Enable": false,
+                          "Read As": "6 Hz"
+                        },
+                        "Air Pressure": {
+                          "Enable": false,
+                          "Read As": "6 Hz"
+                        },
+                        "Ambient Light": {
+                          "Enable": false,
+                          "Read As": "6 Hz"
+                        },
+                        "Ambient Temperature": {
+                          "Enable": false,
+                          "Read As": "6 Hz"
+                        },
+                        "Relative Humidity": {
+                          "Enable": false
+                        },
+                        "Barometer": {
+                          "Enable": false
+                        },
+                        "Accelerometer (Linear)": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Rotation": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Magnetic Field": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Orientation": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        },
+                        "Rotation Vector": {
+                          "Enable": true,
+                          "Read As": "16 Hz",
+                          "Write When": "Fixed"
+                        }
+                      },
+                      "titleLocation": "top",
+                      "columns": [
+                        {
+                          "name": "Enable",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Read As",
+                          "cellType": "radiogroup",
+                          "hasOther": true,
+                          "choices": [
+                            "6 Hz",
+                            "16 Hz",
+                            "50 Hz",
+                            "100 Hz"
+                          ],
+                          "otherText": "Other"
+                        },
+                        {
+                          "name": "Write When",
+                          "cellType": "radiogroup",
+                          "hasOther": true,
+                          "choices": [
+                            "Fixed",
+                            "As Received"
+                          ],
+                          "otherText": "On Change (value >= )"
+                        }
+                      ],
+                      "optionsCaption": "optionsCaption",
+                      "cellType": "checkbox",
+                      "rows": [
+                        {
+                          "value": "ACCELEROMETER",
+                          "text": "Accelerometer"
+                        },
+                        {
+                          "value": "ACCELEROMETER_LINEAR",
+                          "text": "Accelerometer (Linear)"
+                        },
+                        {
+                          "value": "ACCELEROMETER_UNCALIBRATED",
+                          "text": "Accelerometer (Uncalibrated)"
+                        },
+                        {
+                          "value": "GYROSCOPE",
+                          "text": "Gyroscope"
+                        },
+                        {
+                          "value": "GYROSCOPE_UNCALIBRATED",
+                          "text": "Gyroscope (Uncalibrated)"
+                        },
+                        {
+                          "value": "GRAVITY",
+                          "text": "Gravity"
+                        },
+                        {
+                          "value": "MAGNETOMETER",
+                          "text": "Magnetometer"
+                        },
+                        {
+                          "value": "MAGNETOMETER_UNCALIBRATED",
+                          "text": "Magnetometer (Uncalibrated)"
+                        },
+                        {
+                          "value": "ORIENTATION",
+                          "text": "Orientation"
+                        },
+                        {
+                          "value": "ROTATION",
+                          "text": "Rotation"
+                        },
+                        {
+                          "value": "PROXIMITY",
+                          "text": "Proximity"
+                        },
+                        {
+                          "value": "AIR_PRESSURE",
+                          "text": "Air Pressure"
+                        },
+                        {
+                          "value": "AMBIENT_LIGHT",
+                          "text": "Ambient Light"
+                        },
+                        {
+                          "value": "AMBIENT_TEMPERATURE",
+                          "text": "Ambient Temperature"
+                        },
+                        {
+                          "value": "RELATIVE_HUMIDITY",
+                          "text": "Relative Humidity"
+                        },
+                        {
+                          "value": "BAROMETER",
+                          "text": "Barometer"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdropdown",
+                      "name": "question1",
+                      "titleLocation": "hidden",
+                      "columns": [
+                        {
+                          "name": "Enable",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Write When",
+                          "cellType": "radiogroup",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "1",
+                              "text": "1 Second"
+                            },
+                            {
+                              "value": "30",
+                              "text": "30 Second"
+                            },
+                            {
+                              "value": "60",
+                              "text": "1 Minute"
+                            },
+                            {
+                              "value": "600",
+                              "text": "10 Minutes"
+                            }
+                          ],
+                          "otherText": "Other (Time:)"
+                        }
+                      ],
+                      "choices": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                      ],
+                      "optionsCaption": "abc",
+                      "cellType": "checkbox",
+                      "rows": [
+                        "Network",
+                        "Step Count",
+                        "Bluetooth",
+                        "WIFI",
+                        "CPU Usage"
+                      ]
+                    }
+                  ],
+                  "visibleIf": "{question_phonesensor_settings_type} = \"item2\"",
+                  "title": "Advanced Settings:"
+                }
+              ],
+              "visibleIf": "{question_apps_md2k} contains \"Phone Sensor\"",
+              "title": "PhoneSensor"
+            },
+            {
+              "name": "page_devices",
+              "elements": [
+                {
+                  "type": "panel",
+                  "name": "panel6",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question2",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question11",
+                      "title": "AutoSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Chest"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Is Required",
+                          "cellType": "boolean"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            "Respiration",
+                            "ECG",
+                            "Accelerometer",
+                            "Skin Temperature",
+                            "Ambient Temperature",
+                            "Respiration Raw",
+                            "Respiration Baseline",
+                            "Data Quality (Respiration)",
+                            "Data Quality (ECG)",
+                            "Data Variance (Respiration)"
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer",
+                          "Skin Temperature",
+                          "Ambient Temperature",
+                          "Respiration Raw",
+                          "Respiration Baseline",
+                          "Data Quality (Respiration)",
+                          "Data Quality (ECG)",
+                          "Data Variance (Respiration)"
+                        ],
+                        "Column 4": false
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "AutoSense Chest Sensor",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel11",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question16",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question17",
+                      "title": "AutoSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Chest"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Is Required",
+                          "cellType": "boolean"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            "Respiration",
+                            "ECG",
+                            "Accelerometer",
+                            "Skin Temperature",
+                            "Ambient Temperature",
+                            "Respiration Raw",
+                            "Respiration Baseline",
+                            "Data Quality (Respiration)",
+                            "Data Quality (ECG)",
+                            "Data Variance (Respiration)"
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer",
+                          "Skin Temperature",
+                          "Ambient Temperature",
+                          "Respiration Raw",
+                          "Respiration Baseline",
+                          "Data Quality (Respiration)",
+                          "Data Quality (ECG)",
+                          "Data Variance (Respiration)"
+                        ],
+                        "Column 4": false
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "AutoSenseBLE Chest Sensor",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel7",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question7",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question5",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "MotionSense Generation 1",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel10",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question14",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question15",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "MotionSense Generation 2",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel9",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question3",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question13",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "OralB toothbrush",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel12",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question18",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question19",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "Jins Meme EyeGlass",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel13",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question20",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question21",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "Omron Blood Pressure",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel14",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question22",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question23",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "Omron Weight Scale",
+                  "state": "collapsed"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel15",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "question24",
+                      "title": "App Settings:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item_app_activity",
+                          "text": "Log User Activity"
+                        },
+                        {
+                          "value": "item_debug",
+                          "text": "Log Debug Information"
+                        },
+                        {
+                          "value": "item_foreground",
+                          "text": "Run as Foreground Service (Android)"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "matrixdynamic",
+                      "name": "question25",
+                      "title": "MotionSense Device Settings:",
+                      "columns": [
+                        {
+                          "name": "Column 1",
+                          "title": "Device Position",
+                          "cellType": "dropdown",
+                          "hasOther": true,
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "Left Wrist"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "Right Wrist"
+                            }
+                          ],
+                          "otherText": "Other (Name)"
+                        },
+                        {
+                          "name": "Column 2",
+                          "title": "Device Type",
+                          "cellType": "dropdown",
+                          "choices": [
+                            {
+                              "value": "item1",
+                              "text": "MotionSense"
+                            },
+                            {
+                              "value": "item2",
+                              "text": "MotionSenseHRV"
+                            },
+                            {
+                              "value": "item3",
+                              "text": "MotionSenseHRV+"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Column 3",
+                          "title": "Is Required",
+                          "cellType": "boolean",
+                          "defaultValue": "false"
+                        },
+                        {
+                          "name": "Column 4",
+                          "title": "Device ID",
+                          "cellType": "text",
+                          "placeHolder": "(optional)"
+                        },
+                        {
+                          "name": "Column 5",
+                          "title": "Sensors",
+                          "cellType": "checkbox",
+                          "choices": [
+                            {
+                              "value": "ACCELEROMETER",
+                              "text": "Accelerometer"
+                            },
+                            {
+                              "value": "GYROSCOPE",
+                              "text": "Gyroscope"
+                            },
+                            {
+                              "value": "BATTERY",
+                              "text": "Battery"
+                            },
+                            {
+                              "value": "LED",
+                              "text": "Led (HRV & HRV+ only)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_ACCELEROMETER",
+                              "text": "Data Quality (Accelerometer)"
+                            },
+                            {
+                              "value": "DATA_QUALITY_LED",
+                              "text": "Data Quality (LED)"
+                            },
+                            {
+                              "value": "RAW",
+                              "text": "Raw Sample"
+                            },
+                            {
+                              "value": "SEQUENCE_NUMBER",
+                              "text": "Sequence Number"
+                            }
+                          ]
+                        }
+                      ],
+                      "rowCount": 1,
+                      "defaultRowValue": {
+                        "Column 1": "item1",
+                        "Column 3": [
+                          "Respiration",
+                          "ECG",
+                          "Accelerometer"
+                        ]
+                      },
+                      "addRowText": "Add Device",
+                      "removeRowText": "Remove Device"
+                    }
+                  ],
+                  "title": "Easy Sense",
+                  "state": "collapsed"
+                }
+              ],
+              "visibleIf": "{question_apps_md2k} contains \"AutoSense\""
+            },
+            {
+              "name": "page_storage",
+              "elements": [
+                {
+                  "type": "panel",
+                  "name": "panel1",
+                  "elements": [
+                    {
+                      "type": "boolean",
+                      "name": "question_archive_enable",
+                      "title": "Archive Data",
+                      "defaultValue": "false",
+                      "titleLocation": "left",
+                      "label": "Enable",
+                      "showTitle": true
+                    },
+                    {
+                      "type": "checkbox",
+                      "name": "question_archive_as",
+                      "title": "Archive As:",
+                      "enableIf": "{question_archive_enable} = true",
+                      "defaultValue": [
+                        "item2"
+                      ],
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item1",
+                          "text": "csv"
+                        },
+                        {
+                          "value": "item2",
+                          "text": "csv.gzip"
+                        },
+                        {
+                          "value": "item3",
+                          "text": "json"
+                        },
+                        {
+                          "value": "item4",
+                          "text": "json.gzip"
+                        }
+                      ],
+                      "colCount": 2
+                    },
+                    {
+                      "type": "radiogroup",
+                      "name": "question_archive_location",
+                      "title": "Storage Location",
+                      "enableIf": "{question_archive_enable} = true",
+                      "defaultValue": "item1",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item1",
+                          "text": "Internal SD Card"
+                        },
+                        {
+                          "value": "item2",
+                          "text": "External SD Card"
+                        },
+                        {
+                          "value": "item3",
+                          "text": "External Prefered"
+                        }
+                      ],
+                      "colCount": 3
+                    },
+                    {
+                      "type": "radiogroup",
+                      "name": "question10",
+                      "title": "Archive Storage Limit",
+                      "enableIf": "{question_archive_enable} = true",
+                      "titleLocation": "left",
+                      "hasOther": true,
+                      "choices": [
+                        {
+                          "value": "item1",
+                          "text": "100 MB"
+                        },
+                        {
+                          "value": "item2",
+                          "text": "1 GB"
+                        },
+                        {
+                          "value": "item3",
+                          "text": "10 GB"
+                        }
+                      ],
+                      "otherText": "Other (in MB)",
+                      "colCount": 5
+                    },
+                    {
+                      "type": "radiogroup",
+                      "name": "question6",
+                      "title": "Each File Size:",
+                      "defaultValue": "item2",
+                      "titleLocation": "left",
+                      "hasOther": true,
+                      "choices": [
+                        {
+                          "value": "item1",
+                          "text": "1 KB"
+                        },
+                        {
+                          "value": "item2",
+                          "text": "1 MB"
+                        },
+                        {
+                          "value": "item3",
+                          "text": "10 MB"
+                        }
+                      ],
+                      "otherText": "Other (in KB)",
+                      "colCount": 5
+                    }
+                  ],
+                  "title": "Archive"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel2",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "name": "question8",
+                      "title": "Server URL"
+                    },
+                    {
+                      "type": "radiogroup",
+                      "name": "question9",
+                      "title": "When:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item1",
+                          "text": "15 Minute"
+                        },
+                        {
+                          "value": "item2",
+                          "text": "1 Hour"
+                        },
+                        "item3"
+                      ],
+                      "colCount": 4
+                    },
+                    {
+                      "type": "radiogroup",
+                      "name": "question12",
+                      "title": "What:",
+                      "titleLocation": "left",
+                      "choices": [
+                        {
+                          "value": "item1",
+                          "text": "15 Minute"
+                        },
+                        {
+                          "value": "item2",
+                          "text": "1 Hour"
+                        },
+                        "item3"
+                      ],
+                      "colCount": 4
+                    }
+                  ],
+                  "title": "Upload Data"
+                },
+                {
+                  "type": "panel",
+                  "name": "panel3",
+                  "title": "Update Configuration"
+                }
+              ],
+              "title": "Configure Storage"
+            }
+          ],
+          "questionTitleLocation": "left",
+          "questionErrorLocation": "bottom",
+          "pagePrevText": "Prev",
+          "pageNextText": "Next",
+          "completeText": "Finish"
+        }
+      ]
+    }
+
+  ]
+}

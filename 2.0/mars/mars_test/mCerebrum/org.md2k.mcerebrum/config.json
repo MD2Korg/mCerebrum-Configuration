@@ -1,16 +1,16 @@
 {
   "config":{
-    "id": "Opioid",
-    "type": "Opioid",
+    "id": "R783207",
+    "type": "field_study",
     "update": "notify",
-    "version": "2.0.6"
+    "version": "2.0.0"
   },
   "study":{
-    "id": "Opioid",
-    "type": "Opioid",
-    "title": "Hopkins Pain Study",
-    "summary": "Hopkins Pain Study",
-    "description": "Hopkins Pain Study",
+    "id": "R783207",
+    "type": "field_study",
+    "title": "AA Smoking Study",
+    "summary": "AA Smoking Study",
+    "description": "AA Smoking Study",
     "version":"2.0.0",
     "start_at_boot": true
   },
@@ -34,7 +34,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.17.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.16.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -43,22 +43,34 @@
       "id": "study",
       "type": "study",
       "title": "Study UI",
-      "summary": "UI for Data Collection",
-      "description": "UI for Data Collection",
+      "summary": "UI for Moffitt Study",
+      "description": "UI for Moffitt Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC4.json",
       "update": "notify",
       "use_as": "required"
     },
     {
-      "id": "Phone",
+      "id": "phone",
       "type": "sense",
       "title": "PhoneSensor",
       "summary": "Captures accelerometer, gyroscope, and location data from the phone",
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.8.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.7.json",
       "icon": "phonesensor.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "autosense",
+      "type": "sense",
+      "title": "Chest Sensor",
+      "summary": "Records ECG and respiration signals over ANT+ or BLE",
+      "description": "Records ECG and respiration signals over ANT+ or BLE",
+      "package_name": "org.md2k.autosense",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.6.json",
+      "icon": "autosense.png",
       "update": "notify",
       "use_as": "required"
     },
@@ -69,8 +81,19 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.18-RC2.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.17-RC1.json",
       "icon": "motionsense.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "stream_processor",
+      "type": "analyze",
+      "title": "Stress & Smoking Detector",
+      "summary": "Detects stress and smoking events from autosense and motionsense device",
+      "description": "Detects stress and smoking events from autosense and motionsense device",
+      "package_name": "org.md2k.streamprocessor",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.streamprocessor/version2.0.3.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -92,18 +115,7 @@
       "summary": "Records EMA",
       "description": "Records EMA",
       "package_name": "org.md2k.ema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.4-RC4.json",
-      "update": "notify",
-      "use_as": "required"
-    },
-    {
-      "id": "opioidlabstudy",
-      "type": "sense",
-      "title": "Opioid Lab UI",
-      "summary": "Mark pain level",
-      "description": "Mark pain level",
-      "package_name": "org.md2k.mcerebrum.opioidlabstudy",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum.opioidlabstudy/version2.0.0-RC5.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.4-RC3.json",
       "update": "notify",
       "use_as": "required"
     }

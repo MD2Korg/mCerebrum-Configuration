@@ -3,15 +3,11 @@
   "motionsense_title": "MotionSense",
   "motionsense_enable": true,
   "motionsense_description": "Collects data from MotionSense Sensors",
-  "motionsense_requiredDeviceNo": 2,
+  "motionsense_requiredDeviceNo": 0,
   "motionsense_requiredDevices": [
     {
       "platformType": "MOTION_SENSE_HRV",
       "platformId": "LEFT_WRIST"
-    },
-    {
-      "platformType": "MOTION_SENSE_HRV",
-      "platformId": "RIGHT_WRIST"
     }
   ],
   "motionsense_defaultSettings": [

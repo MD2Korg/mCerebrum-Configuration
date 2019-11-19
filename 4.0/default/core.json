@@ -1,0 +1,21 @@
+{
+  "core_config_id": "default",
+  "core_config_version": "1.0.0",
+  "core_study_name": "default",
+  "core_uploader_enable": true,
+  "core_uploader_url": "https://odin.md2k.org",
+  "core_uploader_userId": "abc",
+  "core_uploader_password": "abc",
+  "core_uploader_isLoggedIn": false,
+  "core_uploader_rules": [
+    {
+      "type": "interval",//time,datasource
+      "interval": 900000,
+      "dataSource": "",
+      "time": "",
+      "condition": "",
+      "uploadDataSource": [],
+      "restrictDataSource": []
+    }
+  ]
+}
