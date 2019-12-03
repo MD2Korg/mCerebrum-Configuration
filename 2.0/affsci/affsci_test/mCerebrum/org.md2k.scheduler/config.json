@@ -1353,7 +1353,7 @@
       "id": "INCENTIVE_DATA_QUALITY_LAST_EMA",
       "incentive": [
         {
-          "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,DAY,START)), now(), DATA_VARIANCE_SUMMARY_MINUTE, RESPIRATION, AUTOSENSE_CHEST, CHEST)>=66.6",
+          "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,DAY,START)), now(), DATA_QUALITY_SUMMARY_MINUTE, ACCELEROMETER, NULL, LEFT_WRIST)>=66.6",
           "amount": 1.25,
           "message": [
             "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",

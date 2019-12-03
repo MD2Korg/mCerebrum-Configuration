@@ -1,15 +1,22 @@
 {
   "core_config_id": "default",
   "core_config_version": "1.0.0",
+  "core_config_description": "abc",
+
   "core_study_name": "default",
+
+  "core_archive_enable": false,
+  "core_archive_storageLimit": "1.5 GB",
+
   "core_uploader_enable": true,
   "core_uploader_url": "https://odin.md2k.org",
   "core_uploader_userId": "abc",
   "core_uploader_password": "abc",
   "core_uploader_isLoggedIn": false,
+  "core_uploader_storageLimit": "1.5 GB",
   "core_uploader_rules": [
     {
-      "type": "interval",//time,datasource
+      "type": "interval",
       "interval": 900000,
       "dataSource": "",
       "time": "",
@@ -17,5 +24,53 @@
       "uploadDataSource": [],
       "restrictDataSource": []
     }
-  ]
+  ],
+  "core_database_dataLimit": 500,
+
+  "core_privacy_enable": false,
+  "core_privacy_durationChoices": [
+    {"id": "5_minutes", "title":"5 Minutes", "value": 300000},
+    {"id": "10_minutes", "title":"10 Minutes", "value": 600000},
+    {"id": "15_minutes", "title":"15 Minutes", "value": 900000},
+    {"id": "30_minutes", "title":"30 Minutes", "value": 1800000},
+    {"id": "1_hour", "title":"1 Hour", "value": 3600000},
+    {"id": "2_hour", "title":"2 Hours", "value": 7200000}
+  ],
+  "core_privacyDataSourceChoices": [
+    {
+      "id": "autosense",
+      "title":"Chest Sensor",
+      "value": [
+
+      ]
+    },
+    {
+      "id": "wrist_sensor",
+      "title":"Wrist Watch",
+      "value": [
+
+      ]
+    },
+    {
+      "id": "survey",
+      "title":"Survey",
+      "value": [
+
+      ]
+    },
+    {
+      "id": "location",
+      "title":"Location",
+      "value": [
+
+      ]
+    },
+    {
+      "id": "all",
+      "title":"All",
+      "value": [
+
+      ]
+    }
+  ],
 }

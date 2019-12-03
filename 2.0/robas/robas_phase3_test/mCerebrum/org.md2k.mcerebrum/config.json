@@ -1,17 +1,17 @@
 {
-  "config":{
-    "id": "robas17",
+  "config": {
+    "id": "robas_phase3",
     "type": "field_study",
     "update": "notify",
-    "version": "2.0.0"
+    "version": "2.0.1"
   },
-  "study":{
-    "id": "robas17",
+  "study": {
+    "id": "robas_phase3",
     "type": "field_study",
-    "title": "ROBAS Study 17",
-    "summary": "ROBAS Study",
-    "description": "ROBAS Study",
-    "version":"2.0.0",
+    "title": "ROBAS Phase 3",
+    "summary": "ROBAS Phase 3",
+    "description": "ROBAS Study Phase 3",
+    "version": "2.0.1",
     "start_at_boot": true
   },
   "apps": [
@@ -63,18 +63,6 @@
       "use_as": "required"
     },
     {
-      "id": "MotionSenseHRV",
-      "type": "sense",
-      "title": "Wrist Sensor",
-      "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
-      "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
-      "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.17-RC1.json",
-      "icon": "motionsense.png",
-      "update": "notify",
-      "use_as": "required"
-    },
-    {
       "id": "oralb",
       "type": "oralb",
       "title": "Oral B",
@@ -82,28 +70,6 @@
       "description": "Captures data from oral B toothbrush",
       "package_name": "org.md2k.oralb",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.4-RC1.json",
-      "update": "notify",
-      "use_as": "required"
-    },
-    {
-      "id": "scheduler",
-      "type": "act",
-      "title": "SchedulerRobas",
-      "summary": "Scheduler app",
-      "description": "Scheduler app",
-      "package_name": "org.md2k.schedulerrobas",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.schedulerrobas/version2.0.0-RC6.json",
-      "update": "notify",
-      "use_as": "required"
-    },
-    {
-      "id": "ema",
-      "type": "sense",
-      "title": "EMA",
-      "summary": "Records EMA",
-      "description": "Records EMA",
-      "package_name": "org.md2k.ema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.3.json",
       "update": "notify",
       "use_as": "required"
     }

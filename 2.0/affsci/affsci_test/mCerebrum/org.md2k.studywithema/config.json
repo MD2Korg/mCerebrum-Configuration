@@ -123,7 +123,7 @@
               "id": "LEFT_WRIST"
             },
             "type": "DATA_QUALITY",
-            "id": "ACCELEROMETER"
+            "id": "LED"
           },
           "plot": {
             "platform": {
@@ -141,7 +141,7 @@
               "id": "RIGHT_WRIST"
             },
             "type": "DATA_QUALITY",
-            "id": "ACCELEROMETER"
+            "id": "LED"
           },
           "plot": {
             "platform": {

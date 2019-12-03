@@ -1,0 +1,207 @@
+{
+  "scheduler_list": [
+    {
+      "id": "RANDOM_EMA_N1",
+      "schedule": {
+        "id": "WAKE_N1",
+        "observe": [
+          "WAKE_UP-N1-------"
+        ],
+        "startIf": "wakeup+offset70>now",
+        "stopIf": "",
+        "startTime": "",
+        "endTime": "",
+        "recurrence": {
+          "periodic": {
+            "interval": "timeOffset(01:10:00)",
+            "count": 12
+          },
+          "list": [
+            "00:00:00",
+            "00:00:00"
+          ]
+        }
+      },
+      "triggerWhen": [
+        {
+          "startIf": "get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1), get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00), EMA, RANDOM)==0",
+          "stopIf": "getLastSample(WAKEUP----,timestamp)<=now && get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00)>=now",
+
+          "try": [
+            {
+              "triggerTime": "get_last_sample(0,WAKEUP,N1)+random(time_offset(00:35:00))",
+              "startIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "stopIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "triggerTime": "get_last_sample(0,WAKEUP,N1)+time_offset(00:35:00)+random(time_offset(00:17:00))",
+              "startIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
+            },
+            {
+              "triggerTime": "now()",
+              "startIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
+              "stopIf": "",
+              "recurrence": {
+                "periodic": {
+                  "interval": "",
+                  "count": 12
+                },
+                "list": []
+              }
+            }
+          ]
+        }
+      ],
+      "triggerWhat": [
+        [
+          {
+            "action": {
+              "transition": [
+                [
+                  "NOTIFICATION_WITH_DELAY",
+                  "Ok",
+                  "EMA"
+                ],
+                [
+                  "NOTIFICATION_WITH_DELAY",
+                  "Delay (10 Min)",
+                  "NOTIFICATION_DURING_DELAY"
+                ],
+                [
+                  "NOTIFICATION_DURING_DELAY",
+                  "Start Now",
+                  "EMA"
+                ],
+                [
+                  "NOTIFICATION_DURING_DELAY",
+                  "MISSED",
+                  "NOTIFICATION_AFTER_DELAY"
+                ],
+                [
+                  "NOTIFICATION_AFTER_DELAY",
+                  "Ok",
+                  "EMA"
+                ],
+                [
+                  "EMA",
+                  "COMPLETED",
+                  "INCENTIVE_DATA_QUALITY_LAST_EMA"
+                ]
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "variable_list": [
+    {
+      "id": "now",
+      "func": "now"
+    },
+    {
+      "id": "wakeup",
+      "func": "getLastSample",
+      "param0": "WAKE_UP----",
+      "param1": "timestamp",
+      "defaultValue": 0
+    },
+    {
+      "id": "timeOffset70",
+      "func": "timeOffset",
+      "param0": "01:10:00"
+    }
+  ],
+  "actionList": [
+    {
+      "type": "notification",
+      "id": "notification_0_60_120",
+      "tone": true,
+      "vibrate": true,
+      "dialog": true,
+      "notificationBar": true,
+      "notificationBarSettings": {},
+      "screen": true,
+      "screenSettings": {},
+      "dialogSettings": {
+        "title": "Survey",
+        "description": "Time to take a survey",
+        "timeout": "",
+        "button": [
+          {
+            "id": "ok",
+            "title": "Ok",
+            "style": "",
+            "requireConfirmation": true,
+            "confirmationDialogTitle": "",
+            "confirmationDialogDescription": "",
+            "confirmationButton": [
+              {
+                "id": "ok",
+                "title": "OK",
+                "hasSolidBackground": true
+              },
+              {
+                "id": "cancel",
+                "title": "Cancel"
+              }
+            ]
+          },
+          {
+            "id": "cancel",
+            "title": "Cancel",
+            "isConfirm": true
+          }
+        ]
+
+      },
+      "toneVibrateSettings": {
+        "periodic": {
+          "interval": "00:00:05",
+          "count": 6
+        },
+        "list": [
+          "00:00:00",
+          "00:01:00",
+          "00:02:00"
+        ],
+        "forEach": {
+          "periodic": {
+          },
+          "offset": []
+        }
+      }
+    },
+    {
+      "type": "incentive",
+      "id": "incentive_data_quality_last_ema",
+      "incentive": [
+        {
+          "startIf": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,DAY,START)), now(), DATA_QUALITY_SUMMARY_MINUTE, ACCELEROMETER, NULL, LEFT_WRIST)>=66.6",
+          "amount": 1.25,
+          "message": [
+            "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ],
+          "timeout": ""
+        },
+        {
+          "amount": 0.50,
+          "message": [
+            "Thank you. Unfortunately, you will only be paid $<AMOUNT> because you have not worn the sensors for at least 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ],
+          "timeout": ""
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "id": "ui",
+      "packageName": "org.md2k.ema",
+      "timeout": ""
+    }
+  ]
+}

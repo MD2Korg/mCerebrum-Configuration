@@ -1,19 +1,31 @@
 {
-  "motionsense_id": "motionsense",
-  "motionsense_title": "MotionSense",
-  "motionsense_enable": true,
-  "motionsense_description": "Collects data from MotionSense Sensors",
   "motionsense_requiredDeviceNo": 0,
   "motionsense_requiredDevices": [
     {
       "platformType": "MOTION_SENSE_HRV",
-      "platformId": "LEFT_WRIST"
+      "platformId": "LEFT_WRIST",
+      "isRequired": true
+    },
+    {
+      "platformType": "MOTION_SENSE_HRV",
+      "platformId": "RIGHT_WRIST",
+      "isRequired": true
+    }
+  ],
+  "motionsense_settings": [
+    {
+      "platformType": "MOTION_SENSE_HRV",
+      "platformId": "LEFT_WRIST",
+      "deviceId": "32:32:32:32:23:23:323",
+      "settings": [
+
+      ]
     }
   ],
   "motionsense_defaultSettings": [
     {
       "platformType": "MOTION_SENSE",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "accelerometerEnable": true,
       "gyroscopeEnable": true,
       "sequenceNumberMotionEnable": true,
@@ -23,7 +35,7 @@
     },
     {
       "platformType": "MOTION_SENSE_HRV",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "accelerometerEnable": true,
       "gyroscopeEnable": true,
       "sequenceNumberMotionEnable": true,
@@ -35,7 +47,7 @@
     },
     {
       "platformType": "MOTION_SENSE_HRV_PLUS",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "accelerometerEnable": true,
       "quaternionEnable": true,
       "sequenceNumberMotionEnable": true,
@@ -51,7 +63,7 @@
     },
     {
       "platformType": "MOTION_SENSE_V2",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "characteristicMotion": 25,
       "accelerometerEnable": true,
       "accelerometerSensitivity": 4,
@@ -65,7 +77,7 @@
     },
     {
       "platformType": "MOTION_SENSE_HRV_V2",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "characteristicMotion": 25,
       "characteristicPpg": 25,
       "accelerometerEnable": true,
@@ -88,7 +100,7 @@
     },
     {
       "platformType": "MOTION_SENSE_HRV_PLUS_V2",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "characteristicMotion": 25,
       "characteristicPpg": 25,
       "accelerometerEnable": true,
@@ -115,7 +127,7 @@
     },
     {
       "platformType": "MOTION_SENSE_HRV_PLUS_GEN2",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "characteristicMotion": 25,
       "characteristicPpg": 25,
       "accelerometerEnable": true,
@@ -142,7 +154,7 @@
     },
     {
       "platformType": "AUTO_SENSE",
-      "correctTimestamp": true,
+      "writeType": "FIXED",
       "accelerometerEnable": true,
       "respirationEnable": true,
       "ecgEnable": true,

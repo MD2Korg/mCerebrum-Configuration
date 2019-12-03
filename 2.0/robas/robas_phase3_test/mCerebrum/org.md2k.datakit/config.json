@@ -5,14 +5,14 @@
   },
   "archive": {
     "enabled": true,
-    "location": "EXTERNAL_SDCARD_PREFERRED",
+    "location": "INTERNAL_SDCARD",
     "interval": 86400000
   },
   "upload": {
     "enabled": true,
     "interval": 900000,
     "url": "https://fourtytwo.md2k.org/",
-    "network_high_frequency":"ANY",
+    "network_high_frequency": "ANY",
     "network_low_frequency": "ANY",
     "restricted_datasource": [
       {
@@ -68,6 +68,18 @@
         ]
       },
       {
+        "id": "chest_sensor",
+        "title": "Chest Sensor",
+        "summary": "",
+        "datasource": [
+          {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            }
+          }
+        ]
+      },
+      {
         "id": "wrist_sensor",
         "title": "Wrist Sensors",
         "summary": "",
@@ -81,16 +93,6 @@
             "platform": {
               "id": "RIGHT_WRIST"
             }
-          }
-        ]
-      },
-      {
-        "id": "ema_intervention",
-        "title": "Surveys",
-        "summary": "",
-        "datasource": [
-          {
-            "type": "SURVEY"
           }
         ]
       }

@@ -1,0 +1,89 @@
+{
+  "phonesensor_accelerometer_enable": true,
+  "phonesensor_accelerometer_sampleRate": 16,
+  "phonesensor_accelerometer_sampleRateUnit": "SECOND",
+  "phonesensor_accelerometer_writeType": "FIXED",
+
+  "phonesensor_accelerometerLinear_enable": true,
+  "phonesensor_accelerometerLinear_sampleRate": 16,
+  "phonesensor_accelerometerLinear_sampleRateUnit": "SECOND",
+  "phonesensor_accelerometerLinear_writeType": "FIXED",
+
+  "phonesensor_gyroscope_enable": true,
+  "phonesensor_gyroscope_sampleRate": 16,
+  "phonesensor_gyroscope_sampleRateUnit": "SECOND",
+  "phonesensor_gyroscope_writeType": "FIXED",
+
+  "phonesensor_magnetometer_enable": true,
+  "phonesensor_magnetometer_sampleRate": 16,
+  "phonesensor_magnetometer_sampleRateUnit": "SECOND",
+  "phonesensor_magnetometer_writeType": "FIXED",
+
+  "phonesensor_gravity_enable": true,
+  "phonesensor_gravity_sampleRate": 16,
+  "phonesensor_gravity_sampleRateUnit": "SECOND",
+  "phonesensor_gravity_writeType": "FIXED",
+
+  "phonesensor_ambientLight_enable": true,
+  "phonesensor_ambientLight_sampleRate": 16,
+  "phonesensor_ambientLight_sampleRateUnit": "SECOND",
+  "phonesensor_ambientLight_writeType": "FIXED",
+
+  "phonesensor_airPressure_enable": true,
+  "phonesensor_airPressure_sampleRate": 16,
+  "phonesensor_airPressure_sampleRateUnit": "SECOND",
+  "phonesensor_airPressure_writeType": "FIXED",
+
+  "phonesensor_ambientTemperature_enable": true,
+  "phonesensor_ambientTemperature_sampleRate": 16,
+  "phonesensor_ambientTemperature_sampleRateUnit": "SECOND",
+  "phonesensor_ambientTemperature_writeType": "FIXED",
+
+  "phonesensor_proximity_enable": true,
+  "phonesensor_proximity_sampleRate": 6,
+  "phonesensor_proximity_sampleRateUnit": "SECOND",
+  "phonesensor_proximity_writeType": "FIXED",
+
+  "phonesensor_relativeHumidity_enable": true,
+  "phonesensor_relativeHumidity_sampleRate": 6,
+  "phonesensor_relativeHumidity_sampleRateUnit": "SECOND",
+  "phonesensor_relativeHumidity_writeType": "FIXED",
+
+  "phonesensor_significantMotion_enable": true,
+  "phonesensor_significantMotion_writeType": "FIXED",
+
+  "phonesensor_chargingStatus_enable": true,
+  "phonesensor_chargingStatus_sampleRate": 1,
+  "phonesensor_chargingStatus_sampleRateUnit": "SECOND",
+  "phonesensor_chargingStatus_writeType": "FIXED",
+
+  "phonesensor_bluetoothStatus_enable": true,
+  "phonesensor_bluetoothStatus_sampleRate": 1,
+  "phonesensor_bluetoothStatus_sampleRateUnit": "SECOND",
+  "phonesensor_bluetoothStatus_writeType": "FIXED",
+
+  "phonesensor_gpsStatus_enable": true,
+  "phonesensor_gpsStatus_sampleRate": 1,
+  "phonesensor_gpsStatus_sampleRateUnit": "SECOND",
+  "phonesensor_gpsStatus_writeType": "FIXED",
+
+  "phonesensor_wifiStatus_enable": true,
+  "phonesensor_wifiStatus_sampleRate": 1,
+  "phonesensor_wifiStatus_sampleRateUnit": "SECOND",
+  "phonesensor_wifiStatus_writeType": "FIXED",
+
+  "phonesensor_battery_enable": true,
+  "phonesensor_battery_sampleRate": 1,
+  "phonesensor_battery_sampleRateUnit": "SECOND",
+  "phonesensor_battery_writeType": "FIXED",
+
+  "phonesensor_activityType_enable": true,
+  "phonesensor_activityType_sampleRate": 1,
+  "phonesensor_activityType_sampleRate_unit": "MINUTE",
+  "phonesensor_activityType_writeType": "FIXED",
+
+  "phonesensor_gps_enable": true,
+  "phonesensor_gps_sampleRate": 12,
+  "phonesensor_gps_sampleRateUnit": "MINUTE",
+  "phonesensor_gps_writeType": "AS_RECEIVED"
+}

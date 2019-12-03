@@ -6,7 +6,39 @@ This repo contains configurations for mCerebrum studies.
 
 You can find more information about MD2K software on our [software website](https://md2k.org/software) or the MD2K organization on our [MD2K website](https://md2k.org/).
 
-#### Variables:
+
+##### Scheduler
+| Name | Default Config| Config|Description
+|---|---|---|---|
+|`core_id` | &#9745; |
+|`core_enable` | &#9745;|&#9745;|
+
+<br>Schedule</br>
+
+
+| Field |required|Description|Example
+|---|---|---|---|
+|`id` | &#9745;| unique id for this scheduler|`"id": "wakeup"`
+|`observe[]` || list of events to observe<br><br>Events:<br>1) DataSource<br>2) DateTime<br>3) Time| `"observe":[`<br>`"WAKEUP-----",`<br>`"00:00:00`<br>`]`|
+|`startIf`||Conditional statement to start scheduling (if it's not running)|
+|`stopIf`||Conditional statement to stop scheduling defines whether it's possible to schedule|
+|`startTime`|||
+|`endTime`|||
+|`recurrence`|||
+
+
+<br> Trigger When
+
+| Field |required|Description|Example
+|---|---|---|---|
+|`id` | &#9745;| unique id for this scheduler|`"id": "wakeup"`
+|`observe[]` || list of events to observe<br><br>Events:<br>1) DataSource<br>2) DateTime<br>3) Time| `"observe":[`<br>`"WAKEUP-----",`<br>`"00:00:00`<br>`]`|
+|`startIf`||Conditional statement to start scheduling (if it's not running)|
+|`stopIf`||Conditional statement to stop scheduling defines whether it's possible to schedule|
+|`startTime`|||
+|`endTime`|||
+|`recurrence`|||
+
 
 ##### Core
 | Name | Default Config| Config|Description
@@ -48,100 +80,78 @@ You can find more information about MD2K software on our [software website](http
 |`core_upload_rules`<br>`- id`<br>`- enable`<br>`- title`<br>`- interval`<br>`- condition`<br>`- includeDataSources`<br>`- excludeDataSources` | &#9745; ||
 
 ##### PhoneSensor
-| Name | Default Config| Config|Description
+| Name | Values| Default Value|Description
 |---|---|---|---|
-|`phonesensor_accelerometer_enable`| &#9745; |&#9745;|
-|`phonesensor_accelerometer_sampleRate`| &#9745; |&#9745;|
-|`phonesensor_accelerometer_sampleRateUnit`| &#9745; |&#9745;|
-|`phonesensor_accelerometer_writeType`| &#9745; |&#9745;|
-|`phonesensor_accelerometer_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_accelerometer_writeOnChangeValue`| &#9745; |&#9745;|
+|`phonesensor_accelerometer_enable`|`true/false`|`false` |
+|`phonesensor_accelerometer_sampleRate`| `1-100`|`16` |&#9745;|
+|`phonesensor_accelerometer_sampleRateUnit`| `SECOND`|`SECOND` |&#9745;|
+|`phonesensor_accelerometer_writeType`|`FIXED/AS_RECEIVED/ON_CHANGE`| `FIXED` ||
 |`phonesensor_accelerometerLinear_enable`| &#9745; |&#9745;|
 |`phonesensor_accelerometerLinear_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_accelerometerLinear_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_accelerometerLinear_writeType`| &#9745; |&#9745;|
-|`phonesensor_accelerometerLinear_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_accelerometerLinear_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_gyroscope_enable`| &#9745; |&#9745;|
 |`phonesensor_gyroscope_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_gyroscope_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_gyroscope_writeType`| &#9745; |&#9745;|
-|`phonesensor_gyroscope_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_gyroscope_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_magnetometer_enable`| &#9745; |&#9745;|
 |`phonesensor_magnetometer_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_magnetometer_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_magnetometer_writeType`| &#9745; |&#9745;|
-|`phonesensor_magnetometer_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_magnetometer_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_gravity_enable`| &#9745; |&#9745;|
 |`phonesensor_gravity_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_gravity_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_gravity_writeType` | &#9745; |&#9745;|
-|`phonesensor_gravity_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_gravity_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_ambientLight_enable`| &#9745; |&#9745;|
 |`phonesensor_ambientLight_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_ambientLight_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_ambientLight_writeType`| &#9745; |&#9745;|
-|`phonesensor_ambientLight_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_ambientLight_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_airPressure_enable`| &#9745; |&#9745;|
 |`phonesensor_airPressure_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_airPressure_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_airPressure_writeType`| &#9745; |&#9745;|
-|`phonesensor_airPressure_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_airPressure_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_ambientTemperature_enable`| &#9745; |&#9745;|
 |`phonesensor_ambientTemperature_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_ambientTemperature_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_ambientTemperature_writeType` | &#9745; |&#9745;|
-|`phonesensor_ambientTemperature_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_ambientTemperature_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_proximity_enable`| &#9745; |&#9745;|
 |`phonesensor_proximity_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_proximity_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_proximity_writeType`| &#9745; |&#9745;|
-|`phonesensor_proximity_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_proximity_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_relativeHumidity_enable`| &#9745; |&#9745;|
 |`phonesensor_relativeHumidity_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_relativeHumidity_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_relativeHumidity_writeType`| &#9745; |&#9745;|
-|`phonesensor_relativeHumidity_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_relativeHumidity_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_significantMotion_enable`| &#9745; |&#9745;|
 |`phonesensor_significantMotion_writeType`| &#9745; |&#9745;|
 |`phonesensor_chargingStatus_enable`| &#9745; |&#9745;|
+|`phonesensor_chargingStatus_sampleRate`| &#9745; |&#9745;|
+|`phonesensor_chargingStatus_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_chargingStatus_writeType`| &#9745; |&#9745;|
-|`phonesensor_chargingStatus_writeOnChangeType`| &#9745; |&#9745;|
 |`phonesensor_bluetoothStatus_enable`| &#9745; |&#9745;|
+|`phonesensor_bluetoothStatus_sampleRate`| &#9745; |&#9745;|
+|`phonesensor_bluetoothStatus_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_bluetoothStatus_writeType`| &#9745; |&#9745;|
-|`phonesensor_bluetoothStatus_writeOnChangeType`| &#9745; |&#9745;|
 |`phonesensor_gpsStatus_enable`| &#9745; |&#9745;|
+|`phonesensor_gpsStatus_sampleRate`| &#9745; |&#9745;|
+|`phonesensor_gpsStatus_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_gpsStatus_writeType`| &#9745; |&#9745;|
-|`phonesensor_gpsStatus_writeOnChangeType`| &#9745; |&#9745;|
 |`phonesensor_wifiStatus_enable`| &#9745; |&#9745;|
+|`phonesensor_wifiStatus_sampleRate`| &#9745; |&#9745;|
+|`phonesensor_wifiStatus_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_wifiStatus_writeType`| &#9745; |&#9745;|
-|`phonesensor_wifiStatus_writeOnChangeType`| &#9745; |&#9745;|
 |`phonesensor_battery_enable`| &#9745; |&#9745;|
-|`phonesensor_battery_writeType`| &#9745; |&#9745;|
 |`phonesensor_battery_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_battery_sampleRateUnit`| &#9745; |&#9745;|
-|`phonesensor_battery_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_battery_writeOnChangeValue`| &#9745; |&#9745;|
+|`phonesensor_battery_writeType`| &#9745; |&#9745;|
 |`phonesensor_activityType_enable`| &#9745; |&#9745;|
 |`phonesensor_activityType_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_activityType_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_activityType_writeType`| &#9745; |&#9745;|
-|`phonesensor_activityType_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_activity_type_writeOnChangeValue`| &#9745; |&#9745;|
 |`phonesensor_gps_enable`| &#9745; |&#9745;|
 |`phonesensor_gps_sampleRate`| &#9745; |&#9745;|
 |`phonesensor_gps_sampleRateUnit`| &#9745; |&#9745;|
 |`phonesensor_gps_writeType`| &#9745; |&#9745;|
-|`phonesensor_gps_writeOnChangeType`| &#9745; |&#9745;|
-|`phonesensor_gps_writeOnChangeValue`| &#9745; |&#9745;|
 
 ##### MotionSense
 |Varialble |Default Config| Config|Description
@@ -202,6 +212,8 @@ You can find more information about MD2K software on our [software website](http
 |`motionsense_device_platformType`| &#9745; |||MotionSense, MotionSenseHRV|
 |`motionsense_device_platformId`| &#9745; |&#9745;||MotionSense, MotionSenseHRV|
 |`motionsense_device_version`|&#9745;|||MotionSense, MotionSenseHRV|
+
+
 
 ## Contributing
 Please read our [Contributing Guidelines](https://md2k.org/software/under-the-hood/contributing) for details on the process for submitting pull requests to us.

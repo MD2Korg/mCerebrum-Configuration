@@ -63,25 +63,13 @@
       "use_as": "required"
     },
     {
-      "id": "autosense",
-      "type": "sense",
-      "title": "Chest Sensor",
-      "summary": "Records ECG and respiration signals over ANT+ or BLE",
-      "description": "Records ECG and respiration signals over ANT+ or BLE",
-      "package_name": "org.md2k.autosense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.6.json",
-      "icon": "autosense.png",
-      "update": "notify",
-      "use_as": "required"
-    },
-    {
       "id": "MotionSenseHRV",
       "type": "sense",
       "title": "Wrist Sensor",
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.17-RC1.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.18-RC2.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"
@@ -116,6 +104,28 @@
       "description": "Records EMA",
       "package_name": "org.md2k.ema",
       "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.4-RC3.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "mars",
+      "type": "sense",
+      "title": "Mars Intervention App",
+      "summary": "Mars intervention app",
+      "description": "Mars intervention app",
+      "package_name": "org.md2k.mars",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mars/version2.0.0-RC1.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "low_effort_intervention",
+      "type": "sense",
+      "title": "Low Effort Intervention App",
+      "summary": "Low Effort intervention app",
+      "description": "Low Effort intervention app",
+      "package_name": "org.md2k.loweffortintervention",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.loweffortintervention/version2.0.0-RC1.json",
       "update": "notify",
       "use_as": "required"
     }
