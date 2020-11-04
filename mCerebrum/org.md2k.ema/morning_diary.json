@@ -1,0 +1,442 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "hour_minute_ampm",
+    "question_text": "What time did you do to bed last night? (lights out with the intention of going to sleep)",
+    "response_option":[
+      "22:00:00"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "hour_minute",
+    "question_text": "After turning out the lights, how long did it take you to fall asleep? "
+  },
+  {
+    "question_id": 2,
+    "question_type": "number_picker",
+    "question_text": "How many times did you awaken during the night? (do not include final awakening)",
+    "response_option": [
+      "Select:",
+      "0",
+      "50"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "hour_minute",
+    "question_text": "Please add up the total amount of time you were awake during the middle of the night (don’t include the time it took you to fall asleep)."
+  },
+  {
+    "question_id": 4,
+    "question_type": "hour_minute_ampm",
+    "question_text": "What time was the time of your final awakening? (woke up and did not return to sleep)",
+    "response_option":[
+      "06:00:00"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "hour_minute_ampm",
+    "question_text": "What time did you get out of bed? (time actually got up to start day)",
+    "response_option":[
+      "06:00:00"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "hour_minute",
+    "question_text": "Estimate how many hours and minutes you slept last night."
+  },
+  {
+    "question_id": 7,
+    "question_type": "seek_bar",
+    "question_text": "Rate your overall sleep quality.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Sleep Quality:", //header
+      "Extremely Poor", //min value text
+      "Excellent"  //max value text
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "seek_bar",
+    "question_text": "Rate the degree to which pain interfered with your sleep last night.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "seek_bar",
+    "question_text": "Rate the average (typical) level of pain you experienced last night while trying to sleep.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain level:", //header
+      "No pain", //min value text
+      "Worst pain imaginable"  //max value text
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "seek_bar",
+    "question_text": "Rate your current level of pain.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain level:", //header
+      "No pain", //min value text
+      "Worst pain imaginable"  //max value text
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "multiple_choice",
+    "question_text": "Did you take any of your pain medications after you fell asleep last night?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Morphine Sulfates</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone Hydrochloride</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone HCl</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Methadone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Fentanyl Patch</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone SR</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Codeine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydrocodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 20,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Nicomorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Dihydromorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 23,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 24,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 25,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/aspirin</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 26,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/ibuprofen</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 27,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 28,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Demerol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 29,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Tramadol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 30,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought that I would be awake all night.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 31,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I could not seem to keep the pain out of my mind.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 32,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought about how a lack of sleep would impact me today.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 33,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought that the pain was never going to get any better.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 34,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I thought about how I could not stop my mind from racing or slowing down.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 35,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I tried to ignore the pain.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 36,
+    "question_type": "multiple_choice",
+    "question_text": "Tell us about any thoughts you had last night, either before falling asleep or if you awakened during the night. <br><br> I kept thinking about how much it hurt.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 37,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

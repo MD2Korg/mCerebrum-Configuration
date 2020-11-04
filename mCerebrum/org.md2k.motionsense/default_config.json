@@ -1,0 +1,15 @@
+{
+  "required": 1,
+  "devices":[
+    {
+      "use_as":"optional",
+      "platform_type":"MOTION_SENSE_HRV",
+      "platform_id":"LEFT_WRIST"
+    },
+    {
+      "use_as":"optional",
+      "platform_type":"MOTION_SENSE_HRV",
+      "platform_id":"RIGHT_WRIST"
+    }
+  ]
+}

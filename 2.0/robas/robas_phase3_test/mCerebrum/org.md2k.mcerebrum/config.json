@@ -69,7 +69,7 @@
       "summary": " Oral B data collection",
       "description": "Captures data from oral B toothbrush",
       "package_name": "org.md2k.oralb",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.4-RC1.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.oralb/version2.0.4-RC2.json",
       "update": "notify",
       "use_as": "required"
     }

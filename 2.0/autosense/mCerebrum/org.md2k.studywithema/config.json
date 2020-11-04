@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "list": [
+    ]
+  },
+  "ui": {
+    "icon": "logo_aa.png",
+    "menu": [
+      {
+        "id": "home",
+        "title": "Home"
+      },
+      {
+        "id": "settings",
+        "title": "Settings",
+        "parameter": [
+          "password",
+          "1234"
+        ]
+      },
+      {
+        "id": "reset",
+        "title": "Reset Application"
+      },
+      {
+        "id": "update",
+        "title": "Check Update"
+      },
+      {
+        "id":"tutorial",
+        "title":"Tutorial",
+        "parameter":[
+          "https://md2k.org/software-how-to/software-howto-studyguides/moffitt-pg.html"
+        ]
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Breathing",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "DATA_VARIANCE",
+            "id": "RESPIRATION"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "RESPIRATION"
+          },
+          "video_link": "g5duKPIBwbs",
+          "message": "1) Tighten the chest band so it fits snugly under the armpits.\n\n2) Make sure all cable connections are secure.\n\n3) Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+        },
+        {
+          "title": "Heart Rate",
+          "read": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ECG"
+          },
+          "plot": {
+            "platform": {
+              "type": "AUTOSENSE_CHEST"
+            },
+            "type": "ECG"
+          },
+          "video_link": "pCcLJxmoiJI",
+          "message": "1) Adjust the position of the electrodes on the body.\n\n2)  Make sure all cable connections are secure.\n\n3)  Reset the application, wait 15 seconds and check again.\n\n4) Restart the phone, wait one minute and check again.\n\n5) Make sure the chest sensor is charged and powered ON."
+        }
+      ]
+    }
+  }
+}

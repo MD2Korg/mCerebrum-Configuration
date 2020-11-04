@@ -1,0 +1,66 @@
+{
+  "config":{
+    "id": "AUTOSENSE",
+    "type": "field_study",
+    "update": "notify",
+    "version": "2.0.0"
+  },
+  "study":{
+    "id": "AUTOSENSE",
+    "type": "field_study",
+    "title": "AutoSense",
+    "summary": "AutoSense",
+    "description": "AutoSense",
+    "version":"2.0.0",
+    "start_at_boot": true
+  },
+  "apps": [
+    {
+      "id": "mcerebrum",
+      "type": "mcerebrum",
+      "title": "mCerebrum",
+      "summary": "Launcher app for mCerebrum",
+      "description": "Launcher app for mCerebrum",
+      "package_name": "org.md2k.mcerebrum",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.15.json",
+      "icon": "mcerebrum.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "datakit",
+      "type": "datakit",
+      "title": "Storage",
+      "summary": "Handles routing, privacy, and storage for mCerebrum applications",
+      "description": "Handles routing, privacy, and storage for mCerebrum applications",
+      "package_name": "org.md2k.datakit",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.18-RC3.json",
+      "icon": "datakit.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "study",
+      "type": "study",
+      "title": "Study UI",
+      "summary": "UI for Moffitt Study",
+      "description": "UI for Moffitt Study",
+      "package_name": "org.md2k.studywithema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC6.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "autosense",
+      "type": "sense",
+      "title": "Chest Sensor",
+      "summary": "Records ECG and respiration signals over ANT+ or BLE",
+      "description": "Records ECG and respiration signals over ANT+ or BLE",
+      "package_name": "org.md2k.autosense",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.autosense/version2.0.6.json",
+      "icon": "autosense.png",
+      "update": "notify",
+      "use_as": "required"
+    }
+  ]
+}

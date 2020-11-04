@@ -2,98 +2,78 @@
   "scheduler_list": [
     {
       "id": "RANDOM_EMA_N1",
-      "schedule": {
-        "id": "WAKE_N1",
-        "observe": [
-          "WAKE_UP-N1-------"
+      "listen":[
+        "now()",
+        "----",
+        "12:00:00"
         ],
-        "startIf": "wakeup+offset70>now",
-        "stopIf": "",
-        "startTime": "",
-        "endTime": "",
-        "recurrence": {
-          "periodic": {
-            "interval": "timeOffset(01:10:00)",
-            "count": 12
-          },
-          "list": [
-            "00:00:00",
-            "00:00:00"
-          ]
-        }
-      },
-      "triggerWhen": [
-        {
-          "startIf": "get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,N1), get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00), EMA, RANDOM)==0",
-          "stopIf": "getLastSample(WAKEUP----,timestamp)<=now && get_last_sample(0,WAKEUP,N1)+time_offset(01:10:00)>=now",
+      "startIf": "",
+      "stopIf": "",
 
-          "try": [
-            {
-              "triggerTime": "get_last_sample(0,WAKEUP,N1)+random(time_offset(00:35:00))",
-              "startIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
-              "stopIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
-            },
-            {
-              "triggerTime": "get_last_sample(0,WAKEUP,N1)+time_offset(00:35:00)+random(time_offset(00:17:00))",
-              "startIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0"
-            },
-            {
-              "triggerTime": "now()",
-              "startIf": "is_privacy_on()==false && get_phone_battery()>10 && is_driving(now()-time_offset(00:15:00), now())==false && get_sample_no(now()-time_offset(00:30:00),now(),EMA,RANDOM)==0",
-              "stopIf": "",
-              "recurrence": {
-                "periodic": {
-                  "interval": "",
-                  "count": 12
-                },
-                "list": []
-              }
-            }
-          ]
+      "beginAt": "",
+      "scheduleType": "ONCE/PERIODIC/LIST",
+      "periodicInterval": "timeOffset(10:00:00)",
+      "periodicLimit": 15,
+      "scheduleList": ["timeOffset(10:00:00", "timeOffset(10:00:00)"],
+      "trigger": [
+        {
+          "triggerTime":"",
+          "triggerIf": "",
+          "periodicInterval": "timeOffset(10:00:00)",
+          "periodicLimit": 15,
+          "action": "actionId"
         }
-      ],
-      "triggerWhat": [
-        [
-          {
-            "action": {
-              "transition": [
-                [
-                  "NOTIFICATION_WITH_DELAY",
-                  "Ok",
-                  "EMA"
-                ],
-                [
-                  "NOTIFICATION_WITH_DELAY",
-                  "Delay (10 Min)",
-                  "NOTIFICATION_DURING_DELAY"
-                ],
-                [
-                  "NOTIFICATION_DURING_DELAY",
-                  "Start Now",
-                  "EMA"
-                ],
-                [
-                  "NOTIFICATION_DURING_DELAY",
-                  "MISSED",
-                  "NOTIFICATION_AFTER_DELAY"
-                ],
-                [
-                  "NOTIFICATION_AFTER_DELAY",
-                  "Ok",
-                  "EMA"
-                ],
-                [
-                  "EMA",
-                  "COMPLETED",
-                  "INCENTIVE_DATA_QUALITY_LAST_EMA"
-                ]
-              ]
-            }
-          }
-        ]
       ]
     }
   ],
+  "actions": [
+    {
+      "id": "actionId",
+      ""
+    }
+  ],
+
+  "action": [
+    [
+      {
+        "action": {
+          "transition": [
+            [
+              "NOTIFICATION_WITH_DELAY",
+              "Ok",
+              "EMA"
+            ],
+            [
+              "NOTIFICATION_WITH_DELAY",
+              "Delay (10 Min)",
+              "NOTIFICATION_DURING_DELAY"
+            ],
+            [
+              "NOTIFICATION_DURING_DELAY",
+              "Start Now",
+              "EMA"
+            ],
+            [
+              "NOTIFICATION_DURING_DELAY",
+              "MISSED",
+              "NOTIFICATION_AFTER_DELAY"
+            ],
+            [
+              "NOTIFICATION_AFTER_DELAY",
+              "Ok",
+              "EMA"
+            ],
+            [
+              "EMA",
+              "COMPLETED",
+              "INCENTIVE_DATA_QUALITY_LAST_EMA"
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+
   "variable_list": [
     {
       "id": "now",

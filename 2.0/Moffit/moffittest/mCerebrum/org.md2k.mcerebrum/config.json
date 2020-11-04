@@ -34,7 +34,7 @@
       "summary": "Handles routing, privacy, and storage for mCerebrum applications",
       "description": "Handles routing, privacy, and storage for mCerebrum applications",
       "package_name": "org.md2k.datakit",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.17.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.18-RC3.json",
       "icon": "datakit.png",
       "update": "notify",
       "use_as": "required"
@@ -46,7 +46,7 @@
       "summary": "UI for Moffitt Study",
       "description": "UI for Moffitt Study",
       "package_name": "org.md2k.studywithema",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC4.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC6.json",
       "update": "notify",
       "use_as": "required"
     },
@@ -57,7 +57,7 @@
       "summary": "Captures accelerometer, gyroscope, and location data from the phone",
       "description": "Captures accelerometer, gyroscope, and location data from the phone",
       "package_name": "org.md2k.phonesensor",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.7.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.8.json",
       "icon": "phonesensor.png",
       "update": "notify",
       "use_as": "required"
@@ -81,7 +81,7 @@
       "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
       "package_name": "org.md2k.motionsense",
-      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.18-RC3.json",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.18-RC4.json",
       "icon": "motionsense.png",
       "update": "notify",
       "use_as": "required"

@@ -1,0 +1,576 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "multiple_choice",
+    "question_text": "Did you have a sickle cell crisis today?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "multiple_select",
+    "question_text": "Did you seek medical care, including calling, for this crisis? (Mark all that apply)",
+    "response_option": [
+      "Outpatient primary care",
+      "Outpatient hematologist",
+      "Infusion center",
+      "Emergency room",
+      "Other",
+      "<UNSELECT_OTHER>None"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "multiple_select",
+    "question_text": "Did you seek medical care <u><i>TODAY</i></u>, including calling, for any reason other than a crisis? (Mark all that apply)",
+    "response_option": [
+      "Outpatient primary care",
+      "Outpatient hematologist",
+      "Infusion center",
+      "Emergency room",
+      "Other",
+      "<UNSELECT_OTHER>None"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "multiple_choice",
+    "question_text": "How often today have you felt confident about your ability to handle your personal problems?",
+    "response_option": [
+      "Never",
+      "Almost never",
+      "Sometimes",
+      "Fairly often",
+      "Very often"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "multiple_choice",
+    "question_text": "How often today did you feel that you were unable to control the important things in your life?",
+    "response_option": [
+      "Never",
+      "Almost never",
+      "Sometimes",
+      "Fairly often",
+      "Very often"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "multiple_choice",
+    "question_text": "How often today have you felt that things were going your way?",
+    "response_option": [
+      "Never",
+      "Almost never",
+      "Sometimes",
+      "Fairly often",
+      "Very often"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "multiple_choice",
+    "question_text": "How often today have you felt difficulties were piling up so high that you could not overcome them?",
+    "response_option": [
+      "Never",
+      "Almost never",
+      "Sometimes",
+      "Fairly often",
+      "Very often"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "seek_bar",
+    "question_text": "Rate your <u><i>lowest</i></u> level of pain experienced throughout the entire day.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "seek_bar",
+    "question_text": "Rate your <u><i>highest</i></u> level of pain experienced throughout the entire day.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "seek_bar",
+    "question_text": "Rate your <u><i>average</i></u> (typical) level of pain experienced throughout the entire day.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "seek_bar",
+    "question_text": "Rate your current level of pain. ",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "seek_bar",
+    "question_text": "Rate the degree to which pain interfered with WORK related activities today.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain Interference:", //header
+      "No interference", //min value text
+      "Extreme interference"  //max value text
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br> I told myself I couldn’t let the pain stand in the way of what I have to do.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br> I kept thinking about how much I hurt.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br> I couldn’t seem to keep my pain out of my mind.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br> I saw the pain as a challenge and didn’t let it bother me.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br> I kept thinking about how badly I wanted my pain to stop.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br>  I felt my pain overwhelmed me.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "multiple_choice",
+    "question_text": "<u><i>When you had pain</i></u> during the past day (including now)... <br><br> I was afraid my pain would get worse.",
+    "response_option": [
+      "Not at all",
+      "Slight degree",
+      "Moderate degree",
+      "Great degree",
+      "All the time"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "hour_minute",
+    "question_text": "How much time did you spend today lying down, either in bed or on a couch? "
+  },
+  {
+    "question_id": 20,
+    "question_type": "hour_minute",
+    "question_text": "How much time did you spend today napping?"
+  },
+  {
+    "question_id": 21,
+    "question_type": "multiple_choice",
+    "question_text": "Did you take any pain medications <u><i>today</i></u>?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 22,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Morphine Sulfates</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 23,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone Hydrochloride</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 24,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone HCl</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 25,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Methadone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 26,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Fentanyl Patch</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 27,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone SR</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 28,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Codeine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 29,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydrocodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 30,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Nicomorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 31,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 32,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Dihydromorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 33,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 34,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 35,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/aspirin</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 36,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/ibuprofen</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 37,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 38,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Demerol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 39,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Tramadol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 40,
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>happy</i></u> you felt today.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Happy:", //header
+      "Not at all happy", //min value text
+      "Extremely happy"  //max value text
+    ]
+  },
+  {
+    "question_id": 41,
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>sad</i></u> you felt today.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Sad:", //header
+      "Not at all Sad", //min value text
+      "Extremely Sad"  //max value text
+    ]
+  },
+  {
+    "question_id": 42,
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>irritable</i></u> you felt today.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Irritable:", //header
+      "Not at all irritable", //min value text
+      "Extremely irritable"  //max value text
+    ]
+  },
+  {
+    "question_id": 43,
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>anxious</i></u> you felt today.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Anxious", //header
+      "Not at all anxious", //min value text
+      "Extremely anxious"  //max value text
+    ]
+  },
+  {
+    "question_id": 44,
+    "question_type": "seek_bar",
+    "question_text": "Thinking back over your day: <br><br> Rate how <u><i>content</i></u> you felt today.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Content:", //header
+      "Not at all content", //min value text
+      "Extremely content"  //max value text
+    ]
+  },
+  {
+    "question_id": 45,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]

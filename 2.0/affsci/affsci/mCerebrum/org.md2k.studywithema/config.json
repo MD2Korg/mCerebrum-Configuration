@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "list": [
+      {
+        "id": "wakeup_time_n2",
+        "title": "Wakeup Time (Day: -2)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "N2"
+        }
+      },
+      {
+        "id": "wakeup_time_n1",
+        "title": "Wakeup Time (Day: -1)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "N1"
+        }
+      },
+      {
+        "id": "wakeup_time_0",
+        "title": "Wakeup Time (Day: 0)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "P0"
+        }
+      },
+      {
+        "id": "wakeup_time_p1",
+        "title": "Wakeup Time (Day: +1)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "P1"
+        }
+      },
+      {
+        "id": "wakeup_time_p2",
+        "title": "Wakeup Time (Day: +2)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "P2"
+        }
+      },
+      {
+        "id": "wakeup_time_p3",
+        "title": "Wakeup Time (Day: +3)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "P3"
+        }
+      },
+      {
+        "id": "wakeup_time_p4",
+        "title": "Wakeup Time (Day: +4)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "P4"
+        }
+      },
+      {
+        "id": "wakeup_time_p5",
+        "title": "Wakeup Time (Day: +5)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "P5"
+        }
+      }
+    ]
+  },
+  "ui": {
+    "icon": "logo_aa.png",
+    "menu": [
+      {
+        "id": "home",
+        "title": "Home"
+      },
+      {
+        "id": "settings",
+        "title": "Settings",
+        "parameter": [
+          "password",
+          "1234"
+        ]
+      },
+      {
+        "id": "reset",
+        "title": "Reset Application"
+      },
+      {
+        "id": "update",
+        "title": "Check Update"
+      },
+      {
+        "id":"tutorial",
+        "title":"Tutorial",
+        "parameter":[
+          "https://md2k.org/software-how-to/software-howto-studyguides/moffitt-pg.html"
+        ]
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Left Wrist",
+          "read": {
+            "platform": {
+              "id": "LEFT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "id": "LEFT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "eyn9sMnRcCk",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        },
+        {
+          "title": "Right Wrist",
+          "read": {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "LED"
+          },
+          "plot": {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "eyn9sMnRcCk",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ],
+      "privacy": {
+      }
+    }
+  }
+}

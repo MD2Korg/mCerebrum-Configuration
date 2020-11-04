@@ -1,0 +1,271 @@
+[
+  {
+    "question_id": 0,
+    "question_type": "seek_bar",
+    "question_text": "Rate your current pain.",
+    "response_option": [
+      "0",//min value
+      "10", //max value
+      "0",  //default value
+      "10", //section count
+      "AUTO_ADJUST", //value always
+      "Pain level:", //header
+      "No pain", //min value text
+      "Worst pain imaginable"  //max value text
+    ]
+  },
+  {
+    "question_id": 1,
+    "question_type": "image_spot",
+    "question_text": "Indicate the location/s of your pain flare (front).",
+    "response_option": [
+      "front.png"
+    ]
+  },
+  {
+    "question_id": 2,
+    "question_type": "image_spot",
+    "question_text": "Indicate the location/s of your pain flare (back).",
+    "response_option": [
+      "back.png"
+    ]
+  },
+  {
+    "question_id": 3,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Morphine Sulfates</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 4,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone Hydrochloride</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 5,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone HCl</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 6,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Methadone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 7,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Fentanyl Patch</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 8,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone SR</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 9,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Codeine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 10,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydrocodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 11,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Nicomorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 12,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Hydromorphone</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 13,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Dihydromorphine</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 14,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 15,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/paracetamol(acetaminophen)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 16,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/aspirin</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 17,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxycodone/ibuprofen</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 18,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Oxymorphone (SA)</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 19,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Demerol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 20,
+    "question_type": "number_picker",
+    "question_text": "How many pills of <u><i>Tramadol</i></u> did you take?",
+    "response_option": [
+      "Number of pills",
+      "0",
+      "50"
+    ],
+    "condition": [
+      "0:null"
+    ]
+  },
+  {
+    "question_id": 21,
+    "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
+  }
+]
