@@ -744,7 +744,7 @@
           "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)), now(), DATA_QUALITY_SUMMARY_MINUTE, ACCELEROMETER, MOTION_SENSE_HRV, LEFT_WRIST)>=66.6",
           "amount": 4.00,
           "message": [
-            "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+            "Congratulations! You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
             "You will be paid $<AMOUNT>",
             "Total Earning: $<TOTAL_AMOUNT>"
           ]
@@ -752,7 +752,7 @@
         {
           "amount": 2.00,
           "message": [
-            "Thank you. Unfortunately, you will only be paid $<AMOUNT> because you have not worn the sensors for at least 60% of the time since your last survey.",
+            "Nice work! You will be paid $<AMOUNT> for completing the survey. Remember, you can earn $4.00 for your next survey if you wear the sensors for at least 60% of the time.",
             "You will be paid $<AMOUNT>",
             "Total Earning: $<TOTAL_AMOUNT>"
           ]

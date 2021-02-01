@@ -228,7 +228,7 @@
   {
     "question_id": 18,
     "question_type": "time",
-    "question_text": "You said you smoked more than 1 cigarette since the last assessment. What time was it when you smoked your last cigarette?",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. First cigarette?",
     "condition": [
       "16:2",
       "16:3",
@@ -245,7 +245,7 @@
   {
     "question_id": 19,
     "question_type": "time",
-    "question_text": "You said you smoked more than 1 cigarette since the last assessment. What time was it when you smoked your first cigarette?",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. Most recent cigarette?",
     "condition": [
       "16:2",
       "16:3",
