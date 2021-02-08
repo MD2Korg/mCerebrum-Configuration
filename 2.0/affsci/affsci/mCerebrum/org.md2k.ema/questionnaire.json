@@ -228,7 +228,7 @@
   {
     "question_id": 18,
     "question_type": "time",
-    "question_text": "You said you smoked more than 1 cigarette since the last assessment. First cigarette?",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. The question on this screen is asking when you smoked your first cigarette, and the question on the next screen will ask when you smoked your most recent cigarette. What time was it when you smoked your first cigarette?",
     "condition": [
       "16:2",
       "16:3",
@@ -245,7 +245,7 @@
   {
     "question_id": 19,
     "question_type": "time",
-    "question_text": "You said you smoked more than 1 cigarette since the last assessment. Most recent cigarette?",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment, what time was it when you smoked your most recent cigarette?",
     "condition": [
       "16:2",
       "16:3",
@@ -292,7 +292,7 @@
   {
     "question_id": 22,
     "question_type": "time",
-    "question_text": "You said you vaped more than 1 puff since the last assessment. What time was it when you last vaped?",
+    "question_text": "ou said you vaped more than 1 puff since the last assessment. The question on this screen is asking when you first vaped, and the question on the next screen will ask when you most recently vaped. What time was it when you first vaped?",
     "condition": [
       "20:2", "20:3", "20:4", "20:5", "20:6", "20:7", "20:8", "20:9",
       "20:10","20:11", "20:12", "20:13", "20:14", "20:15", "20:16", "20:17", "20:18", "20:19",
@@ -310,7 +310,7 @@
   {
     "question_id": 23,
     "question_type": "time",
-    "question_text": "You said you vaped more than 1 puff since the last assessment. What time was it when you first vaped?",
+    "question_text": "You said you vaped more than 1 puff since the last assessment, what time was it when you most recently vaped?",
     "condition": [
       "20:2", "20:3", "20:4", "20:5", "20:6", "20:7", "20:8", "20:9",
       "20:10","20:11", "20:12", "20:13", "20:14", "20:15", "20:16", "20:17", "20:18", "20:19",
@@ -343,7 +343,7 @@
   {
     "question_id": 25,
     "question_type": "time",
-    "question_text": "What time was it when you last used marijuana/cannabis?",
+    "question_text": "What time was it when you most recently used marijuana/cannabis?",
     "condition": [
       "24:~None (I did not use marijuana)"
     ]
