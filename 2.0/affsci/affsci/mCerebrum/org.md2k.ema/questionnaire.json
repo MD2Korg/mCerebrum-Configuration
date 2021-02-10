@@ -292,7 +292,7 @@
   {
     "question_id": 22,
     "question_type": "time",
-    "question_text": "ou said you vaped more than 1 puff since the last assessment. The question on this screen is asking when you first vaped, and the question on the next screen will ask when you most recently vaped. What time was it when you first vaped?",
+    "question_text": "You said you vaped more than 1 puff since the last assessment. The question on this screen is asking when you first vaped, and the question on the next screen will ask when you most recently vaped. What time was it when you first vaped?",
     "condition": [
       "20:2", "20:3", "20:4", "20:5", "20:6", "20:7", "20:8", "20:9",
       "20:10","20:11", "20:12", "20:13", "20:14", "20:15", "20:16", "20:17", "20:18", "20:19",
