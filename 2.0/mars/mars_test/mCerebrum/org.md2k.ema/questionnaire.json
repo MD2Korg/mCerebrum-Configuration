@@ -575,6 +575,28 @@
   {
     "question_id": 45,
     "question_type": "multiple_choice",
+    "question_text": "Since the last assessment, have you used nicotine gum?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 46,
+    "question_type": "number_picker",
+    "question_text": "How many pieces of nicotine gum have you used since the last assessment?",
+    "response_option": [
+      "Please Select:",
+      "1",
+      "29"
+    ],
+    "condition": [
+      "45:Yes"
+    ]
+  },
+  {
+    "question_id": 47,
+    "question_type": "multiple_choice",
     "question_text": "RIGHT NOW,\n\nI feel capable of controlling my behavior and emotions.",
     "response_option": [
       "0 Not at all",
@@ -585,7 +607,7 @@
     ]
   },
   {
-    "question_id": 46,
+    "question_id": 48,
     "question_type": "multiple_choice",
     "question_text": "RIGHT NOW,\n\nI feel able to effectively manage most situations and emotions.",
     "response_option": [
@@ -597,7 +619,7 @@
     ]
   },
   {
-    "question_id": 47,
+    "question_id": 49,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]
