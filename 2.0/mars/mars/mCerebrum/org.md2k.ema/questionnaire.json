@@ -246,7 +246,7 @@
   {
     "question_id": 20,
     "question_type": "time",
-    "question_text": "You said you smoked 1 cigarette since the last assessment. First cigarette?",
+    "question_text": "You said you smoked 1 cigarette since the last assessment. What time was it when you smoked that cigarette?",
     "condition": [
       "19:Less than 1",
       "19:1"
@@ -255,7 +255,7 @@
   {
     "question_id": 21,
     "question_type": "time",
-    "question_text": "You said you smoked more than 1 cigarette since the last assessment. The question on this screen is asking when you smoked your first cigarette, and the question on the next screen will ask when you smoked your most recent cigarette. What time was it when you smoked your first cigarette?",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. What time was it when you smoked your last cigarette?",
     "condition": [
       "19:2",
       "19:3",
@@ -272,7 +272,7 @@
   {
     "question_id": 22,
     "question_type": "time",
-    "question_text": "You said you smoked more than 1 cigarette since the last assessment, what time was it when you smoked your most recent cigarette?",
+    "question_text": "You said you smoked more than 1 cigarette since the last assessment. What time was it when you smoked your first cigarette?",
     "condition": [
       "19:2",
       "19:3",
@@ -319,7 +319,7 @@
   {
     "question_id": 25,
     "question_type": "time",
-    "question_text": "You said you vaped more than 1 puff since the last assessment. The question on this screen is asking when you first vaped, and the question on the next screen will ask when you most recently vaped. What time was it when you first vaped?",
+    "question_text": "You said you vaped more than 1 puff since the last assessment. What time was it when you last vaped?",
     "condition": [
       "23:2", "23:3", "23:4", "23:5", "23:6", "23:7", "23:8", "23:9",
       "23:10","23:11", "23:12", "23:13", "23:14", "23:15", "23:16", "23:17", "23:18", "23:19",
@@ -337,7 +337,7 @@
   {
     "question_id": 26,
     "question_type": "time",
-    "question_text": "You said you vaped more than 1 puff since the last assessment, what time was it when you most recently vaped?",
+    "question_text": "You said you vaped more than 1 puff since the last assessment. What time was it when you first vaped?",
     "condition": [
       "23:2", "23:3", "23:4", "23:5", "23:6", "23:7", "23:8", "23:9",
       "23:10","23:11", "23:12", "23:13", "23:14", "23:15", "23:16", "23:17", "23:18", "23:19",
@@ -370,7 +370,7 @@
   {
     "question_id": 28,
     "question_type": "time",
-    "question_text": "What time was it when you most recently used marijuana/cannabis?",
+    "question_text": "What time was it when you last used marijuana/cannabis?",
     "condition": [
       "27:~None (I did not use marijuana)"
     ]
@@ -575,6 +575,56 @@
   {
     "question_id": 45,
     "question_type": "multiple_choice",
+    "question_text": "Since the last assessment, have you used nicotine gum?",
+    "response_option": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question_id": 46,
+    "question_type": "string_picker",
+    "question_text": "How many pieces of nicotine gum have you used since the last assessment?",
+    "response_option": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "More than 30"
+    ],
+    "condition": [
+      "45:Yes"
+    ]
+  },
+  {
+    "question_id": 47,
+    "question_type": "multiple_choice",
     "question_text": "RIGHT NOW,\n\nI feel capable of controlling my behavior and emotions.",
     "response_option": [
       "0 Not at all",
@@ -585,7 +635,7 @@
     ]
   },
   {
-    "question_id": 46,
+    "question_id": 48,
     "question_type": "multiple_choice",
     "question_text": "RIGHT NOW,\n\nI feel able to effectively manage most situations and emotions.",
     "response_option": [
@@ -597,7 +647,7 @@
     ]
   },
   {
-    "question_id": 47,
+    "question_id": 49,
     "question_text": "Thank you for answering this Survey. Please click \"FINISH\"."
   }
 ]
