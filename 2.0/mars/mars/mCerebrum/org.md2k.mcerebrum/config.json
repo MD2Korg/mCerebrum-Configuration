@@ -3,7 +3,7 @@
     "id": "mars",
     "type": "field_study",
     "update": "notify",
-    "version": "2.0.0"
+    "version": "2.0.2"
   },
   "study":{
     "id": "mars",
@@ -11,7 +11,7 @@
     "title": "MARS Study",
     "summary": "MARS Study",
     "description": "MARS Study",
-    "version":"2.0.0",
+    "version":"2.0.2",
     "start_at_boot": true
   },
   "apps": [
