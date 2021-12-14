@@ -304,7 +304,7 @@
           ]
         },
         {
-          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(12:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMI, RANDOM)>0",
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMI, RANDOM)>0",
           "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
           "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00)",
           "trigger_rule": [

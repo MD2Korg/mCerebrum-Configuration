@@ -100,6 +100,216 @@
           "type": "WAKEUP",
           "id": "DAY9"
         }
+      },
+      {
+        "id": "wakeup_time_10",
+        "title": "Wakeup Time (Day: 10)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY"
+        }
+      },
+      {
+        "id": "wakeup_time_11",
+        "title": "Wakeup Time (Day: 11)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY11"
+        }
+      },
+      {
+        "id": "wakeup_time_12",
+        "title": "Wakeup Time (Day: 12)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY12"
+        }
+      },
+      {
+        "id": "wakeup_time_13",
+        "title": "Wakeup Time (Day: 13)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY13"
+        }
+      },
+      {
+        "id": "wakeup_time_14",
+        "title": "Wakeup Time (Day: 14)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY14"
+        }
+      },
+      {
+        "id": "wakeup_time_15",
+        "title": "Wakeup Time (Day: 15)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY15"
+        }
+      },
+      {
+        "id": "wakeup_time_16",
+        "title": "Wakeup Time (Day: 16)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY16"
+        }
+      },
+      {
+        "id": "wakeup_time_17",
+        "title": "Wakeup Time (Day: 17)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY17"
+        }
+      },
+      {
+        "id": "wakeup_time_18",
+        "title": "Wakeup Time (Day: 18)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY18"
+        }
+      },
+      {
+        "id": "wakeup_time_19",
+        "title": "Wakeup Time (Day: 19)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY19"
+        }
+      },
+      {
+        "id": "wakeup_time_20",
+        "title": "Wakeup Time (Day: 20)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY20"
+        }
+      },
+      {
+        "id": "wakeup_time_21",
+        "title": "Wakeup Time (Day: 21)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY21"
+        }
+      },
+      {
+        "id": "wakeup_time_22",
+        "title": "Wakeup Time (Day: 22)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY22"
+        }
+      },
+      {
+        "id": "wakeup_time_23",
+        "title": "Wakeup Time (Day: 23)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY23"
+        }
+      },
+      {
+        "id": "wakeup_time_24",
+        "title": "Wakeup Time (Day: 24)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY24"
+        }
+      },
+      {
+        "id": "wakeup_time_25",
+        "title": "Wakeup Time (Day: 25)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY25"
+        }
+      },
+      {
+        "id": "wakeup_time_26",
+        "title": "Wakeup Time (Day: 26)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY26"
+        }
+      },
+      {
+        "id": "wakeup_time_27",
+        "title": "Wakeup Time (Day: 27)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY27"
+        }
+      },
+      {
+        "id": "wakeup_time_28",
+        "title": "Wakeup Time (Day: 28)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY28"
+        }
+      },
+      {
+        "id": "wakeup_time_29",
+        "title": "Wakeup Time (Day: 29)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY29"
+        }
+      },
+      {
+        "id": "wakeup_time_30",
+        "title": "Wakeup Time (Day: 30)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY30"
+        }
       }
     ]
   },
