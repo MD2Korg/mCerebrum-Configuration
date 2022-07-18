@@ -1,0 +1,122 @@
+{
+  "config":{
+    "id": "affsci_mrt",
+    "type": "field_study",
+    "update": "notify",
+    "version": "2.0.2"
+  },
+  "study":{
+    "id": "affsci_mrt",
+    "type": "field_study",
+    "title": "AffSci MRT Study",
+    "summary": "AffSci MRT Study",
+    "description": "AffSci MRT Study",
+    "version":"2.0.2",
+    "start_at_boot": true
+  },
+  "apps": [
+    {
+      "id": "mcerebrum",
+      "type": "mcerebrum",
+      "title": "mCerebrum",
+      "summary": "Launcher app for mCerebrum",
+      "description": "Launcher app for mCerebrum",
+      "package_name": "org.md2k.mcerebrum",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mcerebrum/version2.0.15.json",
+      "icon": "mcerebrum.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "datakit",
+      "type": "datakit",
+      "title": "Storage",
+      "summary": "Handles routing, privacy, and storage for mCerebrum applications",
+      "description": "Handles routing, privacy, and storage for mCerebrum applications",
+      "package_name": "org.md2k.datakit",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.datakit/version2.0.18-RC3.json",
+      "icon": "datakit.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "study",
+      "type": "study",
+      "title": "Study UI",
+      "summary": "UI for AffSciMRT Study",
+      "description": "UI for AffSciMRT Study",
+      "package_name": "org.md2k.studywithema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.studywithema/version2.0.11-RC6.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "phone",
+      "type": "sense",
+      "title": "PhoneSensor",
+      "summary": "Captures accelerometer, gyroscope, and location data from the phone",
+      "description": "Captures accelerometer, gyroscope, and location data from the phone",
+      "package_name": "org.md2k.phonesensor",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.phonesensor/version2.0.8.json",
+      "icon": "phonesensor.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "MotionSenseHRV",
+      "type": "sense",
+      "title": "Wrist Sensor",
+      "summary": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
+      "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
+      "package_name": "org.md2k.motionsense",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.motionsense/version2.0.18-RC4.json",
+      "icon": "motionsense.png",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "scheduler",
+      "type": "act",
+      "title": "Scheduler",
+      "summary": "Scheduler app",
+      "description": "Scheduler app",
+      "package_name": "org.md2k.scheduler",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.scheduler/version2.0.12-RC22.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "ema",
+      "type": "sense",
+      "title": "EMA",
+      "summary": "Records EMA",
+      "description": "Records EMA",
+      "package_name": "org.md2k.ema",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.ema/version2.0.4-RC5.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "mars",
+      "type": "sense",
+      "title": "Mars Intervention App",
+      "summary": "Mars intervention app",
+      "description": "Mars intervention app",
+      "package_name": "org.md2k.mars",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.mars/version2.0.0-RC4.json",
+      "update": "notify",
+      "use_as": "required"
+    },
+    {
+      "id": "low_effort_intervention",
+      "type": "sense",
+      "title": "Low Effort Intervention App",
+      "summary": "Low Effort intervention app",
+      "description": "Low Effort intervention app",
+      "package_name": "org.md2k.loweffortintervention",
+      "download_link": "https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/2.0/org.md2k.loweffortintervention/version2.0.0-RC8.json",
+      "update": "notify",
+      "use_as": "required"
+    }
+  ]
+}

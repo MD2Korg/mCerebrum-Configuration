@@ -1,0 +1,207 @@
+{
+  "settings": {
+    "list": [
+      {
+        "id": "wakeup_time_0",
+        "title": "Wakeup Time (Day: 0)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY0"
+        }
+      },
+      {
+        "id": "wakeup_time_1",
+        "title": "Wakeup Time (Day: 1)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY1"
+        }
+      },
+      {
+        "id": "wakeup_time_2",
+        "title": "Wakeup Time (Day: 2)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY2"
+        }
+      },
+      {
+        "id": "wakeup_time_3",
+        "title": "Wakeup Time (Day: 3)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY3"
+        }
+      },
+      {
+        "id": "wakeup_time_4",
+        "title": "Wakeup Time (Day: 4)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY4"
+        }
+      },
+      {
+        "id": "wakeup_time_5",
+        "title": "Wakeup Time (Day: 5)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY5"
+        }
+      },
+      {
+        "id": "wakeup_time_6",
+        "title": "Wakeup Time (Day: 6)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY6"
+        }
+      },
+      {
+        "id": "wakeup_time_7",
+        "title": "Wakeup Time (Day: 7)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY7"
+        }
+      },
+      {
+        "id": "wakeup_time_8",
+        "title": "Wakeup Time (Day: 8)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY8"
+        }
+      },
+      {
+        "id": "wakeup_time_9",
+        "title": "Wakeup Time (Day: 9)",
+        "input_type": "DATE_TIME",
+        "use_as": "REQUIRED",
+        "save": {
+          "type": "WAKEUP",
+          "id": "DAY9"
+        }
+      }
+    ]
+  },
+  "ui": {
+    "icon": "logo_aa.png",
+    "menu": [
+      {
+        "id": "home",
+        "title": "Home"
+      },
+      {
+        "id": "settings",
+        "title": "Settings",
+        "parameter": [
+          "password",
+          "1234"
+        ]
+      },
+      {
+        "id": "reset",
+        "title": "Reset Application"
+      },
+      {
+        "id": "update",
+        "title": "Check Update"
+      },
+      {
+        "id":"tutorial",
+        "title":"Tutorial",
+        "parameter":[
+          "https://md2k.org/software-how-to/software-howto-studyguides/moffitt-pg.html"
+        ]
+      }
+    ],
+    "home_screen": {
+      "data_quality": [
+        {
+          "title": "Left Wrist",
+          "read": {
+            "platform": {
+              "id": "LEFT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ACCELEROMETER"
+          },
+          "plot": {
+            "platform": {
+              "id": "LEFT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "eyn9sMnRcCk",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        },
+        {
+          "title": "Right Wrist",
+          "read": {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            },
+            "type": "DATA_QUALITY",
+            "id": "ACCELEROMETER"
+          },
+          "plot": {
+            "platform": {
+              "id": "RIGHT_WRIST"
+            },
+            "type": "ACCELEROMETER"
+          },
+          "video_link": "eyn9sMnRcCk",
+          "message": "1) Reset the application, wait 15 seconds and check again.\n\n2) Restart the phone, wait one minute and check again.\n\n3) Make sure the wristband is charged."
+        }
+      ],
+      "privacy": {
+      },
+      "button": {
+        "column": 2,
+        "list": [
+          {
+            "id": "mars",
+            "title": "MARS",
+            "icon": "x.png",
+            "run": {
+              "package_name": "org.md2k.loweffortintervention",
+              "activity": "org.md2k.loweffortintervention.ActivityMars",
+              "parameter": [
+              ]
+            }
+          },
+          {
+            "id": "quit_tips",
+            "title": "Quit Tips",
+            "icon": "x.png",
+            "run": {
+              "package_name": "org.md2k.loweffortintervention",
+              "activity": "org.md2k.loweffortintervention.ActivityTailorUser",
+              "parameter": [
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

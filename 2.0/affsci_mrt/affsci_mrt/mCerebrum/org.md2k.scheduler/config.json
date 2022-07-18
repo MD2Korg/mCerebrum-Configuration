@@ -1,0 +1,763 @@
+{
+  "id": "MARS",
+  "type": "STUDY",
+  "title": "MARS Study",
+  "scheduler_list": [
+    {
+      "type": "WAKEUP_INFO",
+      "id": "TODAY",
+      "title": "Set Wakeup Time",
+      "listen": {
+        "datasource": [
+          {
+            "type": "WAKEUP",
+            "id": "DAY0"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)<today()",
+          "start_time": "now()",
+          "end_time": "now()+time_offset(01:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "true",
+              "retry_after": "time_offset(00:00:10)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["WAKEUP_TODAY", "", ""]
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "DAY_START",
+      "id": "NOTIFY",
+      "title": "Notify Day Start",
+      "listen": {
+        "datasource": [
+          {
+            "type": "WAKEUP",
+            "id": "DAY0"
+          }
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00), DAY_START, NOTIFY)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:15:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "true",
+              "retry_after": "time_offset(00:00:10)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_DAY_START_NOTIFY", "", ""]
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "EMA",
+      "id": "TAILOR",
+      "title": "Tailor EMA",
+      "listen": {
+        "datasource": [
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00), EMA,TAILOR)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:05)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00), EMA, TAILOR)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:05)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00), EMA, TAILOR)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:05)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00), EMA, TAILOR)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:05)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), EMA,TAILOR)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:05)"
+            }
+          ]
+        },
+        {
+          "condition": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00)>now() && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMA,TAILOR)==0",
+          "start_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:05)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_TAILOR", "Ok", "EMA_TAILOR"]
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "EMI",
+      "id": "RANDOM",
+      "title": "Random EMI",
+      "listen": {
+        "datasource": [
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_last_sample_time(EMA, TAILOR)+time_offset(01:00:00)>now() && get_sample_no(get_last_sample_time(EMA, TAILOR), get_last_sample_time(EMA, TAILOR)+time_offset(01:00:00), EMI, RANDOM)==0",
+          "start_time": "get_last_sample_time(EMA, TAILOR)",
+          "end_time": "get_last_sample_time(EMA, TAILOR)+time_offset(01:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:00:03)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["LOW_INTERVENTION_APP_NO_TRIGGER", "", ""]
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "action": {
+              "transition": [
+                ["LOW_INTERVENTION_APP_NO_TRIGGER", "", ""]
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120_EMI", "Ok", "LOW_INTERVENTION_APP_TRIGGER"]
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_0_60_120_EMI", "Ok", "MARS_APP_TRIGGER"]
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "EMA",
+      "id": "RANDOM",
+      "title": "RANDOM EMA",
+      "listen": {
+        "datasource": [
+        ]
+      },
+      "when": [
+        {
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00), EMI, RANDOM)>0",
+          "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(02:20:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00), EMI, RANDOM)>0",
+          "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(04:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00), EMI, RANDOM)>0",
+          "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(07:00:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00), EMI, RANDOM)>0",
+          "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(09:20:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), EMI, RANDOM)>0",
+          "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        },
+        {
+          "condition": "get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMA,RANDOM)==0 && get_sample_no(get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(11:40:00), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00), EMI, RANDOM)>0",
+          "start_time": "get_last_sample_time(EMI, RANDOM)+time_offset(01:00:00)",
+          "end_time": "get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)+time_offset(14:00:00)",
+          "trigger_rule": [
+            {
+              "trigger_time": "now()",
+              "condition": "is_privacy_on()==false && is_driving(now()-time_offset(00:05:00), now())==false",
+              "retry_after": "time_offset(00:01:00)"
+            }
+          ]
+        }
+      ],
+      "what": [
+        [
+          {
+            "action": {
+              "transition": [
+                ["NOTIFICATION_WITH_DELAY", "Ok", "EMA"],
+                ["NOTIFICATION_WITH_DELAY", "Delay (10 Min)", "NOTIFICATION_DURING_DELAY"],
+                ["NOTIFICATION_DURING_DELAY", "Start Now", "EMA"],
+                ["NOTIFICATION_DURING_DELAY", "MISSED", "NOTIFICATION_AFTER_DELAY"],
+                ["NOTIFICATION_AFTER_DELAY", "Ok", "EMA"],
+                ["EMA", "COMPLETED", "INCENTIVE_DATA_QUALITY_LAST_EMA"]
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "notification_details": [
+    {
+      "id": "PHONE_VIBRATE_30_WITH_0_60_120",
+      "type": "PHONE_VIBRATION",
+      "title": "Phone Vibration",
+      "format": "THREE_TONE",
+      "repeat": 6,
+      "interval": "00:00:05",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_TONE_30_WITH_0_60_120",
+      "type": "PHONE_TONE",
+      "title": "Phone Tone",
+      "format": "THREE_TONE_HIGH",
+      "repeat": 6,
+      "interval": "00:00:05",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00"
+      ]
+    },
+    {
+      "id": "PHONE_VIBRATE_DAY_START_NOTIFY",
+      "type": "PHONE_VIBRATION",
+      "title": "Phone Vibration",
+      "format": "THREE_TONE",
+      "repeat": 3,
+      "interval": "00:00:10",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00",
+        "00:03:00",
+        "00:04:00",
+        "00:05:00",
+        "00:06:00",
+        "00:07:00",
+        "00:08:00",
+        "00:09:00"
+      ]
+    },
+    {
+      "id": "PHONE_TONE_DAY_START_NOTIFY",
+      "type": "PHONE_TONE",
+      "title": "Phone Tone",
+      "format": "THREE_TONE_HIGH",
+      "repeat": 3,
+      "interval": "00:00:10",
+      "at": [
+        "00:00:00",
+        "00:01:00",
+        "00:02:00",
+        "00:03:00",
+        "00:04:00",
+        "00:05:00",
+        "00:06:00",
+        "00:07:00",
+        "00:08:00",
+        "00:09:00"
+      ]
+    },
+    {
+      "id": "PHONE_SCREEN_30",
+      "type": "PHONE_SCREEN",
+      "title": "Phone Screen",
+      "repeat": 1,
+      "interval": "00:00:30",
+      "at": [
+        "00:00:00"
+      ]
+    },
+    {
+      "id": "PHONE_MESSAGE_DAY_START_NOTIFY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:15:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Equipment Reminder",
+        "content": "Your day is about to start. Please remember to put on your equipment",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_TAILOR",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:02:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Quick Questions",
+        "content": "Time to answer 2 questions",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_EMI",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:45:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Strategy",
+        "content": "Time to practice a strategy",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DELAY_10_MINUTE",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:45:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          },
+          {
+            "title": "Delay (10 Min)",
+            "confirm": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_AFTER_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "title": "Survey",
+        "content": "Time to take a survey",
+        "button": [
+          {
+            "title": "Ok",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHONE_MESSAGE_DURING_DELAY",
+      "type": "PHONE_DIALOG",
+      "title": "Phone Message",
+      "repeat": 1,
+      "interval": "00:10:00",
+      "at": [
+        "00:00:00"
+      ],
+      "message": {
+        "type": "GENERAL",
+        "title": "Survey delayed for 10 minutes",
+        "message": "Please click \"Start\" when you are ready",
+        "button": [
+          {
+            "title": "Start Now",
+            "confirm": false
+          },
+          {
+            "title": "Cancel",
+            "confirm": true
+          }
+        ]
+      }
+    }
+  ],
+  "notification_list": [
+    {
+      "id": "NOTIFICATION_DAY_START_NOTIFY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_DAY_START_NOTIFY",
+            "PHONE_TONE_DAY_START_NOTIFY",
+            "PHONE_MESSAGE_DAY_START_NOTIFY",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_TAILOR",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_TAILOR",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_0_60_120_EMI",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_EMI",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "NOTIFICATION_WITH_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_DELAY_10_MINUTE",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_DURING_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_MESSAGE_DURING_DELAY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NOTIFICATION_AFTER_DELAY",
+      "notification": [
+        {
+          "notification_details_id": [
+            "PHONE_VIBRATE_30_WITH_0_60_120",
+            "PHONE_TONE_30_WITH_0_60_120",
+            "PHONE_MESSAGE_AFTER_DELAY",
+            "PHONE_SCREEN_30"
+          ]
+        }
+      ]
+    }
+  ],
+  "application_list": [
+    {
+      "id": "WAKEUP_TODAY",
+      "application": [
+        {
+          "package_name": "org.md2k.scheduler",
+          "timeout": "00:01:00",
+          "parameter": {
+            "type": "SET_VALUE",
+            "save_type": "WAKEUP",
+            "save_id": "TODAY",
+            "read_type": "WAKEUP"
+          }
+        }
+      ]
+    },
+    {
+      "id": "EMA",
+      "application": [
+        {
+          "package_name": "org.md2k.ema",
+          "timeout": "00:10:00",
+          "parameter": {
+            "filename": "questionnaire.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "EMA_TAILOR",
+      "application": [
+        {
+          "package_name": "org.md2k.loweffortintervention",
+          "timeout": "00:02:00",
+          "parameter": {
+            "trigger_type": "TAILOR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "LOW_INTERVENTION_APP_NO_TRIGGER",
+      "application": [
+        {
+          "package_name": "org.md2k.loweffortintervention",
+          "timeout": "00:00:02",
+          "parameter": {
+            "trigger_type": "NONE"
+          }
+        }
+      ]
+    },
+    {
+      "id": "LOW_INTERVENTION_APP_TRIGGER",
+      "application": [
+        {
+          "package_name": "org.md2k.loweffortintervention",
+          "timeout": "00:05:00",
+          "parameter": {
+            "trigger_type": "LOW_INTERVENTION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MARS_APP_TRIGGER",
+      "application": [
+        {
+          "package_name": "org.md2k.loweffortintervention",
+          "timeout": "00:05:00",
+          "parameter": {
+            "trigger_type": "MARS"
+          }
+        }
+      ]
+    }
+  ],
+  "incentive_list": [
+    {
+      "id": "INCENTIVE_DATA_QUALITY_LAST_EMA",
+      "incentive": [
+        {
+          "condition": "get_data_quality(max(get_2nd_last_sample_time(EMA), get_last_sample(0,WAKEUP,TODAY)+time_offset(00:30:00)), now(), DATA_QUALITY_SUMMARY_MINUTE, ACCELEROMETER, MOTION_SENSE_HRV, LEFT_WRIST)>=66.6",
+          "amount": 4.00,
+          "message": [
+            "Thank you. You will be paid $<AMOUNT> for taking the survey and wearing the sensors for more than 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ]
+        },
+        {
+          "amount": 2.00,
+          "message": [
+            "Thank you. Unfortunately, you will only be paid $<AMOUNT> because you have not worn the sensors for at least 60% of the time since your last survey.",
+            "You will be paid $<AMOUNT>",
+            "Total Earning: $<TOTAL_AMOUNT>"
+          ]
+        }
+      ]
+    }
+  ]
+}
