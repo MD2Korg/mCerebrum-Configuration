@@ -1,7 +1,7 @@
 {
   "id": "MARS",
   "type": "STUDY",
-  "title": "MARS Study",
+  "title": "Affective Science Study",
   "scheduler_list": [
     {
       "type": "WAKEUP_INFO",
