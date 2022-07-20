@@ -8,9 +8,9 @@
   "study":{
     "id": "affsci_mrt",
     "type": "field_study",
-    "title": "AffSci MRT Study",
-    "summary": "AffSci MRT Study",
-    "description": "AffSci MRT Study",
+    "title": "Affective Science Study",
+    "summary": "Affective Science Study",
+    "description": "Affective Science Study",
     "version":"2.0.2",
     "start_at_boot": true
   },
